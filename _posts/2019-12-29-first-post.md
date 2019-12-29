@@ -1,5 +1,5 @@
 ---
-title: "github.io blog 시작"
+title: "Start github.io blog "
 excerpt: "I start github.io blog that is Github Blog Service"
 
 categories:

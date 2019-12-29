@@ -1,11 +1,11 @@
 ---
-title: "Strat github.io blog"
+title: "github.io blog 시작"
 excerpt: "I start github.io blog that is Github Blog Service"
 
 categories:
-	- Blog
+  - Blog
 tags:
-	- Blog
+  - Blog
 last_modified_at: 2019-12-29T16:30:00-05:00
 ---
 

@@ -1,13 +1,24 @@
 ---
-title: "이 블로그 설명서"
+title: "Description Blog"
 permalink: /about/
 layout: single
 ---
 
-## devinlfe.github.io 블로그
+Hi guys, I'm Computer Science&Engineering senior.  
+I wants to record my life to make this Blog.  
+It seems strange that I put posts mixed.  
+I'm trying to rearranged my blog.  
+Thanks for visit my weird blog :D
 
-이 블로그는 Github Pages 블로그 서비스인 github.io를 같이 만들어보는 샘플 블로그이다.
 
-진짜 블로그인 <https://devinlife.com>을 방문해보자.
-이 곳에서 이 샘플 블로그를 같이 만들어보는 Github Pages 블로그 따라하기 시리즈의
-모든 글을 볼 수 있다.
+## Eliot's library
+
+This Blog have many categories.  
+
+"Scratch Paper" page contains what I want to know.  
+"Projects" page contains main project and side project.
+"Novels" page contains what I serialize novel.
+"Journal" page contains my everything.
+"Github" page links to my github address.
+
+

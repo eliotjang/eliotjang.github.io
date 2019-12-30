@@ -8,8 +8,14 @@ main:
     url: /categories/
   - title: "Tags"
     url: /tags/
-  - title: "Journal"
-    url: categories/journal/
+  - title: "Scratch Paper"
+    url: /categories/scratch paper/
+  - title: "Projects"
+    url: /categories/project/
+  - title: "Novels"
+    url: /categories/novel/
+  - title: "Journals"
+    url: /categories/journal/
   - title: "About"
     url: /about/
   

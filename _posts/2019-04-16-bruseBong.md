@@ -1,13 +1,12 @@
 ---
-title:  "별 헤는 밤 - 윤동주"
-excerpt: "윤동주 시인의 작품 모음 - 별 헤는 밤"
+title:  "Bruse Bong Journey"
+excerpt: "Adventure of Bruse Bong"
 
 categories:
-  - 윤동주
+  - novel
 tags:
-  - 별 헤는 밤
-  - 윤동주
-  - 시
+  - novel
+  - 1st work
 last_modified_at: 2019-04-13T08:06:00-05:00
 ---
 

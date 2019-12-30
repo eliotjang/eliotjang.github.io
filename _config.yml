@@ -19,12 +19,12 @@ locale                   : "en-US"
 title                    : "Engineer Eliot's Blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Eliot Jang Blog, 엘리엇장 블로그"
+name                     : "Eliot Jang"
 description              : "엔지니어 엘리엇장의 모든 것을 기록하는 서재입니다."
 url                      : "https://eliotjang.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/assets/images/Eliot-in-KNU.jpeg"
+repository               : "eliotjang/eliotjang.github.io"
+teaser                   : "/assets/images/notebook.webp"
 logo                     : "/assets/images/Eliot-in-KNU.jpeg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
@@ -109,10 +109,10 @@ analytics:
 author:
   name             : "Eliot Jang, 엘리엇장"
   avatar           : "/assets/images/Eliot-in-KNU.jpeg"
-  bio              : "**엔지니어 엘리엇장**의 모든 것을 기록하는 서재에 오신 것을 환영합니다."
+  bio              : "**엔지니어 엘리엇장**의 모든 것을 기록하는 서재에 오신 것을 환영합니다.\n\n Welcome to **Eliot's Liabrary** :D"
   location         : "Korea, Republic of"
   email            : "eliotjang2@gmail.com"
-  links:
+  link:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       # url: mailto:eliotjang2@gmail.com
@@ -124,14 +124,13 @@ author:
       # url: "https://twitter.com/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+      # url: "https://facebook.com/eliotjang"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       # url: "https://github.com/eliotjang"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/engineer_eliot"
-
 # Site Footer
 footer:
   links:
@@ -140,7 +139,7 @@ footer:
       # url:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url:
+      # url: "https://facebook.com/eliotjang
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       # url: "https://github.com/eliotjang"

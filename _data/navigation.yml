@@ -8,6 +8,8 @@ main:
     url: /categories/
   - title: "Tags"
     url: /tags/
+  - title: "Journal"
+    url: categories/journal/
   - title: "About"
     url: /about/
   

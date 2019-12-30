@@ -291,6 +291,19 @@ defaults:
       comments: true
       share: true
       related: true
+
+  # _posts / _journal
+  - scope:
+      path: /_journal/
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+
   # _pages
   - scope:
       path: ""

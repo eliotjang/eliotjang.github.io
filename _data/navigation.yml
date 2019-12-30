@@ -5,7 +5,7 @@ main:
   - title: "Projects"
     url: /categories/project/
   - title: "Novels"
-    url: /categories/novel/
+    url: /categories/소설/
   - title: "Journals"
     url: /categories/journal/
   - title: "GitHub"

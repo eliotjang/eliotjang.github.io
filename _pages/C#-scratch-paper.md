@@ -1,9 +1,9 @@
 ---
 title: "C# for nubs!"
-permalink: /tags/C#/
+permalink: /tags/C sharp/
 layout: tag
 author_profile: true
-taxonomy: C#
+taxonomy: C sharp
 ---
 
 It is C#!

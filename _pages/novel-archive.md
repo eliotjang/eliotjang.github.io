@@ -12,6 +12,6 @@ This Page is my __*Novel*__ library.
 *****
 
 ## Bruse Bong Journey
-[click!](https://eliotjang.github.io/tags/1st novel)
+[click!](https://eliotjang.github.io/tags/bruse bong)
 
 *****

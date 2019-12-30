@@ -1,13 +1,5 @@
 # main links
 main:
-  - title: "Visit GitHub"
-    url: https://github.com/eliotjang/
-  - title: "윤동주"
-    url: /categories/윤동주/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
   - title: "Scratch Paper"
     url: /categories/scratch paper/
   - title: "Projects"
@@ -16,6 +8,8 @@ main:
     url: /categories/novel/
   - title: "Journals"
     url: /categories/journal/
+  - title: "GitHub"
+    url: https://github.com/eliotjang/
   - title: "About"
     url: /about/
   

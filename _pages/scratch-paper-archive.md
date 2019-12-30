@@ -12,7 +12,7 @@ This Page is my __*just memo*__ library.
 *****
 
 ## Learn C#
-[click to study C#](https://eliotjang.github.io/tags/C#)
+[click to study C#](https://eliotjang.github.io/tags/C#/)
 
 *****
-###All posts
+### All posts

@@ -7,9 +7,12 @@ categories:
 tags:
   - journal
   - in 2019
-last_modified_at: 2019-12-31T03:07:00+09:00
+  - C Sharp
+  - Unity
+last_modified_at: 2019-12-31T03:15:00+09:00
 ---
 Mon, December 30th 2019 rainy and windy  
+
 *This is my first journal.*  
 *I shiver a little but anyway I will do my best.*  
 

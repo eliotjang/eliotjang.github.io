@@ -1,13 +1,13 @@
 ---
-title:  "Bruse Bong Journey"
-excerpt: "Adventure of Bruse Bong"
+title:  "브루스 봉 여행기"
+excerpt: "위험천만한 곳으로 여행을 하는 브루스 봉"
 
 categories:
-  - novel
+  - 소설
 tags:
-  - novel
-  - Journey
-  - bruse bong
+  - 소설
+  - 여행기
+  - 브루스 봉 여행기
 last_modified_at: 2019-04-13T08:06:00-05:00
 ---
 

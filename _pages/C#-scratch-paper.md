@@ -1,12 +1,9 @@
 ---
-title: "Learn C#"
-permalink: /tags/C#/
+title: "C# for nubs!"
+permalink: /tags/C\#/
 layout: tag
 author_profile: true
-taxonomy: C#
+taxonomy: C\#
 ---
 
-Beginner to study C#
-
-*****
-
+It is C#!

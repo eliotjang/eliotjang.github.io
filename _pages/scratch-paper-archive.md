@@ -12,6 +12,6 @@ This Page is my __*Scratch Paper*__ library.
 *****
 
 ## C#
-[beginner for C#](https://eliotjang.github.io/tags/C sharp)
+[beginner for C#](https://eliotjang.github.io/tags/C Sharp)
 
 *****

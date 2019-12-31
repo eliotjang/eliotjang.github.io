@@ -9,7 +9,7 @@ tags:
   - in 2019
   - sunrise
   - friends
-last_modified_at:2019-12-31T20:11:00+09:00
+last_modified_at: 2019-12-31T20:11:00+09:00
 ---
 I stay up all night for make my first game.  
 This game is example of other bloger.  

@@ -16,15 +16,14 @@ This is my first game.
 
 *****
 
-*Game Scenario*  
+### *Game Scenario*  
 - Click Pokeball 
 - If you click while event generated..
 - Pikachu will come out of Pokeball!  
 
 *****
-### Watch video  
-		[Click](https://youtu.be/bD5kvn6xTy4)
-![go pikachu image](https://eliotjang.github.io/assets/images/shot1.png)
+### *Game Play Video*  
+[![go pikachu video](https://eliotjang.github.io/assets/images/shot1.png)](https://youtu.be/bD5kvn6xTy4)
 
 
 *****

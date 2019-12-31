@@ -15,3 +15,11 @@ This Page is my __*Projects*__ library.
 [Anonymous SNS application](https://eliotjang.github.io/tags/app)
 
 *****
+
+## Game
+[Go Pikachu!!](https://eliotjang.github.io/tags/goPikachu)  
+
+*****
+### All Projects  
+
+

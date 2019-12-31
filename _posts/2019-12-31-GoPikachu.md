@@ -23,7 +23,7 @@ This is my first game.
 
 *****
 ### Watch video  
-[watch video](https://youtu.be/bD5kvn6xTy4)
+		[Click](https://youtu.be/bD5kvn6xTy4)
 ![go pikachu image](https://eliotjang.github.io/assets/images/shot1.png)
 
 

@@ -20,3 +20,5 @@ This Page is my __*English Journal*__ library.
 [2020 version](https://eliotjang.github.io/tags/in 2020)
 
 *****
+
+### *All Journals*

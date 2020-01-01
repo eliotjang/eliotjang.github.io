@@ -9,9 +9,12 @@ tags:
   - in 2019
   - sunrise
   - friends
-last_modified_at: 2019-12-31T20:11:00+09:00
+last_modified_at: 2019-01-01T22:50:00+09:00
 ---
-I stay up all night for make my first game.  
+Tuesday, December 31th, 2019  
+Cold  
+
+I stay up all night for make my first game, "Go-Pikachu"  
 This game is example of other bloger.  
 But it is hard to me, because of ingorance about Unity and C#.  
 Anyway, I upload this game in my github, blog and youtube.  

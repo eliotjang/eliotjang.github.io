@@ -17,7 +17,7 @@ Cold
 
 I made a video at dawn.  
 It was very hard but I can't stop.  
-It made me in a spirite of the rivalry.  
+It made me in a spirit of the rivalry.  
 
 So I finished making and upload to youtube channel "엘리엇장, Eliot Jang".  
 I took a video with my high school alumni. It's very thanksful to them.  

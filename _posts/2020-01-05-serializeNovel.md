@@ -3,10 +3,10 @@ title: “Serialize A Novel”
 excerpt: “Serialize a novel with program, FolderStory”
 
 categories:
-journal
+  - journal
 tags:
-journal
-in 2020
+  - journal
+  - in 2020
 last_modified_at: 2020-01-06T01:25:00+09:00
 ---
 Sunday, January 5th, 2020  

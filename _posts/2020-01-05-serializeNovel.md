@@ -1,6 +1,6 @@
 ---
-title: “Serialize A Novel”
-excerpt: “Serialize a novel with program, FolderStory”
+title: Serialize A Novel
+excerpt: Serialize a novel with program, FolderStory
 
 categories:
   - journal

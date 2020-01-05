@@ -9,7 +9,7 @@ tags:
   - in 2020
   - camera
   - body ache
-
+last_modifed_at: 2020-01-05T17:40:00+09:00
 ---
 Saturday, January 4th, 2020  
 Cold

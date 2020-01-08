@@ -9,7 +9,7 @@ tags:
   - in 2020
 last_modified_at: 2020-01-09T00:20:00+09:00
 ---
-Wednesday, January 8th, 2020
+Wednesday, January 8th, 2020  
 Cold
 
 I woke at 12 o’clock.  

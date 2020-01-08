@@ -1,6 +1,6 @@
 ---
 title: "Back To Suwon"
-excerpt: "After a medical examination, we back to Suwon, rented room.
+excerpt: "After a medical examination, we back to Suwon, rented room."
 
 categories:
   - journal

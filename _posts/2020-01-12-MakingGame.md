@@ -7,6 +7,7 @@ categories:
 tags:
   - journal
   - in 2020
+last_modified_at: 2020-01-13T20:00:00+09:00
 ---
 I went to the cafe, Idiya.  
 

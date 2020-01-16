@@ -32,7 +32,7 @@ last_modified_at: 2020-01-17T05:10:00+09:00
 	to be transferred through cloud
 - Different business stores 80% of actual data  
 
-![](https://eliotjang.github.io/assets/images/hadoop/bigData-generated.png){: .align-center}
+![](https://eliotjang.github.io/assets/images/hadoop/bigData-generated.png){: .align-center}  
 
 **What comes under the Big Data?**  
   >- There are some fields that comes under the Big data

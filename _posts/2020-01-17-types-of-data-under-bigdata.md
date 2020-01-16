@@ -11,7 +11,7 @@ tags:
 last_modified_at: 2020-01-17T07:00:00+09:00
 ---
 
-![](https://eliotjang.github.io/assets/images/hadoop/bigData-type.png){: .align-center}  
+![](https://eliotjang.github.io/assets/images/hadoop/bigdata-type.png){: .align-center}  
 
 **What are the different types of data?**  
   - The big data are categorized into three different types:  

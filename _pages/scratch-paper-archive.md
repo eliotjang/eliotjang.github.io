@@ -16,7 +16,10 @@ taxonomy: scratch paper #not needs. I hide it all journal posts for make _journa
 *****
 
 ### Big Data & Hadoop
-[click here to watch](https://eliotjang.github.io/tags/hadoop)
+
+![](https://eliotjang.github.io/assets/images/hadoop/hadoop-logo.png){: .align-center}  
+
+[click!](https://eliotjang.github.io/tags/hadoop)
 
 *****
 

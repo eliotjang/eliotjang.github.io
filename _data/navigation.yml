@@ -2,6 +2,8 @@
 main:
   - title: "Scratch Paper"
     url: /categories/scratch paper/
+  - title: "Algoritms"
+    url: /categories/algorithm/
   - title: "Projects"
     url: /categories/project/
   - title: "Novels"

@@ -1,5 +1,5 @@
 ---
-title: "Maximum Element"
+title: "Maximum Element | HackerRank"
 excerpt: "HackerRank > Stacks"
 
 categories:
@@ -7,6 +7,8 @@ categories:
 tags:
   - algorithm
   - c++
+  - hackerrank
+  - maximum element
 last_mdoified_at: 2020-01-18T20:20:00+09:00
 ---
 
@@ -72,7 +74,8 @@ I wrote two arrays for time efficient.
 
 And It could not only array but also stack, original array data structure.  
 
-Thanks for watch my code review. :D  
+Thanks for watch my code review.  
+**:D**
 
 
 

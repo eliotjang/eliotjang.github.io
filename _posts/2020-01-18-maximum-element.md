@@ -1,6 +1,6 @@
 ---
-title: "Maximum Element | HackerRank"
-excerpt: "HackerRank > Stacks"
+title: "Maximum Element || HackerRank"
+excerpt: "HackerRank || Practice > Data Structures > Stacks > Maximum Element"
 
 categories:
   - algorithm

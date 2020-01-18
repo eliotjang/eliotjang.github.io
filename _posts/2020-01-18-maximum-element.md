@@ -1,6 +1,6 @@
 ---
-title: "Maximum Element || HackerRank"
-excerpt: "HackerRank || Practice > Data Structures > Stacks > Maximum Element"
+title: "Maximum Element, HackerRank"
+excerpt: "Data Structures > Stacks > Maximum Element"
 
 categories:
   - algorithm
@@ -9,6 +9,8 @@ tags:
   - c++
   - hackerrank
   - maximum element
+  - stack
+  - data structure
 last_mdoified_at: 2020-01-18T20:20:00+09:00
 ---
 

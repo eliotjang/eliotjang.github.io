@@ -1,6 +1,6 @@
 ---
-title: "[Stack]Balanced Brackets, HackerRank"
-excerpt: "HackerRank, Data Structures > Stacks > Balanced Brackets"
+title: "[Stack] Balanced Brackets, HackerRank"
+excerpt: "Data Structures > Stacks > Balanced Brackets, solution in cpp"
 
 categories:
   - algorithm

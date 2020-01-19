@@ -1,6 +1,6 @@
 ---
-title: "Maximum Element, HackerRank"
-excerpt: "Data Structures > Stacks > Maximum Element"
+title: "[Stack] Maximum Element, HackerRank"
+excerpt: "Data Structures > Stacks > Maximum Element, solution in cpp"
 
 categories:
   - algorithm

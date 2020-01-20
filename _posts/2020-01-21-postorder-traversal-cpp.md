@@ -1,6 +1,6 @@
 ---
-title: "[Tree] Preorder Traversal, HackerRank"
-excerpt: "Data Structures > Trees > Tree: Preorder Traversal, solution in cpp"
+title: "[Tree] Postorder Traversal, HackerRank"
+excerpt: "Data Structures > Trees > Tree: Postorder Traversal, solution in cpp"
 
 categories:
   - algorithm
@@ -10,12 +10,12 @@ tags:
   - c++
   - cpp
   - tree
-  - preorder traversal
+  - postorder traversal
   - data structure
-last_modified_at: 2020-01-20T22:25:00+09:00
+last_modified_at: 2020-01-21T00:50:00+09:00
 ---
 
-![](https://eliotjang.github.io/assets/images/c++/preorder-traversal.png){: .align-center}  
+![](https://eliotjang.github.io/assets/images/c++/postorder-traversal.png){: .align-center}  
 
 ```cpp
 #include <iostream>
@@ -52,14 +52,14 @@ class Solution {
            }
         }
 
-    void preOrder(Node *root) {
-	std::cout << root->data << ' ';
+    void postOrder(Node *root) {
         if (!(root->left==NULL)) {
             this->preOrder(root->left);
         }
         if (!(root->right==NULL)) {
             this->preOrder(root->right);
         }
+	std::cout << root->data << ' ';
     }
 
 };
@@ -92,6 +92,6 @@ Think for **refer function ownself**.
 :D
 
 **Before you know to coding**  
-You don't need to touch except preOrder().  
+You don't need to touch except postOrder().  
 I modified main() for debugging on VS Code.  
 

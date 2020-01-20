@@ -90,11 +90,10 @@ int main() {
 ```
 
 **Key Point**  
-Think for refer function ownself.  
-Thank you for visiting my blog.  
+Think for **refer function ownself**.  
 :D
 
-**Before you need to know**  
-You don't need to touch **preorder()** else.  
+**Before you know to coding**  
+You don't need to touch except preorder().  
 I modified main() for debugging on VS Code.  
 

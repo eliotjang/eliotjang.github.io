@@ -1,6 +1,6 @@
 ---
-title: "[Tree] Postorder Traversal, HackerRank"
-excerpt: "Data Structures > Trees > Tree: Postorder Traversal, solution in cpp"
+title: "[Tree] Inorder Traversal, HackerRank"
+excerpt: "Data Structures > Trees > Tree: Inorder Traversal, solution in cpp"
 
 categories:
   - algorithm
@@ -10,12 +10,12 @@ tags:
   - c++
   - cpp
   - tree
-  - postorder traversal
+  - inorder traversal
   - data structure
 last_modified_at: 2020-01-21T00:50:00+09:00
 ---
 
-![](https://eliotjang.github.io/assets/images/c++/postorder-traversal.png){: .align-center}  
+![](https://eliotjang.github.io/assets/images/c++/inorder-traversal.png){: .align-center}  
 
 ```cpp
 #include <iostream>
@@ -54,14 +54,14 @@ class Solution {
            }
         }
 
-    void postOrder(Node *root) {
+    void inOrder(Node *root) {
         if (!(root->left==NULL)) {
-            this->postOrder(root->left);
-        }
-        if (!(root->right==NULL)) {
-            this->postOrder(root->right);
+            this->inOrder(root->left);
         }
 	cout << root->data << ' ';
+        if (!(root->right==NULL)) {
+            this->inOrder(root->right);
+        }
     }
 
 };
@@ -82,7 +82,7 @@ int main() {
         root = myTree.insert(root, data);
     }
 
-    myTree.postOrder(root);
+    myTree.inOrder(root);
 
     return 0;
 }
@@ -94,6 +94,6 @@ Think for **refer function ownself**.
 :D
 
 **Before you know to coding**  
-You don't need to touch except postOrder().  
+You don't need to touch except inOrder().  
 I modified main() for debugging on VS Code.  
 

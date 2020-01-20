@@ -30,7 +30,7 @@ If you didn't allow security of **oracle.Inc**, you can see some sentence on **r
 
 ![](https://eliotjang.github.io/assets/images/hadoop/virtualbox/virtualbox-4.png){: .align-center}  
 
-If you can see green check mark, the installation was successful!  
+If you can see green check mark, the installation is successful!  
 
 - - -
 
@@ -49,7 +49,7 @@ Write Name same as **Ubuntu-bigdata** and Memory size to **3072** and **Create**
 
 Change File size to **20.00GB** and **Create**.  
 
-![](https://eliotjang.github.io/assets/images/hadoop/virtualbox/virtualbox-6.png){: .align-center}  
+![](https://eliotjang.github.io/assets/images/hadoop/virtualbox/virtualbox-9.png){: .align-center}  
 
 If you can see like this image, you works well!  
 

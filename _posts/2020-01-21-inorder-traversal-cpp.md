@@ -90,10 +90,10 @@ int main() {
 ```
 
 **Key Point**  
-Think for **refer function ownself**.  
+Think that Class can refer function **ownself**.    
 :D
 
-**Before you know to coding**  
+**Have to know before you coding**
 You don't need to touch except inOrder().  
 I modified main() for debugging on VS Code.  
 

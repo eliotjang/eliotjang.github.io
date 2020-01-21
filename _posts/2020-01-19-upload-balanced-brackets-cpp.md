@@ -101,8 +101,9 @@ int main()
 }
 ```  
 
-**Point**  
-Input(a string of brackets) doesn't have **Regularity**.  
-So code should be followed *all exceptions*.  
+**Key Point**  
+Input(a string of brackets) doesn't have _regularity_.  
+
+So code should tested  *All Exceptions*.  
 Thank you for visiting my blog.  
 :D

@@ -68,7 +68,7 @@ int main()
 }  
 ```
 
-### **Point**  
+### **Key Point**  
 N can be up to ten million.  
 So it must write a code that is time efficient.  
 

@@ -21,3 +21,8 @@ Also, I have to read Romance of the three kingdoms.
 I will record introduce of historic sites and editing.  
 And upload in my blog and Youtube.  
 
+I don’t mean to say this, I stayed up all night with my college classmates.  
+Then, I ride a bus to go to Seoul,  and arrived at 8 o’clock.  
+
+We will depart to Daegu tomorrow to meet kith and kin.  
+

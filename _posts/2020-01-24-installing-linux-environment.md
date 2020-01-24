@@ -76,6 +76,7 @@ If you see this image, you did well!
 
 ![](https://eliotjang.github.io/assets/images/hadoop/virtualbox/ubuntu-install-7.png){: .align-center}  
 
-This image is Ubuntu first screen!  
+Well done!
+Thank you for visiting my blog. :D  
 
 

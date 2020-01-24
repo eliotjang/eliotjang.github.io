@@ -11,15 +11,15 @@ taxonomy: scratch paper #not needs. I hide it all journal posts for make _journa
 *****
 
 ### C#
-[beginner for C#](https://eliotjang.github.io/tags/C Sharp)
+[beta test](https://eliotjang.github.io/tags/C Sharp)
 
 *****
 
 ### Big Data & Hadoop
 
-![](https://eliotjang.github.io/assets/images/hadoop/hadoop-logo.png){: .align-center}  
+![](https://eliotjang.github.io/assets/images/hadoop/hadoop-logo.png)  
 
-[click!](https://eliotjang.github.io/tags/hadoop)
+[click here!](https://eliotjang.github.io/tags/hadoop)
 
 *****
 

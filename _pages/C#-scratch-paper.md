@@ -1,9 +1,9 @@
 ---
 title: "C# for nubs!"
-permalink: /tags/C Sharp/
+permalink: /tags/fun c#/
 layout: tag
 author_profile: true
-taxonomy: C Sharp
+taxonomy: fun c#
 ---
 
-It is C#!
+Introduce what I learned C# functions.  

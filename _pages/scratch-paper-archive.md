@@ -10,8 +10,15 @@ taxonomy: scratch paper #not needs. I hide it all journal posts for make _journa
 
 *****
 
+### C++  
+![](https://eliotjang.github.io/assets/imgaes/c++/c++-logo.png)  
+[functions](https://eliotjang.github.io/tags/fun c++)  
+
+*****
+
 ### C#
-[beta test](https://eliotjang.github.io/tags/C Sharp)
+![](https://eliotjang.github.io/assets/images/c#-logo.jpeg)  
+[functions](https://eliotjang.github.io/tags/fun c#)
 
 *****
 

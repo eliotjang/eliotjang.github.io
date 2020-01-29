@@ -2,7 +2,7 @@
 title: "[Stack] Equal Stacks, HackerRank"
 excerpt: "Data Structures > Stacks > Equal Stacks, solution in cpp"
 
-categoreis:
+categories:
   - algorithm
 tags:
   - algorithm

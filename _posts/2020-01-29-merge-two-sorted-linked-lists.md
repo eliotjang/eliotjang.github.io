@@ -1,5 +1,5 @@
 ---
-title: "[Linked List] Merge two sorted linked listsi, HackerRank"
+title: "[Linked List] Merge two sorted linked lists, HackerRank"
 excerpt: "Data Structures > Linked Lists > Merge two sorted linked lists, solution in cpp"
 
 categories:

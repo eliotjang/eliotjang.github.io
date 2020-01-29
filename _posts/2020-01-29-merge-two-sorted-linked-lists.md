@@ -159,7 +159,8 @@ int main()
 ```
 
 **IMP POINT:**  
+
 Remind that you have to use pointer well.  
 **Don't lose** where the pointer **points**.  
 
-Thank you visiting my blog :D
+Thank you for visiting my blog :D

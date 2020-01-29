@@ -21,7 +21,6 @@ last_modified_at: 2020-01-29T22:15:00+09:00
 #include <algorithm>
 using namespace std;
 
-
 int main() {
     vector<int> queue;
     int query, type, x;

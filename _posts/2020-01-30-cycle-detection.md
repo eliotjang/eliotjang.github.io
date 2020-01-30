@@ -14,6 +14,7 @@ tags:
 last_modified_at: 2020-01-30T17:10:00+09:00
 ---
 <https://www.hackerrank.com/challenges/detect-whether-a-linked-list-contains-a-cycle/problem>  
+
 ![](https://eliotjang.github.io/assets/images/c++/cycle-detection.png){: .align-center}  
 
 ```cpp
@@ -146,8 +147,10 @@ int main()
 ```
 
 **KEY NOTE**  
+
 If linked list have a cycle, it will ciculation till computer **shut down.**  
 However, the problem have a **limitied size.**  
 So you can think about that.  
 
+- - -
 Thank you for visiting my blog.  

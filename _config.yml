@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Engineer Eliot's Blog"
+title                    : "Engineer, EliotJang Blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Eliot Jang"
-description              : "엔지니어 엘리엇장의 모든 것을 기록하는 서재입니다."
+name                     : "EliotJang"
+description              : "Welcome to my library, margin of life."
 url                      : "https://eliotjang.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "eliotjang/eliotjang.github.io"
@@ -107,51 +107,36 @@ analytics:
 
 # Site Author
 author:
-  name             : "Eliot Jang, 엘리엇장"
-  avatar           : "/assets/images/Eliot-in-KNU.jpeg"
-  bio              : "**엔지니어 엘리엇장**의 모든 것을 기록하는 서재에 오신 것을 환영합니다.\n\n Welcome to **Eliot's Liabrary** :D"
+  name             : "EliotJang, 엘리엇장"
+  avatar           : "/assets/images/album/long-hair-eliot.jpg"
+  bio              : "Welcome to my library, margin of life."
   location         : "Korea, Republic of"
   email            : "eliotjang2@gmail.com"
   link:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: mailto:eliotjang2@gmail.com
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://eliotjang.github.io"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
+      url: mailto:eliotjang2@gmail.com
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/eliotjang"
+      url: "https://facebook.com/eliotjang"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/eliotjang"
+      url: "https://github.com/eliotjang"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/engineer_eliot"
+      url: "https://instagram.com/engineer_eliot"
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/eliotjang
+      url: "https://facebook.com/eliotjang"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/eliotjang"
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
+      url: "https://github.com/eliotjang"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/engineer_eliot"
+      url: "https://instagram.com/engineer_eliot"
 
 
 # Reading Files
@@ -287,7 +272,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
       comments: true
       share: true
       related: true

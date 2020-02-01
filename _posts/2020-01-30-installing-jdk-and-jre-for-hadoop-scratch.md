@@ -25,7 +25,7 @@ So in this part, jdk 8 would easy to learning hadoop.
 
 **Installation of JRE and JDK on Linux:**  
 
-![](https://eliotjang.github.io/assets/images/hadoop/virtualbox/mkdir-java.png){: .align-center}  
+![](https://eliotjang.github.io/assets/images/hadoop/virtualbox/mkdir-java.png){: .align-center}
 
   - Open up the terminal by pressing Ctrl + option(Alt) + T
   - Create a java folder at /usr/local/ using root permission. It will ask for the password for the Ubuntu system.  

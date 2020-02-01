@@ -112,31 +112,30 @@ author:
   bio              : "Welcome to my library, margin of life."
   location         : "Korea, Republic of"
   email            : "eliotjang2@gmail.com"
-  link:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: mailto:eliotjang2@gmail.com
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      url: "https://facebook.com/eliotjang"
+  links:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/engineer_eliot"  
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/eliotjang"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/engineer_eliot"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://facebook.com/eliotjang"
+
+
 # Site Footer
 footer:
   links:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      url: "https://facebook.com/eliotjang"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/engineer_eliot"  
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/eliotjang"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/engineer_eliot"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://facebook.com/eliotjang"
 
 
 # Reading Files

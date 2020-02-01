@@ -48,6 +48,6 @@ last_modified_at: 2020-02-02T02:00:00+09:00
   - (**NOTE:** you should changed name **eliotjang** to your own name. check **$ cd ./home** and **$ ls**. you can know your own folder name.)
   - ![](https://eliotjang.github.io/assets/images/hadoop/virtualbox/moved-hadoop-targz.png){: .align-center}
   - Follow the lines to go to the hadoop directory from home directory.
-    >`$ cd hadoop/`  
     >`$ tar xzf hadoop`
-
+    >`$ mv hadoop-2.4.1 hadoop`
+    >`$ rm hadoop-2.4.1.tar.gz`

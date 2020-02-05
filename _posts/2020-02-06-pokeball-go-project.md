@@ -28,5 +28,6 @@ Thank you for visiting my blog.
 
 * * *  
 
-[github link](https://github.com/eliotjang/Pokeball-Go/). 
-[youtube link](https://youtu.be/GuVuJhj3ATE)
+[Github link](https://github.com/eliotjang/Pokeball-Go/)  
+
+[Youtube link](https://youtu.be/GuVuJhj3ATE)

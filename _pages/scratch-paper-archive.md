@@ -30,4 +30,8 @@ taxonomy: scratch paper #not needs. I hide it all journal posts for make _journa
 
 *****
 
+### Ubuntu  
 
+![](https://eliotjang.github.io/assets/imgaes/ubuntu/ubuntu-logo.jpeg)  
+
+[click here!](https://eliotjang.github.io/tags/ubuntu)

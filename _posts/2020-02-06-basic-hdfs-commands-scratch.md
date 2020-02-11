@@ -33,7 +33,7 @@ last_modified_at: 2020-02-06T20:00:00+09:00
     - The mkdir command is used to create a new directory inside the given location.  
   - **The rm command**:
     - Syntax: `hdfs dfs -rm <file_path>`
-    - Syntax: `hdfs dfs -rm -r <directory_name>
+    - Syntax: `hdfs dfs -rm -r <directory_name>`
     - The rm command is used to remove a file or directory. If the directory has some elements we need to use rm -r option to recursively delete all internal elements.  
   - **The put command**:
     - Syntax: `hdfs dfs -put <path1> <path2> <dest>`

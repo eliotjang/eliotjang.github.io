@@ -32,8 +32,8 @@ last_modified_at: 2020-02-12T21:00:00+09:00
   ![](https://eliotjang.github.io/assets/images/hadoop/capacity-scheduler.png){: .align-center}  
 
   - In the Capacity Scheduler, there are multiple queues to schedule the tasks.
-  - For each queue, there are dedicated slots in the cluster. When no jobs are running, the task of one queue can occupy as many slots as possible
-    - >A **computer cluster** is a set of loosely or tightly connected **computers** that work together so that, in many respects, they can be viewed as a single system.
+  - For each queue, there are dedicated slots in the cluster. When no jobs are running, the task of one queue can occupy as many slots as possible  
+    >A **computer cluster** is a set of loosely or tightly connected **computers** that work together so that, in many respects, they can be viewed as a single system.
   - When a new job comes in the next queue, it will replace the jobs from those slots which are dedicated to that queue.  
 
 

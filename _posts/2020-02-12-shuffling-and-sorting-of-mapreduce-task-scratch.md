@@ -12,7 +12,7 @@ last_modified_at: 2020-02-12T20:50:00+09:00
 ---  
 
 
-**What is Shuffling?*
+**What is Shuffling?**
   - The Mapper creates the intermediate key-value pair and transfer them to the Reducer task. This procedure is known as Shuffling.
   - Using the Shuffling procedure the system can sort the data using key values.
   - The shuffling task begins when some of the mapping tasks are done. So this is the faster process. It will not wait for completion of the mapper task.  

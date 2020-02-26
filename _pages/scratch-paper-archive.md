@@ -16,19 +16,21 @@ taxonomy: scratch paper #not needs. I hide it all journal posts for make _journa
 
 *****
 
-### C#
-![](https://eliotjang.github.io/assets/images/c#/c#-logo.jpeg)  
-[functions](https://eliotjang.github.io/tags/fun c#)
-
-*****
-
 ### Big Data & Hadoop
 
 ![](https://eliotjang.github.io/assets/images/hadoop/hadoop-logo.png)  
 
 [click here!](https://eliotjang.github.io/tags/hadoop)
 
-*****
+*****  
+
+### Deep Learning  
+
+![](https://eliotjang.github.io/assets/images/deep learning/deep-learning-logo.png)  
+
+[click here!](https://eliotjang.github.io/tags/deep learning)  
+
+*****  
 
 ### Ubuntu  
 

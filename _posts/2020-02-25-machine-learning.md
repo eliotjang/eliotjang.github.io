@@ -1,12 +1,12 @@
 ---
-title: "[Tensorflow] What is ML?"
-excerpt: "boostcourse-dl-tensorflow"
+title: "[Deep Learning] What is ML?"
+excerpt: "Boostcourse, Part-1 Basic ML"
 
 categories:
-  - machine learning
+  - deep learning
 tags:
+  - deep learning
   - machine learning
-  - python
   - tensorflow
 last_modified_at: 2020-02-25T10:00:00+09:00
 ---
@@ -26,7 +26,7 @@ last_modified_at: 2020-02-25T10:00:00+09:00
       - training set
     - An example training set for four visual categories  
 
-![](https://eliotjang.github.io/assets/images/python/tensorflow/four-visual-categories.png){: .align-center}  
+![](https://eliotjang.github.io/assets/images/deep learning/four-visual-categories.png){: .align-center}  
 
   - Unsupervised learning: un-labeled data
     - Google news grouping
@@ -43,14 +43,14 @@ last_modified_at: 2020-02-25T10:00:00+09:00
 
   - Predicting final exam score based on time spent
     - regression  
-![](https://eliotjang.github.io/assets/images/python/tensorflow/predicting-final-exam.png){: .align-center}  
+![](https://eliotjang.github.io/assets/images/deep learning/predicting-final-exam.png){: .align-center}  
 
   - Pass/non-pass based on time spent
     - binary classification  
-![](https://eliotjang.github.io/assets/images/python/tensorflow/pass-or-non-pass.png){: .align-center}  
+![](https://eliotjang.github.io/assets/images/deep learning/pass-or-non-pass.png){: .align-center}  
 
   - Letter grade (A,B,C,E and F) based on time spent
     - multi-label classification  
-![](https://eliotjang.github.io/assets/images/python/tensorflow/letter-grade.png){: .align-center}  
+![](https://eliotjang.github.io/assets/images/deep learning/letter-grade.png){: .align-center}  
 
 

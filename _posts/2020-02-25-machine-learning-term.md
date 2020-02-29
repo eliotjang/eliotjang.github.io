@@ -53,4 +53,4 @@ last_modified_at: 2020-02-25T10:00:00+09:00
     - multi-label classification  
 ![](https://eliotjang.github.io/assets/images/deep learning/letter-grade.png){: .align-center}  
 
-
+Thanks for visiting my blog

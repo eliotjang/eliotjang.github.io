@@ -8,6 +8,16 @@ taxonomy: scratch paper #not needs. I hide it all journal posts for make _journa
 
 ## __This Page uploads what I learned and scratch.__  
 
+*****  
+### Korean History
+![](https://eliotjang.github.io/assets/images/korean-history/korean-history-logo.jpeg)  
+[click here](https://eliotjang.github.io/tags/korean history)  
+
+*****  
+### Network Security  
+![](https://eliotjang.github.io/assets/images/network-security/network-security-logo.jpeg)  
+[click here](https://eliotjang.github.io/tags/network security)
+
 *****
 
 ### C++  
@@ -34,6 +44,6 @@ taxonomy: scratch paper #not needs. I hide it all journal posts for make _journa
 
 ### Ubuntu  
 
-![](https://eliotjang.github.io/assets/imgaes/ubuntu/ubuntu-logo.jpeg)  
+![](https://eliotjang.github.io/assets/images/ubuntu/ubuntu-logo.jpeg)  
 
 [click here!](https://eliotjang.github.io/tags/ubuntu)

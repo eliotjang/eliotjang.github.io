@@ -12,12 +12,12 @@ This Page is my __*Projects*__ library.
 *****
 
 ## Defense Game  
-[Tower Defense](https://eliotjang.github.io/tags/bunker defense)
+[Tower Defense](https://github.com/eliotjang/Defense_Game)
 
 *****
 
 ## Application
-[Anonymous SNS application](https://eliotjang.github.io/tags/app)
+[Anonymous SNS application](https://github.com/eliotjang/eliotjang/Modazal)
 
 *****
 

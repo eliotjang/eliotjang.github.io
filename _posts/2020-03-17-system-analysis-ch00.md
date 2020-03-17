@@ -16,8 +16,8 @@ last_modified_at: 2020-03-17T19:00:00+09:00
   - 시스템을 시각화하거나 사양이나 설계를 문서화 하기 위한 표현 방법
   - 본 교재에서는, 클래스나 인터페이스의 관계를 표현하기 위해 사용
   - Resource
-    - [www.omg.org/uml]
-    - [www.rational.com/uml]  
+    <www.omg.org/uml>  
+    <www.rational.com/uml>  
 
 **클래스 다이어그램**  
   - 클래스나 인스턴스(객체), 인터페이스 등 간의 정적인 관계를 표현한 그림  
@@ -68,7 +68,9 @@ last_modified_at: 2020-03-17T19:00:00+09:00
 
 ![](https://eliotjang.github.io/assets/images/system-analysis/ch00-5.png){: align-center}  
 
-**시퀀스(sequence) 다이어그램**
+**시퀀스(sequence) 다이어그램**  
+
+![](https://eliotjang.github.io/assets/images/system-analysis/ch00-6.png){: align-center}  
   - 프로그램이 동작할 때, 객체들 사이의 메소드들이 어떤 순서로 실행되는지를 보여준다.  
     - 객체들간의 협동 과정을 보여줌
   - `:Client` : Client 클래스의 익명의 객체를 의미한다.  
@@ -78,16 +80,13 @@ last_modified_at: 2020-03-17T19:00:00+09:00
   - 생명선 중간의 가늘고 긴 사각형: 객체가 활동 중임을 나타낸다. 
     - 즉, CPU를 얻어서 실행이 되는 상태  
 
-![](https://eliotjang.github.io/assets/images/system-analysis/ch00-6.png){: align-center}  
-
-
 ## 02. 디자인 패턴을 배우기 전에  
 
 디자인 패턴은 클래스 라이브러리가 아니다. 
   - 클래스 라이브러리 : 많이 사용되는 클래스들을 미리 만들어서 모아둔 것
-    - 예: 통신 관련 클래스 라이브러리, 수학 관련 클래스 라이브러리
+    `예: 통신 관련 클래스 라이브러리, 수학 관련 클래스 라이브러리`
   - 클래스 라이브러리 구현 시, 디자인 패턴이 적용된다.  
-    - 예: Java.util.Calender 클래스에의 getInstance() 메소드에서 Factory Method 패턴이 사용된다. 
+    `예: Java.util.Calender 클래스에의 getInstance() 메소드에서 Factory Method 패턴이 사용된다.` 
   - 다이어그램을 단순히 보지 말고, 그 의미를 읽어내야 한다.  
   - 스스로 예제를 생각해야 한다.  
 

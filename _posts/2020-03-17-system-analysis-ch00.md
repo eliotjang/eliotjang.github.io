@@ -15,9 +15,9 @@ last_modified_at: 2020-03-17T19:00:00+09:00
 **UML(Unified Modeling Language)**  
   - 시스템을 시각화하거나 사양이나 설계를 문서화 하기 위한 표현 방법
   - 본 교재에서는, 클래스나 인터페이스의 관계를 표현하기 위해 사용
-  - Resource
-    <www.omg.org/uml>  
-    <www.rational.com/uml>  
+  - Resource  
+    <https://www.omg.org/uml>  
+    <https://www.rational.com/uml>  
 
 **클래스 다이어그램**  
   - 클래스나 인스턴스(객체), 인터페이스 등 간의 정적인 관계를 표현한 그림  
@@ -83,7 +83,7 @@ last_modified_at: 2020-03-17T19:00:00+09:00
 ## 02. 디자인 패턴을 배우기 전에  
 
 디자인 패턴은 클래스 라이브러리가 아니다. 
-  - 클래스 라이브러리 : 많이 사용되는 클래스들을 미리 만들어서 모아둔 것
+  - 클래스 라이브러리 : 많이 사용되는 클래스들을 미리 만들어서 모아둔 것  
     `예: 통신 관련 클래스 라이브러리, 수학 관련 클래스 라이브러리`
   - 클래스 라이브러리 구현 시, 디자인 패턴이 적용된다.  
     `예: Java.util.Calender 클래스에의 getInstance() 메소드에서 Factory Method 패턴이 사용된다.` 

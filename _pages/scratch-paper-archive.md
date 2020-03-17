@@ -16,7 +16,22 @@ taxonomy: scratch paper #not needs. I hide it all journal posts for make _journa
 *****  
 ### Network Security  
 ![](https://eliotjang.github.io/assets/images/network-security/network-security-logo.jpeg)  
-[click here](https://eliotjang.github.io/tags/network security)
+[click here to see my work piece](https://eliotjang.github.io/tags/network security)
+
+*****  
+### Embedded System  
+![](https://eliotjang.github.io/assets/images/embedded-system/embedded-system-logo.jpeg)  
+[click here to see my work piece](https://eliotjang.github.io/tags/embedded system)  
+
+*****
+### Web Database Programming
+![](https://eliotjang.github.io/assets/images/web-database/web-database-logo.png)  
+[click here to see my work piece](https://eliotjang.github.io/tags/web database)  
+
+*****  
+### System Analysis & Design
+![](https://eliotjang.github.io/assets/images/system-analysis/system-analysis-logo.jpeg)  
+[click here to see my work piece](https://eliotjang.github.io/tags/system analysis)  
 
 *****
 

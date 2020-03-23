@@ -3,9 +3,7 @@ title: "[시스템분석및설계] Chapter 0. UML 과 Design Pattern"
 excerpt: "Hiroshi Yuki, Java 언어로 배우는 디자인 패턴 입문"  
 
 categories: 
-  - senior
-  - java
-  - design patter
+  - system analysis
 tags:
   - system analysis
 last_modified_at: 2020-03-17T19:00:00+09:00  

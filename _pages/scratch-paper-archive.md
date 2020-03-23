@@ -11,12 +11,12 @@ taxonomy: scratch paper #not needs. I hide it all journal posts for make _journa
 *****  
 ### Korean History
 ![](https://eliotjang.github.io/assets/images/korean-history/korean-history-logo.jpeg)  
-[click here](https://eliotjang.github.io/tags/korean\ history)  
+[click here](https://eliotjang.github.io/tags/korean history)  
 
 *****  
 ### Network Security  
 ![](https://eliotjang.github.io/assets/images/network-security/network-security-logo.jpeg)  
-[click here to see my work piece](https://eliotjang.github.io/tags/network\ security)
+[click here to see my work piece](https://eliotjang.github.io/tags/network security)
 
 *****  
 ### Embedded System  

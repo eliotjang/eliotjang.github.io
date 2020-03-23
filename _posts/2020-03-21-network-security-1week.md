@@ -3,7 +3,7 @@ title: "[네트워크보안] 1 week, TCP_IP Protocol"
 excerpt: "장상수 저, 정보보호총론, 생능출판, 2015"
 
 categories:
-  - scratch paper  
+  - network security  
 
 tags:
   - network security  

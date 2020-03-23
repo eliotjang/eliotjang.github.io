@@ -2,7 +2,7 @@
 title: "[C++ Function] STL Algorithm std::unique"
 excerpt: "this.pointer.com, stl-algorithm-stdunique-tutorial"
 
-cateogories:
+categories:
   - fun c++
 tags:
   - fun c++

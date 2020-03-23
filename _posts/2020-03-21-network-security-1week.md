@@ -2,8 +2,6 @@
 title: "[네트워크보안] 1 week, TCP_IP Protocol"
 excerpt: "장상수 저, 정보보호총론, 생능출판, 2015"
 
-categories:
-  - network security
 tags:
   - network security
 last_modified_at: 2020-03-21T17:00:00+09:00

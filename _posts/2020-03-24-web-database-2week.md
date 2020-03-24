@@ -22,7 +22,7 @@ last_modified_at: 2020-03-24T17:00:00+09:00
   2. `<tag 속성=값>내용</tag>`  
   3. `<tag>`
 
-> 예: <font color=blue size=15>문서내용</font>  
+> `예: <font color=blue size=15>문서내용</font>`  
 
 
 ## HTML의 기본 형식  
@@ -63,16 +63,16 @@ last_modified_at: 2020-03-24T17:00:00+09:00
 맥(Mac) 실습 방법  
   1. Visual Studio Code(텍스트 편집기)로 HTML 문서 작성  
   2. 저장  
-  3. Finder에서 저장된 파일 클릭  
+  3. Finder에서 저장된 파일 더블 클릭  
   4. 웹 브라우저에서 확인 
 
 ## Tag 종류 및 실습  
 
-**BODY 태그**  
 
+**BODY 태그**  
 bgcolor, text 속성  
 
-```  
+```html  
 <html>
     <head>
         <title>
@@ -88,7 +88,7 @@ bgcolor, text 속성
 
 
 background 속성  
-```  
+```html  
 <html>
     <head>
         <title>
@@ -102,22 +102,22 @@ background 속성
 ```  
 [body-background.html](https://eliotjang.github.io/assets/images/web-database/body.background.html)  
 
-사진은 body-background.html과 같은 폴더에 있어야 합니다.  
+> 사진은 body-background.html과 같은 폴더에 있어야 한다.  
 
-그 외의 BODY 태그 속성들  
+그 외 BODY 태그 속성들  
   - link 속성 : 다른 html과 하이퍼링크로 연결된 부분의 최초 색상  
   - vlink 속성 : 하이퍼링크가 연결된 부분을 클릭한 후의 색상  
   - alink 속성 : 하이퍼링크가 연결된 부분을 누를 때 색상  
   - topmargin 속성 : 웹 페이지 body 부분의 상단 여백  
   - leftmargin 속성 : 웹 페이지 body 부분의 왼쪽 여백  
 
-**문장태그**  
+- - -
 
+**문장 태그**  
 H 태그  
-`<hn>문서 제목</hn>`  
-    - 문서 제목의 문자 크기 지정  
-    - n은 1~6  
-```  
+`<hn>문서 제목</hn>` : 문서 제목의 문자 크기 지정. n은 1~6  
+
+```html  
 <html>
     <title>
         H 태그
@@ -135,10 +135,9 @@ H 태그
 [h.html](https://eliotjang.github.io/assets/images/web-database/h.html)  
 
 p 태그  
-`<p>문서 제목</p>`  
-    - 문장 정렬, align 속성을 사용하며 default 값은 left  
-    - left, center, right 가능
-```  
+`<p>문서 제목</p>` : 문장 정렬, align 속성을 사용하며 default 값은 left  
+
+```html  
 <html>
     <head>
         <title>
@@ -154,12 +153,13 @@ p 태그
 ```
 [p.html](https://eliotjang.github.io/assets/images/web-database/p.html)  
 
-br, hr태그  
-  - `<br> : 줄바꾸기(Line Break)`  
-  - `<hr> : 수평선 그리기`  
-    - size, width, align의 값에 double quotes(쌍따옴표)를 넣어도 상관없다.  
-    - noshade를 noshade="noshade" 형식으로 바꿔도 무방하다.  
-```  
+br, hr 태그  
+  - `<br>` : 줄바꾸기(Line Break)  
+  - `<hr>` : 수평선 그리기  
+    > size, width, align의 값에 double quotes(쌍따옴표)를 넣거나  
+    > noshade를 noshade="noshade" 형식으로 바꿔도 상관없다.  
+
+```html  
 <html>
     <head>
         <title>
@@ -183,7 +183,7 @@ center, pre 태그
   - `<center>문장</center>` : 문장을 가운데로 정렬  
   - `<pre>텍스트</pre>` : 문장 형식 그대로 출력  
 
-```  
+```html  
 <html>
     <head>
         <title>
@@ -209,8 +209,9 @@ font 태그
 `<font>텍스트</font>` : 글자 크기, 색상 모양을 지정
   - size 속성: 글자 크기 지정  
   - color 속성: 글자 색상 지정  
-  - face 속성: 글자체를 지정
-```  
+  - face 속성: 글자체를 지정  
+
+```html  
 <html>
     <head>
         <title>
@@ -227,16 +228,12 @@ font 태그
 [font.html](https://eliotjang.github.io/assets/images/web-database/font.html)  
 
 
-xmp, blockquote, comment 태그  
-`<xmp>텍스트</xmp>` : 예문을 나타낼 때 사용  
-  - 글자 모양을 고정 폭 글자체 형식으로 출력  
-
+**xmp, blockquote, comment 태그**  
+`<xmp>텍스트</xmp>` : 예문을 나타낼 때 사용. 글자 모양을 고정 폭 글자체 형식으로 출력  
 `<blockquote>텍스트</blockquote>` : 글을 인용할 때 사용. 줄을 바꿔서 표시  
+`<!-- 주석 -->` : 주석(comment). 주석 부분은 보이지 않음  
 
-`<!-- 주석 -->` : 주석(comment)  
-  - 주석 부분은 보이지 않음  
-
-```  
+```html  
 <html>
     <head>
         <title>
@@ -252,22 +249,15 @@ xmp, blockquote, comment 태그
 ```  
 [xmp-blockquote-comment.html](https://eliotjang.github.io/assets/images/web-database/xmp-blockquote-comment.html)  
 
-**논리적 스타일 태그**  
+### 【논리적 스타일 태그】  
 
-dfn, em, cite, code 태그  
-`<dfn>용어 정의</dfn>` : 용어 정의 태그  
-  - 일반적으로 글자 모양은 이탤릭체 또는 볼드체  
+**dfn, em, cite, code 태그**  
+`<dfn>용어 정의</dfn>` : 용어 정의 태그. 일반적으로 글자 모양은 이탤릭체 또는 볼드체  
+`<em> 기운 이탤릭체</em>` : 문자 강조 때 사용하는 태그. 글자가 기울어진 이탤릭체  
+`<cite>인용 문구</cite>` : 책 또는 제목의 인용 문구를 나타낼 때 사용. 일반적으로 이탤릭체  
+`<code>computer program code</code>` : 컴퓨터 프로그램 코드를 나타낼 때 사용하는 태그. 일반적으로 영어타자기체  
 
-`<em> 기운 이탤릭체</em>` : 문자 강조 때 사용하는 태그  
-  - 글자가 기울어진 이탤릭체  
-
-`<cite>인용 문구</cite>` : 책 또는 제목의 인용 문구를 나타낼 때 사용  
-  - 일반적으로 이탤릭체  
-
-`<code>computer program code</code>` : 컴퓨터 프로그램 코드를 나타낼 때 사용하는 태그  
-  - 일반적으로 영어타자기체  
-
-```  
+```html  
 <html>
     <head>
         <title>
@@ -284,17 +274,13 @@ dfn, em, cite, code 태그
 ```
 [dfn-em-cite-code.html](https://eliotjang.github.io/assets/images/web-database/dfn-em-cite-code.html)  
 
-kbd, samp, strike, strong 태그  
-`<kbd>키보드</kbd>` : computer로 입력한 글자를 나타낼 때 사용  
-  - 일반적으로 고정 폭 글자체  
-`<samp>컴퓨터 상태 메시지</samp>` : computer의 상태 메시지를 나타낼 때 사용  
-  - 일반적으로 고정 폭 글자체  
-`<strike>강조 태그</strike>` : 문장 강조 태그  
-  - 문장 중간 부분에 줄을 그어 강조  
-`<strong>특정 문장 강조 태그</strong>` : 특정 문장 강조  
-  - bold체로 나타남  
+**kbd, samp, strike, strong 태그**  
+`<kbd>키보드</kbd>` : computer로 입력한 글자를 나타낼 때 사용. 일반적으로 고정 폭 글자체  
+`<samp>컴퓨터 상태 메시지</samp>` : computer의 상태 메시지를 나타낼 때 사용. 일반적으로 고정 폭 글자체  
+`<strike>강조 태그</strike>` : 문장 강조 태그. 문장 중간 부분에 줄을 그어 강조  
+`<strong>특정 문장 강조 태그</strong>` : 특정 문장 강조. bold체로 나타남  
 
-```  
+```html  
 <html>
     <head>
         <title>
@@ -311,14 +297,12 @@ kbd, samp, strike, strong 태그
 ```  
 [kbd-samp-strike-strong.html](https://eliotjang.github.io/assets/images/web-database/kbd-samp-strike-strong.html)  
 
-var, au, arg 태그  
-`<var>변수이름</var>` : 주로 변수 이름을 나타내는 태그  
-  - 주로 Italic체  
-`<au>저자명</au>` : 주로 저자(author)를 나타낼 때 사용하는 태그  
-  - 일반적으로 고정 폭 글자체  
+**var, au, arg 태그**  
+`<var>변수이름</var>` : 주로 변수 이름을 나타내는 태그. 주로 Italic체  
+`<au>저자명</au>` : 주로 저자(author)를 나타낼 때 사용하는 태그. 일반적으로 고정 폭 글자체  
 `<arg>프로그램의 기능 및 줄거리</arg>` : 프로그램의 기능 및 줄거리를 설명할 때 사용하는 태그  
 
-```  
+```html  
 <html>
     <head>
         <title>
@@ -335,17 +319,13 @@ var, au, arg 태그
 [var-au-arg.html](https://eliotjang.github.io/assets/images/web-database/var-au-arg.html)  
 
 
-b, big, i, u 태그  
+**b, big, i, u 태그**  
 `<b>굵은 글씨체</b>` : 원하는 글 부분을 굵은 글씨체로 나타내는 태그  
-  - 굵은 글자체로 강조  
 `<big>큰 글씨체 태그</big>` : 현재 정의된 폰트보다 좀 더 큰 글씨체를 만들 때 사용하는 태그  
-  - 큰 글씨체로 강조  
 `<i>이탤릭 글씨체</i>` : 이탤릭을 나타내는 태그  
-  - 이탤릭 글씨체로 강조  
 `<u>특정 문자 아래에 밑줄</u>` : 특정 문자에 underline 강조  
-  - 밑줄로 강조  
 
-```  
+```html  
 <html>
     <head>
         <title>

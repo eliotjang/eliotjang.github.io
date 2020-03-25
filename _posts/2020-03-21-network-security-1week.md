@@ -13,18 +13,17 @@ last_modified_at: 2020-03-21T17:00:00+09:00
 
 ## 인터넷 프로토콜의 개요  
 
-**TCP/IP 참조 모델**  
+【TCP/IP 참조 모델】
 
 ![](https://eliotjang.github.io/assets/images/network-security/1week-1.png){: .align-center}  
 
 네트워크 시스템은 복잡하기 때문에 복잡한 시스템의 구조를 명확히 파악하는데 용이하고 시스템을 유지보수하거나 개선하는데 용이하도록 계층화된 모듈로 구성되어 있다.  
 
 **OSI 참조모델** : 7개의 계층으로 구성  
-  - **물리 계층**
-    - 컴퓨터나 라우터같은 네트워크 장치를 물리 매체에 연결하기 위한 전기/기계적인 인터페이스를 구성하고 있다.  
-      + 물리 매체(전송 매체)는 유선 매체와 무선 매체로 구분할 수 있다.  
-	+ `유선 매체 : Lan 케이블`  
-	+ `무선 매체 : Wifi`
+  * **물리 계층**
+    - 컴퓨터나 라우터같은 네트워크 장치를 물리 매체에 연결하기 위한 전기/기계적인 인터페이스를 구성하고 있다.
+      + 물리 매체(전송 매체)는 유선 매체와 무선 매체로 구분할 수 있다.
+      + `유선 매체 : Lan 케이블`, `무선 매체 : Wifi`
     - 케이블 및 커넥터 규격을 포함하고 있으며 데이터 비트들을 전자기 신호로 변환하여 전송하는 방식을 규정하고 있다.
   - **데이터 링크 계층**  
     - 네트워크 매체(물리 매체)를 공유하는 노드들 간 데이터를 송수신하기 위한 절차를 규정하고 있다.  
@@ -50,11 +49,32 @@ last_modified_at: 2020-03-21T17:00:00+09:00
 
 **TCP/IP 참조모델** : 5개의 계층으로 구성
   - Host-to-network 계층은 OSI 참조 모델의 물리 계층과 데이터 링크 계층에 해당된다.  
+  - **데이터 링크 계층**
+    - 링크 : 통신 경로상의 인접한 두 노드들을 연결하는 통신 채널
+      - `유선 링크(wired links)`
+      - `무선 링크(wireless links)`
+    - 프레임 : 데이터링크 계층의 데이터 전송 단위  
+  > 데이터 링크 계층은 한 노드에서 인접한 다른 노드로 링크를 따라 프레임을 전달한다.  
+    
+![](https://eliotjang.github.io/assets/images/network-security/1week-2.png)  
 
-**IP (Internet Protocol) 개요**  
+  - **인터넷 계층**
+    - **네트워크 주소(IP 주소)를 이용하여 패킷을 발신지에서 목적지로 전달하는 책임을 가진다.**
+      - source-to-destination delivery
+    - 인터넷 계층은 발신지(source) 노드와 목적지(destination) 노드가 다른 네트워크에 있을 때 패킷을 전달하는데 사용되는 프로토콜들을 규정한다.
+      - Internet Protocol(IP)
+      - Internet Protocol(IPsec) : IP 보안 기능을 추가한 프로토콜
+      - Internet Control Message Protocol(ICMP) : 소스 노드에서 목적지 노드로 데이터 패킷을 전달하는 과정에서 오류가 발생할 경우에 그 오류 사실을 소스 노드에 알려줄 때 사용되는 프로토콜
+      - Internet Group Management Protocol(IGMP) : 인터넷상에서 멀티캐스트 그룹을 형성해서 데이터를 멀티캐스트할 때 사용되는 그룹 관**
+      - **Routing protocols**(OSPF, RIP, BGP 등)
+						
 
-**TCP (Transmission Control Protocol) 개요**  
 
-**UDP (User Datagram Protocol) 개요**  
+
+【IP (Internet Protocol) 개요】  
+
+【TCP (Transmission Control Protocol) 개요】  
+
+【UDP (User Datagram Protocol) 개요】  
 
 

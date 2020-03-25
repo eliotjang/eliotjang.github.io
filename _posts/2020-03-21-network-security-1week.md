@@ -67,14 +67,82 @@ last_modified_at: 2020-03-21T17:00:00+09:00
       - Internet Control Message Protocol(ICMP) : 소스 노드에서 목적지 노드로 데이터 패킷을 전달하는 과정에서 오류가 발생할 경우에 그 오류 사실을 소스 노드에 알려줄 때 사용되는 프로토콜
       - Internet Group Management Protocol(IGMP) : 인터넷상에서 멀티캐스트 그룹을 형성해서 데이터를 멀티캐스트할 때 사용되는 그룹 관**
       - **Routing protocols**(OSPF, RIP, BGP 등)
-						
+  - **전송 계층**
+    - **포트 주소(포트 번호)를 이용하여 응용 프로세스 간 메시지 전달을 담당하는 계층**
+      - 응용 계층이 데이터를 송수신할 수 있는 인터페이스 제공
+      - TCP, UDP, SCTP
+	- SCTP는 최근에 나온 것으로 아직 잘 사용하진 않는다.
+  - TCP (Transmission Control Protocol)
+    - 신뢰성 있고 순서를 보장하는 데이터 전달 기능 제공
+    - 흐름 제어 (flow control)
+    - 혼잡 제어 (congestion control)
+    - 데이터 전송 전 연결 설정 수행(연결지향적)
+  - UDP (User Datagram Protocol)
+    - 비신뢰적이고 데이터 전송 순서를 보장하지 않음 
+    - 흐름 제어나 혼잡 제어가 없음
+    - 사전 연결 설정과정이 없음(비연결지향적)
+  - **응용 계층**
+    - 개체들이 네트워크를 통하여 정보를 생성하고 교환할 수 있도록 해주는 응용 환경
+      - 다양한 네트워크들이 존재  
+	`사람과 사람간 직접적인 통신을 가능하게 하는 응용`  
+	`사람과 시스템간의 통신을 가능하게 하는 응용`    
+	`시스템과 시스템 사이의 통신을 가능하게 하는 응용`      
+    - 응용 계층의 프로토콜들
+      - FTP, Telnet, DNS, HTTP 
+
+<details>
+<summary>흐름제어 기능 자세히 살펴보기</summary>
+<div markdown="1">
+
+수신측 호스트에서 패킷을 수신하게 되면 수신자 패킷은 TCP 수신 버퍼에 임시 저장이 되는데, 그러면 수신측 응용프로세스가 수신버퍼로부터 패킷을 읽어가서 처리하게 되는되고, 이때 수신측 응용프로세스가 패킷을 처리하는 속도보다 패킷의 수신 속도가 더 빠르게 되면 패킷 수신 버퍼에 overflow가 발생이 되서 패킷들이 손실될 현상이 발생하게 된다.  
+이때는 수신측 호스트에서 그 사실을 송신 호스트로 알려줘서 송신 호스트에서 패킷 전송 속도를 조절하게해야 하는데 이러한 기능이 흐름제어 기능이다
+.
+
+</div>
+</details>
 
 
+- - -  
 
-【IP (Internet Protocol) 개요】  
+【주소 개념】
 
-【TCP (Transmission Control Protocol) 개요】  
+**물리 주소**
+  - 같은 네트워크에 연결된 노드를 식별하기위한 하드웨어 주소
+  - 데이터링크 계층의 주소로서 인접한 노드를 식별
+  - MAC 주소: 48-bit format  
+    > 07:01:02:01:2C:4B  
+    > 6-byte (12개의 16진수) 물리주소  
 
-【UDP (User Datagram Protocol) 개요】  
 
+**네트워크 주소**
+  - 하부의 물리적인 네트워크와 독립적으로 통신하기 위하여 사용되는 주소
+  - 네트워크 계층의 주소로서 소스 및 목적지 호스트를 식별
+  - IP 주소 : 32-bit format
+
+
+**포트 주소**
+  - 전송 계층의 주소로서 통신하는 응용프로세스를 식별
+  - TCP/UDP port 번호 : 16-bit format
+
+![](https://eliotjang.github.io/assets/images/network-security/1week-3.png)  
+
+소스노드와 목적지노드의 주소는 변함이 없지만, 데이터링크 계층의 맥 주소는 인접한 노드를 거칠때 마다 변경이 된다.  
+따라서 네트워크 계층이 하는 일은 소스 호스트에서 목적지 호스트까지 패킷을 전달하는 일을 담당한다고 하는 것이고,  
+반면에 데이터 링크 계층이 하는 일은 인접한 노드 간의 데이터 프레임을 전송하는 일을 담당한다고 하는 것이다.  
+
+
+![](https://eliotjang.github.io/assets/images/network-security/1week-4.png)  
+
+- - -  
+
+【캡슐화】 
+
+송신측 패킷 전송 형태  
+
+![](https://eliotjang.github.io/assets/images/network-security/1week-5.png)
+
+
+수신측 패킷 전송 형태  
+
+![](https://eliotjang.github.io/assets/images/network-security/1week-6.png)
 

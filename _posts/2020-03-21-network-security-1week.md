@@ -104,7 +104,7 @@ last_modified_at: 2020-03-21T17:00:00+09:00
 
 - - -  
 
-【주소 개념】
+### 주소 개념
 
 **물리 주소**
   - 같은 네트워크에 연결된 노드를 식별하기위한 하드웨어 주소
@@ -135,7 +135,7 @@ last_modified_at: 2020-03-21T17:00:00+09:00
 
 - - -  
 
-【캡슐화】 
+### 캡슐화 
 
 송신측 패킷 전송 형태  
 
@@ -145,4 +145,108 @@ last_modified_at: 2020-03-21T17:00:00+09:00
 수신측 패킷 전송 형태  
 
 ![](https://eliotjang.github.io/assets/images/network-security/1week-6.png)
+
+
+- - -  
+【인터넷 프로토콜(IP)】  
+
+**IP 주소의 일반 형식**  
+![](https://eliotjang.github.io/assets/images/network-security/1week-7.png)  
+
+  - 라우터의 개입 없이 상호 데이터 전달이 가능한 영역(e.g. LAN)
+  - 같은 네트워크 주소를 갖는 인터페이스들의 집합
+
+![](https://eliotjang.github.io/assets/images/network-security/1week-8.png)  
+
+![](https://eliotjang.github.io/assets/images/network-security/1week-9.png)  
+
+**특수 주소**  
+ 
+![](https://eliotjang.github.io/assets/images/network-security/1week-10.png)  
+
+  - 사설망 주소
+    - 10.0.0.0 ~ 10.255.255.255
+    - 172.16.0.0 ~ 172.31.0.0
+    - 192.168.0.0 ~ 192.168.255.255  
+
+  - 대부분의 시스템에서 유효한 루프백 주소는 127.0.0.1
+
+**IP 데이터그램 구조**  
+
+![](https://eliotjang.github.io/assets/images/network-security/1week-11.png)  
+
+- - -  
+
+【User Datagram Protocol】 
+
+  - 비연결형 서비스
+    - 송신자와 수신자 간 no handshaking
+    - 각 데이터그램은 다른 것과 독립적으로 처리
+  - 송신 프로세스와 수신 프로게스 간 비 신뢰적인 데이터 전달
+    - 메시지가 손실될 수 있음
+    - 응용 프로세스로의 데이터 전달 순서가 보장되지 않음  
+  - No flow control  
+  - No congestion control  
+  -지원 가능 통신 방식
+    - 1-to-1
+    - 1-to-many
+    - many-to-1
+    - many-to-many  
+
+**왜 UDP를 사용하는가?**  
+
+연결설정이 없다
+  - 연결 설정에 따른 지연 감소  
+
+구현이 간단하다
+  - 송신 및 수신 측에서 연결 상태를 관리할 필요가 없다  
+
+헤더의 크기가 작다
+  - 작은 오버헤드  
+
+No congestion control
+  - 원하는대로 데이터를 빨리 전송할 수 있다  
+
+인터넷 전화, 멀티미디어 스트리밍 서비스, DNS, SNMP, TFTP 등의 응용에서 이용  
+
+**User Datagram Format**  
+
+![](https://eliotjang.github.io/assets/images/network-security/1week-12.png)  
+
+![](https://eliotjang.github.io/assets/images/network-security/1week-13.png)  
+
+【전송제어 프로토콜(TCP)】 
+
+**TCP의 속성 및 특징**  
+
+  - 스트림 지향 서비스 제공
+    - 송신 프로세스는 연속된 바이트들의 흐름으로 데이터를 전달하며, 수신 프로세스도 바이트들의 흐름으로 데이터를 수신하여 처리
+    - TCP는 데이터를 운반하는 가상의 파이프에 의해 2개의 프로세스가 연결되는 것처럼 보이는 환경을 제공
+    - 수신자가 데이터를 읽어가는 단위는 송신된 데이터 크기와 독립적
+  - 신뢰성
+    - 순서 번호에 의한 세그먼트 전달 순서 보장
+    - 세그먼트 중복 수신 방지
+    - 수신 확인(ACK)에 의한 재전송
+  - 흐름제어
+    - 송신 호스트의 데이터 전송 속도 조절 수단 제공
+  - 3-way handshake에 의한 연결 설정
+    - 최초 순서 번호, 수신 윈도우 크기 등의 교환
+    - 연결은 소켓을 통해 이루어짐
+    - 소켓은 송신 호스트의 IP 주소 및 포트 번호, 수신 호스트의 IP 주소 및 포트 번호에 의해 식별  
+
+**TCP 헤더**  
+
+![](https://eliotjang.github.io/assets/images/network-security/1week-14.png)  
+
+**3-Way Handshake**
+
+![](https://eliotjang.github.io/assets/images/network-security/1week-15.png)
+
+**연결 해제 절차**
+
+![](https://eliotjang.github.io/assets/images/network-security/1week-16.png)
+
+
+
+
 

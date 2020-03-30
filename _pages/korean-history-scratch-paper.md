@@ -8,4 +8,6 @@ taxonomy: korean history
 
 Upload what I learned korean history.  
 
-- - -
+- - -  
+
+## 해당 교과목이 폐강되었습니다..

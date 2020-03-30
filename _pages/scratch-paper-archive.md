@@ -9,11 +9,6 @@ taxonomy: scratch paper #not needs. I hide it all journal posts for make _journa
 ## __This Page uploads what I learned and scratch.__  
 
 *****  
-### Korean History
-![](https://eliotjang.github.io/assets/images/korean-history/korean-history-logo.jpeg)  
-[click here](https://eliotjang.github.io/tags/korean history/)  
-
-*****  
 ### Network Security  
 ![](https://eliotjang.github.io/assets/images/network-security/network-security-logo.jpeg)  
 [click here to see my work piece](https://eliotjang.github.io/tags/network security/)
@@ -22,11 +17,6 @@ taxonomy: scratch paper #not needs. I hide it all journal posts for make _journa
 ### Embedded System  
 ![](https://eliotjang.github.io/assets/images/embedded-system/embedded-system-logo.jpeg)  
 [click here to see my work piece](https://eliotjang.github.io/tags/embedded system/)  
-
-*****
-### Web Database Programming
-![](https://eliotjang.github.io/assets/images/web-database/web-database-logo.png)  
-[click here to see my work piece](https://eliotjang.github.io/tags/web database/)  
 
 *****  
 ### System Analysis & Design
@@ -61,4 +51,17 @@ taxonomy: scratch paper #not needs. I hide it all journal posts for make _journa
 
 ![](https://eliotjang.github.io/assets/images/ubuntu/ubuntu-logo.jpeg)  
 
-[click here!](https://eliotjang.github.io/tags/ubuntu)
+[click here!](https://eliotjang.github.io/tags/ubuntu)  
+
+*****  
+
+### Korean History
+![](https://eliotjang.github.io/assets/images/korean-history/korean-history-logo.jpeg)
+[click here](https://eliotjang.github.io/tags/korean history/)
+
+*****  
+
+### Web Database Programming
+![](https://eliotjang.github.io/assets/images/web-database/web-database-logo.png)
+[click here to see my work piece](https://eliotjang.github.io/tags/web database/)
+

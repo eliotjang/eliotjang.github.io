@@ -238,7 +238,7 @@ public class Main {
   - ConcreteIterator(구체적인 반복자) 객체를 생성한다.
   - BookShelf가 이 일을 담당하였다.
 
-![](https:///Users/eliotjang/Projects/eliotjang.github.io/assets/images/system-analysis/ch01-3.png){: width="60%" height="40%"}  
+![](https://eliotjang.github.io/assets/images/system-analysis/ch01-3.png){: width="60%" height="40%"}  
 
 
 ## 04. 독자의 사고를 넓혀주는 힌트  
@@ -261,8 +261,25 @@ public class Main {
 
 **<font color="red">코드의 어떤 부분을 수정했을 때, 그것으로 인해 수정해야 할 코드 부분을 적게 하는 것이 중요하다.</font>**  
 
+**가능한 한 추상 클래스나 인터페이스를 자주 사용해라**  
+  - 구체적인 클래스만으로 프로그래밍하는 것은 것은 좋지 않다.  
+
+**Aggregate와 Iterator의 대응 관계**  
+  - Aggregate 클래스와 Iterator 클래스는 밀접하게 관련이 있다.
+  - 예: BookShelf의 getBookAt() 메소드의 이름을 getBookFrom() 으로 바꾸면, BookShelfIterator의 next()도 수정해야 한다.  
+
+**여러 종류의 Iterator를 만들 수 있다**
+  - 예: 역방향으로 책을 끄집어내는 BookShelfIteratorBackward를 만든 후, BookShelf의 iterator() 메소드를 다음과 같이 변경하면, 다른 종류의 Iterator를 생성할 수 있다.  
+  `return new BookShelfIteratorBackward(this);`  
 
 
+## 05. Iterator 패턴과 관련된 패턴  
+
+**Visitor 패턴**  
+
+**Composite 패턴**  
+
+**Factory Method 패턴**  
 
 
 

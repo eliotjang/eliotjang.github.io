@@ -43,6 +43,11 @@ for (int i = 0; i < arr.length; i++) {
 
 ![](https://eliotjang.github.io/assets/images/system-analysis/ch01-2.png){: width="70%" height="70%"}   
 
+> 각 인터페이스나 클래스를 <font color="blue">클릭</font>하여 코드와 기능을 상세하게 볼 수 있습니다.  
+<details>
+<summary><font color="blue">Aggregate 인터페이스</font></summary>
+<div markdown="1">
+
 **Aggregate 인터페이스 (sample/Aggregate.java)**  
   - iterator(): 집합체에 대응하는 Iterator 한 개를 생성하는데 사용될 메소드
       - 어떤 집합체 원소를 하나씩 열거하거나 조사하고자 할 때 이 메소드를 사용해서 Iterator 인터페이스를 구현한 클래스의 인스턴스를 한 개 얻어온다.  
@@ -53,6 +58,12 @@ public interface Aggregate {
 }
 ```  
 
+</div>
+</details>  
+
+<details>
+<summary><font color="blue">Iterator 인터페이스</font></summary>
+<div markdown="1">
 
 **Iterator 인터페이스 (sample/Iterator.java)**  
   - 집합체의 원소를 하나하나 끄집어내는 루프 변수와 같은 역할을 한다.
@@ -67,6 +78,12 @@ public interface Iterator {
   publci abstract Object next();
 }
 ```
+</div>
+</details>  
+
+<details>
+<summary><font color="blue">Book 클래스</font></summary>
+<div markdown="1">
 
 **Book 클래스(sample/Book.java)**  
   - 책을 나타내는 클래스
@@ -85,6 +102,12 @@ public class Book {
 }
 ```  
 
+</div>
+</details>
+
+<details>
+<summary><font color="blue">BookShelf 클래스</font></summary>
+<div markdown="1">
 
 **BookShelf 클래스 (sample/BookShelf.java)**  
   - 책꽂이를 나타내는 클래스 = 집합체(aggregate)
@@ -121,6 +144,12 @@ public class BookShelf implements Aggregate {
 }
 ```  
 
+</div>
+</details>
+
+<details>
+<summary><font color="blue">BookShelfIterator 클래스</font></summary>
+<div markdown="1">
 
 **BookShelfIterator 클래스 (sample/BookShelfIterator.java)**  
   - 책꽂이(BookShelf)에 있는 책들을 하나씩 끄집어내는 일을 하는 클래스
@@ -154,6 +183,12 @@ public class BookShelfIterator implements Iterator {
 }
 ```  
 
+</div>
+</details>
+
+<details>
+<summary><font color="blue">Main 클래스</font></summary>
+<div markdown="1">
 
 **Main 클래스 (sample/Main.java)**  
   - main()
@@ -181,6 +216,8 @@ public class Main {
 }
 ```  
 
+</div>
+</details>
 
 ## 03. Iterator 패턴에 등장하는 역할  
 
@@ -196,7 +233,7 @@ public class Main {
   - Iterator를 만들어내는 인터페이스를 제공함.
   - iterator(): 내가 가지고 있는 각 원소들을 차례로 검색해 줄 사람을 만들어내는 메소드  
 
-**ConcreteAggregate(구체적인 집합체)의 역할
+**ConcreteAggregate(구체적인 집합체)의 역할**  
   - Aggregate 인터페이스를 구현하는 클래스
   - ConcreteIterator(구체적인 반복자) 객체를 생성한다.
   - BookShelf가 이 일을 담당하였다.

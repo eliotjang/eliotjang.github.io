@@ -28,7 +28,7 @@ for (int i = 0; i < arr.length; i++) {
 
 **책꽂이(BookShelf)에 책(Book)을 넣은 후, 순서대로 다시 끄집어 내서 책 이름을 표시하는 프로그램**  
 
-![](https://eliotjang.github.io/assets/images/system-analysis/ch01-1.png)  
+![](https://eliotjang.github.io/assets/images/system-analysis/ch01-1.png){: width="70%" height="50%"}  
 
 **각 클래스와 인터페이스 설명**  
 
@@ -41,18 +41,18 @@ for (int i = 0; i < arr.length; i++) {
 |BookShelfIterator|서가를 검색하는 클래스|
 |Main|동작 테스트용 클래스|  
 
-![](https://eliotjang.github.io/assets/images/system-analysis/ch01-2.png)   
+![](https://eliotjang.github.io/assets/images/system-analysis/ch01-2.png){: width="70%" height="70%"}   
 
 **Aggregate 인터페이스 (sample/Aggregate.java)**  
 
   - iterator(): 집합체에 대응하는 Iterator 한 개를 생성하는데 사용될 메소드
-		- 어떤 집합체 원소를 하나씩 열거하거나 조사하고자 할 때 이 메소드를 사용해서 Iterator 인터페이스를 구현한 클래스의 인스턴스를 한 개 얻어온다.  
+      - 어떤 집합체 원소를 하나씩 열거하거나 조사하고자 할 때 이 메소드를 사용해서 Iterator 인터페이스를 구현한 클래스의 인스턴스를 한 개 얻어온다.  
 
-  ```java
-  public interface Aggregate {
-    public abstract Iterator iterator();
-  }
-  ```  
+```java
+public interface Aggregate {
+  public abstract Iterator iterator();
+}
+```  
 
 **Iterator 인터페이스 (sample/Iterator.java)**  
 
@@ -62,12 +62,12 @@ for (int i = 0; i < arr.length; i++) {
   - next(): 다음 원소를 얻어올 때 사용하는 메소드
       - 반환형은 Object  
 
-  ```java
-  public interface Iterator {
-    public abastract boolean hasNext();
-    publci abstract Object next();
-  }
-  ```
+```java
+public interface Iterator {
+  public abastract boolean hasNext();
+  publci abstract Object next();
+}
+```
 
 
 

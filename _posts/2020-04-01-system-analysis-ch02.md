@@ -14,13 +14,13 @@ last_modified_at: 2020-04-01T01:00:00+09:00
 **AC 어댑터**  
   - 기존의 교류 100볼트 전기를, 직류 12볼트로 바꾸어 준다  
 
-  ![](https://){: width="60%" height="45%"}  
+  ![](https://eliotjang.github.io/assets/images/system-analysis/ch02-1.png){: width="60%" height="45%"}  
 
 
 **Adapter 패턴**  
   - 이미 제공되어 있는 것을 그대로 사용할 수 없는 경우
   - '이미 제공되어 있는 것'과 '필요한 것' 사이의 간격을 메우는 디자인 패턴
-  - Wrappter 패턴이라고도 한다.  
+  - Wrapper 패턴이라고도 한다.  
 
 **두 가지 종류의 Adpater 패턴**  
   - 상속(inheritance)을 이용한 Adapter 패턴
@@ -47,7 +47,7 @@ last_modified_at: 2020-04-01T01:00:00+09:00
 public class Banner {
   private String string;
   public Banner(String string) {
-    this.string =. string;
+    this.string = string;
   }
   public void showWithParen() {
     System.out.println("(" + string + ")");
@@ -63,7 +63,7 @@ public interface Print {
 }
 ```
 
-**이미 제공되는 것:** ![](https://eliotjang.github.io/assets/images/system-analysis/ch02-2.png){: width="20%" height="25%"}  
+**이미 제공되는 것:   ** ![](https://eliotjang.github.io/assets/images/system-analysis/ch02-2.png){: width="20%" height="25%"}  
 
 **이미 필요로 하는 것:** ![](https://eliotjang.github.io/assets/images/system-analysis/ch02-3.png){: width="20%" height="25%"}  
 
@@ -90,13 +90,13 @@ public class PrintBanner extends Banner implements Print {
 ```  
 
 
-**전원 예외 예제 프로그램**  
+**전원 예와 예제 프로그램**  
 
 ||전원의 비유|예제 프로그램|
 |-----------|--------|----------------------|
-|제공되어 있는 것|교류 100볼트|Banner클래스  (showWithParen, showWithAste()|
+|제공되어 있는 것|교류 100볼트|Banner클래스(showWithParen, showWithAste()|
 |교환장치|어댑터|PrintBanner클래스|
-|필요한 것|직류 12볼트|Print 인터페이스  (printWeak, printStrong)|  
+|필요한 것|직류 12볼트|Print 인터페이스(printWeak, printStrong)|  
 
 
 **Banner 클래스 소스 (sample1/Banner.java)**  
@@ -134,7 +134,8 @@ public class Main {
 
 **위임**
   - 내가 할 일을 누군가에게 맡긴다.
-  - 예제에서: PrintBanner는 자신이 할 일을 Banner 클래스의 인스턴스에게 맡긴다.  
+  - 예제에서 PrintBanner는 자신이 할 일을 Banner 클래스의 인스턴스에게 맡긴다.  
+  
 **예제1과 달리, Print를 클래스로 가정하면,**
   - PrintBanner가 Print와 Banner의 하위 클래스로 정의할 수 없다.(다중 상속을 지원하지 않기 때문에)
   - 위임을 사용해야 한다.  
@@ -173,7 +174,7 @@ public class PrintBanner extends Print {
 
 **클래스 다이어그램**  
 
-![](https://eliotjang.github.io/assets/images/system-analysis/ch02-5.png)  
+![](https://eliotjang.github.io/assets/images/system-analysis/ch02-5.png){: width="650" height="400"}  
 
 
 ## 04. Adapter 패턴에 등장하는 역할  
@@ -212,7 +213,7 @@ public class PrintBanner extends Print {
       - 재사용  
 
 **만약 소스가 없더라도**
-  - 기존의 클래스는 손을 대지 않고, 새로운 인터페이스에 기존의 클래스를 맞출 ㅜ 있다.
+  - 기존의 클래스는 손을 대지 않고, 새로운 인터페이스에 기존의 클래스를 맞출 수 있다.
   - 특히, 기존 클래스의 소스 코드 없이, 메소드의 프로토타입만 알면 어댑터 패턴을 적용할 수 있다.
       - 메소드 프로토타입: 메소드의 이름, 인자 개수, 인자형, 반환형 등  
 

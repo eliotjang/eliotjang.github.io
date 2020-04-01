@@ -282,8 +282,23 @@ public class Main {
 **Factory Method 패턴**  
 
 
+## 06. 이 장에서 학습한 내용  
+
+**집합체의 원소를 일관된 방법으로 하나하나 세는 Iterator 패턴**  
 
 
+## 연습문제  
+
+**BookShelf 클래스에서는 Book을 배열에 저장하기 때문에 책꽂이의 크기를 초과해서 책을 넣을 수 없다**
+  - java.util.ArrayList 클래스를 사용하면, 크기 제한없이 책을 계속해서 넣을 수 있다. 기존의 코드를 이렇게 바꾸시오.  
+
+
+## Iterator 보충  
+
+
+![](https://eliotjang.github.io/assets/images/system-analysis/ch01-4.png){: width="60%" height="40%"}  
+
+클라이언트가, 출석부에 있는 학생을 차례대로 끄집어내 오려면, 출석부의 iterator() 메소드를 호출하여 출석부Iterator를 얻어온다. 그리고 나서, 출석부Iterator의 hasNext()와 next()를 이용하여 각 학생을 가져온다.  
 
 
 

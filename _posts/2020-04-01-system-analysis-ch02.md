@@ -63,7 +63,7 @@ public interface Print {
 }
 ```
 
-**이미 제공되는 것:   ** ![](https://eliotjang.github.io/assets/images/system-analysis/ch02-2.png){: width="20%" height="25%"}  
+**이미 제공되는 것:** ![](https://eliotjang.github.io/assets/images/system-analysis/ch02-2.png){: width="20%" height="25%"}  
 
 **이미 필요로 하는 것:** ![](https://eliotjang.github.io/assets/images/system-analysis/ch02-3.png){: width="20%" height="25%"}  
 

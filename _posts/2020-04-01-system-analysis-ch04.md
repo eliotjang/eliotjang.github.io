@@ -44,7 +44,7 @@ last_modified_at: 2020-04-01T18:00:00+09:00
 > 해당 클래스를 **<font color="blue">클릭</font>**하여 기능과 코드를 살펴볼 수 있습니다.  
 
 <details>
-**<summary><font color="blue">Product 클래스</font></summary>**
+<summary><font color="blue"><b>Product 클래스</b></font></summary>
 <div markdown="1">
 
 **Product 클래스**
@@ -64,14 +64,14 @@ public abstract class Product {
 </details>
 
 <details>
-**<summary><font color="blue">Factory 클래스</font></summary>**
+<summary><font color="blue"><b>Factory 클래스</b></font></summary>
 <div markdown="1">
 
 **Factory 클래스**
-  - <font color="blue">framework</font> 패키지
+  - <font color="blue">framework 패키지</font>
   - create()
-      - <font color="red">Template Method 패턴</font> 사용됨
-	  - 추상 메소드인 createProduct와 registerProduct를 사용함
+      - <font color="red">Template Method 패턴 사용됨</font>  
+	    - 추상 메소드인 createProduct와 registerProduct를 사용함
       - 제품을 만들고, 등록한 후, 생성된 제품을 반환한다.
   - createProduct() / registerProduct()
       - 하위 클래스에서 구현한다.
@@ -95,7 +95,7 @@ public abstract class Factory {
 </details>
 
 <details>
-**<summary><font color="blue">IDCard 클래스</font></summary>**
+<summary><font color="blue"><b>IDCard 클래스</b></font></summary>
 <div markdown="1">
 
 **IDCard 클래스**
@@ -127,7 +127,7 @@ public class IDCard extends Product {
 </details>
 
 <details>
-**<summary><font color="blue">IDCardFactory 클래스</font></summary>**
+<summary><font color="blue"><b>IDCardFactory 클래스</b></font></summary>
 <div markdown="1">
 
 **IDCardFactory 클래스**
@@ -162,7 +162,7 @@ public class IDCardFactory extends Factory {
 </details>
 
 <details>
-**<summary><font color="blue">Main 클래스</font></summary>**
+<summary><font color="blue"><b>Main 클래스</b></font></summary>
 <div markdown="1">
 
 **Main 클래스**
@@ -178,7 +178,7 @@ public class Main {
     Factory factory = new IDCardFactory();
     Product card1 = factory.create("홍길동");
     Product card2 = factory.create("이순신");
-    Product card3 = factory.create("장성원");
+    Product card3 = factory.create("강감찬");
     card1.use();
     card2.use();
     card3.use();
@@ -186,7 +186,7 @@ public class Main {
 }
 ```  
 
-![](https://eliotjang.github.io/assets/images/system-analysis/ch04-2.png){: width="401" height="159"}  
+![](https://eliotjang.github.io/assets/images/system-analysis/ch04-2.png){: width="600" height="350"}  
 
 </div>
 </details>
@@ -231,12 +231,12 @@ public class Main {
 
 ![](https://eliotjang.github.io/assets/images/system-analysis/ch04-4.png){: width="546" height="244"}  
 
-  - <font color="red">Factory와 Product 수정 없이</font>, 다른 종류의 '제품'과 '공장'을 추가로 만들 수 있다.  
+  - <font color="red">Factory와 Product 수정 없이</font>다른 종류의 '제품'과 '공장'을 추가로 만들 수 있다.  
   ⇒ Main 클래스(클라이언트)에서는, TV 제품이 필요한 경우,  
   TVFactory 객체를 생성한 후에 TVFactory 객체의 create() 메소드를 호출하기만 하면 된다.  
 
 **각 공장이 어떤 제품을 생산하는지에 대해서 클라이언트는 신경 쓰지 않는다(모른다)**
-  - 예: IDCardFactory 공장이, IDCard 제품 대신에 IDCard2라는 제품을 생산하도록 바뀌어도, <font color="red">Main 클래스의 코드는 바뀌지 않는다</font>
+  - 예: IDCardFactory 공장이, IDCard 제품 대신에 IDCard2라는 제품을 생산하도록 바뀌어도, <font color="red">Main 클래스의 코드는 바뀌지 않는다</font>  
       - 단지, IDCardFactory 객체를 생성하고, create() 메소드를 호출하기만 하면 된다.  
 
 **인스턴스 생성 - 메소드 구현 방법**
@@ -245,32 +245,34 @@ public class Main {
   1. 추상 메소드로 한다.(예제 프로그램의 경우)
   2. 디폴트 구현을 준비해 둔다.
       - 하위 클래스에서 구현을 준비하지 않았을 경우에 이 디폴트 구현이 실행된다.  
-      ```java
-      class Factory {
-	public Product createProduct(String name) {
-	  return new Product(name);
-	}
-      }
-      ```  
+
+```java
+class Factory {
+    public Product createProduct(String name) {
+	return new Product(name);
+    }
+}
+```  
 
   3. 에러로 처리한다.
       - 디폴트 구현의 내용을 예외로 발생시키는 문장으로 한다.  
-      ```java
-      class Factory {
-	public Product createProduct(String name) {
-	  throw new FactoryMethodRuntimeException();
-	}
-      }
-      ```  
+
+```java
+class Factory {
+    public Product createProduct(String name) {
+	throw new FactoryMethodRuntimeException();
+    }
+}
+```  
 
 
 ## 06. Factory Method 패턴과 관련된 패턴  
 
-**<font color="red">Template Method 패턴</font>(3장)**  
-**Singleton 패턴(5장)**  
-**Composite 패턴(11장)**  
-**<font color="blue">Iterator 패턴</font>(1장)**
-  - iterator() 메소드가, Iterator 인스턴스를 생성할 때, Factory Method 패턴을 사용하는 경우가 있다.  
+  - **<font color="red">Template Method 패턴</font>(3장)**  
+  - **Singleton 패턴(5장)**  
+  - **Composite 패턴(11장)**  
+  - **<font color="blue">Iterator 패턴</font>(1장)**
+      - iterator() 메소드가, Iterator 인스턴스를 생성할 때, Factory Method 패턴을 사용하는 경우가 있다.  
 
 
 ## 07. 요약  

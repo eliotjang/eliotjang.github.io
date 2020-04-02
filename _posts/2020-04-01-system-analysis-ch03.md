@@ -11,7 +11,7 @@ last_modified_at: 2020-04-01T12:00:00+09:00
 
 ## 01. Template Method 패턴  
 
-**템플릿인란?**
+**템플릿이란?**
   - 문자 모양을 따라 구멍에 뚫려있는 얇은 플라스틱 판
   - 필기도구의 종류(싸인펜, 연필, 색연필)에 따라 실제로 쓰여지는 문자의 인스턴스가 결정된다.  
 
@@ -45,7 +45,7 @@ last_modified_at: 2020-04-01T12:00:00+09:00
 
 > 해당 클래스를 <font color="blue"><b>클릭</b></font>하여 기능과 코드를 살펴볼 수 있습니다.  
 <details>
-<summary><font color="blue><b>AbstractDisplay 클래스</b></font></summary>
+<summary><font color="blue"><b>AbstractDisplay 클래스</b></font></summary>
 <div markdown="1">
 
 **AbstractDisplay 클래스 (sample/AbstractDisplay.java)**
@@ -74,7 +74,7 @@ public abstract class AbstractDisplay { // 추상 클래스 AbstractDisplay
 </details>  
 
 <details>
-<summary><font color="blue><b>CharDisplay 클래스<b/></font></summary>
+<summary><font color="blue"><b>CharDisplay 클래스<b/></font></summary>
 <div markdown="1">
 
 **CharDisplay 클래스 (sample/CharDisplay.java)**
@@ -107,7 +107,7 @@ public class CharDisplay extends AbstractDisplay { // CharDisplay는 AbstractDis
 </details>
 
 <details>
-<summary><font color="blue><b>StringDisplay 클래스</b></font></summary>
+<summary><font color="blue"><b>StringDisplay 클래스</b></font></summary>
 <div markdown="1">
 
 **StringDisplay 클래스 (sample/StringDisplay.java)**
@@ -153,7 +153,7 @@ public class StringDisplay extends AbstractDisplay { // StringDisplay도 Abstrac
 </details>
 
 <details>
-<summary><font color="blue><b>Main 클래스</b></font></summary>
+<summary><font color="blue"><b>Main 클래스</b></font></summary>
 <div markdown="1">
 
 **Main 클래스 (sample/Main.java)**

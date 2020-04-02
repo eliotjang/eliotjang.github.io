@@ -202,16 +202,21 @@ public class Main {
 
 ![](https://eliotjang.github.io/assets/images/system-analysis/ch03-4.png){: width="140" height="310"}  
 
+**<font color="green">교수님의 잠깐 Tip!</font>**
+> 추상 클래스와 인터페이스의 차이점은 추상 클래스는 정상적인 메소드들도 가질 수 있는 반면, 인터페이스는 추상클래스만 가질 수 있다.
+
 **로직을 공통화할 수 있다**
   - TemplateMethod 패턴을 이용하지 않은 경우  
   ![](https://eliotjang.github.io/assets/images/system-analysis/ch03-5.png){: width="380" height="270"}  
 
-      - templateMethod()가 method1,2,3을 같은 방식(로직)으로 사용하는 경우, 같은 코드가 ConcreteClass 1,2,3에 반복해서 나타난다.  
-      ⇒ 로직을 바꾸어야 하는 경우, Concrete1,2,3의 모든 templateMethod()를 수정해야 한다.  
+      - templateMethod()가 method1,2,3을 같은 방식(로직)으로 사용하는 경우,  
+      같은 코드가 ConcreteClass 1,2,3에 반복해서 나타난다.  
+      ⇒ 로직을 바꾸어야 하는 경우,  
+      Concrete1,2,3의 모든 templateMethod()를 수정해야 한다.  
   - TemplateMethod 패턴을 이용한 경우  
-  ![](https://eliotjang.github.io/assets/images/system-analysis/ch03-6.png){: width="350" height="300"}  
+  ![](https://eliotjang.github.io/assets/images/system-analysis/ch03-6.png){: width="380" height="270"}  
 
-      - templateMethod()가 부모 클래스인 AbstractClass에서 구현됨으로써, <font color="red">공통된 로직이 한 곳에 집중</font>되어 있다.  
+      - templateMethod()가 부모 클래스인 AbstractClass에서 구현됨으로써, **<font color="red">공통된 로직이 한 곳에 집중</font>**되어 있다.  
 
 
 ## 05. 관련 패턴  
@@ -223,7 +228,7 @@ public class Main {
 ## 06. 보강: 클래스 계층과 추상 클래스  
 
 **상위 클래스가 하위 클래스에게 요청**
-  - 상위 클래스가 선언된 추상 클래스의 구현을, 하위 클래스에게 요청한다.  
+  - 상위 클래스에 선언된 추상 메소드의 구현을, 하위 클래스에게 요청한다.  
 
 **추상 클래스의 의의**
   - 추상 클래스는 인스턴스를 만들 수 없다.

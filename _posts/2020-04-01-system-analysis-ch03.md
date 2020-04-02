@@ -74,7 +74,7 @@ public abstract class AbstractDisplay { // 추상 클래스 AbstractDisplay
 </details>  
 
 <details>
-<summary><font color="blue"><b>CharDisplay 클래스<b/></font></summary>
+<summary><font color="blue"><b>CharDisplay 클래스</b></font></summary>
 <div markdown="1">
 
 **CharDisplay 클래스 (sample/CharDisplay.java)**

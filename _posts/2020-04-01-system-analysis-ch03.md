@@ -79,6 +79,7 @@ public abstract class AbstractDisplay { // 추상 클래스 AbstractDisplay
 
 **CharDisplay 클래스 (sample/CharDisplay.java)**
   - 상위 클래스인 AbstractDisplay 클래스의 추상 메소드인 open, print, close를 구현함  
+
   |메소드명|처리|
   |------|----------------------------------|
   |open|문자열 '<<'를 표시합니다.|
@@ -118,12 +119,15 @@ public class CharDisplay extends AbstractDisplay { // CharDisplay는 AbstractDis
 	  - string = "안녕하세요."인 경우
 	      - string.length() : 6을 반환
 	      - string.getBytes().length() : 13 을 반환  
+
       > <font color="green">getBytes() 메소드 호출 시, 아무 매개변수도 넘겨주지 않으면 현재 플랫폼의 기본 캐릭터 셋으로 디코딩하여 바이트 배열을 생성</font>  
+
       > <font color="green">캐릭터 셋을 지정하여 getBytes() 메소드를 사용하면 지정된 캐릭터 셋으로 해당 문자열을 디코딩하여 바이트 배열 생성  
+
   |메소드명|처리|
   |--------|----------------------------------------------------|
   |open|문자열 '+----+'를 표시합니다.|
-  |print|생성자에서 제공된 문자열을 '|'와 '|' 사이에 두어 표시합니다.|
+  |print|생성자에서 제공된 문자열을 '｜'와 '｜' 사이에 두어 표시합니다.|
   |close|문자열 '+----+'를 표시합니다.|  
 
 ```java
@@ -147,7 +151,8 @@ public class StringDisplay extends AbstractDisplay { // StringDisplay도 Abstrac
     }
     System.out.println("+"); // 테두리의 모서리를 표현하는 "+" 마크를 표시.
   }
-}  
+}
+```  
 
 </div>
 </details>
@@ -176,7 +181,7 @@ public class Main {
 }
 ```  
 
-![](https://eliotjang.github.io/assets/images/system-analysis/ch03-3.png){: width="310" height="260"}  
+![](https://eliotjang.github.io/assets/images/system-analysis/ch03-3.png){: width="500" height="400"}  
 
 </div>
 </details>
@@ -252,7 +257,7 @@ public class Main {
 
 **3-4**
   - 추상 클래스와 인터페이스 클래스의 차이점
-  - <font color="red">참고: Java 8의 디폰트 메소드 공부할 것!!!</font>  
+  - <font color="red">참고: Java 8의 디폴트 메소드 공부할 것!!!</font>  
 
 
 

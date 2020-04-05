@@ -141,53 +141,54 @@ last_modified_at: 2020-04-04T17:00:00+09:00
 		⑤라운드 수: 한 번의 암·복호화를 위해 반복하는 라운드 함수의 횟수로, 많을수록 더 안전하다고 보지만 암·복호화 과정에서 시간이 더 걸린다.  
 		- 근본적으로 한 번의 라운드 함수로 충분한 안전성을 확보할 수는 없기에 라운드 함수에 대한 다양한 암호분석을 통해 충분한 안전성을 얻을 수 있도록 라운드 횟수를 결정한다.  
 	    4. 블록 암호 알고리즘 종류  
-		**➊ 데이터 암호 표준(DES, Data Encryption Standard)**  
+		**➊데이터 암호 표준(DES, Data Encryption Standard)**  
 		     › DES는 대칭키 암호 중 하나인 64비트 블록 암호이며 56비트 비밀키를 사용한다. 1977년에 미국 NBS(National Bureau of Standards, 현 NIST)에서 이 알고리즘을 미국 표준 블록 암호 알고리즘으로 채택하였다.  
-		**➋ 트리플 데이터 암호 표준(Triple DES)**  
+		**➋트리플 데이터 암호 표준(Triple DES)**  
 		     › DES에 대한 전수공격으로 인해 더 이상 안전하지 않다는 것이 증명되어 DES를 보완하기 위해 고안된 알고리즘이 Triple DES이다.  
 		     › Triple DES는 3개의 키 값을 사용하고 DES 16라운드의 3배에 해당하는 48라운드를 수행하여 암호화 강도를 높였다.  
 		    ![](https://eliotjang.github.io/assets/images/network-security/ch02-9.png){: width="413" hegith="153"}  
-		**➌ 고급 암호화 표준(AES, Advanced Encryption Standard)**  
+		**➌고급 암호화 표준(AES, Advanced Encryption Standard)**  
 		    › AES는 미국 표준 블록 암호였던 DES의 안전성에 문제가 제기됨에 따라 2000년 새로운 미국 표준 블록 암호로 채택된 128-비트 블록 암호이다.  
 		    › AES의 암호화 과정은 DES와 달리 SPN 구조 채택  
 		    › 키의 비트 길이 - 128, 192, 256비트 길이  
-		**➍ 국제 데이터 암호화 알고리즘(IDEA, International Data Encryption Algorithm)**  
+		**➍국제 데이터 암호화 알고리즘(IDEA, International Data Encryption Algorithm)**  
 		    › 스위스에서 1992년 세지아 레이(Xuejia Lai), 제임스 메시(James Messey)에 의해 제안된 처리 속도가 빠름  
 		    › IDEA는 128비트 키, 8라운드, 64비트 블록  
 		    › RSA와 더불어 PGP에 사용되는 방식  
-		**➎ 아리아(ARIA)**  
+		**➎아리아(ARIA)**  
 		    › 아리아(ARIA)는 우리나라의 국가보안기술연구소에서 개발한 블록 암호 체계이다. ARIA라는 이름은 학계(Academy), 연구소(Research Institute), 정부 기관(Agency)이 공동으로 개발한 특징을 함축적으로 표현한 것이다.  
 		    › 2004년 산업자원부의 KS 인증(KS X 1213:2004)을 획득하여 현재까지 우리나라의 국가 표준 암호 알고리즘으로 2010년 웹 표준 중 하나가 되었다.  
-		**➏ 시드(SEED)**  
+		**➏시드(SEED)**  
 		    › 시드(SEED)는 전자 상거래, 금융, 무선 통신 등에서 전송되는 개인정보와 같은 중요한 정보를 보호하기 위해 1999년 2월 한국정보보호진흥원(KISA)과 국내 암호 전문가들이 순수 국내 기술로 개발한 128-비트 블록 암호이다.  
 		    › SEED128은 1999년 9월 정보통신단체표준(TTA)으로 제정되었으며, 2005년에는 국제 표준화 기구인 ISO/IEC에서 국제 블록 암호 표준으로 제정하였으며, IETF에서도 표준으로 제정되었다.  
-		**➐ 하이트(HIGHT, HIGh security and light weigHT)**  
+		**➐하이트(HIGHT, HIGh security and light weigHT)**  
 		    › HIGHT는 RFID, USN 등과 같이 저전력·경량화를 요구하는 컴퓨팅 환경에서 기밀성을 제공하기 위해 2005년 KISA, ETRI 부설 연구소 및 고려대가 공동으로 개발한 64-비트 블록 암호이다.  
 		    › 이 알고리즘은 2006년 12월 정보통신단체표준(TTA)으로 제정되었으며, 2010년 ISO/IEC 국제 블록 암호 표준으로 제정되었다.  
-		**➑ LEA(Lightweight Encryption Algorithm)**  
+		**➑LEA(Lightweight Encryption Algorithm)**  
 		    › 2012년 국가보안기술연구소가 개발한 '128비트 경량 고속 블록 암호 알고리즘'  
 		    › LEA는 현재 가장 많이 쓰이는 미국 연방 표준 알고리즘 AES(Advanced Encryption Standard)보다 1.5~2배 빠르다. 다양한 정보보호 서비스에서 대용량 데이터를 빠르게 처리하거나 스마트폰 보안, 사물인터넷(IoT) 등 저전력 암호화에 널리 쓸 수 있다.  
-		**➒ 블로피시(Blowfish)**  
+		**➒블로피시(Blowfish)**  
 		    › 1993년 브루스 슈나이어가 설계한 개발한 대칭키 암호 알고리즘으로 가변적인 키 길이(32~448비트)를 가지며, 구현이 간단하고 알고리즘의 안전성을 분석하기 쉬우며,  
 		    › 키의 크기가 가변적이므로 안전성과 성능의 요구에 따라 유연하게 사용이 가능하다.  
 	    5. 블록 암호 모드
 		- 긴 평문을 암호화하기 위해서는 블록 암호 알고리즘을 반복해서 사용하여 긴 평문 전부를 암호화할 필요가 있다. 이처럼 반복하는 방법을 블록 암호의 모드(mode)라고 함  
-		① ECB 모드: Electronic CodeBook mode  
+		①ECB 모드: Electronic CodeBook mode  
 		- 간단, 고속, 병렬처리가 가능하나 암호문 블록의 삭제나 교체에 의한 평문의 조작이 가능하고 재전송 공격이 가능하여 사용을 하지 않는다.  
 		![](https://eliotjang.github.io/assets/images/network-security/ch02-10.png){: width="582" hegith="254"}  
-		② CBC 모드: Cipher Block Chaining mode(암호 블록연쇄 모드)  
+		②CBC 모드: Cipher Block Chaining mode(암호 블록연쇄 모드)  
 		- 평문의 반복은 암호문에 반영되지 않고 임의의 암호문 블록을 복호화 할 수 있으나, 비트 단위의 에러가 있는 암호문을 복호화하면 1블록 전체와 다음 블록의 대응하는 비트가 에러가 되는 단점이 있다. SSL/TLC 등 보안프로토콜에 많이 사용된다.  
 		  ![](https://eliotjang.github.io/assets/images/network-security/ch02-11.png){: width="625" hegith="283"}  
-		③ CFB 모드: Cipher-FeedBack mode(암호 피드백 모드)  
+		③CFB 모드: Cipher-FeedBack mode(암호 피드백 모드)  
 		- 패딩이 필요없고 복호화는 병렬 처리가 가능. 재전송 공격이 가능하다. 현재는 사용을 하지 않는다.  
 		![](https://eliotjang.github.io/assets/images/network-security/ch02-12.png){: width="415" hegith="325"}  
-		④ OFB 모드: Output-Feed Back mode(출력 피드백 모드)  
+		④OFB 모드: Output-Feed Back mode(출력 피드백 모드)  
 		- 패딩이 필요없고 암호화/복호화의 사전 준비를 할 수 있으나, 병렬처리가 불가하고 적극적 공격자가 암호문 블록을 비트 반전시키면 대응하는 평문 블록이 비트 반전된다. CTR 모드를 사용하는 편이 낫다.  
 		![](https://eliotjang.github.io/assets/images/network-security/ch02-13.png){: width="637" hegith="319"}  
-		⑤ CTR 모드: CounTeR mode(카운터 모드)  
+		⑤CTR 모드: CounTeR mode(카운터 모드)  
 		- 패딩이 필요없고 암호화/복호화의 사전준비를 할 수 있으며 병렬처리가 가능하나, 적극적 공격자가 암호 블록을 비트 반전시키면 대응하는 평문 블록이 비트 반전된다.  
 		![](https://eliotjang.github.io/assets/images/network-security/ch02-14.png){: width="622" hegith="298"}  
 	    6. 블록 암호 공격 기법  
+
 	    |공격 기법|개념|
 	    |-------------|------------|
 	    |차분공격<br/>(Differential Cryptanalysis)|1990년 비함(Biham)과 샤미르(Shamir)에 의하여 개발된 선택된 평문공격법으로, 두 개의 평문 블록들의 비트의 차이에 대하여 대응되는 암호문 블록들의 비트의 차이를 이용하여 사용된 암호열쇠를 찾아내는 방법이다.|

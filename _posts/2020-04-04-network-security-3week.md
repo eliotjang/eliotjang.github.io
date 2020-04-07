@@ -339,20 +339,62 @@ last_modified_at: 2020-04-04T17:00:00+09:00
 	④변경 불가(unalterable): 서명한 문서의 내용을 변경할 수 없어야 한다.  
 	⑤재사용 불가(not reusable): 하나의 문서의 서명을 다른 문서의 서명으로 사용할 수 없어야 한다.
     2. 전자서명 방법  
+    - 소개  
     ![](https://eliotjang.github.io/assets/images/network-security/ch02-19.png){: width="632" height="278"}  
     - 메시지에 직접 서명하는 방법  
     ![](https://eliotjang.github.io/assets/images/network-security/ch02-20.png){: width="393" height="318"}  
     - 메시지의 해시 값에 서명하는 방법  
     ![](https://eliotjang.github.io/assets/images/network-security/ch02-21.png){: width="420" height="332"}  
-    3. 전자서명 알고리즘
-	1. RSA 전자서명
-	2. ElGamal 전자서명
-	3. DSS(Digital Signature Standard) 전자서명
-	    - DSS(Digital Signature Standard)는 1991년, NIST에서 제안한 전자서명 표준안으로 핵심 알고리즘으로 DSA(Digital Signature Algorithm)을 사용한다.
-	4. Schnorr 전자서
-
-
-
+2. **전자서명 알고리즘**
+    1. RSA 전자서명
+    2. ElGamal 전자서명
+    3. DSS(Digital Signature Standard) 전자서명  
+	- DSS(Digital Signature Standard)는 1991년, NIST에서 제안한 전자서명 표준안으로 핵심 알고리즘으로 DSA(Digital Signature Algorithm)을 사용한다.
+    4. Schnorr 전자서명
+    5. KCDSA(Korean Certificate-based Digital Signature Algorithm) 전자서명  
+	- KCDSA는 1997년 한국 표준 디지털 서명으로 채택된 알고리즘이다.  
+3. **공개키 기반 구조(PKI, Public Key Intrastructure)**
+    1. PKI의 개념
+        1. 정의  
+	공개 키의 소유자를 디지털 인증서를 통해 인증하는 시스템으로서  
+	공개 키를 효과적으로 운용하기 위해 정한 많은 규격이나 절차들의 총칭  
+        2. 공개키 기반구조(PKI)의 객체 구성  
+	①공개키 인증서를 발급, 폐지하는 인증기관(CA)  
+	②공개키와 인증서 소유자 사이의 관계를 확인하는 등록기관(RA)  
+	③인증서를 발급받고, 전자문서에 서명하고 암호화를 할 수 있는 공개키 인증서의 소유자  
+	④인증기관의 공개키를 사용하여 인증경로 및 전자서명을 검증하는 사용자  
+	⑤공개키 인증서와 CRL을 저장하는 저장소  
+    2. 공인인증서(X.509)
+        1. 개념
+            - 공인인증서는 전자 서명의 검증에 필요한 공개키에 소유자 정보를 추가하여 만든 일종의 전자 신분증(증명서)으로 인증기관의 개인키를 사용하여 변조 불가능하게 한 개체의 데이터이다.
+            - 공인인증서는 개인키와 한 쌍으로 존재한다.
+            - 현재 가장 널리 쓰이는 디지털 인증서 형태는 X.509 인증서이다.
+            - 인증서의 종류
+                - <font color="black">범용 공인인증서</font>  
+                    모든 분야에서 이용  
+                    인터넷뱅킹, 온라인증권, 전자상거래, 전자정부 민원서비스, 국세청 홈텍스, 전자입찰/조달, 온라인교육, 예비군 등 다양한 분야에서 활용  
+                    소정의 수수료  
+                - <font color="black">용도제한 공인인증서</font>  
+                    은행 및 보험, 신용카드 업무, 정부 민원업무 등 특정분야에서만 이용  
+                    해당 기관이 고객에게만 발급  
+                    무료  
+        2. X.509  
+        ITU X.509(IETF RFC3280) 국제 표준  
+        인증서의 생성·교환을 수행할 때 사용  
+        많은 애플리케이션에서 지원
+        3. X.509 인증서의 내용  
+        ![](https://eliotjang.github.io/assets/images/network-security/ch02-22.png){: width="301" height="327"}  
+    3. 전자서명 인증관리 체계
+        - 우리나라는 1999년 전자서명법을 제정하고 공인전자서명 인증 체계(National Public Key Infrastructure, NPKI)와 2001년 전자정부법에 의해 정부 인증기관에서 발급하는 행정전자서명 인증체계(Government Public Key Infrastructure, GPKI)를 마련하였다.  
+	![](https://eliotjang.github.io/assets/images/network-security/ch02-23.png){: width="351" height="311"}  
+4. **스테가노그래피, 디지털 워터마크와 DRM**
+  1. 스테가노그래피(Steganography)
+    - 전달하려는 정보를 이미지, 오디오 등의 파일에 인간이 감지할 수 없도록 숨겨져 상대방에게 전달하는 기술의 총칭이다.
+    - 기존의 암호화 방법은 메시지를 암호화하여 정보를 보호하는 반면에 스테가노그래피는 비밀정보를 매체에 은닉하여 그 정보의 존재 자체를 감추는 보안 기술이다.
+  2. 디지털 워터마크(digital watermark)
+    - 디지털 워터마크는 데이터 소유자의 저작권과 소유권을 보호하기 위해 영상에 특정한 코드나 유형 등을 삽입하는 기술을 말한다. 디지털 콘텐츠에 사용자만이 알 수 있는 아이디(ID) 또는 정보 등의 부호를 삽입하거나, 영상·음성 등의 신호에 특정한 코드나 유형 등을 삽입하는 기술을 말한다.
+  3. DRM(Digital Rights Management)
+    - 디지털 컨텐츠의 불법 복제와 유포를 막고 저작권 보유자의 익과 권리를 보호해 주는 기술과 서비스를 말한다.  
 
 
 

@@ -3,8 +3,10 @@ title: "[네트워크보안] Chapter 00. TCP_IP Protocol"
 excerpt: "장상수 저, 정보보호총론, 생능출판, 2015"
 toc: true
 toc_sticky: true
+toc_label: "Ch00. TCP_IP Protocol"
 header:
   teaser: /assets/images/network-security/network-security-logo.jpeg
+
 categories:
   - network security  
 

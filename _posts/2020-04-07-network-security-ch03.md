@@ -3,6 +3,7 @@ title: "[네트워크보안] Chapter 03. 시스템 보안"
 excerpt: "장상수 저, 정보보호총론, 생능출판, 2015"
 toc: true
 toc_sticky: true
+toc_label: "Ch03. 시스템 보안"
 header:
   teaser: /assets/images/network-security/nerwork-security-logo.jpeg
 categories:

@@ -1,7 +1,10 @@
 ---
 title: "[네트워크보안] Chapter 00. TCP_IP Protocol"
 excerpt: "장상수 저, 정보보호총론, 생능출판, 2015"
-
+toc: true
+toc_sticky: true
+header:
+  teaser: /assets/images/network-security/network-security-logo.jpeg
 categories:
   - network security  
 
@@ -15,7 +18,7 @@ last_modified_at: 2020-03-21T17:00:00+09:00
 
 【TCP/IP 참조 모델】
 
-![](https://eliotjang.github.io/assets/images/network-security/1week-1.png){: .align-center}  
+![](https://eliotjang.github.io/assets/images/network-security/ch00-1.png){: width="40%" height="60%"}  
 
 네트워크 시스템은 복잡하기 때문에 복잡한 시스템의 구조를 명확히 파악하는데 용이하고 시스템을 유지보수하거나 개선하는데 용이하도록 계층화된 모듈로 구성되어 있다.  
 
@@ -56,7 +59,7 @@ last_modified_at: 2020-03-21T17:00:00+09:00
     - 프레임 : 데이터링크 계층의 데이터 전송 단위  
   > 데이터 링크 계층은 한 노드에서 인접한 다른 노드로 링크를 따라 프레임을 전달한다.  
     
-![](https://eliotjang.github.io/assets/images/network-security/1week-2.png)  
+![](https://eliotjang.github.io/assets/images/network-security/ch00-2.png){: width="30%" height="30%"}    
 
   - **인터넷 계층**
     - **네트워크 주소(IP 주소)를 이용하여 패킷을 발신지에서 목적지로 전달하는 책임을 가진다.**
@@ -104,7 +107,7 @@ last_modified_at: 2020-03-21T17:00:00+09:00
 
 - - -  
 
-### 주소 개념
+## 주소 개념
 
 **물리 주소**
   - 같은 네트워크에 연결된 노드를 식별하기위한 하드웨어 주소
@@ -124,45 +127,45 @@ last_modified_at: 2020-03-21T17:00:00+09:00
   - 전송 계층의 주소로서 통신하는 응용프로세스를 식별
   - TCP/UDP port 번호 : 16-bit format
 
-![](https://eliotjang.github.io/assets/images/network-security/1week-3.png)  
+![](https://eliotjang.github.io/assets/images/network-security/ch00-3.png){: width="60%" height="40%"}  
 
 소스노드와 목적지노드의 주소는 변함이 없지만, 데이터링크 계층의 맥 주소는 인접한 노드를 거칠때 마다 변경이 된다.  
 따라서 네트워크 계층이 하는 일은 소스 호스트에서 목적지 호스트까지 패킷을 전달하는 일을 담당한다고 하는 것이고,  
 반면에 데이터 링크 계층이 하는 일은 인접한 노드 간의 데이터 프레임을 전송하는 일을 담당한다고 하는 것이다.  
 
 
-![](https://eliotjang.github.io/assets/images/network-security/1week-4.png)  
+![](https://eliotjang.github.io/assets/images/network-security/ch00-4.png){: width="60%" height="40%"}  
 
 - - -  
 
-### 캡슐화 
+## 캡슐화 
 
 송신측 패킷 전송 형태  
 
-![](https://eliotjang.github.io/assets/images/network-security/1week-5.png)
+![](https://eliotjang.github.io/assets/images/network-security/ch00-5.png){: width="60%" height="40%"}  
 
 
 수신측 패킷 전송 형태  
 
-![](https://eliotjang.github.io/assets/images/network-security/1week-6.png)
+![](https://eliotjang.github.io/assets/images/network-security/ch00-6.png){: width="60%" height="40%"}  
 
 
 - - -  
 【인터넷 프로토콜(IP)】  
 
 **IP 주소의 일반 형식**  
-![](https://eliotjang.github.io/assets/images/network-security/1week-7.png)  
+![](https://eliotjang.github.io/assets/images/network-security/ch00-7.png){: width="30%" height="10%"}  
 
   - 라우터의 개입 없이 상호 데이터 전달이 가능한 영역(e.g. LAN)
   - 같은 네트워크 주소를 갖는 인터페이스들의 집합
 
-![](https://eliotjang.github.io/assets/images/network-security/1week-8.png)  
+![](https://eliotjang.github.io/assets/images/network-security/ch00-8.png){: width="40%" height="40"}  
 
-![](https://eliotjang.github.io/assets/images/network-security/1week-9.png)  
+![](https://eliotjang.github.io/assets/images/network-security/ch00-9.png){: width="40%" height="10%"}  
 
 **특수 주소**  
  
-![](https://eliotjang.github.io/assets/images/network-security/1week-10.png)  
+![](https://eliotjang.github.io/assets/images/network-security/ch00-10.png){: width="60%" height="40%"}  
 
   - 사설망 주소
     - 10.0.0.0 ~ 10.255.255.255
@@ -173,7 +176,7 @@ last_modified_at: 2020-03-21T17:00:00+09:00
 
 **IP 데이터그램 구조**  
 
-![](https://eliotjang.github.io/assets/images/network-security/1week-11.png)  
+![](https://eliotjang.github.io/assets/images/network-security/ch00-11.png){: width="70%" height="40%"}  
 
 - - -  
 
@@ -211,9 +214,9 @@ No congestion control
 
 **User Datagram Format**  
 
-![](https://eliotjang.github.io/assets/images/network-security/1week-12.png)  
+![](https://eliotjang.github.io/assets/images/network-security/ch00-12.png){: width="50%" height="30%"}  
 
-![](https://eliotjang.github.io/assets/images/network-security/1week-13.png)  
+![](https://eliotjang.github.io/assets/images/network-security/ch00-13.png){: width="60%" height="40%"}  
 
 【전송제어 프로토콜(TCP)】 
 
@@ -236,15 +239,15 @@ No congestion control
 
 **TCP 헤더**  
 
-![](https://eliotjang.github.io/assets/images/network-security/1week-14.png)  
+![](https://eliotjang.github.io/assets/images/network-security/ch00-14.png){: width="70%" height="60%"}  
 
 **3-Way Handshake**
 
-![](https://eliotjang.github.io/assets/images/network-security/1week-15.png)
+![](https://eliotjang.github.io/assets/images/network-security/ch00-15.png){: width="30%" height="50%"}  
 
 **연결 해제 절차**
 
-![](https://eliotjang.github.io/assets/images/network-security/1week-16.png)
+![](https://eliotjang.github.io/assets/images/network-security/ch00-16.png){: width="30%" height="50%"}  
 
 
 

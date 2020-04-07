@@ -1,7 +1,10 @@
 ---
 title: "[네트워크보안] Chapter 01. 정보보호 일반 이론"
 excerpt: "장상수 저, 정보보호총론, 생능출판, 2015"
-
+toc: true
+toc_sticky: true
+header:
+  teaser: /assets/images/network-security/network-security-logo.jpeg
 categories:
   - network security
 tags:
@@ -22,7 +25,7 @@ last_modified_at: 2020-03-29T00:00:19+09:00
   - <font color="red">정보보호의 대상(정보자산)은 정보시스템과 데이터(정보), 인적 요소 문서 등</font>
   - 정보자산(Assets)은 데이터(정보), 문서, 소프트웨어, 하드웨어, 시설이나 장비 등의 물리적 자산, 인적 자산 등으로 구분이 되며 그 외에 회사의 이미지 또는 평판, 직원들의 사기 등을 무형 자산으로 평
   - 직접 공격은 컴퓨터에 대한 직접적인 위협이지만 간접 공격은 한 번 공격받은 시스템에 의해 이루어진다는 점이 다르다. 따라서 정보시스템은 공격의 주체가 되기도 하고 공격의 대상이 되기도 한다.  
-    ![](https://eliotjang.github.io/assets/images/network-security/2week-1.png)  
+    ![](https://eliotjang.github.io/assets/images/network-security/ch01-1.png)  
 3. 정보보호(Information Security)의 정의
   - 정보보호의 법률적 의미 - 정보의 수집, 가공, 저장, 검생, 송신, 수신 중 발생할 수 있는 정보의 훼손, 변조, 유출 등을 방지하기 위한 관리적·기술적 수단을 마련하는 것
   - <font color="red">정보보안이라고도 하며,</font> 컴퓨터 등 정보처리 능력을 가진 장치를 이용하여 <font color="red">수집, 가공, 저장, 검색, 송신 또는 수신되는 정보의 유출, 위·변조, 훼손 등을 방지하기 위하여 기술적, 물리적, 관리적 수단을 강구하는 일체의 행위</font>를 말한다.
@@ -50,10 +53,10 @@ last_modified_at: 2020-03-29T00:00:19+09:00
 
 1. 보안 취약점(Vulnerability)의 정의  
   - 정보시스템의 <font color="red">결함이나 체계 설계상의 허점으로 인해 사용자의 허용된 권한 이상의 동작이나 허용된 범위 이상의 정보 열람을 가능하게 하는 것</font>  
-  ![](https://eliotjang.github.io/assets/images/network-security/2week-2.png)  
+  ![](https://eliotjang.github.io/assets/images/network-security/ch01-2.png)  
 2. 보안 위협  
   - 보안 위협(Threats)은 <font color="red">자산에 손실을 초래할 수 있는, 원치 않는 사건의 잠재적 원인이나 행위자</font>로 정의된다. 위협은 일반적으로 위협원천에 따라, 크게 자연재해나 장비 고장 등의 환경적 요인에 의한 것과 인간에 의한 것으로 나눌 수 있다.  
-  ![](https://eliotjang.github.io/assets/images/network-security/2week-3.png)  
+  ![](https://eliotjang.github.io/assets/images/network-security/ch01-3.png)  
     - 일반적인 보안 위협  
       1. 내바에 의한 중요 기밀정보 유출 위협  
       2. 사회공학적 공격 위협  
@@ -101,9 +104,9 @@ last_modified_at: 2020-03-29T00:00:19+09:00
     3. 트로이 목마  
       - <font color="red">감춰진 코드를 갖고 있는 프로그램</font>으로 작동이 되면 원하지 않거나 해가 되는 기능을 수행한다.  
       - <font color="red">자기 복제 능력이 없다</font>  
-      ![](https://eliotjang.github.io/assets/images/network-security/2week-4.png)  
+      ![](https://eliotjang.github.io/assets/images/network-security/ch01-4.png)  
     4. 다양한 악성 프로그램  
-      ![](https://eliotjang.github.io/assets/images/network-security/2week-5.png)  
+      ![](https://eliotjang.github.io/assets/images/network-security/ch01-5.png)  
 2. 악성코드 침해사고 사례  
     1. 모리스 웜(Morris Worm)  
 	- 인터넷을 통해 전파된 <font color="red">최초의 웜</font>이다. 1988년 11월 2일, 미국 코넬 대학교 학생인 로버트 터팬 모리스(Robert Tappen Morris, JR)에 의해 제작되었다. 모리스의 원래 제작 의도는 인터넷의 크기를 측정하기 위한 것이라고 한다.  
@@ -142,7 +145,7 @@ last_modified_at: 2020-03-29T00:00:19+09:00
 1. DoS(Denial of Service) / DDoS(Distributed DoS) 공격 정의  
     - DoS 공격은 시스템을 악의적으로 공격해 해당 시스템의 자원을 부족하게 하여 원래 의도된 용도로 사용하지 못하게 하는 공격이다.  
     - 특정 서버에게 수많은 접속 시도를 만들어 <font color="red">다른 이용자가 정상적으로 서비스 이용을 하지 못하게 하는 공격</font>이다.  
-    ![](https://eliotjang.github.io/assets/images/network-security/2week-6.png)  
+    ![](https://eliotjang.github.io/assets/images/network-security/ch01-6.png)  
 2. DoS/DDoS 증상  
     ① 비정상적인 네트워크 성능 저하  
     ②  특정 웹사이트의 접근 불가  
@@ -167,20 +170,20 @@ last_modified_at: 2020-03-29T00:00:19+09:00
 1. 피싱의 정의  
     - 피싱은 이메일, 문자 메시지 등을 사용해서 신뢰할 수 있는 사람 또는 기업이 보낸 메시지인 것처럼 가장함으로써 비밀번호 및 신용카드 정보와 같이 기밀을 요하는 정보를 부정하게 얻으려는 <font color="red">사회공학기법</font>의 한 종류이다.  
     - 피싱이란 용어는 '낚시(fishing)'에서 유래하였으며 개인정보(private data)와 낚시(fishing)의 합성어이다.  
-    ![](https://eliotjang.github.io/assets/images/network-security/2week-7.png)  
+    ![](https://eliotjang.github.io/assets/images/network-security/ch01-7.png)  
 2. 피싱 종류  
-    ![](https://eliotjang.github.io/assets/images/network-security/2week-8.png)  
+    ![](https://eliotjang.github.io/assets/images/network-security/ch01-8.png)  
 3. 스미싱(Smishing) 개요  
     - 신뢰할 수 있는 사람 또는 기업이 보낸 것처럼 가장하여 개인비밀정보를 요구하거나 휴대폰 소액 결제를 유도  
-    ![](https://eliotjang.github.io/assets/images/network-security/2week-9.png)  
+    ![](https://eliotjang.github.io/assets/images/network-security/ch01-9.png)  
 
 ### 5. 스팸
 
 1. 스팸의 정의  
     - 스팸(Spam)은 전자 우편, 게시판, 문자 메시지, 전화, 인터넷 포털 사이트의 쪽지 기능 등을 통해 불특정 다수의 사람들에게 보내는 광고성 편지 또는 메시지를 말한다.  
-    ![](https://eliotjang.github.io/assets/images/network-security/2week-10.png)  
+    ![](https://eliotjang.github.io/assets/images/network-security/ch01-10.png)  
 2. 스팸 유형  
-    ![](https://eliotjang.github.io/assets/images/network-security/2week-11.png)  
+    ![](https://eliotjang.github.io/assets/images/network-security/ch01-11.png)  
 
 ## 【접근통제】  
 
@@ -223,7 +226,7 @@ last_modified_at: 2020-03-29T00:00:19+09:00
 
 1. 스마트폰 보안 위협
     - 현재까지 알려진 모바일 악성코드의 주요 특징은 통화 기록이나 전화번호, 사진, 금융정보 등의 개인정보를 탈취하는 것이 대부분이다.  
-      ![](https://eliotjang.github.io/assets/images/network-security/2week-12.png)  
+      ![](https://eliotjang.github.io/assets/images/network-security/ch01-12.png)  
 	- <font color="red">사용자/단말기 보안 이슈</font>
 	    - 스마트폰 단말기의 도난·분실로 인한 개인정보 또는 엄부 정보의 유출, 엄부용 서버에 불법 접속하여 업무정보 유출, 스마트폰 소유자가 악의적으로 업무 정보의 외부유출 가능성 존재  
 	- <font color="red">네트워크 보안 이슈</font>
@@ -261,7 +264,7 @@ last_modified_at: 2020-03-29T00:00:19+09:00
 
 2. 클라우드 서비스의 보안 위협  
     - 클라우드 서비스는 기존 IT 환경의 보안 위협과 클라우드 특성에 따른 가상화, 다중 임차(Multi-tenancy), 원격지에 정보 위탁·사업자 종속, 모바일 기기 접속, 데이터 국외 이전, 침해사고 대형화, 데이터센터 안전성 등 신규 공격 위협이 존재하게 된다.  
-    ![](https://eliotjang.github.io/assets/images/network-security/2week-13.png)  
+    ![](https://eliotjang.github.io/assets/images/network-security/ch01-13.png)  
 
 ### 3. 빅 데이터(big data) 보안  
 
@@ -294,11 +297,11 @@ last_modified_at: 2020-03-29T00:00:19+09:00
 
 3. 사물인터네 보안 위협  
     - 스마트 홈, 스마트 의료, 스마트 카 등 IoT 서비스가 일상생활로 확산되면서 <font color="red">기존 사이버세계의 위험이 현실세계로 전이·확대</font>되었다. 따라서 기존 PC, 모바일 기기 중심의 사이버 환경과 달리 IoT 환경은 보호대상, 주체, 방법 등에 있어 새로운 정보보호 패러다임으로 접근이 필요  
-      ![](https://eliotjang.github.io/assets/images/network-security/2week-14.png)  
+      ![](https://eliotjang.github.io/assets/images/network-security/ch01-14.png)  
 
 4. 사물인터넷(IoT, Internet of Things) 보안 위협  
     - 사물인터넷의 보안 위협 개념도  
-      ![](https://eliotjang.github.io/assets/images/network-security/2week-15.png)  
+      ![](https://eliotjang.github.io/assets/images/network-security/ch01-15.png)  
     
 5. 핀테크(Fintech) 보안  
     Financial + Technology → 신기술을 활용한 금융서비스 제공  
@@ -310,7 +313,7 @@ last_modified_at: 2020-03-29T00:00:19+09:00
     
 6. OWASP Top 10 RISK  
     - OWASP(Open Web Application Security Project)에서는 매년 각 분야별 프로젝트에서 가장 심각한 보안 위험 10가지에 대해 발표  
-      ![](https://eliotjang.github.io/assets/images/network-security/2week-16.png)  
+      ![](https://eliotjang.github.io/assets/images/network-security/ch01-16.png)  
 
 
 

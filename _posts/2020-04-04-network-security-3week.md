@@ -250,7 +250,7 @@ last_modified_at: 2020-04-04T17:00:00+09:00
     1. 특징
 	- 해시 함수는 임의의 길이를 갖는 메시지를 입력 받아 고정된 길이의 출력값으로 압축시키는 함수이다. 암호 알고리즘에는 키가 사용되지만, 해시 함수는 키를 사용하지 않으므로 같은 입력에 대해서는 항상 같은 출력이 나오게 된다.
 	- 이러한 함수를 사용하는 목적은 입력 메시지에 대한 변경할 수 없는 증거 값을 뽑아냄으로써 메시지의 오류나 변조를 탐지할 수 있는 무결성을 제공하는 목적으로 주로 사용된다.  
-	![](https://eliotjang.github.io/assets/images/network-security/ch02-17.png){: width="409" height="97}  
+	![](https://eliotjang.github.io/assets/images/network-security/ch02-17.png){: width="409" height="97"}  
     2. 일방향 해시 함수의 성질  
     ①일방향성: 해시 값을 이용해 원래의 입력 값을 추정하는 것은 계산상으로 불가능해야 함  
     ②임의의 길이 메시지로부터 고정 길이의 해시 값을 계산한다  
@@ -307,15 +307,49 @@ last_modified_at: 2020-04-04T17:00:00+09:00
 	- 난수는 암호학적으로 대칭키 암호 알고리즘의 비밀키, 스트림 암호 알고리즘의 초기화 벡터, 공개키 암호 알고리즘 RSA의 큰 소수 등을 생성할 때 사용되는 것으로 난수를 생성하는 과정의 안전성에 결함이 있다면 이는 암호 알고리즘 자체의 안전성에 영향을 미치게 된다.  
 
     
-
-
 ## 2.5 메시지 인증  
 
+1. **메시지 인증 코드(Message Authentication Code) 특성**
+    - 메시지 인증이란 '메시지가 올바른 송신자로부터 온 것이다' 라는 성질을 가리키는 것으로 메시지 인증 코드를 사용하면 변경과 거짓 행세를 찾아낼 수 있다.
+    - 메시지 인증 코드란 무결성을 확인하고 메시지에 대한 인증을 하는 기술이다.
+    - MAC은 임의 길이의 메시지와 송신자와 수신자가 키라는 2개의 입력을 기초로 해서 고정 비트 길이의 출력(MAC 값)을 계산하는 함수이다.  
+2. **MAC의 구현**
+    - 일방향 해시 함수를 이용하여 메시지 인증 코드를 구현할 수 있다. 그 중 하나로 HMAC이 있다.
+    - HMAC은 일방향 해시 함수로 메시지 인증 코드를 구성하는 방법이다  
+    <span style="color:green">(RFC2104). HMAC의 H는 Hash를 의미한다</span>
+    - HMAC에서는 사용하는 일방향 해시 함수를 단 한 종류로 한정하는 것은 아니다
+    - 강한 일방향 해시 함수라면 뭐든지 HMAC에 이용할 수 있다  
+    ![](https://eliotjang.github.io/assets/images/network-security/ch02-18.png){: width="455" height="347"}  
 
-
+3. **MAC으로 해결할 수 없는 문제**
+    - 제 3자에 대한 증명
+    - 부인 방지  
 
 
 ## 2.6 PKI 및 전자서명(Digital signature)  
+
+1. **전자서명 배경**
+    1. 전자서명 특성
+	- 전자서명(digital signature)은 종래의 인감도장 혹은 서명(sign)처럼 개인의 고유성을 주장하고 인정받기 위해 전자적 문서에 서명하는 방법이다.
+	- 또한 수신자가 받은 내용이 위조 또는 삭제되지 않았는지와 상대방의 신분 확인 등을 하는 방법이다.  
+	- <font color="black">전자서명은 다음과 같은 특성(조건)을 만족하여야 한다</font>  
+	①위조 불가(unforgeable): 서명은 서명자 이외의 다른 사람이 생성할 수 없어야 한다.  
+	②서명자 인증(authentic): 서명은 서명자의 의도에 따라 서명된 것임을 확인할 수 있어야 한다.  
+	③부인 방지(non-repudiation): 서명자가 자신이 서명한 사실을 부인할 수 없어야 한다.  
+	④변경 불가(unalterable): 서명한 문서의 내용을 변경할 수 없어야 한다.  
+	⑤재사용 불가(not reusable): 하나의 문서의 서명을 다른 문서의 서명으로 사용할 수 없어야 한다.
+    2. 전자서명 방법  
+    ![](https://eliotjang.github.io/assets/images/network-security/ch02-19.png){: width="632" height="278"}  
+    - 메시지에 직접 서명하는 방법  
+    ![](https://eliotjang.github.io/assets/images/network-security/ch02-20.png){: width="393" height="318"}  
+    - 메시지의 해시 값에 서명하는 방법  
+    ![](https://eliotjang.github.io/assets/images/network-security/ch02-21.png){: width="420" height="332"}  
+    3. 전자서명 알고리즘
+	1. RSA 전자서명
+	2. ElGamal 전자서명
+	3. DSS(Digital Signature Standard) 전자서명
+	    - DSS(Digital Signature Standard)는 1991년, NIST에서 제안한 전자서명 표준안으로 핵심 알고리즘으로 DSA(Digital Signature Algorithm)을 사용한다.
+	4. Schnorr 전자서
 
 
 

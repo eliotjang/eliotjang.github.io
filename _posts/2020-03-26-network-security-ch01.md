@@ -1,5 +1,5 @@
 ---
-title: "[네트워크보안] Chpater 01. 정보보호 일반 이론"
+title: "[네트워크보안] Chapter 01. 정보보호 일반 이론"
 excerpt: "장상수 저, 정보보호총론, 생능출판, 2015"
 
 categories:

@@ -14,15 +14,15 @@ last_modified_at: 2020-04-04T17:00:00+09:00
 1. **암호의 역사**
     1. 고대 암호
 	- BC 400~500년경 고대 그리스의 군사들은 스키테일(scytale) 암호라고 불리는 전치암호(Transposition Cipher, 문자의 위치를 서로 바꾸는 암호)를 사용한 기록이 있다.  
-	![](https://eliotjang.github.io/assets/images/network-security/ch02-1.png){: width="168" hegith="99"}  
+	![](https://eliotjang.github.io/assets/images/network-security/ch02-1.png){: width="168" heigth="99"}  
 	- BC 50년경 시저 암호 (치환암호 - substitution cipher)  
 	![](https://eliotjang.github.io/assets/images/network-security/ch02-2.png){: width="470" hegith="138"}  
     2. 근대 암호
 	- 근대 암호의 이론적 기초가 된 논문은 1920년 프리드먼(Freidman)이 발표한 『일치 반복률과 암호 응용』과 1949년 섀넌(Shannon)이 발표한 『비밀 시스템의 통신이론』을 들 수 있다.
 	- 2차대전 중 Enigma 암호  
-	![](https://eliotjang.github.io/assets/images/network-security/ch02-3.png){: width="180" hegith="217"}
+	![](https://eliotjang.github.io/assets/images/network-security/ch02-3.png){: width="180" heigth="217"}
 	- 코드북 암호  
-	![](https://eliotjang.github.io/assets/images/network-security/ch02-4.png){: width="417" hegith="154"}  
+	![](https://eliotjang.github.io/assets/images/network-security/ch02-4.png){: width="417" heigth="154"}  
     3. 현대 암호
 	- 1976년 스탠퍼드 대학의 디피(Diffie)와 헬만(Hellman)은 『암호의 새로운 방향』(Directions in Cryptography)이라는 논문에서 처음으로 공개키 암호의 개념을 발표
 	- 이어 1978년 메사추세스 공과대학(MIT)의 리베스트(Rivest), 샤미르(Shamir), 아델먼(Adelman)이 소인수 분해 문제에 기반을 둔 RSA 공개키 암호를 개발
@@ -39,13 +39,13 @@ last_modified_at: 2020-04-04T17:00:00+09:00
 	① 암호화키에 의하여 암호화 및 복호화가 효과적으로 이루어져야 한다.  
 	② 암호 시스템은 사용이 용이하여야 한다.  
 	③ 암호화 알고리즘 자체보다는 암호 키에 의한 보안이 이루어져야 한다.  
-	![](https://eliotjang.github.io/assets/images/network-security/ch02-5.png){: width="454" hegith="127"}  
+	![](https://eliotjang.github.io/assets/images/network-security/ch02-5.png){: width="454" heigth="127"}  
     3. 암호 기술의 미래 양자 암호(Quantum Cryptography)
 	- 양자 암호는 안전한 통신을 위한 암호체계이다. 1984년 베넷(C. H. Benett)과 브라사드(G. Brassard)가 제안하였으며 기존에 있던 대부분의 암호체계가 수학적 복잡성에 기반을 두는데 비해, 양자 암호는 양자역학적 성질을 이용하여 암호에 사용되는 원 타임 패드를 생성하는 이상적인 방법 중 하나이다.	
 	- 양자 암호통신의 구성
 	    1. 양자채널을 이용하여 안전하게 키를 분배하고
 	    2. 일반 통신망을 통해 키를 이용하여 안전한 암호통신을 수행한다.  
-	    ![](https://eliotjang.github.io/assets/images/network-security/ch02-6.png){: width="338" hegith="190"}  
+	    ![](https://eliotjang.github.io/assets/images/network-security/ch02-6.png){: width="338" heigth="190"}  
 
 3. **암호 알고리즘**
     - 암호화와 복호화 알고리즘
@@ -121,12 +121,12 @@ last_modified_at: 2020-04-04T17:00:00+09:00
     1. 개념
 	- 암호문을 만들기 위해 평문을 일정한 단위로 나누어서 각 단위마다 암호화 과정을 수행하여 블록단위로 암호문을 얻는 대칭 암호화 방식이다.
 	- 각 블록의 연산에는 동일한 키가 이용된다.  
-	![](https://eliotjang.github.io/assets/images/network-security/ch02-7.png){: width="428" hegith="216"}  
+	![](https://eliotjang.github.io/assets/images/network-security/ch02-7.png){: width="428" heigth="216"}  
     2. 블록 암호 알고리즘 구조
 	- 블록 암호의 이론적 토대는 전치와 치환을 반복함으로써 평문과 암호문으로부터 키에 대한 정보를 이끌어 내기 어렵게 하는 것  
 	    1. 페이스텔 구조
 		- 3라운드 이상이며, 짝수 라운드로 구성된다. 이러한 구조는 라운드 함수와 관계없이 역변환이 가능하며(즉, 암·복호화 과정이 같은), 두 번의 수행으로 블록간의 완전한 확산이 이루어지며 알고리즘의 수행속도가 빠르고, 하드웨어 및 소프트웨어 구현이 용이하고, 아직 구조상에 문제점이 발견되고 있지 않다는 장점을 지니고 있다. 대표적 암호로 DES가 있다.  
-		![](https://eliotjang.github.io/assets/images/network-security/ch02-8.png){: width="275" hegith="348"}  
+		![](https://eliotjang.github.io/assets/images/network-security/ch02-8.png){: width="275" heigth="348"}  
 	    2. SPN (Substitution Permutation Network) 구조
 		- 치환과 순열을 반복적으로 사용하는 구조
 		- 암호화 함수와 복호화 함수가 다름
@@ -146,7 +146,7 @@ last_modified_at: 2020-04-04T17:00:00+09:00
 		**➋트리플 데이터 암호 표준(Triple DES)**  
 		     › DES에 대한 전수공격으로 인해 더 이상 안전하지 않다는 것이 증명되어 DES를 보완하기 위해 고안된 알고리즘이 Triple DES이다.  
 		     › Triple DES는 3개의 키 값을 사용하고 DES 16라운드의 3배에 해당하는 48라운드를 수행하여 암호화 강도를 높였다.  
-		    ![](https://eliotjang.github.io/assets/images/network-security/ch02-9.png){: width="413" hegith="153"}  
+		    ![](https://eliotjang.github.io/assets/images/network-security/ch02-9.png){: width="413" heigth="153"}  
 		**➌고급 암호화 표준(AES, Advanced Encryption Standard)**  
 		    › AES는 미국 표준 블록 암호였던 DES의 안전성에 문제가 제기됨에 따라 2000년 새로운 미국 표준 블록 암호로 채택된 128-비트 블록 암호이다.  
 		    › AES의 암호화 과정은 DES와 달리 SPN 구조 채택  
@@ -174,19 +174,19 @@ last_modified_at: 2020-04-04T17:00:00+09:00
 		- 긴 평문을 암호화하기 위해서는 블록 암호 알고리즘을 반복해서 사용하여 긴 평문 전부를 암호화할 필요가 있다. 이처럼 반복하는 방법을 블록 암호의 모드(mode)라고 함  
 		①ECB 모드: Electronic CodeBook mode  
 		- 간단, 고속, 병렬처리가 가능하나 암호문 블록의 삭제나 교체에 의한 평문의 조작이 가능하고 재전송 공격이 가능하여 사용을 하지 않는다.  
-		![](https://eliotjang.github.io/assets/images/network-security/ch02-10.png){: width="582" hegith="254"}  
+		![](https://eliotjang.github.io/assets/images/network-security/ch02-10.png){: width="582" heigth="254"}  
 		②CBC 모드: Cipher Block Chaining mode(암호 블록연쇄 모드)  
 		- 평문의 반복은 암호문에 반영되지 않고 임의의 암호문 블록을 복호화 할 수 있으나, 비트 단위의 에러가 있는 암호문을 복호화하면 1블록 전체와 다음 블록의 대응하는 비트가 에러가 되는 단점이 있다. SSL/TLC 등 보안프로토콜에 많이 사용된다.  
-		  ![](https://eliotjang.github.io/assets/images/network-security/ch02-11.png){: width="625" hegith="283"}  
+		  ![](https://eliotjang.github.io/assets/images/network-security/ch02-11.png){: width="625" heigth="283"}  
 		③CFB 모드: Cipher-FeedBack mode(암호 피드백 모드)  
 		- 패딩이 필요없고 복호화는 병렬 처리가 가능. 재전송 공격이 가능하다. 현재는 사용을 하지 않는다.  
-		![](https://eliotjang.github.io/assets/images/network-security/ch02-12.png){: width="415" hegith="325"}  
+		![](https://eliotjang.github.io/assets/images/network-security/ch02-12.png){: width="415" heigth="325"}  
 		④OFB 모드: Output-Feed Back mode(출력 피드백 모드)  
 		- 패딩이 필요없고 암호화/복호화의 사전 준비를 할 수 있으나, 병렬처리가 불가하고 적극적 공격자가 암호문 블록을 비트 반전시키면 대응하는 평문 블록이 비트 반전된다. CTR 모드를 사용하는 편이 낫다.  
-		![](https://eliotjang.github.io/assets/images/network-security/ch02-13.png){: width="637" hegith="319"}  
+		![](https://eliotjang.github.io/assets/images/network-security/ch02-13.png){: width="637" heigth="319"}  
 		⑤CTR 모드: CounTeR mode(카운터 모드)  
 		- 패딩이 필요없고 암호화/복호화의 사전준비를 할 수 있으며 병렬처리가 가능하나, 적극적 공격자가 암호 블록을 비트 반전시키면 대응하는 평문 블록이 비트 반전된다.  
-		![](https://eliotjang.github.io/assets/images/network-security/ch02-14.png){: width="622" hegith="298"}  
+		![](https://eliotjang.github.io/assets/images/network-security/ch02-14.png){: width="622" heigth="298"}  
 	    6. 블록 암호 공격 기법  
 
 	    |공격 기법|개념|
@@ -197,31 +197,32 @@ last_modified_at: 2020-04-04T17:00:00+09:00
 	    |통계적 분석<br/>(Statistical analysis)|암호문에 대한 평문의 각 단어의 빈도에 관한 자료를 포함하는 지금까지 알려진 모든 통계적인 자료를 이용하여 해독하는 방법이다.|
 	    |수학적 분석<br/>(Mathematical analysis)|통계적인 방법을 포함하며 수학적 이론을 이용하여 해독하는 방법이다.|  
 
-
-**3. 스트림 암호(Stream Cipher) 알고리즘**  
+3. **스트림 암호(Stream Cipher) 알고리즘**  
     - 스트림 암호는 블록 단위로 암·복호화되는 블록 암호와는 달리 이진화된 평문 스트림과 이진 키스트림 수열의 XOR 연산으로 암호문을 생성하는 방식  
     - GSM의 통신 암호화에 사용됨 (A5/1)  
-    - 대표적 스트림 - RC4  
-    ![](https://eliotjang.github.io/assets/images/network-security/ch02-15.png){: width="528" hegith="197"}  
+    - 대표적 스트림: RC4  
+    ![](https://eliotjang.github.io/assets/images/network-security/ch02-15.png){: width="528" heigth="197"}  
 
 
 ## 2.3 공개키 암호 시스템(Public-key cryptosystem)  
 
-**대칭 암호**  
-    「암호화 키」와「복호화 키」 동일  
+1. **대칭/공개키 암호**
+    1. 대칭 암호
+	- 「암호화 키」와「복호화 키」 동일
+    2. 공개 키 암호
+	- 「암호화 키」와「복호화 키」 다르다  
+	- 「암호화 키」를 가지고 있는 사람이라면 누구든지 암호화 할 수 있음
+	- 하지만 「암호화 키」를 가지고 있어도 복호화할 수는 없다
+	- 복호화할 수 있는 것은 「복호화 키」를 가지고 있는 사람 뿐임 
+	- 암호화 키 → 공개키, 복호화 키 → 개인키
+	- 대칭 암호에 비해 처리 속도가 매우 느림
+	- 응용: 디지털 서명, 키 교환 등  
+	![](https://eliotjang.github.io/assets/images/network-security/ch02-16.png){: width="413" heigth="316"}  
 
-**공개 키 암호**  
-    「암호화 키」와「복호화 키」 다르다  
-    「암호화 키」를 가지고 있는 사람이라면 누구든지 암호화 할 수 있음  
-    하지만 「암호화 키」를 가지고 있어도 복호화할 수는 없다  
-    복호화할 수 있는 것은 「복호화 키」를 가지고 있는 사람 뿐임  
-    암호화 키 → 공개키, 복호화 키 → 개인키  
-    대칭 암호에 비해 처리 속도가 매우 느림  
-    응용: 디지털 서명, 키 교환 등  
-
-![](https://eliotjang.github.io/assets/images/network-security/ch02-16.png){: width="413" hegith="316"}  
-
-
+2. **공개키 암호 알고리즘 종류**
+    1. RSA(Rivest, Shamir, Adleman)
+	- RSA는 1978년 라이베스트(Rivest), 샤미르(Shamir) 그리고 애들먼(Adleman)에 의해 설계된 암호로서 디피(Diffie)와 헬만(Hellman)이 제안한 공개키 암호시스템에 대한 개념이 반영된 것으로, 소인수 분해의 어려움에 그 기반을 둔 공개키 암호이다.
+    가. RSA에 의한 암호
 
 ## 2.4 해시 함수(Hash Function)  
 

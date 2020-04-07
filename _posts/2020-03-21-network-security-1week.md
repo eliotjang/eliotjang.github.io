@@ -1,5 +1,5 @@
 ---
-title: "[네트워크보안] 1 week, TCP_IP Protocol"
+title: "[네트워크보안] Chapter 00. TCP_IP Protocol"
 excerpt: "장상수 저, 정보보호총론, 생능출판, 2015"
 
 categories:

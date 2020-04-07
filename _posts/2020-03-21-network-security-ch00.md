@@ -14,13 +14,13 @@ tags:
 last_modified_at: 2020-03-21T17:00:00+09:00
 ---  
 
-## TCP/IP 참조 모델  
+## 【TCP/IP 참조 모델】  
 
 ![](https://eliotjang.github.io/assets/images/network-security/ch00-1.png){: width="60%" height="80%"}  
 
 네트워크 시스템은 복잡하기 때문에 복잡한 시스템의 구조를 명확히 파악하는데 용이하고 시스템을 유지보수하거나 개선하는데 용이하도록 계층화된 모듈로 구성되어 있다.  
 
-**OSI 참조모델** : 7개의 계층으로 구성  
+### OSI 참조모델 : 7개의 계층으로 구성  
   - <span style="color:black">물리 계층</span>
     - 컴퓨터나 라우터같은 네트워크 장치를 물리 매체에 연결하기 위한 전기/기계적인 인터페이스를 구성하고 있다.
       + 물리 매체(전송 매체)는 유선 매체와 무선 매체로 구분할 수 있다.
@@ -48,7 +48,7 @@ last_modified_at: 2020-03-21T17:00:00+09:00
     - 자원 공유, 전자 메일 등과 같은 프로토콜이 응용 계층에 포함된다.
 
 
-**TCP/IP 참조모델** : 5개의 계층으로 구성
+### TCP/IP 참조모델 : 5개의 계층으로 구성
   - Host-to-network 계층은 OSI 참조 모델의 물리 계층과 데이터 링크 계층에 해당된다.  
   - <span style="color:black">데이터 링크 계층</span>
     - 링크 : 통신 경로상의 인접한 두 노드들을 연결하는 통신 채널
@@ -73,12 +73,12 @@ last_modified_at: 2020-03-21T17:00:00+09:00
       - 응용 계층이 데이터를 송수신할 수 있는 인터페이스 제공
       - TCP, UDP, SCTP
 	- SCTP는 최근에 나온 것으로 아직 잘 사용하진 않는다.
-  - TCP (Transmission Control Protocol)
+  - <span style="color:black">TCP (Transmission Control Protocol)</span>
     - 신뢰성 있고 순서를 보장하는 데이터 전달 기능 제공
     - 흐름 제어 (flow control)
     - 혼잡 제어 (congestion control)
     - 데이터 전송 전 연결 설정 수행(연결지향적)
-  - UDP (User Datagram Protocol)
+  - <span style="color:black">UDP (User Datagram Protocol)</span>
     - 비신뢰적이고 데이터 전송 순서를 보장하지 않음 
     - 흐름 제어나 혼잡 제어가 없음
     - 사전 연결 설정과정이 없음(비연결지향적)
@@ -93,7 +93,8 @@ last_modified_at: 2020-03-21T17:00:00+09:00
 
 ### 주소 개념
 
-**물리 주소**
+
+<font color="black">물리 주소</font>
   - 같은 네트워크에 연결된 노드를 식별하기위한 하드웨어 주소
   - 데이터링크 계층의 주소로서 인접한 노드를 식별
   - MAC 주소: 48-bit format  
@@ -101,13 +102,13 @@ last_modified_at: 2020-03-21T17:00:00+09:00
     > 6-byte (12개의 16진수) 물리주소  
 
 
-**네트워크 주소**
+<font color="black">네트워크 주소</font>
   - 하부의 물리적인 네트워크와 독립적으로 통신하기 위하여 사용되는 주소
   - 네트워크 계층의 주소로서 소스 및 목적지 호스트를 식별
   - IP 주소 : 32-bit format
 
 
-**포트 주소**
+<font color="black">포트 주소</font>
   - 전송 계층의 주소로서 통신하는 응용프로세스를 식별
   - TCP/UDP port 번호 : 16-bit format
 
@@ -135,7 +136,7 @@ last_modified_at: 2020-03-21T17:00:00+09:00
 ## 【인터넷 프로토콜(IP)】  
 
 ### IP 주소의 일반 형식  
-![](https://eliotjang.github.io/assets/images/network-security/ch00-7.png){: width="30%" height="10%"}  
+![](https://eliotjang.github.io/assets/images/network-security/ch00-7.png){: width="50%" height="30%"}  
 
   - 라우터의 개입 없이 상호 데이터 전달이 가능한 영역(e.g. LAN)
   - 같은 네트워크 주소를 갖는 인터페이스들의 집합
@@ -170,7 +171,7 @@ last_modified_at: 2020-03-21T17:00:00+09:00
     - 응용 프로세스로의 데이터 전달 순서가 보장되지 않음  
   - No flow control  
   - No congestion control  
-  -지원 가능 통신 방식
+  - 지원 가능 통신 방식
     - 1-to-1
     - 1-to-many
     - many-to-1

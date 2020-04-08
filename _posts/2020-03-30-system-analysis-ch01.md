@@ -2,6 +2,11 @@
 title: "[시스템분석및설계] Chapter 1. 이터레이터(Iterator) 패턴" 
 excerpt: "Hiroshi Yuki, Java 언어로 배우는 디자인 패턴 입문"  
 
+toc: true
+toc_sticky: true
+toc_label: "Ch1. 이터레이터(Iterator) 패턴"
+header:
+  teaser: /assets/images/system-analysis/system-analysis-logo.jpeg
 categories: 
   - system analysis
 tags:
@@ -11,7 +16,7 @@ last_modified_at: 2020-03-30T19:00:00+09:00
 
 ## 01. Iterator 패턴  
 
-**for 문의 변수 i의 역할**  
+### for 문의 변수 i의 역할  
 
 ```java
 for (int i = 0; i < arr.length; i++) {
@@ -20,17 +25,17 @@ for (int i = 0; i < arr.length; i++) {
 ```  
   - 변수 i: 여러 원소가 모여있는 배열의 각 원소를 차례대로 선택하는 사용된다.  
 
-**Iterator 패턴**
+### Iterator 패턴
   - 변수 i의 기능을 추상화해서 일반화 시켰음
   - 무엇인가 많이 모여있는 것 중에서 하나씩 끄집어내서 열거하면서 전체를 처리하는 일을 할 때 이 패턴을 적용한다.  
 
 ## 02. 예제 프로그램  
 
-**책꽂이(BookShelf)에 책(Book)을 넣은 후, 순서대로 다시 끄집어 내서 책 이름을 표시하는 프로그램**  
+### 책꽂이(BookShelf)에 책(Book)을 넣은 후, 순서대로 다시 끄집어 내서 책 이름을 표시하는 프로그램  
 
 ![](https://eliotjang.github.io/assets/images/system-analysis/ch01-1.png){: width="70%" height="50%"}  
 
-**각 클래스와 인터페이스 설명**  
+### 각 클래스와 인터페이스 설명  
 
 |이름|해설|
 |----|----|
@@ -221,19 +226,19 @@ public class Main {
 
 ## 03. Iterator 패턴에 등장하는 역할  
 
-**Iterator(반복자)의 역할**  
+### Iterator(반복자)의 역할  
   - 원소를 하나씩 끄집어낼 때 사용할 공통된 메소드를 선언한 인터페이스
   - hasNext()와 next() 메소드 선언  
 
-**ConcreteIterator(구체적인 반복자)의 역할**  
+### ConcreteIterator(구체적인 반복자)의 역할  
   - Iterator 인터페이스를 실제로 구현하는 클래스
   - BookShelfIterator가 이 역할을 담당하였다.  
 
-**Aggregate(집합체)의 역할**  
+### Aggregate(집합체)의 역할  
   - Iterator를 만들어내는 인터페이스를 제공함.
   - iterator(): 내가 가지고 있는 각 원소들을 차례로 검색해 줄 사람을 만들어내는 메소드  
 
-**ConcreteAggregate(구체적인 집합체)의 역할**  
+### ConcreteAggregate(구체적인 집합체)의 역할  
   - Aggregate 인터페이스를 구현하는 클래스
   - ConcreteIterator(구체적인 반복자) 객체를 생성한다.
   - BookShelf가 이 일을 담당하였다.
@@ -243,7 +248,7 @@ public class Main {
 
 ## 04. 독자의 사고를 넓혀주는 힌트  
 
-**왜 Iterator 패턴이 유용한가?**  
+### 왜 Iterator 패턴이 유용한가?  
   - 집합체가 원소를 어떻게 구현하고 있든지 상관없이, 집합체의 원소를 차례로 끄집어내고자 하면, Iterator의 hasNext()와 next() 메소드를 사용하면 된다.
       - <font color="blue">while루프는 BookShelf 구현과 무관</font>
   - 예: BookShelf가 Book을 배열에 저장하지 않고, vector에 저장하도록 수정하더라도, Main 클래스의 main() 메소드의 다음 부분을 변경하지 않아도 된다.

@@ -2,6 +2,11 @@
 title: "[시스템분석및설계] Chapter 0. UML 과 Design Pattern"  
 excerpt: "Hiroshi Yuki, Java 언어로 배우는 디자인 패턴 입문"  
 
+toc: true
+toc_sticky: true
+toc_label: "Ch0. UML과 Design Pattern"
+header:
+  teaser: /assets/images/system-analysis/system-analysis-logo.jpeg
 categories: 
   - system analysis
 tags:
@@ -10,14 +15,14 @@ last_modified_at: 2020-03-17T19:00:00+09:00
 ---  
 
 ## 01. UML에 대해서
-**UML(Unified Modeling Language)**  
+### UML(Unified Modeling Language)  
   - 시스템을 시각화하거나 사양이나 설계를 문서화 하기 위한 표현 방법
   - 본 교재에서는, 클래스나 인터페이스의 관계를 표현하기 위해 사용
   - Resource  
     <https://www.omg.org/uml>  
     <https://www.rational.com/uml>  
 
-**클래스 다이어그램**  
+### 클래스 다이어그램  
   - 클래스나 인스턴스(객체), 인터페이스 등 간의 정적인 관계를 표현한 그림  
 
 ![](https://eliotjang.github.io/assets/images/system-analysis/ch00-1.png){: align-center}  
@@ -40,33 +45,33 @@ last_modified_at: 2020-03-17T19:00:00+09:00
     - 객체가 아니라 클래스에 포함된 메소드(정적 메소드나 정적 필드만을 접근할 수 있다) 
     - 밑줄을 그어 이름을 표현한다.  
 
-**인터페이스와 구현**
+### 인터페이스와 구현
   - 인터페이스란, 구현 부분이 생략되어 있는 메소드들의 이름만 선언되어 있다.
   - 설명 : PrintClass 클래스가 Printable 인터페이스를 구현한다.  
 
 ![](https://eliotjang.github.io/assets/images/system-analysis/ch00-2.png){: align-center}  
 
-**집합(Aggregation)**  
+### 집합(Aggregation)  
   - '갖고 있는 관계'는 aggregation으로 표현한다.  
   - 설명:  
     - Basket 클래스는 Fruit 클래스의 인스턴스를 가지고 있다. 즉, Basket 클래스에는, Fruit 클래스로 선언된 필드(변수)가 있다.  
     - Fruit 클래스도 Color 클래스의 인스턴스를 가진다.  
 ![](https://eliotjang.github.io/assets/images/system-analysis/ch00-3.png){: align-center}  
 
-**액세스 제어**
+### 액세스 제어
   - public 메소드나 필드 : +
   - private 메소드나 필드 : -
   - protected 메소드나 필드 : #  
 
 ![](https://eliotjang.github.io/assets/images/system-analysis/ch00-4.png){: align-center}  
 
-**클래스간의 관게**
+### 클래스간의 관게
   - 클래스간의 관계를 나타내기 위해서 클래스를 연결하고, 그 위에 관계를 나타내는 이름을 붙인다.  
   - 삼각형 방향으로 해석한다.  
 
 ![](https://eliotjang.github.io/assets/images/system-analysis/ch00-5.png){: align-center}  
 
-**시퀀스(sequence) 다이어그램**  
+### 시퀀스(sequence) 다이어그램  
 
 ![](https://eliotjang.github.io/assets/images/system-analysis/ch00-6.png){: align-center}  
   - 프로그램이 동작할 때, 객체들 사이의 메소드들이 어떤 순서로 실행되는지를 보여준다.  

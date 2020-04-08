@@ -2,6 +2,11 @@
 title: "[시스템분석및설계] Chapter 2. 어댑터(Adapter) 패턴" 
 excerpt: "Hiroshi Yuki, Java 언어로 배우는 디자인 패턴 입문"  
 
+toc: true
+toc_sticky: true
+toc_label: "Ch2. 어댑터(Adapter) 패턴"
+header:
+  teaser: /assets/images/system-analysis/system-analysis-logo.jpeg
 categories: 
   - system analysis
 tags:

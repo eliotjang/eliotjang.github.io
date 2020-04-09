@@ -133,13 +133,126 @@ last_modified_at: 2020-04-07T16:00:00+09:00
 
 ## 3.3 클라이언트 보안  
 
+![](https://eliotjang.github.io/assets/images/network-security/ch03-4.png){: width="70%" height="50%"}
 
+### 1. Windows 보안
+1. NFTS(NT File System)
+	- NTFS 파일 시스템은 Windows NT Server의 전용 파일 시스템
+	
+	1. NTFS 퍼미션(permission)
+		- NTFS 볼륨에는 각 파일이나 폴더마다 ACL(Accesss Control List)가 있어 접근을 통제
+		- 파일이나 폴더에 사용자 계정이나 사용자 그룹별로 액세스릁 통제하고 이를 관리할 수 있는 퍼미션을 줄 수 있다.
+	2. 중첩 퍼미션  
+	①퍼미션은 누적된다.  
+	개별 사용자가 여러 그룹에 속할 경우에 어느 자원에 대해 각기 다른 퍼미션을 그룹마다 주었을 경우에는 그 그룹에 속해 있는 개별 사용자에게는 누적되어 부여된다.  
+	②파일 퍼미션은 폴더 퍼미션에 우선한다.  
+	③Deny 퍼미션은 다른 퍼미션에 우선한다.  
+
+2. 공유 폴더 보안
+	- 윈도우 NT 이상에서는 "관리목적을 위한 기본공유" 라는 것이 기본적으로 존재한다. 명령 프롬프트에서 net share를 실행하면 기본적으로 ADMIN$, IPC$, C$ 등이 공유되어 있음을 확인할 수 있다.
+	- 공유 해제 방법1: 명령어 이용, 재부팅 후 다시 공유됨  
+	`C:\>net share c$ \delete`  
+	- 공유 해제 방법2: 레지스트리 수정. 재부팅하더라도 공유 해제 유지됨  
+	`\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters`  
+	디렉토리에 DWORD 값을 추가하고 값을 0으로 설정
+	- 폴더를 공유할 경우에는 공유되는 폴더의 등록정보에서 [공유]-[사용권한]에서 사용자 및 읽기, 변경, 모든 권한을 선택하여 설정
+
+
+### 2. 클라이언트 보안 위협
+1. 키보드 입력 정보의 노출
+	- 키로거 프로그램(Key Logger Program) 등을 이용하여 [그림3-14]와 같이 키보드로 입력되는 내용을 가로채 다른 컴퓨터에 개인의 ID와 비밀번호뿐만 아니라 계좌번호, 신용카드 번호 등을 유출하게 된다.  
+	![](https://eliotjang.github.io/assets/images/network-security/ch03-5.png){: width="70%" height="650%"}
+
+2. 웸·바이러스의 감염  
+![](https://eliotjang.github.io/assets/images/network-security/ch03-6.png){: width="70%" height="50%"}
+
+3. 스파이웨어의 감염
+	- 스파이웨어는 사용자의 동의 없이 PC에 불법 설치되는 악성 프로그램으로 ID/Password 등의 사용자 로그인 정보, 사용자의 방문 웹 사이트 정보 또는 키보드 입력정보 등 중요정보를 수집하여 제3자에게 또는 공격자에게 전송하는 기능을 수행
+
+4. 단순 ID/Password의 사용
+	- ID 및 패스워드 인증 수단의 안정성 및 보안성은 패스워드에 의해 좌우되기 때문에 공격자가 패스워드를 알고 있으면 이용자 PC에 접속하여 PC에 저장된 국가정보 및 행정문서, 개인정보 등 중요 문서를 탈취할 수 있다. 또한, 이용자가 가입된 사이트에서 서비스 도용, 악성코드 전파 등의 정보시스템에서 발생 가능한 모든 침해 공격을 수행
 
 ## 3.4 서버 보안  
 
+### 1. 인증과 접근 통제
+1. 계정과 패스워드 보호
+	- 멀티유저(Multi-User) 시스템인 리눅스나 유닉스는 각각의 사용자만이 접근 가능한 파일, 디렉토리들이 있다. 일련의 규정들을 적용시킬 수 있는 것이 퍼미션이고 이런 퍼미션에 의해 사용자들은 자신의 영역을 갖게 된다.
+
+	1. /etc/passwd
+		- passwd 파일은 계정에 대한 정보를 가지고 있다. 사용자들의 고유성을 나타내는 uid부터 어느 그룹에 속해있는지 등 정보가 들어있다.  
+		![](https://eliotjang.github.io/assets/images/network-security/ch03-7.png){: width="80%" height="60%"}
+	
+	2. /etc/shadow
+		- 사용자 계정에 대한 암호화된 패스워드 및 관련 정보를 포함하는 파일로 루트 사용자만 접근할 수 있다.  
+		![](https://eliotjang.github.io/assets/images/network-security/ch03-8.png){: width="70%" height="50%"}
+	
+	3. 사용자 계정 생성
+		- 사용자 계정 생성은 간단하게 다음과 같이 생성할 수 있다.  
+		`
+		# useradd <username>  
+		# passwd <username>
+		`
+
+2. 로그 관리
+	1. 로그 파일의 종류 및 특성
+
+3. 리눅스 시스템 커널 보안 설정 방법
 
 
 ## 3.5 시스템 공격 유형  
+
+### 1. 버퍼 오버플로우(BOF, Buffer overflow) 공격
+- 버퍼 오버플로우
+- 쉘코드(Shellcode)
+- 버퍼 오버플로우 취약점을 악용한 공격 과정
+
+1. 버퍼 오버플로우 공격에 대한 대응책
+	1. 버퍼 오버플로우에 취약한 함수를 사용하지 않는다.
+	2. 최신의 운영체제를 사용한다.
+	
+
+### 2. 포맷 스트링(Format String) 공격
+
+### 3. 백도어(BackDoor) 공격
+1. 백오리피스(Back Orifice)
+2. 넷버스(Netbus)
+3. 스쿨버스(Schoolbus)
+4. 루트킷(Rootkit)
+
+### 4. 무차별(Brute Force) 공격
+
+### 5. 하트블리드(Heartbleed) 공격
+
+### 6. 메모리 해킹
+
+### 7. MITB(Man-In-The-Browser) 공격과 Web Injection
+
+### 8. 사회공학기법(Social Engineering)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

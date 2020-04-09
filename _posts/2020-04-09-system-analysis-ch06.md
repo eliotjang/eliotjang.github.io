@@ -273,11 +273,10 @@ public class Main {
 
 ## 연습 문제
 
-### 6-1
-- MessageBox와 UnderlinePen 클래스에서 같은 작업을 하는 createClone() 메소드를 따로 두지 말고, 한 곳에 두고 공유시키는 방법은?
-
-### 6-2
-- Object 클래스는 java.lang.Cloneable 인터페이스를 구현하는가?
+- 6-1
+	- MessageBox와 UnderlinePen 클래스에서 같은 작업을 하는 createClone() 메소드를 따로 두지 말고, 한 곳에 두고 공유시키는 방법은?
+- 6-2
+	- Object 클래스는 java.lang.Cloneable 인터페이스를 구현하는가?
 
 ## 복습: C++의 얕은 복사, 깊은 복사
 ![](https://eliotjang.github.io/assets/images/system-analysis/ch06-6.png){: width="100%" height="100%"}  

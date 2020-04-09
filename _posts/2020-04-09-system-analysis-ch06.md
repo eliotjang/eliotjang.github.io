@@ -90,7 +90,7 @@ public class Manager {
 }
 ```  
 
-### 추가사항
+### Product 인터페이스 / Manager 클래스
 - Product 인터페이스나 Manager 클래스의 소스에, 구체적인 제품인 MessageBox나 UnderlinePen 클래스의 이름이 전혀 등장하지 않는다.
 	- Manager 클래스는, 구체적인 클래스 이름을 사용하지 않고, Product 인터페이스 이름만을 사용한다.
 	- framework와 구체적인 클래스를 분리함

@@ -161,10 +161,10 @@ last_modified_at: 2020-04-07T16:00:00+09:00
 ### 2. 클라이언트 보안 위협
 1. 키보드 입력 정보의 노출
 	- 키로거 프로그램(Key Logger Program) 등을 이용하여 [그림3-14]와 같이 키보드로 입력되는 내용을 가로채 다른 컴퓨터에 개인의 ID와 비밀번호뿐만 아니라 계좌번호, 신용카드 번호 등을 유출하게 된다.  
-	![](https://eliotjang.github.io/assets/images/network-security/ch03-5.png){: width="70%" height="650%"}
+	![](https://eliotjang.github.io/assets/images/network-security/ch03-5.png){: width="100%" height="100%"}
 
 2. 웸·바이러스의 감염  
-![](https://eliotjang.github.io/assets/images/network-security/ch03-6.png){: width="70%" height="50%"}
+![](https://eliotjang.github.io/assets/images/network-security/ch03-6.png){: width="100%" height="100%"}
 
 3. 스파이웨어의 감염
 	- 스파이웨어는 사용자의 동의 없이 PC에 불법 설치되는 악성 프로그램으로 ID/Password 등의 사용자 로그인 정보, 사용자의 방문 웹 사이트 정보 또는 키보드 입력정보 등 중요정보를 수집하여 제3자에게 또는 공격자에게 전송하는 기능을 수행
@@ -180,11 +180,11 @@ last_modified_at: 2020-04-07T16:00:00+09:00
 
 	1. /etc/passwd
 		- passwd 파일은 계정에 대한 정보를 가지고 있다. 사용자들의 고유성을 나타내는 uid부터 어느 그룹에 속해있는지 등 정보가 들어있다.  
-		![](https://eliotjang.github.io/assets/images/network-security/ch03-7.png){: width="80%" height="60%"}
+		![](https://eliotjang.github.io/assets/images/network-security/ch03-7.png){: width="80%" height="90%"}
 	
 	2. /etc/shadow
 		- 사용자 계정에 대한 암호화된 패스워드 및 관련 정보를 포함하는 파일로 루트 사용자만 접근할 수 있다.  
-		![](https://eliotjang.github.io/assets/images/network-security/ch03-8.png){: width="70%" height="50%"}
+		![](https://eliotjang.github.io/assets/images/network-security/ch03-8.png){: width="70%" height="70%"}
 	
 	3. 사용자 계정 생성
 		- 사용자 계정 생성은 간단하게 다음과 같이 생성할 수 있다.  
@@ -251,10 +251,14 @@ last_modified_at: 2020-04-07T16:00:00+09:00
 1. 버퍼 오버플로우 공격에 대한 대응책
 	1. 버퍼 오버플로우에 취약한 함수를 사용하지 않는다.  
 	```c
-	strcpy(char *dest, const char *src); → char *strncpy(char *destination, const char *source, size_t num);
-	strcat(char *dest, const char *src); → char *strcat(char *destination, const char* source, size_t num);
-	gets(char *s) → char *fgets(char *str, int num, FILE *stream);
-	sprintf(char *str, const char *format) → int snprint(char *s, size_t n, const char *format, ...);
+	strcpy(char *dest, const char *src);
+	→ char *strncpy(char *destination, const char *source, size_t num);	
+	strcat(char *dest, const char *src);
+	→ char *strcat(char *destination, const char* source, size_t num);
+	gets(char *s)
+	→ char *fgets(char *str, int num, FILE *stream);
+	sprintf(char *str, const char *format)
+	→ int snprint(char *s, size_t n, const char *format, ...);
 	```
 
 	2. 최신의 운영체제를 사용한다.
@@ -271,6 +275,7 @@ main() {
 	printf("%s₩n", buffer);
 }
 ```  
+
 |파라미터|특징|파라미터|특징|
 |----|--------------------------------|----|-------------------------------|
 |%d|정수형 10진 상수 (integer)|%o|양의 정수 (8 진수)|

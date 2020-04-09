@@ -4,7 +4,7 @@ excerpt: "Hiroshi Yuki, Java 언어로 배우는 디자인 패턴 입문"
 
 toc: true
 toc_sticky: true
-toc_label: "Ch5. 프로토타입(Prototype) 패턴"
+toc_label: "Ch6. 프로토타입(Prototype) 패턴"
 header:
   teaser: /assets/images/system-analysis/system-analysis-logo.jpeg
 categories: 

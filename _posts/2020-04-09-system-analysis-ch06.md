@@ -97,59 +97,192 @@ public class Manager {
 	- <span style="color:red">Product나 Manager를, 구체적인 클래스와 상관없이 수정할 수 있다.</span>
 
 ### MessageBox 클래스
+- Product 인터페이스를 구현
+- decochar 필드
+	- 문자열을 둘러쌀 장식 문자
+- use() 메소드
+	- 주어진 문자열을 decochar로 둘러싸서 출력하는 일을 한다.
+- createClone() 메소드
+	- 자기 자신을 복제하는 메소드 (자신이 clone()을 호출함)
+	- clone(): 인스턴스가 가지고 있는 필드 값이 그대로 복사된 복제 인스턴스를 반
+환한다.
+		- java.lang.Cloneable 인터페이스를 구현한 클래스만이 이 clone() 메소드를
+ 가진다.
+		- 이 인터페이스를 구현하지 않는 경우에는, CloneNotSupportedException이 >발생한다.
+		- <span style="color:blue">Product 인터페이스는 java.lang.Cloneable 상속
+ (p.106)</span>
+	- clone() 메소드는, 자신의 클래스(및 하위 클래스)에서만 호출할 수 있다.
+		- 다른 클래스의 요청으로 복제하는 경우에는, createClone과 같은 다른 메소
+드로 clone을 감싸주어야한다.
 
+```java
+import framework.*;
+
+public class MessageBox implements Product {
+	private char decochar;
+	public MessageBox(char decochar) {
+		this.decochar = decochar;
+	}
+	public void use(String s) {
+		int length = s.getBytes().length;
+		for (int i=0; i < length+4; i++) {
+			System.out.print(decochar);
+		}
+		System.out.println("");
+		System.out.println(decochar + " " + s + " " + decochar);
+		for (int i=0; i < length+4; i++) {
+			System.out.print(decochar);
+		}
+		System.out.println("");
+	}
+	public Product createClone() {
+		Product p = null;
+		try {
+			p = (Product)clone();
+		} catch (CloneNotSupportedException e) {
+			e.printStackTrace();
+		}
+		return p;
+	}
+}
+```  
 
 ### UnderlinePen 클래스
+- MessageBox와 거의 같은 동작을 함
+- 문자열에 밑줄을 그어준다.
+- ulchar 필드
+	- 밑줄 그을 때 사용할 문자를 가지고 있음
 
+```java
+import framework.*;
+
+public class UnderlinePen implements Product {
+	private char ulchar;
+	public UnderlinePen(char ulchar) {
+		this.ulchar = ulchar;
+	}
+	public void use(String s) {
+		int length = s.getBytes().length;
+		System.out.println("¥" + s + "¥");
+		System.out.print(" ");
+		for (int i=0; i < length; i++) {
+			System.out.print(ulchar);
+		}
+		System.out.println("");
+	}
+	public Product createClone() {
+		Product p = null;
+		try {
+			p = (Product)clone();
+		} catch (CloneNotSupportException e) {
+			e.printStackTrace();
+		}
+		return p;
+	}
+}
+```
 
 ### Main 클래스
+1. Manager의 인스턴스를 생성
+2. UnderlinePen 인스턴스와 MessageBox 인스턴스를 이름을 붙여서 등록한다.
+3. Manager의 create() 메소드를 호출해서, 원하는 '이름'의 제품을 얻어서, 그것의 use()를 실행한다.  
 
+|이름|클래스와 인스턴스의 내용|
+|-----------------|---------------------------------------------|
+|"strong message"|UnderlinePen에서 ulchar는 '~'|
+|"warning box"|MessageBox에서 decochar는 '*'|
+|"slash box"|MessageBox에서 decochar는 '/'|
+
+```java
+import framework.*;
+
+public class Main {
+	public static void main(String[] args) {
+		// 준비
+		Manager manager = new Manager();
+		UnderlinePen upen = new UnderlinePen('~');
+		MessageBox mbox = new MessageBox('*');
+		MessageBox sbox = new MessageBox('/');
+		manager.register("strong message", upen);
+		manager.register("warning box", mbox);
+		manager.register("slash box", sbox);
+
+		// 생성
+		Product p1 = manager.create("strong message");
+		p1.use("Hello, world.");
+		Product p2 = manager.create("warning box");
+		p2.use("Hello, world.");
+		Product p3 = manager.create("slash box");
+		p3.use("Hello, world.");
+	}
+}
+```  
+
+![](https://eliotjang.github.io/assets/images/system-analysis/ch06-2.png){: width="80%" height="60%"}
 
 ## 03. 등장 역할
 
 ### Prototype(원형) 역할
-
+- 인스턴스를 복사(복제)해서 새로운 인스턴스를 만들기 위한 메소드를 결정함
+- 예제애서는, Product 인터페이스에 해당됨
 
 ### ConcretePrototype(구체적인 원형) 역할
-
+- 인스턴스를 복사(복제)해서 새로운 인스턴스를 만드는 메소드를 실제로 구현함
+- 예제에서는, MessageBox나 UnderlinePen 클래스가 해당됨
 
 ### Client(이용자)의 역할
+- 인스턴스를 복사하는 메소드를 이용해서 새로운 인스턴스를 만듬
+- 예제에서는, Manager 클래스가 해당됨
 
+![](https://eliotjang.github.io/assets/images/system-analysis/ch06-3.png){: width="80%" height="60%"}
 
 ## 04. 독자의 사고를 넓혀주는 힌트
 
-### Prototype 패턴을 사용하지 않으면
-
+- Prototype 패턴을 사용하지 않으면,
+	- 인스턴스 복제(모든 필드 값을 같게 함)시
+		- new Something() 한 후에,
+		- Something 객체의 모든 필드 값을 기존의 Something 인스턴스로부터 얻어와야 한다.
+		- 필드가 priavte이고, 그 필드 값을 얻어오는 메소드가 없다면 어떻게 할 것인가?
+			- 복제가 불가능하다.  
+			![](https://eliotjang.github.io/assets/images/system-analysis/ch06-4.png){: width="80%" height="70%"}
 
 ## 05. 관련 패턴
-
+- Flyweight 패턴(20장)
+- Memento 패턴(18장)
+- Composite 패턴(11장) 및 Decorator 패턴(12장)
+- Command 패턴(22장)
 
 ## 06. 보강: clone() 메소드와 java.lang.Cloneable 인터페이스
 
-### 자바 언어의 clone
-
-
-### clone 메소드는 어디에서 정의되어 있는가
-
-
-### Cloneable 인터페이스
-
-
-### clone() 메소드는 'shallow copy'를 수행
+- 자바 언어의 clone
+	- 인스턴스를 복사하는 장치로 clone()메소드가 제공된다.
+	- 복사 대상이 되는 클래스는, 반드시 java.lang.Cloneable 인터페이스를 구현해야 한다.
+	- Cloneable 인터페이스를 구현한 클래스의 인스턴스는, clone() 메소드를 호출하면 복사된다.
+	- Cloneable 인터페이스를 구현하고 있지 않은 클래스의 인스턴스가 clone()메소드를 호출하면, CloneNotSupportedException 에외가 발생한다.
+- clone 메소드는 어디에서 정의되어 있는가
+	- 최상위 클래스인 java.lang.Object에 정의되어 있다.
+	- 모든 클래스에서 clone 메소드를 상속함
+- Cloneable 인터페이스에
+	- clone() 메소드가 선언되어 있는 것은 아니다.
+	- Cloneable 인터페이스는, clone()에 의해 복사될 수 있다는 표시로만 사용된다
+- clone() 메소드는 'shallow copy'를 수행한다  
+![](https://eliotjang.github.io/assets/images/system-analysis/ch06-5.png){: width="80%" height="70%"}
 
 ## 07. 요약
-
+- 인스턴스 복제를 용이하게 하기 위해서 Prototype 패턴을 이용하라.
 
 ## 연습 문제
 
 ### 6-1
-
+- MessageBox와 UnderlinePen 클래스에서 같은 작업을 하는 createClone() 메소드를 따로 두지 말고, 한 곳에 두고 공유시키는 방법은?
 
 ### 6-2
-
+- Object 클래스는 java.lang.Cloneable 인터페이스를 구현하는가?
 
 ## 복습: C++의 얕은 복사, 깊은 복사
+![](https://eliotjang.github.io/assets/images/system-analysis/ch06-6.png){: width="100%" height="100%"}  
 
+![](https://eliotjang.github.io/assets/images/system-analysis/ch06-7.png){: width="100%" height="100%"}
 
 
 

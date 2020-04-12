@@ -6,40 +6,48 @@ author_profile: true
 toc: true
 toc_sticky: true
 toc_label: "Scratch Paper"
-
-taxonomy: scratch paper #not needs. I hide it all journal posts for make _journal folder. So it can't see. I don't know how to do that...
 ---
 
-# __This Page uploads what I learned and scratch.__  
+__This Page uploads what I learned and scratch.__  
+> <span style="color:blue"><b>Click Images</b></span> to see my work piece.  
+> <span style="color:blue"><b>이미지들을 클릭</b></span>하여 제가 작업한 내용들을 볼 수 있습니다.
 
-## Network Security  
-![](https://eliotjang.github.io/assets/images/network-security/network-security-logo.jpeg){: width="30%" height="30%"} [Click!!](https://eliotjang.github.io/tags/network security/)
+### Network Security  
+[![](https://eliotjang.github.io/assets/images/network-security/network-security-logo.jpeg){: width="30%" height="30%"}](https://eliotjang.github.io/tags/network security/)
 
-## System Analysis & Design
-![](https://eliotjang.github.io/assets/images/system-analysis/system-analysis-logo.jpeg){: width="30%" height="30%"} [Click!!](https://eliotjang.github.io/tags/system analysis/)
+- - -
+### System Analysis & Design
+[![](https://eliotjang.github.io/assets/images/system-analysis/system-analysis-logo.jpeg){: width="30%" height="30%"}](https://eliotjang.github.io/tags/system analysis/)
 
-## Fitbit  
-![](https://eliotjang.github.io/assets/images/fitbit/fitbit-logo.jpeg){: width="30%" height="30%"} [Click!!](https://eliotjang.github.io/tags/fitbit/)  
+- - -
+### Fitbit  
+[![](https://eliotjang.github.io/assets/images/fitbit/fitbit-logo.jpeg){: width="30%" height="30%"}](https://eliotjang.github.io/tags/fitbit/)  
 
-## Embedded System
-![](https://eliotjang.github.io/assets/images/embedded-system/embedded-system-logo.jpeg){: width="30%" height="30%"} [Click!!](https://eliotjang.github.io/tags/embedded system/)
+- - -
+### Embedded System
+[![](https://eliotjang.github.io/assets/images/embedded-system/embedded-system-logo.jpeg){: width="30%" height="30%"}](https://eliotjang.github.io/tags/embedded system/)
 
+- - -
+### C++  
+[![](https://eliotjang.github.io/assets/images/c++/c++-logo.png){: width="30%" height="30%"}](https://eliotjang.github.io/tags/fun c++)  
 
-## C++  
-![](https://eliotjang.github.io/assets/images/c++/c++-logo.png){: width="30%" height="30%"} [Click!!](https://eliotjang.github.io/tags/fun c++)  
+- - -
+### Big Data & Hadoop
+[![](https://eliotjang.github.io/assets/images/hadoop/hadoop-logo.png){: width="30%" height="30%"}](https://eliotjang.github.io/tags/hadoop)
 
-## Big Data & Hadoop
-![](https://eliotjang.github.io/assets/images/hadoop/hadoop-logo.png){: width="30%" height="30%"} [Click!!](https://eliotjang.github.io/tags/hadoop)
+- - -
+### Deep Learning  
+[![](https://eliotjang.github.io/assets/images/deep learning/deep-learning-logo.png){: width="30%" height="30%"}](https://eliotjang.github.io/tags/deep learning)  
 
-## Deep Learning  
-![](https://eliotjang.github.io/assets/images/deep learning/deep-learning-logo.png){: width="30%" height="30%"} [Click!!](https://eliotjang.github.io/tags/deep learning)  
+- - -
+### Ubuntu  
+[![](https://eliotjang.github.io/assets/images/ubuntu/ubuntu-logo.jpeg){: width="30%" height="30%"}](https://eliotjang.github.io/tags/ubuntu)  
 
-## Ubuntu  
-![](https://eliotjang.github.io/assets/images/ubuntu/ubuntu-logo.jpeg){: width="30%" height="30%"} [Click!!](https://eliotjang.github.io/tags/ubuntu)  
+- - -
+### Korean History
+[![](https://eliotjang.github.io/assets/images/korean-history/korean-history-logo.jpeg){: width="30%" height="30%"}](https://eliotjang.github.io/tags/korean history/)
 
-## Korean History
-![](https://eliotjang.github.io/assets/images/korean-history/korean-history-logo.jpeg){: width="30%" height="30%"} [Click!!](https://eliotjang.github.io/tags/korean history/)
-
-## Web Database Programming
-![](https://eliotjang.github.io/assets/images/web-database/web-database-logo.png){: width="30%" height="30%"} [Click!!](https://eliotjang.github.io/tags/web database/)
+- - -
+### Web Database Programming
+[![](https://eliotjang.github.io/assets/images/web-database/web-database-logo.png){: width="30%" height="30%"}](https://eliotjang.github.io/tags/web database/)
 

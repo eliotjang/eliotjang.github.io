@@ -1,5 +1,5 @@
 ---
-title: "[Fitbit] Glossary of Terms"
+title: "[Fitbit] Glossary of Terms, Fitbit SDK Guides"
 excerpt: "dev.fitbit.com/build/guides/glossary/"
 
 toc: true
@@ -16,6 +16,11 @@ tags:
 
 last_modified_at: 2020-04-12T21:20:00+09:00
 ---  
+# Fitbit SDK Guides  
+These resources will help you understand how to use each element of the Fitbit SDK.  
+
+## Glossary  
+If you want to understand some of the terminology used in the guides.
 
 ### App / Application
 An application which executes on a Fitbit device. The application is comprised of JavaScript (.js) or TypeScript (.ts) files for the <span style="color:blue">application logic</span>, SVG (.gui) files for the <span style="color:blue">structure</span>, and CSS (.css) files for the <span style="color:blue">presentation</span> layer.  

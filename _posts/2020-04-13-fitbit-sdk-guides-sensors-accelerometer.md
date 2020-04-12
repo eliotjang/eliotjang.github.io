@@ -46,6 +46,8 @@ If you need to check the latest reading from the accelerometer, you can access t
 **app**  
 
 ```javascript  
+import { Accelerometer } from "accelerometer";
+
 if (Accelerometer) {
   // sampling at 1Hz (once per second)
   const accel = new Accelerometer({ frequency: 1 });

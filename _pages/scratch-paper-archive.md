@@ -10,18 +10,18 @@ taxonomy: scratch paper #not needs. I hide it all journal posts for make _journa
 
 *****  
 ### Network Security  
-![](https://eliotjang.github.io/assets/images/network-security/network-security-logo.jpeg)  
-[click here to see my work piece](https://eliotjang.github.io/tags/network security/)
+![](https://eliotjang.github.io/assets/images/network-security/network-security-logo.jpeg){: width="30%" height="30%"} [click here](https://eliotjang.github.io/tags/network security/)
 
-*****  
-### Embedded System  
-![](https://eliotjang.github.io/assets/images/embedded-system/embedded-system-logo.jpeg)  
-[click here to see my work piece](https://eliotjang.github.io/tags/embedded system/)  
-
-*****  
+*****
 ### System Analysis & Design
-![](https://eliotjang.github.io/assets/images/system-analysis/system-analysis-logo.jpeg)  
-[click here to see my work piece](https://eliotjang.github.io/tags/system analysis/)  
+![](https://eliotjang.github.io/assets/images/system-analysis/system-analysis-logo.jpeg){: width="30%" height="30%"} [click here](https://eliotjang.github.io/tags/system analysis/)
+
+*****  
+### Fitbit  
+![](https://eliotjang.github.io/assets/images/fitbit/fitbit-logo.jpeg){: width="30%" height="30%"} [click here](https://eliotjang.github.io/tags/fitbit/)  
+
+### Embedded System
+![](https://eliotjang.github.io/assets/images/embedded-system/embedded-system-logo.jpeg) [click here](https://eliotjang.github.io/tags/embedded system/)
 
 *****
 

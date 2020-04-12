@@ -1,5 +1,5 @@
 ---
-title: "[Fitbit] Accelerometer API, Device API Reference"
+title: "[Fitbit] #4 Accelerometer API, Device API Reference"
 excerpt: "dev.fitbit.com/build/reference/device-api/accelerometer/"
 
 toc: true

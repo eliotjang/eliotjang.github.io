@@ -1,5 +1,5 @@
 ---
-title: "[Fitbit] Application Architecture"
+title: "[Fitbit] #1 Application Architecture"
 excerpt: "dev.fitbit.com/build/guides/application/"
 
 toc: true

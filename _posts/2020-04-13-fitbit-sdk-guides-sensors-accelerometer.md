@@ -1,5 +1,5 @@
 ---
-title: "[Fitbit] Accelerometer Sensor, Fitbit SDK Guides"
+title: "[Fitbit] #3 Accelerometer Sensor, Fitbit SDK Guides"
 excerpt: "dev.fitbit.com/build/guides/sensors/accelerometer/"
 
 toc: true

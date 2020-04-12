@@ -1,5 +1,5 @@
 ---
-title: "[Fitbit] Glossary of Terms, Fitbit SDK Guides"
+title: "[Fitbit] #2 Glossary of Terms, Fitbit SDK Guides"
 excerpt: "dev.fitbit.com/build/guides/glossary/"
 
 toc: true

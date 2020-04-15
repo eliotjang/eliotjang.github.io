@@ -102,7 +102,7 @@ last_modified_at: 2020-04-15T13:00:00+09:00
 
 ![](https://eliotjang.github.io/assets/images/network-security/ch04-2.png){: width="70%"}  
 
-![](https://eliotjang.github.io/assets/images/network-security/ch04-1.png){: width="80%"}
+![](https://eliotjang.github.io/assets/images/network-security/ch04-3.png){: width="80%"}
 
 - Stored XSS 공격: 공격자가 XSS 취약점이 있는 웹 서버에 공격용 스크립트를 입력시켜 놓으면, 방문자가 악성 스크립트가 삽입되어 있는 페이지를 읽는 순간 방문자의 브라우저를 공격하는 방식이다.
 - Reflected XSS 공격: 악성 스크립트가 포함된 URL을 사용자가 클릭하도록 유도하여 URL을 클릭하면 클라이언트를 공격하는 것  

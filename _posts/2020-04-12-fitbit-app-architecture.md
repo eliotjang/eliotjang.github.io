@@ -54,7 +54,7 @@ The `/settings/` folders should contain a single <span style="color:blue">React 
 
 This folder contains the application logic which executes on the device. Code in this folder has access to the <span style="color:blue">Device API</span> and is capable of interacting directly with the presentation layer, communicating with the companion, or reading and writing settings.  
 
-An `index.js` or `index.ts` file **must exist** in this folder, and mus not be empty, or the build process will fail.  
+An `index.js` or `index.ts` file **must exist** in this folder, and must not be empty, or the build process will fail.  
 
 ### Companion
 `/companion/`  

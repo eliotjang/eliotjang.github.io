@@ -14,7 +14,7 @@ categories:
 tags:
   - fitbit
 
-last_modified_at: 2020-04-13T05:00:00+09:00
+last_modified_at: 2020-04-13T04:00:00+09:00
 ---  
 
 **Reference**  

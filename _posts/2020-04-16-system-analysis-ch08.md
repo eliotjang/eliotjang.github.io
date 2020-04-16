@@ -250,37 +250,75 @@ public class Main {
 		}
 		Factory factory = Factory.getFactory(args[0]);
 
-		Link joins = factory.createLink("중앙일보", "http://
+		Link joins = factory.createLink("중앙일보", "http://www.joins.com/");
+		Link chosun = factory.createLink("조선일보", "http://www.chosun.com/");
+
+		Link us_yahoo = factory.createLink("Yahoo!", "http://www.yahoo.com/");
+		Link kr_yahoo = factory.createLink("Yahoo!Korea", "http://www.yahoo.co.kr/");
+		Link excite = factory.createLink("Excite", "http://www.excite.com/");
+		Link google = factory.createLink("Google", "http://www.google.com/");
+
+		Tray traynews = factory.createTray("신문");
+		traynews.add(joins);
+		traynews.add(chosun);
+
+		Tray trayyahoo = factory.createTray("Yahoo!");
+		trayyahoo.add(us_yahoo);
+		trayyahoo.add(kr_yahoo);
+
+		Tray traysearch = factory.createTray("검색엔진");
+		traysearch.add(trayyahoo);
+		traysearch.add(excite);
+		traysearch.add(google);
+
+		Page page = factory.createPage("LinkPage", "영진닷컴");
+		page.add(traynews);
+		page.add(traysearch);
+		page.output();
 ```
 
 
 ### 구체적인 공장: ListFactory 클래스
 
+
 ### 구체적인 부품: ListLink 클래스
+
 
 ### 구체적인 부품: ListTray 클래스
 
+
 ### 구체적인 제품: ListPage 클래스
+
 
 ## 03. 예제 프로그램에 별도의 구체적인 공장을 추가
 
+
 ### 구체적인 공장: TableFactory 클래스
+
 
 ### 구체적인 부품: TableLink 클래스
 
+
 ### 구체적인 부품: TableTray 클래스
+
 
 ### 구체적인 제품: TablePage 클래스
 
+
 ## 04. 등장 역할
+
 
 ## 05. 독자의 사고를 넓혀주는 힌트
 
+
 ## 06. 관련 패턴
+
 
 ## 07. 보강: 인스턴스를 만드는 여러 가지 방법
 
+
 ## 08. 요약
+
 
 ## 연습문제
 

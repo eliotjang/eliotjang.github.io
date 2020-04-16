@@ -43,7 +43,7 @@ last_modified_at: 2020-04-16T18:00:00+09:00
 		<tr>
 			<td rowspan=5>factory</td>
 			<td>Factory</td>
-			<td>추상적인 공장을 나타내는 클래스(Link, Tray, Page를 만듬)<td>
+			<td>추상적인 공장을 나타내는 클래스(Link, Tray, Page를 만듬)</td>
 		</tr>
 		<tr>
 			<td>Item</td>
@@ -86,21 +86,173 @@ last_modified_at: 2020-04-16T18:00:00+09:00
 	</tbody>
 </table>  
 
-
-
 ### 클래스 다이어그램
+![](https://eliotjang.github.io/assets/images/system-analysis/ch08-2.png){: width="100%"}  
 
 ### 디렉토리 구조
+![](https://eliotjang.github.io/assets/images/system-analysis/ch08-3.png){: width="100%"}  
 
 ### 추상적인 부품: Item 클래스
+- Link와 Tray의 상위 클래스
+	- Link나 Tray를 동일시 하기 위한 클래스
+- caption 필드
+	- 목차를 담는 변수
+- makeHTML()
+	- HTML의 문자열을 반홤함
+	- 하위 클래스에서 구현되도록 기대됨  
+
+```java
+package factory;
+
+public abstract class Item {
+	protected String caption;
+	public Item(String caption) {
+		this.caption = caption;
+	}
+	public abstract String makeHTML();
+}
+```  
 
 ### 추상적인 부품: Link 클래스
+- HTML의 하이퍼링크를 추상적으로 표현한 클래스
+- url 필드
+	- URL을 저장하는 변수
+- 상위 클래스 Item에서 상속받은 makeHTML() 메소드가 <span style="color:red">구현되어 있지 않으므로</span>, 추상 클래스이다  
+
+```java
+package factory;
+
+public abstract class Link extends Item {
+	protected String url;
+	public Link(String caption, String url) {
+		super(caption);
+		this.url = url;
+	}
+}
+```  
 
 ### 추상적인 부품: Tray 클래스
+![](https://eliotjang.github.io/assets/images/system-analysis/ch08-4.png){: align-center width="30%"}
+
+- 다수의 Link나 Tray를 모아 집합으로 만드는 클래스
+- tray 필드
+	- ArrayList 객체 이용
+- add()
+	- 항목을 추가할 때 호출되는 메소드
+	- Link와 Tray의 상위 클래스인 Item을 인수로 가짐
+- 상위 클래스 Item에서 상속받은 makeHTML() 메소드가 <span style="color:red">구현되어 있지 않으므로</span>, 추상 클래스이다  
+
+```java
+package factory;
+import java.util.ArrayList;
+
+public abstract class Tray extends Item {
+	protected ArrayList tray = new ArrayList();
+	public Tray(String caption) {
+		super(caption);
+	}
+	public void add(Item item) {
+		try.add(item);
+	}
+}
+```  
 
 ### 추상적인 제품: Page 클래스
+- HTML 페이지 전체를 추상적으로 표현한 클래스
+- Link, Tray는 부품, Page는 제품을 나타낸다
+- title, author 필드
+- add()
+	- Item(Link나 Tray)을 추가할 때 사용되는 메소드
+- output()
+	- makeHTML()의 결과를 파일에 쓴다  
+	`writer.write(this.makeHTML());`  
+	- 간단한 Template Method 패턴  
+
+```java
+package factory;
+import java.io.*;
+import java.util.ArrayList;
+
+public abstract class Page {
+	protected String title;
+	protected String author;
+	protected ArrayList content = new ArrayList();
+	public Page(String title, String author) {
+		this.title = title;
+		this.author = author;
+	}
+	public void add(Item item) {
+		content.add(item);
+	}
+	public void output() {
+		try {
+			string filename = title + ".html";
+			Writer writer = new FileWriter(filename);
+			writer.write(this.makeHTML());
+			writer.close();
+			System.out.println(filename + "을 작성했습니다.");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	public abstract String makeHTML();
+}
+```  
 
 ### 추상적인 공장: Factory 클래스
+- getFactory()
+	- 구체적인 공장을 나타내는 클래스명을 인자로 받아서, 그 클래스의 객체를 반환하는 메소드  
+	`factory = (Factory)Class.forName(classname).newInstance();`  
+	- <span style="color:red">Class 클래스의 forName 메소드를 사용해서, 그 클래스를 동적으로 읽음. 그리고 newInstance 메소드를 이용해서, 그 클래스의 인스턴스를 한 개 작성</span>
+	- 이 메소드의 반환 타입은, Factory(즉, 구체적인 공장의 상위클래스) 추상클래스이다  
+
+```java
+package factory;
+
+public abstract class Factory {
+	public static Factory getFactory(String classname) {
+		Factory factory = null;
+		try {
+			factory = (Factory)Class.forName(classname).newInstance();
+		} catch (ClassNotFoundException e) {
+			System.err.println("클래스" + classname + "이 발견되지 않습니다.");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return factory;
+	}
+	public abstract Link createLink(String caption, String url);
+	public abstract Tray createTray(String caption);
+	public abstract Page createPage(String title, String author);
+}
+```  
+
+### 공장을 사용해서 부품을 조립하여 제품을 만든다: Main 클래스
+- import되어 있는 것은, factory 패키지 뿐이다
+	- 즉, 구체적인 공장은 전혀 사용하지 않는다
+- 구체적인 공장의 클래스명은, 커맨드 라인 인자로 지정한다
+	- `c:> java Main listfactory.ListFactory`
+		- `listfactory.ListFactory`가 args[0]으로 전달된다
+	- args[0]와 Factory.getFactory를 이용하여 구체적인 공장의 인스턴스를 얻어온다  
+	`Factory factory = Factory.getFactory(args[0]);`
+- 공장의 메소드를 이용하여 부품과 제품을 생산한다  
+
+```java
+import factory.*;
+
+public class Main {
+	public static void main(String[] args) {
+		if (args.length != 1) {
+			System.out.println("Usage: java Main clas.name.of.ConcreteFactory");
+			System.out.println("Example 1: java Main listfactory.ListFactory");
+			System.out.println("Example 2: java Main tablefactory.TableFactory");
+			System.exit(0);
+		}
+		Factory factory = Factory.getFactory(args[0]);
+
+		Link joins = factory.createLink("중앙일보", "http://
+```
+
 
 ### 구체적인 공장: ListFactory 클래스
 

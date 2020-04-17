@@ -41,7 +41,7 @@ last_modified_at: 2020-04-16T18:00:00+09:00
 	</thead>
 	<tbody>
 		<tr>
-			<td rowspan=5>factory</td>
+			<td rowspan="5">factory</td>
 			<td>Factory</td>
 			<td>추상적인 공장을 나타내는 클래스(Link, Tray, Page를 만듬)</td>
 		</tr>
@@ -67,7 +67,7 @@ last_modified_at: 2020-04-16T18:00:00+09:00
 			<td>동작 테스트용 클래스</td>
 		</tr>
 		<tr>
-			<td rowspan=4>listfactory</td>
+			<td rowspan="4">listfactory</td>
 			<td>ListFactory</td>
 			<td>구체적인 공장을 나타내는 클래스(ListLink, ListTray, ListPage를 만듬)</td>
 		</tr>

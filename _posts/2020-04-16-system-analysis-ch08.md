@@ -400,7 +400,7 @@ public class ListPage extends Page {
 	</thead>
 	<tbody>
 		<tr>
-			<td rowspan=4>tablefactory</td>
+			<td rowspan="4">tablefactory</td>
 			<td>TableFactory</td>
 			<td>구체적인 공장을 나타내는 클래스(TableLink, TableTray, TablePage를 만듬)</td>
 		</tr>
@@ -707,6 +707,7 @@ public class TablePage extends Page {
 		}
 	}
 	```  
+
 - 8-4
 	- Page 클래스가 Tray 클래스와 비슷한 역할을 하는데, 왜 Page 클래스를 Tray 클래스의 하위 클래스로 하지 않았는가?
 		- Page를 Tray 클래스의 하위로 만들면, Page도 Item의 하위클래스가 되어 add의 대상이 된다

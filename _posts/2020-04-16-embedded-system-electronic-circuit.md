@@ -37,7 +37,7 @@ last_modified_at: 2020-04-16T12:00:00+09:00
 ![](https://eliotjang.github.io/assets/images/embedded-system/electronic-circuit-1.png){: center-align width="80%"}
 
 ## 전원/접지
--전원(+)
+- 전원(+)
 	- 회로에 전압을 공급
 	- 배터리의 경우 (+)극이 전원
 	- VCC, VDD 등으로 표기  
@@ -47,7 +47,7 @@ last_modified_at: 2020-04-16T12:00:00+09:00
 	- 배터리의 경우 (-)극이 접지
 	- GND(ground)로 표기
 	- 모든 회로는 같은 접지를 사용해야 함  
-	![](https://eliotjang.github.io/assets/images/embedded-system/electronic-circuit-3.png){: center-align width="40%"}  
+	![](https://eliotjang.github.io/assets/images/embedded-system/electronic-circuit-3.png){: center-align width="60%"}  
 
 ## 정격 전압 및 전류
 - 정격 전압: 적합한 전압

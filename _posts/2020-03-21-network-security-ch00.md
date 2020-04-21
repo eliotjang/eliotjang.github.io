@@ -166,13 +166,24 @@ last_modified_at: 2020-03-21T17:00:00+09:00
 
 ![](https://eliotjang.github.io/assets/images/network-security/ch00-11.png){: width="80%" height="60%"}  
 
+- Version: 4 or 6
+- IHL(Internet Header Length): 인터넷 헤더의 길이를 4바이트단위로 나타냄
+- Type of service: IP데이터그램이 라우터에서 처리될 때 갖는 우선순위, 서비스 유형을 식별하는 데 사용. 실제적으로 사용X
+- Total length: 인터넷 헤더와 데이터 부분(PayLoad)을 포함한 전체 길이를 바이트 단위로 나타냄
+- Identification: 조각난 패킷을 식별하는 기능 수행
+- DF(Don't fragment): 값을 1로 지정하면 패킷 분할을 막을 수 있음
+- MF(More fragment): 값을 1로 지정해서 분할된 패킷을 뒤에 계속 발생되는지 표시
+- Fragment offset: fragment의 상대적 길이
+- Time to live(TTL): 패킷 전송과정에서 패킷이 올바른 목적지를 찾지 못하면 현상을 방지하기 위해 네트워크에 생존할 수 있는 시간(1~255)을 지정하면 라우터를 지나갈때마다 시간을 하나씩 감소하고 0이되면 폐기처리
+- Protocol: IP 데이터그램이 어떤 프로토콜에 데이터를 실어나르는 지 식별하는 목적으로 사용
+- Header checksum: 패킷 전송 중에 발생할 수 있는 헤더 오류를 검출하는 목적으로 사용
 
 ## 【User Datagram Protocol】 
 
   - 비연결형 서비스
     - 송신자와 수신자 간 no handshaking
     - 각 데이터그램은 다른 것과 독립적으로 처리
-  - 송신 프로세스와 수신 프로게스 간 비 신뢰적인 데이터 전달
+  - 송신 프로세스와 수신 프로게스 간 비신뢰적인 데이터 전달
     - 메시지가 손실될 수 있음
     - 응용 프로세스로의 데이터 전달 순서가 보장되지 않음  
   - No flow control  
@@ -230,11 +241,11 @@ No congestion control
 
 ### 3-Way Handshake
 
-![](https://eliotjang.github.io/assets/images/network-security/ch00-15.png){: width="30%" height="50%"}  
+![](https://eliotjang.github.io/assets/images/network-security/ch00-15.png){: width="50%" height="70%"}  
 
 ### 연결 해제 절차
 
-![](https://eliotjang.github.io/assets/images/network-security/ch00-16.png){: width="30%" height="50%"}  
+![](https://eliotjang.github.io/assets/images/network-security/ch00-16.png){: width="50%" height="70%"}  
 
 
 

@@ -41,13 +41,13 @@ last_modified_at: 2020-04-16T12:00:00+09:00
 	- 회로에 전압을 공급
 	- 배터리의 경우 (+)극이 전원
 	- VCC, VDD 등으로 표기  
-	![](https://eliotjang.github.io/assets/images/embedded-system/electronic-circuit-2.png){: center-align width="80%"}
+	![](https://eliotjang.github.io/assets/images/embedded-system/electronic-circuit-2.png){: center-align width="40%"}
 - 접지(-)
 	- 전압의 크기 결정
 	- 배터리의 경우 (-)극이 접지
 	- GND(ground)로 표기
 	- 모든 회로는 같은 접지를 사용해야 함  
-	![](https://eliotjang.github.io/assets/images/embedded-system/electronic-circuit-3.png){: center-align width="80%"}  
+	![](https://eliotjang.github.io/assets/images/embedded-system/electronic-circuit-3.png){: center-align width="40%"}  
 
 ## 정격 전압 및 전류
 - 정격 전압: 적합한 전압
@@ -64,7 +64,7 @@ last_modified_at: 2020-04-16T12:00:00+09:00
 
 ## 아두이노 우노 핀맵  
 
-![](https://eliotjang.github.io/assets/images/embedded-system/electronic-circuit-5.png){: center-align width="100%"}
+![](https://eliotjang.github.io/assets/images/embedded-system/electronic-circuit-5.png){: center-align width="70%"}
 
 ## 저항 읽는 방법  
 
@@ -84,7 +84,7 @@ last_modified_at: 2020-04-16T12:00:00+09:00
 	- 이외 다른 전압은 인식 못함
 - 아날로그
 	- 0V ~ 5V까지 모두 사용  
-	![](https://eliotjang.github.io/assets/images/embedded-system/electronic-circuit-7.png){: center-align width="80%"}
+	![](https://eliotjang.github.io/assets/images/embedded-system/electronic-circuit-7.png){: center-align width="60%"}
 
 ## 회로
 - 전자 부품들이 서로 연결되어 있는 것

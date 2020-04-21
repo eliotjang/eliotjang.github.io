@@ -57,7 +57,7 @@ last_modified_at: 2020-03-21T17:00:00+09:00
       - `유선 링크(wired links)`
       - `무선 링크(wireless links)`
     - 프레임 : 데이터링크 계층의 데이터 전송 단위  
-  > 데이터 링크 계층은 한 노드에서 인접한 다른 노드로 링크를 따라 프레임을 전달한다.  
+  > <span style="color:red">데이터 링크 계층은 한 노드에서 인접한 다른 노드로 링크를 따라 프레임을 전달한다.</span>  
     
 ![](https://eliotjang.github.io/assets/images/network-security/ch00-2.png){: width="296" height="354"}    
 
@@ -66,9 +66,9 @@ last_modified_at: 2020-03-21T17:00:00+09:00
       - source-to-destination delivery
     - 인터넷 계층은 발신지(source) 노드와 목적지(destination) 노드가 다른 네트워크에 있을 때 패킷을 전달하는데 사용되는 프로토콜들을 규정한다.
       - Internet Protocol(IP)
-      - Internet Protocol(IPsec) : IP 보안 기능을 추가한 프로토콜
+      - Internet Security Protocol(IPsec) : IP 보안 기능을 추가한 프로토콜
       - Internet Control Message Protocol(ICMP) : 소스 노드에서 목적지 노드로 데이터 패킷을 전달하는 과정에서 오류가 발생할 경우에 그 오류 사실을 소스 노드에 알려줄 때 사용되는 프로토콜
-      - Internet Group Management Protocol(IGMP) : 인터넷상에서 멀티캐스트 그룹을 형성해서 데이터를 멀티캐스트할 때 사용되는 그룹 관**
+      - Internet Group Management Protocol(IGMP) : 인터넷상에서 멀티캐스트 그룹을 형성해서 데이터를 멀티캐스트할 때 사용되는 그룹 관리 프로토콜
       - **Routing protocols**(OSPF, RIP, BGP 등)
   - <span style="color:black">전송 계층</span>
     - **포트 주소(포트 번호)를 이용하여 응용 프로세스 간 메시지 전달을 담당하는 계층**
@@ -116,12 +116,15 @@ last_modified_at: 2020-03-21T17:00:00+09:00
 
 ![](https://eliotjang.github.io/assets/images/network-security/ch00-3.png){: width="100%" height="60%"}  
 
-소스노드와 목적지노드의 주소는 변함이 없지만, 데이터링크 계층의 맥 주소는 인접한 노드를 거칠때 마다 변경이 된다.  
+네트워크 계층의 소스노드와 목적지노드의 주소는 변함이 없지만, 데이터링크 계층의 맥 주소는 인접한 노드를 거칠때 마다 변경이 된다.  
 따라서 네트워크 계층이 하는 일은 소스 호스트에서 목적지 호스트까지 패킷을 전달하는 일을 담당한다고 하는 것이고,  
 반면에 데이터 링크 계층이 하는 일은 인접한 노드 간의 데이터 프레임을 전송하는 일을 담당한다고 하는 것이다.  
 
 
 ![](https://eliotjang.github.io/assets/images/network-security/ch00-4.png){: width="80%" height="60%"}  
+
+전송계층의 포트번호가 없다면 리시버 호스트는 수신한 데이터를 어떤 프로세스로 전달할지 알 수 없기 때문에, 데이터를 수신할 응용 프로세스를 식별하는 데 꼭 필요한 정보이다.
+또한 리시버 호스트가 센더 호스트로 응답을 보낼 때 적절한 응용 프로세스로 보내줄 때 포트번호가 필요하다.
 
 ### 캡슐화 
 
@@ -140,6 +143,7 @@ last_modified_at: 2020-03-21T17:00:00+09:00
 ### IP 주소의 일반 형식  
 ![](https://eliotjang.github.io/assets/images/network-security/ch00-7.png){: width="50%" height="30%"}  
 
+### Network (subnet)
   - 라우터의 개입 없이 상호 데이터 전달이 가능한 영역(e.g. LAN)
   - 같은 네트워크 주소를 갖는 인터페이스들의 집합
 

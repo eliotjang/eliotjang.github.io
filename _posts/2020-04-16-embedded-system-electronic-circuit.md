@@ -53,7 +53,51 @@ last_modified_at: 2020-04-16T12:00:00+09:00
 - 정격 전압: 적합한 전압
 - 정격 전류: 적합한 전류
 - 정격 이상의 전압 혹은 전류가 흐르면 전자부품이 망가짐
-- 정격 출력 (W): 전안 X 전류
+- 정격 출력 (W): 전압 X 전류
+
+## 핀맵
+- 핀은 회로를 연결하는 지점
+- 각각의 핀은 용도가 정해져 있음
+- 핀 별로 용도를 정해놓은 것을 핀맵이라고 함  
+
+![](https://eliotjang.github.io/assets/images/embedded-system/electronic-circuit-4.png){: center-align width="80%"}
+
+## 아두이노 우노 핀맵  
+
+![](https://eliotjang.github.io/assets/images/embedded-system/electronic-circuit-5.png){: center-align width="100%"}
+
+## 저항 읽는 방법  
+
+![](https://eliotjang.github.io/assets/images/embedded-system/electronic-circuit-6.png){: center-align width="100%"}
+
+## 아두이노 입출력핀
+- 출력핀
+	- 전원 역학을 하는 핀
+	- 전압이 걸리고 전류가 흘러 나감
+- 입력핀 (센서 역할)
+	- 전압을 측정하는 핀
+	- 전류가 흘러 들어와 전압이 걸림
+
+## 디지털 vs 아날로그
+- 디지털
+	- OV와 5V만 사용
+	- 이외 다른 전압은 인식 못함
+- 아날로그
+	- 0V ~ 5V까지 모두 사용  
+	![](https://eliotjang.github.io/assets/images/embedded-system/electronic-circuit-7.png){: center-align width="80%"}
+
+## 회로
+- 전자 부품들이 서로 연결되어 있는 것
+- 전원(VCC)과 접지(GND)가 반드시 존재해야 함
+- 전원에서 접지까지 연결되어야 함  
+![](https://eliotjang.github.io/assets/images/embedded-system/electronic-circuit-8.png){: center-align width="60%"}
+
+
+
+
+
+
+
 
 
 

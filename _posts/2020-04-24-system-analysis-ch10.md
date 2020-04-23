@@ -241,6 +241,7 @@ public class ProbStrategy implements Strategy {
 ### Player 클래스
 - 가위바위보를 하는 사람을 표현한 클래스
 - 생성 시, '이름'과 '전략'이 주어진다
+- 생성 시의 '전략'에 따라 다음에 내밀 손이 결정된다
 	- nextHand() 메소드 안에서 strategy의 nextHand()를 호출한다
 	- Strategy에게 위임한다
 - 이기든(win) 지든(lose) 무승부이든(even), 다음 승부를 위해서 strategy의 study() 메소드를 호출한다
@@ -288,37 +289,37 @@ public class Player {
 
 ```java
 public class Main {
-	public static void main(String[] args) {
-		if (args.length != 2) {
-			System.out.println("Usage: java Main randomseed1 randomseed2");
-			System.out.println("Example: java Main 314 14");
-			System.exit(0);
-		}
-		int seed1 = Integer.parseInt(args[0]);
-		int seed2 = Integer.parseInt(args[1]);
-		Player player1 = new Player("두리", new WinningStrategy(seed1));
-		Player player2 = new Player("하나", new ProbStrategy(seed2));
-		for (int i = 0; i < 10000; i++) {
-			Hand nextHand1 = player1.nextHand();
-			Hand nextHand2 = player2.nextHand();
-			if (nextHand1.isStrongerThan(nextHand2)) {
-				System.out.println("Winner:" + player1);
-				player1.win();
-				player2.lose();
-			} else if (nextHand2.isStrongerThan(nextHand)) {
-				System.out.println("Winner:" + player2);
-				player1.lose();
-				player2.win();
-			} else {
-				System.out.println("Even...");
-				player1.even();
-				player2.even();
-			}
-		}
-		System.out.println("Total result:");
-		System.out.println(player1.toString());
-		System.out.println(player2.toString());
+  public static void main(String[] args) {
+	if (args.length != 2) {
+	  System.out.println("Usage: java Main randomseed1 randomseed2");
+	  System.out.println("Example: java Main 314 14");
+	  System.exit(0);
 	}
+	int seed1 = Integer.parseInt(args[0]);
+	int seed2 = Integer.parseInt(args[1]);
+	Player player1 = new Player("두리", new WinningStrategy(seed1));
+	Player player2 = new Player("하나", new ProbStrategy(seed2));
+	for (int i = 0; i < 10000; i++) {
+	  Hand nextHand1 = player1.nextHand();
+	  Hand nextHand2 = player2.nextHand();
+	  if (nextHand1.isStrongerThan(nextHand2)) {
+		System.out.println("Winner:" + player1);
+		player1.win();
+		player2.lose();
+	  } else if (nextHand2.isStrongerThan(nextHand)) {
+		System.out.println("Winner:" + player2);
+		player1.lose();
+		player2.win();
+	  } else {
+		System.out.println("Even...");
+		player1.even();
+		player2.even();
+	  }
+	}
+	System.out.println("Total result:");
+	System.out.println(player1.toString());
+	System.out.println(player2.toString());
+  }
 }
 ```
 

@@ -224,7 +224,6 @@ public class Main {
 			- StringDisplayImpl 이외의 다른 클래스의 객체를 넘겨주면, 구현이 교체되는 효과를 가져온다
 
 ## 05. 관련 패턴
-
 - Template Method 패턴(3장)
 - Abstract factory 패턴(8장)
 - Adapter 패턴(2장)
@@ -268,9 +267,6 @@ public class Main {
 		- IncreaseDisplay 클래스
 	- 추가한 구현은 다른 클래스(CountDisplay나 RandomCountDisplay)에서도 사용 가능함
 	- 추가한 다른 기능은, 다른 클래스 상에서도 작동한다
-
-
-
 
 
 

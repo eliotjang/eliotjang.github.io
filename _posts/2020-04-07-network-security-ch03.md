@@ -150,8 +150,8 @@ last_modified_at: 2020-04-07T16:00:00+09:00
 
 2. 공유 폴더 보안
 	- 윈도우 NT 이상에서는 "관리목적을 위한 기본공유" 라는 것이 기본적으로 존재한다. 명령 프롬프트에서 net share를 실행하면 기본적으로 ADMIN$, IPC$, C$ 등이 공유되어 있음을 확인할 수 있다.
-	- 공유 해제 방법1: 명령어 이용, 재부팅 후 다시 공유됨  
-	`C:\>net share c$ \delete`  
+	- 공유 해제 방법1: 명령어 이용. 그러나 재부팅 후 다시 공유됨  
+	`C:\>net share c$ /delete`  
 	- 공유 해제 방법2: 레지스트리 수정. 재부팅하더라도 공유 해제 유지됨  
 	`\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters`  
 	디렉토리에 DWORD 값을 추가하고 값을 0으로 설정
@@ -163,7 +163,7 @@ last_modified_at: 2020-04-07T16:00:00+09:00
 	- 키로거 프로그램(Key Logger Program) 등을 이용하여 [그림3-14]와 같이 키보드로 입력되는 내용을 가로채 다른 컴퓨터에 개인의 ID와 비밀번호뿐만 아니라 계좌번호, 신용카드 번호 등을 유출하게 된다.  
 	![](https://eliotjang.github.io/assets/images/network-security/ch03-5.png){: width="100%" height="100%"}
 
-2. 웸·바이러스의 감염  
+2. 웜·바이러스의 감염  
 ![](https://eliotjang.github.io/assets/images/network-security/ch03-6.png){: width="100%" height="100%"}
 
 3. 스파이웨어의 감염
@@ -198,7 +198,7 @@ last_modified_at: 2020-04-07T16:00:00+09:00
 
 	1. 로그 파일의 종류 및 특성
 		- 리눅스 시스템에서는 /var/log에 기본 로그 파일들이 위치하게 된다.
-		- 리눅수에서 로깅은 시스템, 어플리케이션 심지어는 프로토콜 수준에서도 일어난다. 대부분 리눅스 서비스들은 로그 정보들을 로그 파일들과 표준 출력 장치에 출력
+		- 리눅스에서 로깅은 시스템, 어플리케이션 심지어는 프로토콜 수준에서도 일어난다. 대부분 리눅스 서비스들은 로그 정보들을 로그 파일들과 표준 출력 장치에 출력
 		- ①lastlog  
 		lastlog는 사용자의 최근 로그인 시간을 사용자 이름, 터미널, 마지막 로그인 시간으로 출력한다.  
 		/var/log/last 파일에 저장되고 바이너리 형태이다. 따라서 텍스트 편집기로는 볼 수가 없고 lastlog라는 명령을 통해서만 확인이 가능하다.  
@@ -254,7 +254,7 @@ last_modified_at: 2020-04-07T16:00:00+09:00
 	strcpy(char *dest, const char *src);
 	→ char *strncpy(char *destination, const char *source, size_t num);	
 	strcat(char *dest, const char *src);
-	→ char *strcat(char *destination, const char* source, size_t num);
+	→ char *strncat(char *destination, const char *source, size_t num);
 	gets(char *s)
 	→ char *fgets(char *str, int num, FILE *stream);
 	sprintf(char *str, const char *format)
@@ -290,11 +290,11 @@ main() {
 #include <stdio.h>
 main() {
 	long i=0x00000064, j=1;
-	printf("i의 주소 : %x₩n, &i);
-	printf("i의 값 : %x₩n",i);
+	printf("i의 주소 : %x\n, &i);
+	printf("i의 값 : %x\n",i);
 
-	printf("%64d%n₩n", j, &i);
-	printf("변경된 i의 값: %x₩n", i);
+	printf("%64d%n\n", j, &i);
+	printf("변경된 i의 값: %x\n", i);
 }
 ```  
 	- printf("%64d%n\n", j, &i)은 j와 i의 주소값에 64의 16진수 값을 입력함.
@@ -324,7 +324,7 @@ main() {
 - 오픈 SSL의 통신신호 하트비트(heartbeat)에서 발견되어 하트블리드라고 부르는데, HeartBeat는 서버와 클라이언트 사이에 무슨 문제는 없는지 또는 안정적인 연결을 유지하기 위한 목적으로 일정 신호를 주고받을 때 사용하는 확장규격이다.
 
 ### 6. 메모리 해킹
-- 피해자 PC 메모리에 상주한 악성코드를 이용한 해킹 방법. 기존의 해킹 방법은 외부에서 계좌 비밀번호를 빼내는 방법에 초점을 맞춘 반면, 메모리 해킹 방법은 비밀문 같으 프로그램을 설치하고, 컴퓨터 메모리에 있는 비밀번호를 빼내는 것 뿐만 아니라 데이터를 조작하여 받는 계좌와 금액까지 변경할 수 있는 해킹 방법이다.  
+- 피해자 PC 메모리에 상주한 악성코드를 이용한 해킹 방법. 기존의 해킹 방법은 외부에서 계좌 비밀번호를 빼내는 방법에 초점을 맞춘 반면, 메모리 해킹 방법은 비밀문 같은 프로그램을 설치하고, 컴퓨터 메모리에 있는 비밀번호를 빼내는 것 뿐만 아니라 데이터를 조작하여 받는 계좌와 금액까지 변경할 수 있는 해킹 방법이다.  
 ![](https://eliotjang.github.io/assets/images/network-security/ch03-9.png){: width="80%" height="60%"}
 
 ### 7. MITB(Man-In-The-Browser) 공격과 Web Injection

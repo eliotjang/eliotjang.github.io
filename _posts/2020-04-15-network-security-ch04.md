@@ -146,8 +146,7 @@ Query = "SELECT user_id FROM member WHERE uesr_id = '"&strUser_id&"'
 - 공격자가 의도한 행위(수정, 삭제, 등록 등)를 특정 웹 사이트에 요청하게 하는 공격
 - 공격에 성공하려면 공격자는, 사용자의 웹브라우저가 "조작된 HTTP request"를 보내도록 유도해야 한다. (예를 들면, 사회공학기법을 사용하여 email에 첨부된 URL 주소 또는 hyperlink를 클릭하도록 유도)
 - XSS와의 차이는 브라우저에서 스크립트가 실행되느냐, 아니면, 웹서버로 HTTP request가 보내져서 웹서버에서 실행되느냐로 구분된다. 웹서버로 보내지는 HTTP request는, 웹 서버 접속 인증을 받은 사용자의 신분으로 보내지게 된다.  
-
-![](https://eliotjang.github.io/assets/images/network-security/ch04-6.png){: width="80%"}
+![](https://eliotjang.github.io/assets/images/network-security/ch04-6.png){: width="60%"}
 
 
 ## 4.3 웹·어플리케이션 공격 유형

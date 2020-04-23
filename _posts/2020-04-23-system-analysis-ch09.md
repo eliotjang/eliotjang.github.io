@@ -17,10 +17,12 @@ last_modified_at: 2020-04-23T23:00:00+09:00
 ## 01. Bridge 패턴
 - Bridge(다리)
 	- 두 장소를 연결하는 역할
-	- '기능의 클래스 계층'과 '구현의 클래스 계층' 사이에 다리를 놓는다
+	- '기능의 클래스 계층'과 '구현의 클래스 계층' 사이에 다리를 놓는다  
+
 - 클래스 계층의 두 가지 역할
 	- 기능의 클래스 계층
-	- 구현의 클래스 계층
+	- 구현의 클래스 계층  
+
 - 새로운 '기능'을 추가하고 싶을 때
 	- Something 클래스에 새로운 기능을 추가하려고 할 때
 		- Something 클래스의 하위 클래스를 새롭게 만든다  
@@ -28,7 +30,7 @@ last_modified_at: 2020-04-23T23:00:00+09:00
 		- 소규모의 클래스 계층이 발생함 ⇒ '기능의 클래스 계층'
 	- SomethingGood 클래스에 다시 새로운 기능을 추가하려면..  
 	![](https:///eliotjang.github.io/assets/images/system-analysis/ch09-2.png){: width="80%"}
-	- 새로운 기능을 추가하고 싶을 때 클래스 계층 안에서 새로 만들려고하는 클래스와 유사한 클래스를 찾아내, 하위 클래스를 만들어 기능을 추가한다
+	- 새로운 기능을 추가하고 싶을 때 클래스 계층 안에서 새로 만들려고하는 클래스와 유사한 클래스를 찾아내, 하위 클래스를 만들어 기능을 추가한다  
 
 - 새로운 '구현'을 추가하고 싶을 때
 	- 추상 클래스는, 일련의 메소드들을 추상 메소드로 선언하고, 인터페이스(API)를 규정한다
@@ -40,7 +42,7 @@ last_modified_at: 2020-04-23T23:00:00+09:00
 	![](https:///eliotjang.github.io/assets/images/system-analysis/ch09-3.png){: width="80%"}
 	- 이를 '구현의 클래스 계층'이라고 한다
 	- AbstractClass의 다른 구현을 만들고 싶으면, 다른 하위 클래스를 만들면 된다  
-	![](https:///eliotjang.github.io/assets/images/system-analysis/ch09-4.png){: width="80%"}
+	![](https:///eliotjang.github.io/assets/images/system-analysis/ch09-4.png){: width="80%"}  
 
 - 클래스 계층의 혼재와 클래스 계층의 분리
 	- 클래스 계층 구조 하나에, '기능의 클래스 계층'과 '구현의 클래스 계층'이 혼재해 있으면, 새로운 하위 클래스를 만들 때 어려움이 있다
@@ -134,7 +136,7 @@ public abstract class DisplayImpl {
 
 ### 구현의 클래스 계층: StringDisplayImpl 클래스
 - 문자열을 표시하는 클래스
-- rawOpen, rawPoint, rawClose 메소드 구현
+- <span style="color:blue">rawOpen</span>, rawPoint, <span style="color:blue">rawClose</span> 메소드 구현
 	- printLine()를 이용해서 문자열을 표심함  
 
 ```java
@@ -188,17 +190,21 @@ public class Main {
 - Abstraction의 역할
 	- '기능의 클래스 계층'의 최상위에 있는 클래스
 	- Implementor 역할의 메소드를 사용해서 기본적인 기능만을 제공하는 클래스
-	- 예제에서 Display 클래스가 해당됨
+	- 예제에서 Display 클래스가 해당됨  
+
 - RefinedAbstraction의 역할
 	- Abstraction 역할에 기능을 추가한 역할
-	- 예제에서 CountDisplay 클래스가 해당됨
+	- 예제에서 CountDisplay 클래스가 해당됨  
+
 - Implementor의 역할
 	- '구현의 클래스 계층'의 최상위에 있는 클래스
 	- Abstraction 역할의 API를 구현하기 위한 메소드를 규정하는 역할
-	- 예제에서 DisplayImpl 클래스가 해당됨
+	- 예제에서 DisplayImpl 클래스가 해당됨  
+
 - ConcreteImplementor의 역할
 	- Implementor 역할의 API를 구체적으로 구현하는 역할
-	- 예제에서, StringDisplayImpl 클래스가 해당됨
+	- 예제에서, StringDisplayImpl 클래스가 해당됨  
+
 - 클래스 다이어그램  
 
 ![](https:///eliotjang.github.io/assets/images/system-analysis/ch09-7.png){: width="90%"}
@@ -208,7 +214,9 @@ public class Main {
 ### 분리해두면 확장이 편해진다
 - 두 개로 클래스 계층을 나누어두면, 각각의 클래스 계층을 독립적으로 확장할 수 있다(예는 연습문제에서)
 	- 기능을 추가하고 싶으면, 기능의 클래스 계층에 추가한다
-		- 이 때 구현 클래스 계층은 전혀 수정할 필요가 없다
+		- 이 때 구현 클래스 계층은 전혀 수정할 필요가 없다  
+
+
 	- 구현을 추가하고 싶으면 구현 클래스 계층을 확장한다
 		- 예: 어떤 프로그램에 OS(운영체제) 의존 부분이 있어서, Window 판, Macintosh 판, Unix 판으로 구분된다고 하자 ⇒ OS에 의존하는 부분을 "구현의 클래스 계층"으로 표현한다
 		- 각 OS 공통의 API를 정해서 Implementor 역할로 하고 Concrete Implementor 역할로 Window 판, Macintosh 판, Unix 판의 세 개의 클래스를 만든다
@@ -218,9 +226,10 @@ public class Main {
 
 ### 상속은 견고한 연결, 위임은 느슨한 연결
 - 상속은 소스 코드를 바꿀 수 없은 매우 견고한 연결임
-	- 클래스간의 관계를 바꾸고 싶을 때는 상속을 사용해서는 안됨
+	- 클래스간의 관계를 바꾸고 싶을 때는 상속을 사용해서는 안됨  
+
 - Display 클래스 내에서 위임이 사용된다
-	- 예: oepn을 실행할 때, <span style="color:red">impl.rawOpen()을 호출하여 '떠넘기기'를 한다</span>
+	- 예: open을 실행할 때, <span style="color:red">impl.rawOpen()을 호출하여 '떠넘기기'를 한다</span>
 		- 이 때, impl이 참조하고 있는 객체는, Display 생성 시 클라이언트(Main 클래스)가 넘겨준 구체적인 StringDisplayImpl 클래스의 인스턴스이다
 		- StringDisplayImpl 이외의 다른 클래스의 객체를 넘겨주면, 구현이 교체되는 효과를 가져온다
 
@@ -247,7 +256,7 @@ public class Main {
 
 ### 9-2
 - '텍스트 파일의 내용을 표시'처리를 하는 클래스를 예제 프로그램에 추가하기
-	- 구현의 클래스 계층에 추갛마
+	- 구현의 클래스 계층에 추가한다
 		- 전혀 다른 방식의 DisplayImpl이 필요하므로
 	- DisplayImpl의 하위 클래스로 FileDisplayImpl 클래스를 만듬
 		- 제공하는 메소드 종류는 같다

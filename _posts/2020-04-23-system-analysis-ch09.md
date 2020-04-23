@@ -244,6 +244,7 @@ public class Main {
 - CountDisplay의 하위 클래스로, RandomCountDisplay 클래스를 정의함
 - java.util.Random 클래스를 이용한다
 	- random.nextInt(times)
+
 ### 9-2
 - '텍스트 파일의 내용을 표시'처리를 하는 클래스를 예제 프로그램에 추가하기
 	- 구현의 클래스 계층에 추갛마
@@ -258,6 +259,7 @@ public class Main {
 		- reset(): 최근 표시 위치로 되돌림
 			- rawPrint() 메소드 제일 앞 부분에서 최근 mark 된 위치로 되돌린다
 		- mark() 함수로 위치를 기억시켜, reset() 함수로 mark() 함수로 기억한 곳으로 초기화
+
 ### 9-3
 - '시작문자→장식문자 여러번→마지막 문자와 줄바꾸기'를 한 줄로해서, 이것이 여러 줄 반복된다
 - 반복할 때 마다 점점 장식 문자의 개수가 증가된다

@@ -1,10 +1,10 @@
 ---
-title: "[시스템분석및설계] Chapter 5. 싱글톤(Singleton) 패턴" 
+title: "[시스템분석및설계] Chapter 5. 싱글턴(Singleton) 패턴" 
 excerpt: "Hiroshi Yuki, Java 언어로 배우는 디자인 패턴 입문"  
 
 toc: true
 toc_sticky: true
-toc_label: "Ch5. 싱글톤(Singleton) 패턴"
+toc_label: "Ch5. 싱글턴(Singleton) 패턴"
 header:
   teaser: /assets/images/system-analysis/system-analysis-logo.jpeg
 categories: 
@@ -39,7 +39,7 @@ last_modified_at: 2020-04-09T20:00:00+09:00
 	- priavte이므로, 외부에서 접근하지 못한다.
 - private Singleton() 생성자
 	- priavte 메소드이므로, 외부에서 new Singleton()을 호출하지 못함.
-	- <span sytle="color:red">프로그래머가 실수를 해도 인스턴스가 1개만 생성되는 것을 보증</span>
+	- <span style="color:red">프로그래머가 실수를 해도 인스턴스가 1개만 생성되는 것을 보증</span>
 - public static Singleton getInstance()
 	- Singleton 클래스의 유일한 하나의 인스턴스를 얻을 때 사용하는 메소드
 	

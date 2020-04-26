@@ -79,6 +79,12 @@ public class Director {
 			"좋은 이침입니다",
 			"안녕하세요",
 		});
+		builder.makeString("밤에"); // 별도의 문자열
+		builder.makeItems(new String[]{ // 별도의 개별항목
+			"안녕하세요",
+			"안녕히 주무세요",
+			"안녕히 계세요",
+		});
 		builder.close(); // 문서 완성
 	}
 }

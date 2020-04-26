@@ -20,7 +20,7 @@ last_modified_at: 2020-04-15T18:00:00+09:00
 
 ## 02. 예제 프로그램
 - Builder 패턴을 사용해서, '문서'를 작성하는 프로그램
-- '문서'의 구족
+- '문서'의 구조
 	- 타이틀을 하나 포함한다.
 	- 문자열을 여러 개 포함한다.
 	- 개별 항목을 여러 개 포함한다.
@@ -97,12 +97,12 @@ public class TextBuilder extends Builder {
 		buffer.append("\n"); // 빈행
 	}
 	public void makeString(String str); { // 일반 텍스트에서의 문자열
-		buffer.append('■' + str + "\n"); // ■글머리 기호가 붙은 문자열
+		buffer.append("■" + str + "\n"); // ■글머리 기호가 붙은 문자열
 		buffer.append("\n"); // 빈행
 	}
 	public void makeItems(String[] items) { // 일반 텍스트에서의 개별항목
 		for (int i = 0; i < items.length; i++) {
-			buffer.append("·" + items[i] + "\n"); // ·글머리 기호가 붙은 문자열
+			buffer.append("•" + items[i] + "\n"); // ·글머리 기호가 붙은 문자열
 		}
 		buffer.append("\n"); // 빈행
 	}
@@ -189,14 +189,15 @@ public class Main {
 	}
 	public static void usage() {
 		System.out.println("Usage: java Main plain 일반텍스트로 문서작성");
-		System.out.println("Usage: java Main html HTML 파일로 문서작성');
+		System.out.println("Usage: java Main html HTML 파일로 문서작성");
 	}
 }
 ```  
 
 ![](https://eliotjang.github.io/assets/images/system-analysis/ch07-2.png){: width="70%"}  
 
-![](https://eliotjang.github.io/assets/images/system-analysis/ch07-3.png){: width="100%"}
+![](https://eliotjang.github.io/assets/images/system-analysis/ch07-3.png){: width="100%"}  
+
 
 ## 03. 등장 역할
 - Builder(건축자)의 역할
@@ -212,8 +213,10 @@ public class Main {
 	- Builder 패턴을 이용하는 역할
 	- 예제에서, Main 클래스가 해당됨
 - 클래스 다이어그램  
+
 ![](https://eliotjang.github.io/assets/images/system-analysis/ch07-4.png){: width="90%"}
 - 시퀀스 다이어그램  
+
 ![](https://eliotjang.github.io/assets/images/system-analysis/ch07-5.png){: width="60%"}
 
 
@@ -236,7 +239,7 @@ public class Main {
 
 
 ## 06. 요약
-- 구조를 가진 인스턴스를 쌓아올리는 Builder 패
+- 구조를 가진 인스턴스를 쌓아올리는 Builder 패턴
 
 
 ## 07. 연습 문제

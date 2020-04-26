@@ -103,12 +103,12 @@ public class Manager {
 - use() 메소드
 	- 주어진 문자열을 decochar로 둘러싸서 출력하는 일을 한다.
 - createClone() 메소드
-	- 자기 자신을 복제하는 메소드 (자신이 clone()을 호출함)
+	- 자기 자신을 복제하는 메소드 (자신의 clone()을 호출함)
 	- clone(): 인스턴스가 가지고 있는 필드 값이 그대로 복사된 복제 인스턴스를 반
 환한다.
 		- java.lang.Cloneable 인터페이스를 구현한 클래스만이 이 clone() 메소드를
  가진다.
-		- 이 인터페이스를 구현하지 않는 경우에는, CloneNotSupportedException이 >발생한다.
+		- 이 인터페이스를 구현하지 않는 경우에는, CloneNotSupportedException이 발생한다.
 		- <span style="color:blue">Product 인터페이스는 java.lang.Cloneable 상속
  (p.106)</span>
 	- clone() 메소드는, 자신의 클래스(및 하위 클래스)에서만 호출할 수 있다.
@@ -163,7 +163,7 @@ public class UnderlinePen implements Product {
 	}
 	public void use(String s) {
 		int length = s.getBytes().length;
-		System.out.println("¥" + s + "¥");
+		System.out.println("\"" + s + "\"");
 		System.out.print(" ");
 		for (int i=0; i < length; i++) {
 			System.out.print(ulchar);
@@ -244,7 +244,7 @@ public class Main {
 		- Something 객체의 모든 필드 값을 기존의 Something 인스턴스로부터 얻어와야 한다.
 		- 필드가 priavte이고, 그 필드 값을 얻어오는 메소드가 없다면 어떻게 할 것인가?
 			- 복제가 불가능하다.  
-			![](https://eliotjang.github.io/assets/images/system-analysis/ch06-4.png){: width="80%" height="70%"}
+			![](https://eliotjang.github.io/assets/images/system-analysis/ch06-4.png){: width="50%"}
 
 ## 05. 관련 패턴
 - Flyweight 패턴(20장)

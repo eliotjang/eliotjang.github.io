@@ -18,7 +18,7 @@ last_modified_at: 2020-04-16T18:00:00+09:00
 - '추상적(abstract)'
 	- 구체적으로 어떻게 구현되는지는 생각하지 않고 인터페이스(API)만을 주목하고 있는 상태
 	- 예: 추상 메소드(abstract method)
-		- 메소드의 본체는 쓰여저 있지 않고, 이름과 시그너처(인자의 형과 갯구, 반환형)만 정해져 있는 메소드
+		- 메소드의 본체는 쓰여저 있지 않고, 이름과 시그너처(인자의 형과 갯수, 반환형)만 정해져 있는 메소드
 - 추상적인 공장에서 추상적인 부품을 조립하여 추상적인 제품을 만든다
 	- 하위 클래스에서 구체적인 구현을 수행한다
 
@@ -241,40 +241,42 @@ public abstract class Factory {
 import factory.*;
 
 public class Main {
-	public static void main(String[] args) {
-		if (args.length != 1) {
-			System.out.println("Usage: java Main clas.name.of.ConcreteFactory");
-			System.out.println("Example 1: java Main listfactory.ListFactory");
-			System.out.println("Example 2: java Main tablefactory.TableFactory");
-			System.exit(0);
-		}
-		Factory factory = Factory.getFactory(args[0]);
+  public static void main(String[] args) {
+    if (args.length != 1) {
+      System.out.println("Usage: java Main clas.name.of.ConcreteFactory");
+      System.out.println("Example 1: java Main listfactory.ListFactory");
+      System.out.println("Example 2: java Main tablefactory.TableFactory");
+      System.exit(0);
+    }
+    Factory factory = Factory.getFactory(args[0]);
 
-		Link joins = factory.createLink("중앙일보", "http://www.joins.com/");
-		Link chosun = factory.createLink("조선일보", "http://www.chosun.com/");
+    Link joins = factory.createLink("중앙일보", "http://www.joins.com/");
+    Link chosun = factory.createLink("조선일보", "http://www.chosun.com/");
 
-		Link us_yahoo = factory.createLink("Yahoo!", "http://www.yahoo.com/");
-		Link kr_yahoo = factory.createLink("Yahoo!Korea", "http://www.yahoo.co.kr/");
-		Link excite = factory.createLink("Excite", "http://www.excite.com/");
-		Link google = factory.createLink("Google", "http://www.google.com/");
+    Link us_yahoo = factory.createLink("Yahoo!", "http://www.yahoo.com/");
+    Link kr_yahoo = factory.createLink("Yahoo!Korea", "http://www.yahoo.co.kr/");
+    Link excite = factory.createLink("Excite", "http://www.excite.com/");
+    Link google = factory.createLink("Google", "http://www.google.com/");
 
-		Tray traynews = factory.createTray("신문");
-		traynews.add(joins);
-		traynews.add(chosun);
+    Tray traynews = factory.createTray("신문");
+    traynews.add(joins);
+    traynews.add(chosun);
 
-		Tray trayyahoo = factory.createTray("Yahoo!");
-		trayyahoo.add(us_yahoo);
-		trayyahoo.add(kr_yahoo);
+    Tray trayyahoo = factory.createTray("Yahoo!");
+    trayyahoo.add(us_yahoo);
+    trayyahoo.add(kr_yahoo);
 
-		Tray traysearch = factory.createTray("검색엔진");
-		traysearch.add(trayyahoo);
-		traysearch.add(excite);
-		traysearch.add(google);
+    Tray traysearch = factory.createTray("검색엔진");
+    traysearch.add(trayyahoo);
+    traysearch.add(excite);
+    traysearch.add(google);
 
-		Page page = factory.createPage("LinkPage", "영진닷컴");
-		page.add(traynews);
-		page.add(traysearch);
-		page.output();
+    Page page = factory.createPage("LinkPage", "영진닷컴");
+    page.add(traynews);
+    page.add(traysearch);
+    page.output();
+  }
+}
 ```
 
 
@@ -286,7 +288,7 @@ public class Main {
 package listfactory;
 import factory.*;
 
-publci class ListFactory extends Factory {
+public class ListFactory extends Factory {
 	public Link createLink(String caption, String url) {
 		return new ListLink(caption, url);
 	}
@@ -315,7 +317,7 @@ public class ListLink extends Link {
 		super(caption, url);
 	}
 	public String makeHTML() {
-		return " <li><a href="□" + url + "□">" + caption + "</a></li>\n";
+		return " <li><a href=\"" + url + "\">" + caption + "</a></li>\n";
 	}
 }
 ```  
@@ -379,9 +381,10 @@ public class ListPage extends Page {
 			Item item = (Item)it.next();
 			buffer.append(item.makeHTML());
 		}
-		buffer.append("<\ul>\n");
+		buffer.append("</ul>\n");
 		buffer.append("<hr><address>" + author + "</address>");
-		ruturn buffer.toString();
+		buffer.append("</body></html>\n");
+		return buffer.toString();
 	}
 }
 ```  
@@ -459,7 +462,7 @@ public class TableLink extends Link {
 		super(caption, url);
 	}
 	public String makeHTML() {
-		return "<td><a href="□" + url + "□">" + caption + "</a></td>\n");
+		return "<td><a href=\"" + url + "\">" + caption + "</a></td>\n");
 	}
 }
 ```  
@@ -494,9 +497,9 @@ public class TableTray extends Tray {
 	public String makeHTML() {
 		StringBuffer buffer = new StringBuffer();
 		buffer.append("<td>");
-		buffer.append("<table width="100%" border="1"><tr>");
-		buffer.append("<td bgcolor="#cccccc" align="center" colspan=tray.size() "□"><b>" + caption + "</b></td>");
-		buffer.append("<tr>\n");
+		buffer.append("<table width=\"100%\" border=\"1\"><tr>");
+		buffer.append("<td bgcolor=\"#cccccc\" align=\"center\" colspan=\"" + tray.size() + "\"><b>" + caption + "</b></td>");
+		buffer.append("</tr>\n");
 		buffer.append("<tr>\n");
 		Iterator it = tray.iterator();
 		while (it.hasNext()) {
@@ -525,10 +528,10 @@ public class TablePage extends Page {
 	}
 	public String makeHTML() {
 		StringBuffer buffer = new StringBuffer();
-		buffer.append("<html><head><title" + title + "</title></head> \n");
+		buffer.append("<html><head><title" + title + "</title></head>\n");
 		buffer.append("<body>\n");
-		buffer.append("<h1> + title + "</h1>\n");
-		buffer.append("<table width="80%" border="3">\n");
+		buffer.append("<h1>" + title + "</h1>\n");
+		buffer.append("<table width=\"80%\" border=\"3\">\n");
 		Iterator it = content.iterator();
 		while (it.hasNext()) {
 			Item item = (Item)it.next();
@@ -537,6 +540,7 @@ public class TablePage extends Page {
 		buffer.append("</table>\n");
 		buffer.append("<hr><address>" + author + "</address>");
 		buffer.append("</body></html>\n");
+		return buffer.toString();
 	}
 }
 ```  
@@ -588,7 +592,7 @@ public class TablePage extends Page {
 
 
 ## 08. 요약
-- 추상적인 부품을 조립해서 추상적인 제품을 만든느 추상적인 공장인 Abstract Factory 패턴  
+- 추상적인 부품을 조립해서 추상적인 제품을 만드는 추상적인 공장인 Abstract Factory 패턴  
 
 ## 연습문제
 - 8-1
@@ -601,18 +605,18 @@ public class TablePage extends Page {
 	- 예: 상위 클래스의 private 필드를 하위 클래스에서 접근할 수 없다
 		- 아래 코드는 컴파일 에러 발생함 (출력부분에서 에러발생)  
 		```java
-		class SuperClass {
-			private int priv1 = 10;
-			protected int prot1 = 11;
-		}
-		public class SubClass extends SuperClass {
-			public static void main(String args[]) {
-				SubClass sub = new SubClass();
-				System.out.println("priv1 = " + sub.priv1);
-				System.out.println("prot1 = " + sub.prot1);
-			}
-		}
-		```  
+class SuperClass {
+    private int priv1 = 10;
+    protected int prot1 = 11;
+}
+public class SubClass extends SuperClass {
+    public static void main(String args[]) {
+	    SubClass sub = new SubClass();
+        System.out.println("priv1 = " + sub.priv1);
+        System.out.println("prot1 = " + sub.prot1);
+    }
+}
+```  
 	- 예: 상위클래스의 private 필드를 하위클래스에서 접근할 수 없으므로, 이 필드를 접근하기 위한 액세스 메소드를 제공해야한다  
 	```java
 	class Super Class {

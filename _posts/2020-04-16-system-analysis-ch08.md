@@ -662,7 +662,7 @@ public class TablePage extends Page {
 		```java
 		ListLink ll=new ListLink("Yahoo!", http://www.yahoo.com/);
 		```  
-	- 하위클래스의 객체 생성시, 상위클래스의 "인자없은 생성자"를 자동으로 호출한다  
+	- 하위클래스의 객체 생성시, 상위클래스의 "인자없는 생성자"를 자동으로 호출한다  
 
 	```java
 	class SuperClass {
@@ -718,6 +718,9 @@ public class TablePage extends Page {
 	- Page 클래스가 Tray 클래스와 비슷한 역할을 하는데, 왜 Page 클래스를 Tray 클래스의 하위 클래스로 하지 않았는가?
 		- Page를 Tray 클래스의 하위로 만들면, Page도 Item의 하위클래스가 되어 add의 대상이 된다
 		- 그러나, Page는 Tray에 add 할 수 없기 때문에(HTML의 문법상 부적절) 그렇게 하지 않았다  
+
+
+## 참고자료
 
 ![](https://eliotjang.github.io/assets/images/system-analysis/ch08-9.png){:  width="100%"}  
 

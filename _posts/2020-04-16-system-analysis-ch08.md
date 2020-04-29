@@ -604,57 +604,56 @@ public class TablePage extends Page {
 			- tray 필드 접근을 위한 메소드를 Tray 클래스가 제공해주어야 한다
 	- 예: 상위 클래스의 private 필드를 하위 클래스에서 접근할 수 없다
 		- 아래 코드는 컴파일 에러 발생함 (출력부분에서 에러발생)  
+
 		```java
-class SuperClass {
-    private int priv1 = 10;
-    protected int prot1 = 11;
-}
-public class SubClass extends SuperClass {
-    public static void main(String args[]) {
-        SubClass sub = new SubClass();
-        System.out.println("priv1 = " + sub.priv1);
-        System.out.println("prot1 = " + sub.prot1);
-    }
-}
-```  
+		class SuperClass {
+		  private int priv1 = 10;
+		  protected int prot1 = 11;
+		}
+		public class SubClass extends SuperClass {
+		  public static void main(String args[]) {
+		    SubClass sub = new SubClass();
+		    System.out.println("priv1 = " + sub.priv1);
+		    System.out.println("prot1 = " + sub.prot1);
+		  }
+		}
+		```  
 	- 예: 상위클래스의 private 필드를 하위클래스에서 접근할 수 없으므로, 이 필드를 접근하기 위한 액세스 메소드를 제공해야한다  
 
 	```java
-class Super Class {
-  private int priv1 = 10;
-  protected int prot1 = 11;
-
-  public int getPriv1() {
-    return priv1;
-  }
-}
-public clas SubClass extends SueperClass {
-  public static void main(String args[]) {
-    SubClass sub = new SubClass();
-    System.out.println("priv1 = " + sub.getPriv1() );
-    System.out.println("prot1 = " + sub.prot1);
-  }
-}
-```  
+	class Super Class {
+	  private int priv1 = 10;
+	  protected int prot1 = 11;
+	  public int getPriv1() {
+	    return priv1;
+	  }
+	}
+	public clas SubClass extends SueperClass {
+	  public static void main(String args[]) {
+	    SubClass sub = new SubClass();
+	    System.out.println("priv1 = " + sub.getPriv1() );
+	    System.out.println("prot1 = " + sub.prot1);
+	  }
+	}
+	```  
 - 8-2
 	- Yahoo 사이트의 URL(http://www.yahoo.com/) 링크만을 포함하는 페이지를 반환하는 다음과 같은 메소드를 예제 프로그램의 Factory 클래스에 추가하시오. 이 때 구체적인 공장과 구체적인 부품은 어떻게 변경해야 합니까?  
 	```java
-public Page createYahooPage() {
-  // createLink()를 이용해서 Yahoo URL 생성함
-  // createPage()를 이용해서 Yahoo 페이지 생성함
-  // Page의 add()를 이용해서 Link를 추가함
-  // Page 객체를 반환함
-}
-```  
+	public Page createYahooPage() {
+	  // createLink()를 이용해서 Yahoo URL 생성함
+	  // createPage()를 이용해서 Yahoo 페이지 생성함
+	  // Page의 add()를 이용해서 Link를 추가함
+	  // Page 객체를 반환함
+	}
+	```  
 - 8-3
 	- ListLink 클래스의 생성자는, 상위클래스의 생성자를 호출하는 것 뿐이다  
 
-	```java  
-
-public ListLink(String caption, String url) {
-  super(caption, url);
-}
-```  
+	```java
+	public ListLink(String caption, String url) {
+	  super(caption, url);
+	}
+	```  
 	- 특별한 처리가 없는데, 왜 일부러 ListLink의 생성자를 정의하고 있나?
 		- 생성자는 상속받지 않기 때문이다
 		- ListLink() 생성자를 구현하지 않고, 다음과 같이 호출할 수 없다  
@@ -662,58 +661,56 @@ public ListLink(String caption, String url) {
 		ListLink ll=new ListLink("Yahoo!", http://www.yahoo.com/);
 		```  
 	- 하위클래스의 객체 생성시, 상위클래스의 "인자없은 생성자"를 자동으로 호출한다  
+
 	```java
-class SuperClass {
-  private int priv1 = 10;
-  protected int prot1 = 11;
-
-  SuperClass() {
-    priv1 = 999;
-  }
-  public int getPriv1() {
-    return priv1;
-  }
-}
-public class SubClass extends SuperClass {
-  SubClass() {
-    prot1 = 888;
-  }
-
-  public static void main(String args[]) {
-    SubClass sub = new SubClass();
-    System.out.println("priv1 = " + sub.getPriv1());
-    System.out.println("prot1 = " + sub.prot1);
-  }
-}
-```  
+	class SuperClass {
+	  private int priv1 = 10;
+	  protected int prot1 = 11;
+	  SuperClass() {
+	    priv1 = 999;
+	  }
+	  public int getPriv1() {
+	    return priv1;
+	  }
+	}
+	public class SubClass extends SuperClass {
+	  SubClass() {
+	    prot1 = 888;
+	  }
+	  public static void main(String args[]) {
+	    SubClass sub = new SubClass();
+	    System.out.println("priv1 = " + sub.getPriv1());
+	    System.out.println("prot1 = " + sub.prot1);
+	  }
+	}
+	```  
 	- 하위클래스의 객체 생성시, 상위클래스의 "인자있는 생성자"를 호출하려면, 하위클래스에서 생성자를 따로 만들어야 한다  
+
 	```java
-class SuperClass {
-  private int priv1 = 10;
-  protected int prot1 = 11;
-
-  SuperClass() {
-    priv1 = 999;
-  }
-  SuperClass(int a) {
-    priv1 = a;
-  }
-  public int getPriv1() {
-    return priv1;
-  }
-}
-
-public class SubClass extends SuperClass {
-  SubClass(int x) {
-    Super(x);
-  }
-  public static void main(String args[]) {
-    SubClass sub = new SubClass(777);
-    System.out.println("priv1 = " + sub.getPriv1());
-    System.out.println("prot1 = " + sub.prot1;
-  }
-}
-```  
+	class SuperClass {
+	  private int priv1 = 10;
+	  protected int prot1 = 11;
+	  SuperClass() {
+	    priv1 = 999;
+	  }
+	  SuperClass(int a) {
+	    priv1 = a;
+	  }
+	  public int getPriv1() {
+	    return priv1;
+	  }
+	}
+	public class SubClass extends SuperClass {
+	  SubClass(int x) {
+	    Super(x);
+	  }
+	  public static void main(String args[]) {
+	    SubClass sub = new SubClass(777);
+	    System.out.println("priv1 = " + sub.getPriv1());
+	    System.out.println("prot1 = " + sub.prot1;
+	  }
+	}
+	```  
 
 - 8-4
 	- Page 클래스가 Tray 클래스와 비슷한 역할을 하는데, 왜 Page 클래스를 Tray 클래스의 하위 클래스로 하지 않았는가?

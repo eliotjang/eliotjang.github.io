@@ -248,14 +248,15 @@ public class Main {
 ## 연습 문제
 
 ### 9-1
-- '임의 횟수만큼 문자열 찍기' 기능을 하는 randomDisplay()를 제공하는 클래스 추가하기
+- '<u>임의 횟수만큼 문자열 찍기</u>' 기능을 하는 randomDisplay()를 제공하는 클래스 추가하기
+    - 기능의 클래스 계층에 추가함
 	- 기존의 StringDisplayImpl 클래스가 제공하는 메소드들을 이용해서 구현 가능하므로
 - CountDisplay의 하위 클래스로, RandomCountDisplay 클래스를 정의함
 - java.util.Random 클래스를 이용한다
 	- random.nextInt(times)
 
 ### 9-2
-- '텍스트 파일의 내용을 표시'처리를 하는 클래스를 예제 프로그램에 추가하기
+- '<u>텍스트 파일의 내용을 표시</u>'처리를 하는 클래스를 예제 프로그램에 추가하기
 	- 구현의 클래스 계층에 추가한다
 		- 전혀 다른 방식의 DisplayImpl이 필요하므로
 	- DisplayImpl의 하위 클래스로 FileDisplayImpl 클래스를 만듬

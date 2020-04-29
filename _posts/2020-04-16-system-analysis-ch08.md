@@ -618,6 +618,7 @@ public class SubClass extends SuperClass {
 }
 ```  
 	- 예: 상위클래스의 private 필드를 하위클래스에서 접근할 수 없으므로, 이 필드를 접근하기 위한 액세스 메소드를 제공해야한다  
+
 	```java
 class Super Class {
   private int priv1 = 10;
@@ -647,7 +648,9 @@ public Page createYahooPage() {
 ```  
 - 8-3
 	- ListLink 클래스의 생성자는, 상위클래스의 생성자를 호출하는 것 뿐이다  
-	```java
+
+	```java  
+
 public ListLink(String caption, String url) {
   super(caption, url);
 }

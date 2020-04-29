@@ -638,6 +638,7 @@ public class TablePage extends Page {
 	```  
 - 8-2
 	- Yahoo 사이트의 URL(http://www.yahoo.com/) 링크만을 포함하는 페이지를 반환하는 다음과 같은 메소드를 예제 프로그램의 Factory 클래스에 추가하시오. 이 때 구체적인 공장과 구체적인 부품은 어떻게 변경해야 합니까?  
+
 	```java
 	public Page createYahooPage() {
 	  // createLink()를 이용해서 Yahoo URL 생성함
@@ -646,6 +647,7 @@ public class TablePage extends Page {
 	  // Page 객체를 반환함
 	}
 	```  
+	  - 구체적인 공장과 부품은 변화가 없다
 - 8-3
 	- ListLink 클래스의 생성자는, 상위클래스의 생성자를 호출하는 것 뿐이다  
 

@@ -49,7 +49,7 @@ last_modified_at: 2020-04-30T17:00:00+09:00
 
 ### 기본 아이디어
 
-![](https://eliotjang.github.io/assets/images/system-analysis/ch11-2.png){: width="30%"}
+![](https://eliotjang.github.io/assets/images/system-analysis/ch11-2.png){: width="20%"}
 
 - 트리 형태의 디렉토리 구조
 - 클라이언트가 root에 대해서 getSize()를 호출하면,
@@ -100,11 +100,9 @@ public abstract class Entry {
 - PrintList(String) 구현
   - prefix와 자신의 문자열 표현을 '/'로 묶어서 표현
   - 아래의 식은 모두 동일  
-  ```java
-  prefix + "/" + this
-  prefix + "/" + this.toString()
-  prefix + "/" + toString()
-  ```
+  `prefix + "/" + this`  
+  `prefix + "/" + this.toString()`  
+  `prefix + "/" + toString()`  
 
 ```java
 public class File extends Entry {
@@ -265,7 +263,7 @@ public class Main {
 - Client(의뢰자)의 역할
   - 예제에서는 Main 클래스가 해당됨
 
-![](https://eliotjang.github.io/assets/images/system-analysis/ch11-3.png){: width="100%"}
+![](https://eliotjang.github.io/assets/images/system-analysis/ch11-4.png){: width="100%"}
 
 ## 04. 독자의 사고를 넓혀주는 힌트
 

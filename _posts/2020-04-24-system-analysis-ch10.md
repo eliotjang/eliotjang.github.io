@@ -78,8 +78,8 @@ public class Hand {
   public static final int HANDVALUE_PAA = 2; // 보를 표시하는 값
   public static final Hand[] hand = { // 가위바위보의 손을 표시하는 3개의 인스턴스
     new Hand(HANDVALUE_GUU),
-	new Hand(HANDVALUE_CHO),
-	new Hand(HANDVALUE_PAA),
+    new Hand(HANDVALUE_CHO),
+    new Hand(HANDVALUE_PAA),
   };
   private static final String[] name = { // 가위바위보의 손의 문자열 표현
     "주먹", "가위", "보",
@@ -120,7 +120,7 @@ public class Hand {
 	- 이 메소드가 호출되면, Strategy 인터페이스를 구현한 클래스가 지혜를 모아 '다음 손'을 결정함
 	- study()
 		- 전략을 위한 준비를 하는 메소드
-		- 이긴 경우에는 Player가 strudy(true)를 호출하고,
+		- 이긴 경우에는 Player가 study(true)를 호출하고,
 		- 진 경우에는 Player가 study(flase)를 호출한다
 
 ```java
@@ -349,7 +349,7 @@ public class Main {
 
 ## 04. 독자의 사고를 넓혀주는 힌트
 ### 일부러 Strategy 역할을 만들 필요가 있을까?
-- Strategy 역학을 구현하기만 한다면, ConcreteStrategy의 종류를 변경하기가 쉽다
+- Strategy 역할을 구현하기만 한다면, ConcreteStrategy의 종류를 변경하기가 쉽다
 	- 예1: 예전의 알고리즘과 개량한 알고리즘의 속도를 비교하고 싶은 경우, 간단히 교체해서 테스트할 수 있다
 	- 예2: 장기 게임에서 사용자의 선택에 따라 <u>사고 루틴의 레벨</u>을 교체하는 것도 간단하게 실행할 수 있다
 

@@ -270,7 +270,7 @@ public class Main {
 
 ![](https://eliotjang.github.io/assets/images/system-analysis/ch12-8.png){: width="80%"}
 
-![](https://eliotjang.github.io/assets/images/system-analysis/ch12-9.png){: width="80%"}
+![](https://eliotjang.github.io/assets/images/system-analysis/ch12-9.png){: width="85%"}
 
 ### 작은 클래스가 증가함
 
@@ -285,13 +285,13 @@ public class Main {
 
 ## 06. 보강: 상속과 위임에 있어서의 동일시
 
-![](https://eliotjang.github.io/assets/images/system-analysis/ch12-10.png){: width="100%"}
+![](https://eliotjang.github.io/assets/images/system-analysis/ch12-10.png){: width="80%"}
 
 ![](https://eliotjang.github.io/assets/images/system-analysis/ch12-11.png){: width="80%"}
 
-![](https://eliotjang.github.io/assets/images/system-analysis/ch12-12.png){: width="100%"}
+![](https://eliotjang.github.io/assets/images/system-analysis/ch12-12.png){: width="80%"}
 
-![](https://eliotjang.github.io/assets/images/system-analysis/ch12-13.png){: width="100%"}
+![](https://eliotjang.github.io/assets/images/system-analysis/ch12-13.png){: width="80%"}
 
 
 ## 07. 요약

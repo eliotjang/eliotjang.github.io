@@ -1,18 +1,18 @@
 # main links
 main:
-  - title: "Scratch Paper"
+  - title: "낙서장"
     url: /categories/scratch paper/
-  - title: "Algoritms"
+  - title: "알고리즘"
     url: /categories/algorithm/
-  - title: "Projects"
+  - title: "프로젝트"
     url: /categories/project/
-  - title: "Novels"
-    url: /categories/소설/
-  - title: "Journals"
+  - title: "독서"
+    url: /categories/reading/
+  - title: "일기장"
     url: /categories/journal/
-  - title: "GitHub"
+  - title: "깃허브"
     url: https://github.com/eliotjang/
-  - title: "About"
+  - title: "소개"
     url: /about/
   
 

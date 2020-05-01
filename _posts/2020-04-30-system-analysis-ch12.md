@@ -190,26 +190,122 @@ public class FullBorder extends Border {
 
 ### Main 클래스
 
+- 동작 테스트용 클래스
+- b1 객체: 'Hello, world.'를 장식하지 않고 표시한 것
+- b2 객체: b1에 대해 '#' 문자로 좌우에 장식한 것
+- b3 객체: b2에 대해 전체 장식을 한 것
+- b4 객체: '안녕하세요'에 여러 겹 장식을 한 것
+
+![](https://eliotjang.github.io/assets/images/system-analysis/ch12-5.png){: width="100%"}
+
+```java
+public class Main {
+  public static void main(String[] args) {
+    Display b1 = new StringDisplay("Hello, world.");
+    Display b2 = new SideBorder(b1, '#');
+    Display b3 = new FullBorder(b2);
+    b1.show();
+    b2.show();
+    b3.show();
+    Display b4 = new SideBorder(new FullBorder(new FullBorder(new SideBorder(new FullBorder(new StringDisplay("안녕하세요.")),'*'))),'/');
+    b4.show();
+```
+
+### <span style="color:red">객체 다이어그램</span>
+
+- b1의 장식이 b2, b2의 장식이 b3
+
+![](https://eliotjang.github.io/assets/images/system-analysis/ch12-6.png){: width="80%"}
+
 ## 03. 등장 역할
 
+- Component의 역할
+  - 기능을 추가할 때 핵심이 되는 역할
+  - 스펀지 케이크의 API에 해당함
+  - 예제에서는, Display 클래스가 해당됨
+
+- ConcreteComponent의 역할
+  - Component 역할을 구현한 구체적인 클래스
+  - 구체적인 스펀지 케이크에 해당함
+  - 예제에서는, StringDisplay 클래스가 해당됨
+
+- Decorator(장식자)의 역할
+  - Component 역할과 동일한 인터페이스를 가짐
+  - 장식자이면서, 장식할 대상이 되기도 함
+  - 예제에서는, Border 클래스가 해당됨
+
+- Concrete Decorator의 역할
+  - 구체적인 장식자
+  - 예제에서는, SideBorder와 FullBorder 클래스가 해당됨
+
+![](https://eliotjang.github.io/assets/images/system-analysis/ch12-7.png){: width="80%"}
 
 ## 04. 독자의 사고를 넓혀주는 힌트
 
+### 투명한 인터페이스(API)
+
+- Border 클래스가 Display 클래스의 하위 클래스
+  - 장식을 나타내는 Border 클래스가, 내용물을 나타내는 Display와 동일한 인터페이스(API)를 가진다  
+  ⇒ 장식하는 클래스가, 다시 장식의 대상이 될 수 있다
+  - getColumns, getRows, getRowText, show 메소드는 은폐되지 않고, 다른 클래스에서 볼 수 있다  
+  ⇒ 투명함
+  - Composite과 마찬가지로 재귀적인 구조임
+    - 목적이 서로 다르다
+      - <span style="color:red"><b>Composite</b> 패턴은, <b>container</b>가 다시 내용물이 될 수 있다</span>
+      - <span style="color:blue"><b>Decorator</b></span> 패턴은, 장식하는 클래스가, 다시 장식 대상이 될 수 있다
+      - 예: FullBorder의 getRowText()는 자신이 가지고 있는 Display 객체의 getRowText() 메소드를 호출한다
+
+### 내용물을 변경하지 않고, 기능을 추가할 수 있다
+
+- 내용물을 변경하지 않고, 새로운 장식을 계속해서 부착할 수 있다
+- 포장되는 대상을 변경하지 않고, 기능을 추가할 수 있다
+- Decorator 패턴에서는 위임이 사용된다
+  - 예: SideBorder의 getColumns 메소드 내에서는, display.getColumns()를 호출한다
+
+### 단순한 장식으로도 다양한 기능을 추가할 수 있다
+
+- 간단한 구체적인 장식(ConcreteDecorator 역할)을 많이 준비해두고, 그것들을 자유롭게 조합하여 새로운 장식을 만들 수 있다
+
+### java.io 패키지와 Decortator 패턴
+
+![](https://eliotjang.github.io/assets/images/system-analysis/ch12-8.png){: width="80%"}
+
+![](https://eliotjang.github.io/assets/images/system-analysis/ch12-9.png){: width="80%"}
+
+### 작은 클래스가 증가함
+
+- Decorator 패턴을 사용하면, 유사한 작은 클래스들이 많아지는 단점이 있다
 
 
+## 05. 관련 패턴
+
+- Adapter 패턴
+- Strategy 패턴
 
 
+## 06. 보강: 상속과 위임에 있어서의 동일시
+
+![](https://eliotjang.github.io/assets/images/system-analysis/ch12-10.png){: width="100%"}
+
+![](https://eliotjang.github.io/assets/images/system-analysis/ch12-11.png){: width="80%"}
+
+![](https://eliotjang.github.io/assets/images/system-analysis/ch12-12.png){: width="100%"}
+
+![](https://eliotjang.github.io/assets/images/system-analysis/ch12-13.png){: width="100%"}
 
 
+## 07. 요약
 
+- 객체를 차례차례 장식해서, 기능을 추가해 나가는 Decorator 패턴
 
+## 연습 문제
 
+- Q12-1
+  - 문자열 아래 위로 장식문자를 추가하는 UpDownBorder클래스 만들기
 
-
-
-
-
-
+- Q12-2
+  - 여러 줄의 문자열을 표시하는 MultiStringDisplay 클래스 만들기
+  - ConcreteComponent 역할 수행
 
 
 

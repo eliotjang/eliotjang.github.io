@@ -17,7 +17,7 @@ tags:
 last_modified_at: 2020-05-01T23:00:00+09:00
 ---  
 
-I made Project that demos reading data from hardware sensors.
+# I made Project that demos reading data from hardware sensors.
 
 ## Application Architecture
 
@@ -153,7 +153,7 @@ display.addEventListener("change", () => {
 
 - icon.png
 
-![](https://eliotjang.github.io/assets/images/fitbit/icon.png){: width="40%"}
+![](https://eliotjang.github.io/assets/images/fitbit/icon.png){: width="30%"}
 
 - index.gui
 
@@ -211,11 +211,15 @@ display.addEventListener("change", () => {
 
 ```
 
+## What I did
+
 I published to Fitbit application and executed on my Fitbit Versa Lite.  
 
 ![](https://eliotjang.github.io/assets/images/fitbit/application-name.png){: width="80%"}
 
-![](https://eliotjang.github.io/assets/images/fitbit/get-acceleromter-data.jpeg){: width="70%"}  
+![](https://eliotjang.github.io/assets/images/fitbit/get-accelerometer-data.jpeg){: width="70%"}  
+
+## What I have to do next?
 
 <span style="color:green">I made the projects with sensor examples.  
 I must to restore acceleromter data to Database.  

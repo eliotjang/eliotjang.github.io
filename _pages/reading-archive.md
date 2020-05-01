@@ -10,11 +10,11 @@ taxonomy: reading #not needs. I hide it all journal posts for make _journal fold
 
 *****
 
-## 노르웨이의 숲
-
-진행중...
-
 ## 하버드 상위1퍼센트의 비밀
+
+진행중
+
+## 노르웨이의 숲
 
 아직 안읽음
 

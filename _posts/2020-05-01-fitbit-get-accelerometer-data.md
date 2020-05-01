@@ -17,7 +17,7 @@ tags:
 last_modified_at: 2020-05-01T23:00:00+09:00
 ---  
 
-# I made Project that demos reading data from hardware sensors.
+<span style="color:blue"><b>I made Project that demos reading data from hardware sensors</b></span>.
 
 ## Application Architecture
 

@@ -1,5 +1,5 @@
 ---
-title: "[Fitbit] #4 Accelerometer Sensor Application Demo"
+title: "[Fitbit] #5 Accelerometer Sensor Application Demo"
 excerpt: "https://studio.fitbit.com/"
 
 toc: true

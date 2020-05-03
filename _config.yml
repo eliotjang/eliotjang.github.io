@@ -24,8 +24,8 @@ description              : "Welcome to my library, margin of life."
 url                      : "https://eliotjang.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "eliotjang/eliotjang.github.io"
-teaser                   : "/assets/images/notebook.webp"
-logo                     : "/assets/images/album/long-hair-eliot.jpeg"
+teaser                   : "/assets/images/album/notebook.webp"
+logo                     : "/assets/images/album/long-hair-eliot.jpg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -89,7 +89,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : "/assets/images/Eliot-in-KNU.jpeg"
+og_image                 : "/assets/images/album/long-hair-eliot.jpg"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:

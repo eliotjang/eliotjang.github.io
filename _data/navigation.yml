@@ -1,19 +1,24 @@
 # main links
 main:
+  - title: "Knowledge"
+    url: /categories/knowledge/
   - title: "낙서장"
     url: /categories/scratch paper/
-  - title: "알고리즘"
+  - title: "Algorithm"
     url: /categories/algorithm/
-  - title: "프로젝트"
+  - title: "Projects"
     url: /categories/project/
   - title: "독서"
     url: /categories/reading/
-  - title: "일기장"
+  - title: "Journal"
     url: /categories/journal/
   - title: "깃허브"
     url: https://github.com/eliotjang/
-  - title: "소개"
-    url: /about/
+  
+
+
+# - title: "소개"
+#    url: /about/
   
 
 

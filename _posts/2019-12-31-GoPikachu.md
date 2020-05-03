@@ -23,7 +23,7 @@ This is my first game.
 
 *****
 ### *Game Play Video*  
-[![go pikachu video](https://eliotjang.github.io/assets/images/shot1.png)](https://youtu.be/bD5kvn6xTy4)
+[![go pikachu video](https://eliotjang.github.io/assets/images/album/shot1.png)](https://youtu.be/bD5kvn6xTy4)
 
 
 *****

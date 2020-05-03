@@ -25,7 +25,7 @@ url                      : "https://eliotjang.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "eliotjang/eliotjang.github.io"
 teaser                   : "/assets/images/notebook.webp"
-logo                     : "/assets/images/Eliot-in-KNU.jpeg"
+logo                     : "/assets/images/album/long-hair-eliot.jpeg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200

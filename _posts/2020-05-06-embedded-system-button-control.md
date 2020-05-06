@@ -29,6 +29,8 @@ last_modified_at: 2020-05-06T21:00:00+09:00
 
 ## 버튼을 이용한 LED 제어
 
+- thinkercad.com에 들어가면 회로구성 뿐만 아니라 코드를 집어넣어서 시뮬레이션까지 가능한 툴을 이용
+
 ![](https://eliotjang.github.io/assets/images/embedded-system/button-control-2.png){: width="80%"}
 
 
@@ -44,19 +46,41 @@ last_modified_at: 2020-05-06T21:00:00+09:00
 ## 풀업 회로
 
 - 풀업 저항(10kΩ)을 사용한 회로
+    - VCC(전원부)랑 저항이 연결되어 있음
 - 아두이노에서 스위치를 연결할 때 사용되는 회로
-- 스위치를 누르지 않을 경우 5V, 누를 경우 0V
+- <span style="color:red">(우측사진)스위치를 누르지 않을 경우 5V, (좌측사진)누를 경우 0V</span>
+    - 스위치를 누를 경우 전류가 오른쪽 INPUT으로 가는게 아니라서 INPUT이 0V가 된다. GND로 전류가 가는 이유는, 물은 높은 곳에서 아래쪽으로 가는 경우를 생각하면 편하다
 
-![](https://eliotjang.github.io/assets/images/embedded-system/button-control-4.png){: width="60%"}
+
+![](https://eliotjang.github.io/assets/images/embedded-system/button-control-4.png){: width="70%"}
 
 
 ## 풀업 회로를 이용한 LED 제어
 
 ![](https://eliotjang.github.io/assets/images/embedded-system/button-control-5.png){: width="80%"}
 
+```
+void setup()
+{
+    pinMode(3, INPUT);
+    pinMode(7, OUTPUT);
+}
+void loop()
+{
+    if (digitalRead(3) == LOW) {
+	digitalWrite(7, HIGH);
+    }
+    else {
+	digitalWrite(7, LOW);
+    }
+    delay(10);
+}
+```
+
 
 ## 풀다운 회로
 
+- 접지부랑 저항이 연결되어 있음
 - 풀업 회로와 반대로 0V 쪽에 저항 연결
 - 스위치를 누르지 않을 경우 0V, 누를 경우 5V
 
@@ -67,10 +91,29 @@ last_modified_at: 2020-05-06T21:00:00+09:00
 
 ![](https://eliotjang.github.io/assets/images/embedded-system/button-control-7.png){: width="80%"}
 
+```
+void setup()
+{
+    pinMode(3, INPUT);
+    pinMode(7, OUTPUT);
+}
+void loop()
+{
+    if (digitalRead(3) == HIGH) {
+	digitalWrite(7, HIGH);
+    }
+    else {
+	digitalWrite(7, LOW);
+    }
+    delay(10);
+}
+```
 
 ## 내부 풀업
 
 - 아두이노의 각 핀 내부의 풀업 저항
+    - 풀업이니까 VCC(전원부)랑 저항이 연결되어 있음
+    
 - pinMode(pin_num, INPUT_PULLUP) 함수를 통해 사용
 
 ![](https://eliotjang.github.io/assets/images/embedded-system/button-control-8.png){: width="60%"}
@@ -80,6 +123,23 @@ last_modified_at: 2020-05-06T21:00:00+09:00
 
 ![](https://eliotjang.github.io/assets/images/embedded-system/button-control-9.png){: width="80%"}
 
+```
+void setup()
+{
+    pinMode(3, INPUT_PULLUP);
+    pinMode(7, OUTPUT);
+}
+void loop()
+{
+    if (digitalRead(3) == LOW) {
+	digitalWrite(7, HIGH);
+    }
+    else {
+	digitalWrite(7, LOW);
+    }
+    delay(10);
+}
+```
 
 ## 도전 과제: 토글 제어
 

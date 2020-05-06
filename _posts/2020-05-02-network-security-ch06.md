@@ -3,7 +3,7 @@ title: "[네트워크보안] Chapter 06. 네트워크 보안 관리"
 excerpt: "장상수 저, 정보보호총론, 생능출판, 2015"
 toc: true
 toc_sticky: true
-toc_label: "Ch05. 네트워크 보안 관리"
+toc_label: "Ch06. 네트워크 보안 관리"
 header:
   teaser: /assets/images/network-security/nerwork-security-logo.jpeg
 categories:

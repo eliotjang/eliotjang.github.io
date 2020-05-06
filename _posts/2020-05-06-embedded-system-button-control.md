@@ -21,13 +21,15 @@ last_modified_at: 2020-05-06T21:00:00+09:00
 - 회로 상에서 전류를 흐르게 하거나 차단하는 역할
 - 핀의 극성은 없음
 - 정격 고려하지 않아도 됨
+    - 물론 전자부품이 감당하지 못하는 전류가 흐르면 탈수는 있지만 웬만하면 괜찮다
+
 
 ![](https://eliotjang.github.io/assets/images/embedded-system/button-control-1.png){: width="90%"}
 
 
 ## 버튼을 이용한 LED 제어
 
-![](https://eliotjang.github.io/assets/images/embedded-system/button-control-2.png){: width="60%"}
+![](https://eliotjang.github.io/assets/images/embedded-system/button-control-2.png){: width="80%"}
 
 
 ## 플로팅(Floating)

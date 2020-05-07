@@ -38,8 +38,31 @@ last_modified_at: 2020-05-06T21:00:00+09:00
 
 ## 조도센서를 활용한 LED 제어
 
+- 아날로그 입력은 0 ~ 1023까지 받고, 뿌려주는 값은 0 ~ 255이다
+- 과전류를 방지하기 위해 조도센서 옆에 저항을 달아준다
+
+
 ![](https://eliotjang.github.io/assets/images/embedded-system/sensor-control-2.png){: width="80%"}
 
+```
+void setup()
+{
+    pinMode(A0, INPUT);
+    pinMode(11, OUTPUT);
+    Serial.begin(9600);
+}
+void loop()
+{
+    Serial.println(analogRead(A0));
+    if(analogRead(A0) > 850) {
+	digitalWrite(11, LOW);
+    }
+    else {
+	digitalWrite(11, HIGH);
+    }
+    delay(100);
+}
+```
 
 ## 온도 센서(TMP36)
 

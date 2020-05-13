@@ -77,8 +77,13 @@ public interface Print {
 ⇒ Banner 클래스의 메소드들을 재활용하는 Adapter 클래스를 만든다.  
 ⇒ PrintBanner 클래스  
 
+
 **PrintBanner 클래스**
+
   - Banner 클래스를 <font color="blue">상속</font>하면서, Print 인터페이스를 <font color="blue">구현</font>한다.  
+  - printWeak(): 상속받은 showWithParen()을 호출한다.
+  - printStrong(): 상속받은 showWithAster()를 호출한다.  
+
 
 ```java
 public class PrintBanner extends Banner implements Print {
@@ -103,15 +108,6 @@ public class PrintBanner extends Banner implements Print {
 |교환장치|어댑터|PrintBanner클래스|
 |필요한 것|직류 12볼트|Print 인터페이스(printWeak, printStrong)|  
 
-
-**Banner 클래스 소스 (sample1/Banner.java)**  
-
-**Print 인터페이스 소스 (sample1/Print.java)**  
-
-**PrintBanner 클래스 소스 (sample1/PrintBanner.java)**
-  - Banner 클래스를 <font color="red">상속</font>, Print 인터페이스를 <font color="red">구현</font>
-  - printWeak(): 상속받은 showWithParen()을 호출한다.
-  - printStrong(): 상속받은 showWithAster()를 호출한다.  
 
 **클래스 다이어그램**  
 

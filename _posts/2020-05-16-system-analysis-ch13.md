@@ -372,28 +372,30 @@ public class Main {
 ## Homework : Visitor 패턴 응용
 
 - FileNameFindVisitor 클래스 추가하기
-    - 파일 이름에 "생성자의 입력 인자 name"이 포함된 모든 파일을 모으는 일을 하는 방문자
-    - 구현 방법
-	- 연습문제 13-1 응용하기
-	- 생성자 FileNameFindVisitor(String name)
-    - FileNameFindVisitor.getFoundFiles() 메소드
-	- FileNamedFindVisitor가 모은 모든 파일에 대한 Iterator를 얻어올 때 호출하는 메소드
-    - Main 클래스
-	- Main.main()은 리스트 13-9와 같은 형태
-	- 그림 13-2와 같은 디렉토리 구조에, "Kim", "Lee", "Park" 디렉토리 안에 각각 "hyejaKim.txt", "Leehyeja.txt", "Parkhyeja.tat" 파일을 추가한다
-	- 그리고 나서, 파일 이름이 "hyeja"를 포함하는 파일을 모두 출력한다
+  - 파일 이름에 "생성자의 입력 인자 name"이 포함된 모든 파일을 모으는 일을 하는 방문자
+  - 구현 방법
+    - 연습문제 13-1 응용하기
+    - 생성자 FileNameFindVisitor(String name)
+  - FileNameFindVisitor.getFoundFiles() 메소드
+    - FileNamedFindVisitor가 모은 모든 파일에 대한 Iterator를 얻어올 때 호출하는 메소드
+  - Main 클래스
+    - Main.main()은 리스트 13-9와 같은 형태
+    - 그림 13-2와 같은 디렉토리 구조에, "Kim", "Lee", "Park" 디렉토리 안에 각각 "hyejaKim.txt", "Leehyeja.txt", "Parkhyeja.tat" 파일을 추가한다
+    - 그리고 나서, 파일 이름이 "hyeja"를 포함하는 파일을 모두 출력한다
 
 ![](https://eliotjang.github.io/assets/images/system-analysis/ch13-6.png){: width="80%" }
 
 - 숙제 제출 방법
-    - __보고서__
-    - 표지 (과목명, 학번, 이름, 제출일, 담당교수 등)
-    - 코드 설명 (표를 이용하는 등 보기 좋게 작성)
-	- 각 클래스가 하는 일
-	- 각 클래스의 각 메소드가 하는 일
-    - 코드 프린트
-    - __프로그램__
-    - 해람인의 e참뜰 과제물 제출 기능을 이용
-	- 바이러스 체크 후 압축파일로 제출
-	- 각 클래스의 소스 파일 (java)
-	- 모든 클래스 컴파일 한 파일 (class)
+
+  - __보고서__
+  - 표지 (과목명, 학번, 이름, 제출일, 담당교수 등)
+  - 코드 설명 (표를 이용하는 등 보기 좋게 작성)
+    - 각 클래스가 하는 일
+    - 각 클래스의 각 메소드가 하는 일
+  - 코드 프린트
+
+  - __프로그램__
+  - 해람인의 e참뜰 과제물 제출 기능을 이용
+    - 바이러스 체크 후 압축파일로 제출
+    - 각 클래스의 소스 파일 (java)
+    - 모든 클래스 컴파일 한 파일 (class)

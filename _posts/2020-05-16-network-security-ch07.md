@@ -68,14 +68,14 @@ last_modified_at: 2020-05-16T21:00:00+09:00
 1. DoS 특징
     - 서버의 성능을 크게 떨어뜨리거나 서버를 정지시키는 방법을 통해 서버의 정상적인 작동을 방해하는 공격
     - Resource 고갈형
-	- 시스템이 가지고 있는 자원을 고갈시켜 정상적인 작동을 하지 못하도록 하는 공격으로 SYN flooding과 같은 공격이 이 범주에 속한다
+        - 시스템이 가지고 있는 자원을 고갈시켜 정상적인 작동을 하지 못하도록 하는 공격으로 SYN flooding과 같은 공격이 이 범주에 속한다
     - OS 또는 서버 프로그램의 취약점을 이용한 공격
-	- Land attack, 죽음의 ping(Ping of Death), teardrop attack 등이 이러한 범주에 속하는 공격인데 이러한 공격은 주로 서버나 OS 자체의 취약점을 공격하여 서버 또는 기계 자체를 다운시키는 공격 기법이다
+        - Land attack, 죽음의 ping(Ping of Death), teardrop attack 등이 이러한 범주에 속하는 공격인데 이러한 공격은 주로 서버나 OS 자체의 취약점을 공격하여 서버 또는 기계 자체를 다운시키는 공격 기법이다
     - Route 조작형
-	- 이러한 유형의 공격으로는 ICMP Router Discovery Attack이 대표적이다
-	- 타깃이 되는 서버나 OS를 직접 공격하는 것이 아니라 클라이언트에서 타깃으로 가는 경로를 조작하여 클라이언트가 제대로 서비스를 받지 못하도록 하는 공격 기법이다
+        - 이러한 유형의 공격으로는 ICMP Router Discovery Attack이 대표적이다
+        - 타깃이 되는 서버나 OS를 직접 공격하는 것이 아니라 클라이언트에서 타깃으로 가는 경로를 조작하여 클라이언트가 제대로 서비스를 받지 못하도록 하는 공격 기법이다
     - Bandwidth 잠식형
-	- 앞의 공격들과 달리 이러한 유형의 공격은 특별한 대비책은 존재하지 않는 반면 OS나 서버의 취약점과는 관련이 적어 거의 모든 시스템을 공격할 수 있다는 특성을 가지고 있는 아주 강력한 공격 기법이다
+        - 앞의 공격들과 달리 이러한 유형의 공격은 특별한 대비책은 존재하지 않는 반면 OS나 서버의 취약점과는 관련이 적어 거의 모든 시스템을 공격할 수 있다는 특성을 가지고 있는 아주 강력한 공격 기법이다
 
 2. DDoS 특징
     1. DDoS 공격의 동작 원리
@@ -85,20 +85,20 @@ last_modified_at: 2020-05-16T21:00:00+09:00
 	- ②어플리케이션 공격(Application Attacks): TCP와 HTTP 같은 프로토콜을 이용해서 특정한 반응이 일어나는 요청 패킷을 발송하여 해당 시스템의 연산처리 리소스를 소진시켜서 정상적인 서비스 요쳥과 처리를 할 수 없는 상태로 만드는 것이다
     3. DoS(Denial of Service) 공격 기법 종류
 	- ①Ping of Death
-	    Ping of Death(죽음의 ping) 공격은 몇몇 OS들이 IP fragment를 제대로 재조합하지 못하여 취약점을 이용한 공격 기법이다
-		- ping 명령을 보낼 때 패킷을 최대한 길게 하여(65,535바이트 이상) 공격대상으로 보낸다
-		- 목적지 호스트가 IP fragment들을 재조합할 때 IP 데이터그램의 최대 크기를 넘어서는 경우 버퍼 오버플로우가 발생돼 시스템이 다운되거나 재부팅될 수 있다
-	- ②SYN Flooding attack
-	    - 공격자가 송진자 IP 주소를 존재하지 않거나 다른 시스템의 IP 주소로 위장하여 목적 시스템으로 SYN 패킷을 연속해서 보내는 방법이다
-		- TCP 서버는 동시에 진행할 수 있는 연결들의 개수가 제한되어 있는데 이것을 초과할 경우 정상적ㅇ니 연결 요청을 처리할 수 없다  
+            - Ping of Death(죽음의 ping) 공격은 몇몇 OS들이 IP fragment를 제대로 재조합하지 못하여 취약점을 이용한 공격 기법이다
+                - ping 명령을 보낼 때 패킷을 최대한 길게 하여(65,535바이트 이상) 공격대상으로 보낸다
+                - 목적지 호스트가 IP fragment들을 재조합할 때 IP 데이터그램의 최대 크기를 넘어서는 경우 버퍼 오버플로우가 발생돼 시스템이 다운되거나 재부팅될 수 있다
+        - ②SYN Flooding attack
+            - 공격자가 송진자 IP 주소를 존재하지 않거나 다른 시스템의 IP 주소로 위장하여 목적 시스템으로 SYN 패킷을 연속해서 보내는 방법이다
+           - TCP 서버는 동시에 진행할 수 있는 연결들의 개수가 제한되어 있는데 이것을 초과할 경우 정상적ㅇ니 연결 요청을 처리할 수 없다  
 		![](https://eliotjang.github.io/assets/images/network-security/ch07-6.png){: width="100%"}
-	- ③Smurf Attack
-	    - 공격자가 공격대상의 IP 주소로 위장하여, 중계 네트워크(Intermediary Network)에 ICMP Echo Request 패킷을 directed broadcast 주소로 전송하는 방법이다  
+        - ③Smurf Attack
+            - 공격자가 공격대상의 IP 주소로 위장하여, 중계 네트워크(Intermediary Network)에 ICMP Echo Request 패킷을 directed broadcast 주소로 전송하는 방법이다  
 	    ![](https://eliotjang.github.io/assets/images/network-security/ch07-7.png){: width="100%"}  
-	- ④Land Attack
-	    - 송신자 IP 주소와 수신자 IP 주소, 송신자 포트와 수신자 포트가 동일한 조작된 SYN 패킷을 공격 대상에 전송한다
-	- ⑤Teardrop Attack
-	    - IP 데이터그램 fragment들의 offset 번호의 혼동을 주어 시스템의 패킷 재조합에 과부하가 걸리도록 함으로써 시스템을 못쓰게 하는 공격
+        - ④Land Attack
+            - 송신자 IP 주소와 수신자 IP 주소, 송신자 포트와 수신자 포트가 동일한 조작된 SYN 패킷을 공격 대상에 전송한다
+        - ⑤Teardrop Attack
+            - IP 데이터그램 fragment들의 offset 번호의 혼동을 주어 시스템의 패킷 재조합에 과부하가 걸리도록 함으로써 시스템을 못쓰게 하는 공격
 	    
 
 

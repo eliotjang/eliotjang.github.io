@@ -2,10 +2,6 @@
 title: "[Common sense]Difference between a **let** and a **var**"
 excerpt: "About JavaScript"
 
-toc: true
-toc_label = "content table"
-toc_sticky: true
-
 categories:
   - knowledge
 tags:

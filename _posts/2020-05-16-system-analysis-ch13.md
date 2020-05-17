@@ -197,7 +197,7 @@ public class Directory extends Entry {
         - 현재 디렉토리(currentdir)를 임시로 savedir에 저장한다
         - 현재 디렉토리(currentdir)를, 입력 인자로 들어온 디렉토리로 바꾼다
         - 입력 인자로 들어온 디렉토리의 iterator를 얻는다
-	- 입력 인자로 들어온 디렉토리가 유지하는 원소드를 차례로 방문하면서, accept(this)를 호출하여 방문자가 방문했음을 알린다
+        - 입력 인자로 들어온 디렉토리가 유지하는 원소드를 차례로 방문하면서, accept(this)를 호출하여 방문자가 방문했음을 알린다
         - while 루프가 끝나면, currentdir을 원래 디렉토리로 복귀시킨다
     - 복잡한 재귀적인 호출
         - accpet 메소드는 visit 메소드를 호출하고, visit 메소드는 accept 메소드를 호출한다
@@ -357,7 +357,7 @@ public class Main {
 
 ## 06. 요약
 
-- 데이터 구조 안을 돌아다니면서 수행하는 Visitor 패턴
+- 데이터 구조 안을 돌아다니면서 처리를 수행하는 Visitor 패턴
 
 
 ## 연습 문제
@@ -376,6 +376,7 @@ public class Main {
   - 구현 방법
     - 연습문제 13-1 응용하기
     - 생성자 FileNameFindVisitor(String name)
+        - name 문자열이 파일 이름에 포함된 파일을 찾고자 함(String 클래스의 메소드 이용할 것)
   - FileNameFindVisitor.getFoundFiles() 메소드
     - FileNamedFindVisitor가 모은 모든 파일에 대한 Iterator를 얻어올 때 호출하는 메소드
   - Main 클래스

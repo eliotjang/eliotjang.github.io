@@ -19,7 +19,7 @@ last_modified_at: 2020-05-16T13:00:00+09:00
 - 데이터 구조 안에 저장되어 있는 많은 요소에 대해서, 무언가 "처리"해 나가고자 한다
     - 얼핏 생각하면, 데이터 구조를 나타내고 있는 클래스 안에 "처리"를 기술해야 한다고 생각할 것이다
     - 그러나, "처리"가 여러 종류라고 한다면?
-	- 새로운 처리가 필요해질 때마다, 데이터 구조를 나타내는 클래스를 수정해야 한다
+        - 새로운 처리가 필요해질 때마다, 데이터 구조를 나타내는 클래스를 수정해야 한다
 
 - 데이터 구조와 처리를 분리하자
     - 데이터 구조를 돌아다니면 "방문자"를 정의해서, 이 방문자가 "처리"를 담당하도록 하자
@@ -108,11 +108,11 @@ public abstract class Entry implements Element {
 
 - accept(Visitor)
     - 클라이언트가, File 객체에게 "방문자를 받아들이세요"라고 요청할 때 호출하는 메소드
-	- 클라이언트는 Visitor를 매개변수로 하여 accept를 호출할 것이다
+        - 클라이언트는 Visitor를 매개변수로 하여 accept를 호출할 것이다
     - 입력 인자로 들어온 방문자의 visit 메소드를 호출한다
-	- 이 때, 현재 자신 객체를 인자로 하여 호출한다
-	- 그러면, Visitor의 visit(File) 메소드가 실행된다
-	- 즉, 방문자가 방문하면 방문자에게 "나는 File 객체입니다. 나의 일을 처리해 주세요"라고 요쳥하는 것과 비슷하다
+        - 이 때, 현재 자신 객체를 인자로 하여 호출한다
+        - 그러면, Visitor의 visit(File) 메소드가 실행된다
+        - 즉, 방문자가 방문하면 방문자에게 "나는 File 객체입니다. 나의 일을 처리해 주세요"라고 요쳥하는 것과 비슷하다
 
 ```java
 public class File extends Entry {
@@ -142,7 +142,7 @@ public class File extends Entry {
 - accept(Visitor)
     - 입력 인자로 들어온 Visitor에게, 자기 자신을 매개 변수로 해서 visit()를 호출한다
     - 그러면, Visitor의 visit(Directory) 메소드가 실행된다
-	- 방문자가 방문하면 방문자에게 "나는 Directory 객체입니다. 나의 일을 처리해 주세요"라고 요청하는 것과 비슷하다
+        - 방문자가 방문하면 방문자에게 "나는 Directory 객체입니다. 나의 일을 처리해 주세요"라고 요청하는 것과 비슷하다
 
 ```java
 import java.util.Iterator;
@@ -188,19 +188,19 @@ public class Directory extends Entry {
 - visit(File)
     - 입력인자로 받아들인 "File 에 대해 수행해야 할 처리"가 기술되어 있다
     - 알고리즘
-	- 현재 디렉토리와 File의 toString() 반환 값을 연결하여
-	- 현재 파일의 전체 경로를 출력한다
+        - 현재 디렉토리와 File의 toString() 반환 값을 연결하여
+        - 현재 파일의 전체 경로를 출력한다
 - visit(Directory)
     - 입력 인자로 받아들인 "Directory에 대해 수행해야 할 처리"가 기술되어 있다
     - 알고리즘
-	- 먼저, 디렉토리 전체 경로를 출력한다
-	- 현재 디렉토리(currentdir)를 임시로 savedir에 저장한다
-	- 현재 디렉토리(currentdir)를, 입력 인자로 들어온 디렉토리로 바꾼다
-	- 입력 인자로 들어온 디렉토리의 iterator를 얻는다
+        - 먼저, 디렉토리 전체 경로를 출력한다
+        - 현재 디렉토리(currentdir)를 임시로 savedir에 저장한다
+        - 현재 디렉토리(currentdir)를, 입력 인자로 들어온 디렉토리로 바꾼다
+        - 입력 인자로 들어온 디렉토리의 iterator를 얻는다
 	- 입력 인자로 들어온 디렉토리가 유지하는 원소드를 차례로 방문하면서, accept(this)를 호출하여 방문자가 방문했음을 알린다
-	- while 루프가 끝나면, currentdir을 원래 디렉토리로 복귀시킨다
+        - while 루프가 끝나면, currentdir을 원래 디렉토리로 복귀시킨다
     - 복잡한 재귀적인 호출
-	- accpet 메소드는 visit 메소드를 호출하고, visit 메소드는 accept 메소드를 호출한다
+        - accpet 메소드는 visit 메소드를 호출하고, visit 메소드는 accept 메소드를 호출한다
 
 ```java
 import java.util.Iterator;
@@ -316,7 +316,7 @@ public class Main {
 - ObjectStructure(객체의 구조)의 역할
     - Element 역할을 집합으로 취급할 수 있도록 해 주는 메소드를 제공한다
     - 예제에서는, Directory 클래스가 해당됨
-	- 유지하고 있는 요소들을 얻어갈 수 있도록, iterator 메소드를 제공함
+        - 유지하고 있는 요소들을 얻어갈 수 있도록, iterator 메소드를 제공함
 
 - 클래스 다이어그램
 
@@ -335,15 +335,15 @@ public class Main {
 - 왜 이렇게 복잡한 일을 하는가?
     - "반복 처리가 필요하면 데이터 구조 안에 루프를 쓰면 되지 않나?"
     - Visitor 패턴의 목적은, "처리"를 "데이터 구조"로부터 분리하는 것이다
-	- 다른 처리를 하는 ConcreteVisitor를 추가할 수 있다
-	- 또, 기존의 ConcreteVisitor의 기능을 확장하기도 쉽다
-	- 결국, 부품의 독립성을 높여준다
+        - 다른 처리를 하는 ConcreteVisitor를 추가할 수 있다
+        - 또, 기존의 ConcreteVisitor의 기능을 확장하기도 쉽다
+        - 결국, 부품의 독립성을 높여준다
 
 - Open-Closed Principle
     - 확장에 대해서는 열려있고
-	- 클래스를 설계할 때에 특별한 이유가 없는 한 장래의 확장을 허락해야 한다
+        - 클래스를 설계할 때에 특별한 이유가 없는 한 장래의 확장을 허락해야 한다
     - 수정에 대해서는 닫혀있다
-	- 확장을 하더라도 기존의 클래스는 수정할 필요가 없어야 한다
+        - 확장을 하더라도 기존의 클래스는 수정할 필요가 없어야 한다
 
 - ConcreteVisitor 역할의 추가는 간단하지만, ConcreteElement 역할의 추가는 곤란하다
 
@@ -386,7 +386,6 @@ public class Main {
 ![](https://eliotjang.github.io/assets/images/system-analysis/ch13-6.png){: width="80%" }
 
 - 숙제 제출 방법
-
   - __보고서__
   - 표지 (과목명, 학번, 이름, 제출일, 담당교수 등)
   - 코드 설명 (표를 이용하는 등 보기 좋게 작성)

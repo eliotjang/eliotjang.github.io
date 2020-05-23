@@ -191,7 +191,9 @@ public class Main {
 }
 ```
 
-페이지화면과 명령창 출력 사진 요망
+![](https://eliotjang.github.io/assets/images/system-analysis/ch15-7.png){: width="80%" }
+
+![](https://eliotjang.github.io/assets/images/system-analysis/ch15-2.png){: width="80%" }
 
 ## 03. Facade(정면)의 역할
 

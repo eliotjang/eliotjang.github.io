@@ -34,9 +34,9 @@ last_modified_at: 2020-05-23T15:00:00+09:00
     - Username과 Password 입력란의 활성화 여부
     - OK/Cancel 버튼 활성화 여부
 
-![](https://eliotjang.github.io/assets/images/system-analysis/ch15-1.png){: width="30%" }  
+![](https://eliotjang.github.io/assets/images/system-analysis/ch16-1.png){: width="30%" }  
 
-![](https://eliotjang.github.io/assets/images/system-analysis/ch15-2.png){: width="100%" }
+![](https://eliotjang.github.io/assets/images/system-analysis/ch16-2.png){: width="100%" }
 
 - 이러한 프로그램을 어떻게 만들 것인가?
   - 라디오 버튼, 텍스트 필드, 버튼은 각각 다른 클래스로 되어 있다
@@ -59,12 +59,12 @@ last_modified_at: 2020-05-23T15:00:00+09:00
 
 ### 클래스 다이어그램
 
-![](https://eliotjang.github.io/assets/images/system-analysis/ch15-3.png){: width="100%" }
+![](https://eliotjang.github.io/assets/images/system-analysis/ch16-3.png){: width="100%" }
 
 
 ### 시퀀스 다이어그램
 
-![](https://eliotjang.github.io/assets/images/system-analysis/ch15-4.png){: width="100%" }
+![](https://eliotjang.github.io/assets/images/system-analysis/ch16-4.png){: width="100%" }
 
 
 ### Mediator 인터페이스
@@ -345,7 +345,7 @@ public class Main {
 
 - 클래스 다이어그램
 
-![](https://eliotjang.github.io/assets/images/system-analysis/ch15-5.png){: width="100%" }
+![](https://eliotjang.github.io/assets/images/system-analysis/ch16-5.png){: width="100%" }
 
 - Mediator(조정자, 중개자)의 역할
   - Colleague 역할들과 통신을 조정하기 위한 인터페이스를 정하는 역할

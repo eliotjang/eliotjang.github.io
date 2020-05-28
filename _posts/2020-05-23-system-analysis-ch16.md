@@ -158,7 +158,7 @@ public class ColleagueTextField extends TextField implements TextListener, Colle
     super(text, columns);
   }
   public void seMediator(Mediator mediator) {
-    this.mediator = meidator;
+    this.mediator = mediator;
   }
   public void setColleagueEnabled(boolean enabled) {
     setEnabled(enabled);
@@ -280,9 +280,9 @@ public class LoginFrame extends Frame implements ActionListener, Mediator {
 
         checkGuest.setMediator(this);
         checkLogin.setMediator(this);
-        textUser. setMediator(this);
-        textPass. setMediator(this);
-        buttonOk. setMediator(this);
+        textUser.setMediator(this);
+        textPass.setMediator(this);
+        buttonOk.setMediator(this);
         buttonCancel.setMediator(this);
 
         checkGuest.addItemListener(checkGuest);
@@ -334,7 +334,7 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class Main {
-  public static vodi main(String args[]) {
+  public static void main(String args[]) {
     new LoginFrame("Mediator Sample");
   }
 }

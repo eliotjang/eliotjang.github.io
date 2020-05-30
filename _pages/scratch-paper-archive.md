@@ -28,16 +28,8 @@ __This Page uploads what I learned and scratch.__
 [![](https://eliotjang.github.io/assets/images/embedded-system/embedded-system-logo.jpeg){: width="30%" height="30%"}](https://eliotjang.github.io/tags/embedded system/)
 
 - - -
-### C++  
-[![](https://eliotjang.github.io/assets/images/c++/c++-logo.png){: width="30%" height="30%"}](https://eliotjang.github.io/tags/fun c++)  
-
-- - -
 ### Big Data & Hadoop
 [![](https://eliotjang.github.io/assets/images/hadoop/hadoop-logo.png){: width="30%" height="30%"}](https://eliotjang.github.io/tags/hadoop)
-
-- - -
-### Deep Learning  
-[![](https://eliotjang.github.io/assets/images/deep learning/deep-learning-logo.png){: width="30%" height="30%"}](https://eliotjang.github.io/tags/deep learning)  
 
 - - -
 ### Ubuntu  

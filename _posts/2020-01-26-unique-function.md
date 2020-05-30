@@ -3,10 +3,10 @@ title: "[C++ Function] STL Algorithm std::unique"
 excerpt: "this.pointer.com, stl-algorithm-stdunique-tutorial"
 
 categories:
-  - fun c++
+  - knowledge
 tags:
-  - fun c++
-  - function
+  - knowledge
+
 last_modified_at: 2020-01-26T21:20:00T09:00
 ---
 std::unique is an STL Algorithms that provide a functionality to remove all consecutive duplicate elements from a given range.  

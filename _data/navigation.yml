@@ -2,7 +2,7 @@
 main:
   - title: "Knowledge"
     url: /categories/knowledge/
-  - title: "낙서장"
+  - title: "Scratch Paper"
     url: /categories/scratch paper/
   - title: "Algorithm"
     url: /categories/algorithm/
@@ -10,9 +10,7 @@ main:
     url: /categories/project/
   - title: "독서"
     url: /categories/reading/
-  - title: "Journal"
-    url: /categories/journal/
-  - title: "깃허브"
+  - title: "Github"
     url: https://github.com/eliotjang/
   
 

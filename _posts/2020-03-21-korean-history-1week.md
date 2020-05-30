@@ -1,11 +1,11 @@
 ---
-title: "[한국사길잡이] 1 week, 한국사 연표 및 시대 구분 당위성·목적·이유"
+title: "한국사 연표 및 시대 구분 당위성·목적·이유"
 excerpt: "이건홍 등 3명 저, 한국사능력검정시험, 길벗, 2016"
 
 categories:
-  - korean history
+  - knowledge
 tags:
-  - korean history
+  - knowledge
 last_modified_at: 2020-03-22T15:00:00+09:00
 ---  
 

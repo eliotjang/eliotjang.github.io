@@ -1,11 +1,11 @@
 ---
-title: "[웹데이터베이스] 2 week, HTML 태그 적용 및 문서 작성"
+title: "HTML 태그 적용 및 문서 작성"
 excerpt: "GWNU Computer Science & Engineering Lecture"
 
 categories:
-  - web database
+  - knowledge
 tags:
-  - web database
+  - knowledge
 last_modified_at: 2020-03-24T17:00:00+09:00
 ---  
 

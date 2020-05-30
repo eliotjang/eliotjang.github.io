@@ -12,15 +12,15 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "sunrise" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Engineer, EliotJang Blog"
+title                    : "Software Engineer, EliotJang Blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "EliotJang"
-description              : "Welcome to my library, margin of life."
+description              : "Welcome to my library, margin of life.  삶의 여유가 있는 제 도서관에 오신 것을 환영합니다"
 url                      : "https://eliotjang.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "eliotjang/eliotjang.github.io"
@@ -286,4 +286,4 @@ defaults:
       read_time: false
       comments: false
       share: true
-      related: false
+      related: true

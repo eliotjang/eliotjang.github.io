@@ -11,22 +11,11 @@ This Page is my __*Projects*__ library.
 
 *****
 
-## Defense Game  
-[Tower Defense](https://github.com/eliotjang/Defense_Game)
+[Tower Defense Game](https://github.com/eliotjang/Defense_Game)
 
 *****
 
-## Application
 [Anonymous SNS application](https://github.com/eliotjang/eliotjang/Modazal)
 
 *****
-
-## Pokemon Game
-[Go Pikachu!](https://eliotjang.github.io/tags/goPikachu)  
-
-[Pokeball Go](https://eliotjang.github.io/tags/pokeball go)  
-
-*****
-### All Projects  
-
 

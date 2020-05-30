@@ -9,8 +9,6 @@ toc_label: "Scratch Paper"
 ---
 
 __This Page uploads what I learned and scratch.__  
-> <span style="color:blue"><b>Click Images</b></span> to see my work piece.  
-> <span style="color:blue"><b>이미지들을 클릭</b></span>하여 제가 작업한 내용들을 볼 수 있습니다.
 
 - - -
 
@@ -31,6 +29,4 @@ __This Page uploads what I learned and scratch.__
 [Fitbit Scratch Paper](https://eliotjang.github.io/tags/fitbit/)
 
 - - -
-
-#[![](https://eliotjang.github.io/assets/images/network-security/network-security-logo.jpeg){: width="30%" height="30%"}](https://eliotjang.github.io/tags/network security/)
 

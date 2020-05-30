@@ -32,10 +32,6 @@ __This Page uploads what I learned and scratch.__
 [![](https://eliotjang.github.io/assets/images/hadoop/hadoop-logo.png){: width="30%" height="30%"}](https://eliotjang.github.io/tags/hadoop)
 
 - - -
-### Ubuntu  
-[![](https://eliotjang.github.io/assets/images/ubuntu/ubuntu-logo.jpeg){: width="30%" height="30%"}](https://eliotjang.github.io/tags/ubuntu)  
-
-- - -
 ### Korean History
 [![](https://eliotjang.github.io/assets/images/korean-history/korean-history-logo.jpeg){: width="30%" height="30%"}](https://eliotjang.github.io/tags/korean history/)
 

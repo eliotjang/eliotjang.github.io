@@ -3,9 +3,10 @@ title: "[Ubuntu] Change Terminal Text Size"
 excerpt: "smok95.tistory.com/285"
 
 categories:
-  - scratch
+  - knowledge
 tags:
-  - scratch
+  - knowledge
+
   - ubuntu
 last_modified_at: 2020-02-11T14:10:00+09:00
 ---

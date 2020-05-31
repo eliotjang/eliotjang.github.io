@@ -237,8 +237,10 @@ public class Main {
 - 갱신을 위한 정보의 취급
   - NumberGenerator는 update 메소드를 사용해서 '갱신되었습니다'라고 Observer에게 통지함
     - 이때, Observer 클래스의 update()의 입력인자는 NumberGeneraoter
-      - Observer는 입력인자로 들어온 NumberGenerator를 이용하여 원하는 정보를 추출한다  ![](https://eliotjang.github.io/assets/images/system-analysis/ch17-4.png){: width="60%"}
-      - NumberGenerator가, 관찰자가 필요한 정보만 넘겨줄 수도 있다  ![](https://eliotjang.github.io/assets/images/system-analysis/ch17-5.png){: width="60%"}  
+      - Observer는 입력인자로 들어온 NumberGenerator를 이용하여 원하는 정보를 추출한다  
+![](https://eliotjang.github.io/assets/images/system-analysis/ch17-4.png){: width="60%"}
+      - NumberGenerator가, 관찰자가 필요한 정보만 넘겨줄 수도 있다  
+![](https://eliotjang.github.io/assets/images/system-analysis/ch17-5.png){: width="60%"}  
 
 
 
@@ -249,14 +251,16 @@ public class Main {
 
 
 - Model/View/Controller(MVC)
-  - Smalltalk 언어에서, 하나의 데이터 모델을 여러 형태로 보여주고자 할 때 사용되는 유명한 패턴이다  ![](https://eliotjang.github.io/assets/images/system-analysis/ch17-6.png){: width="70%"}
+  - Smalltalk 언어에서, 하나의 데이터 모델을 여러 형태로 보여주고자 할 때 사용되는 유명한 패턴이다  
+![](https://eliotjang.github.io/assets/images/system-analysis/ch17-6.png){: width="70%"}
   - Model과 View의 관계는, Observer 패턴에서 Subject와 Observer의 역할과 서로 대응된다
 
 
 ## 05. 보강
 
 - JDK에서 제공되는 java.util.Observer 인터페이스와 java.util.Observable 클래스는, Observer 패턴의 일종이다
-- java.util.Observer 인터페이스  ![](https://eliotjang.github.io/assets/images/system-analysis/ch17-7.png){: width="70%"}
+- java.util.Observer 인터페이스  
+![](https://eliotjang.github.io/assets/images/system-analysis/ch17-7.png){: width="70%"}
 - java.util.Observer와 java.util.Observerble을 사용하기가 쉽지 않다
   - 관찰대상이 되는 클래스를 정의하기 위해서는 java.util.Observable 클래스를 상속받아야 한다
   - 그런데, 이미 Subject 역할로 생각하고 있는 클래스가 다른 클래스의 하위 클래스이면,
@@ -296,7 +300,8 @@ public class Main {
       - Graphics 객체의 fillArc(int x, int y, int width, int height, int startAngle, int arcAngle)
       - startAngle부터 archAngle 만큼 그린다
       - startAngle: 0 이면 3시 위치를 의미한다(반시계방향으로 증가)
-      - arcAngle: 양수이면 반시계 방향으로 그리고, 음수이면 시계방향으로 그린다  ![](https://eliotjang.github.io/assets/images/system-analysis/ch17-8.png){: width="50%"}  
+      - arcAngle: 양수이면 반시계 방향으로 그리고, 음수이면 시계방향으로 그린다  
+![](https://eliotjang.github.io/assets/images/system-analysis/ch17-8.png){: width="50%"}  
 
 
 ## Homework #4: Observer 패턴 응용

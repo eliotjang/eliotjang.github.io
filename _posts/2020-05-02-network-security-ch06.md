@@ -5,7 +5,7 @@ toc: true
 toc_sticky: true
 toc_label: "Ch06. 네트워크 보안 관리"
 header:
-  teaser: /assets/images/network-security/nerwork-security-logo.jpeg
+  teaser: /assets/images/network-security/network-security-logo.jpeg
 categories:
   - network security
 tags:

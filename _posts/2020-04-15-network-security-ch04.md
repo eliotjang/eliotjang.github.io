@@ -5,7 +5,7 @@ toc: true
 toc_sticky: true
 toc_label: "Ch04. 어플리케이션 보안"
 header:
-  teaser: /assets/images/network-security/nerwork-security-logo.jpeg
+  teaser: /assets/images/network-security/network-security-logo.jpeg
 categories:
   - network security
 tags:

@@ -6,7 +6,7 @@ toc_sticky: false
 toc_label: "Ch08. 네트워크 보안 기술"
 
 header:
-  teaser: /assets/images/network-security/nerwork-security-logo.jpeg
+  teaser: /assets/images/network-security/network-security-logo.jpeg
 
 categories:
   - network security

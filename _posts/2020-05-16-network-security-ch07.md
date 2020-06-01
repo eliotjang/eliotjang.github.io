@@ -5,7 +5,7 @@ toc: true
 toc_sticky: true
 toc_label: "Ch07. 네트워크 기반 공격 기술"
 header:
-  teaser: /assets/images/network-security/nerwork-security-logo.jpeg
+  teaser: /assets/images/network-security/network-security-logo.jpeg
 categories:
   - network security
 tags:

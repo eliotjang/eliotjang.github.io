@@ -483,11 +483,336 @@ last_modified_at: 2020-05-23T17:00:00+09:00
 
 ## 8.5 라우터(Router) 보안
 
+### 1. 라우터 자체 보안 설정 
+
+### 1-1. 기본 접근통제 
+
+- 라우터에 탑재되어 있는 기본적인 기능을 이용하여 라우터의 보안성을 높일 수 있음 
+
+가. 암호설정을 통한 접근통제  
+`Router(config)#username XXXX password XXXX`
+`Router(config)#line vty 0 4`
+`Router(config-line)#login local`
+`Router(config-line)#^Z`  
+
+
+나. IP 주소 필터링  
+`Router(config)#access-list 10 permit 219.252.42.150`
+`Router(config)#access-list 10 deny any`
+`Router(config)#line vty 0 4`
+`Router(config-line)#access-class 10 in`
+`Router(config-line)#^Z`  
+
+
+다. 사용자별 권한 수준 지정  
+`Router(config)#username XXXX privilege 권한레벨 password XXXX`  
+
+
+### 1-2. 불필요한 프로토콜과 서비스 제거 
+
+`Router(config)# no service udp-small-servers`
+`Router(config)# no service pad`
+`Router(config)# no service finger`  
+
+- ICMP redirect 차단 
+- ICMP 프로토콜을 ACL로 차단 
+- TCP/UDP small services 차단  
+
+
+### 2. 라우터 Filtering 
+
+### 2-1. Ingress 필터링 설정 
+
+- Ingress 필터링은 standard 또는 extended access-list를 활용하여 라우터 내부로, 즉, 내부 네트워크로 유입되는 패킷의 소스 ID나 목적지 포트 등을 체크하여 허용하거나 거부하도록 필터링하는 것을 뜻한다  
+
+`Router#configure terminal`
+`Router(config)#access-list 102 deny in 127.0.0.1.0.255.255.255 any`  
+
+### 2-2. egress 필터링 설정 
+
+- gress filtering이란 내부에서 라우터 외부로 나가는 패킷의 소스 IP를 체크하여 필터링하는 것이다  
+
+
+### 2-3. null routing을 활용한 필터링 
+
+- blackhole 필터링 
+- 시스템이나 네트워크를 모니터링 하던 중 특정 ip 또는 특정 대역에서 비정상적인 시도가 감지되었을 경우 해당 ip를 차단하기 위해 사용
+- 특정한 ip 또는 ip 대역에 대해서 Null이라는 가상의 쓰레기 인터페이스로 보내도록 함으로써 패킷의 통신이 되지 않도록 하는 것  
+
+`interface Null0`
+`no IP unreachables`
+`IP route <차단하고자 하는 목적지 IP 또는 대역> <netmask> Null0`  
+
+
+### 2-4. Unicast RPF를 이용한 필터링 
+
+- Unicast RPF의 원리는 인터페이스를 통해 들어오는 패킷의 소스 IP에 대해 라우팅 테이블을 확인하여 들어온 인터페이스로 다시 나가는지 확인하는 것이다 
+- 수신 패킷의 소스 IP를 목적지로 하여 라우팅 된다면 정상 패킷으로 간주하고 다르다면 스푸핑 된 패킷으로 간주하여 필터링 함  
+
+
+### 3. Source Route 
+
+- 패킷을 수신 IP 주소에 전송할 때 경로를 지정해서 패킷을 전송하는 방법으로 IP 패킷에 경유하는 경로 정보를 설정해 두고 그 경로 상에 있는 라우터가 정보에 따라 수신측에 패킷을 보내는 방법이다 
+- Loose Source and Record Route : 송신측에서 패킷이 통과하는 라우터를 지정한다. Strict Source 라우팅과 달리 지정된 라우터까지는 임의의 수의 라우터를 경유할 수 있다 
+- Strict Source and Record Route : 송신측에서 패킷이 통과하는 경로를 정확하게 지정한다 
+  - `Router(config)#no IP source-route`
+  - `Router(config)#^Z`  
+
+### 4. 라우팅 프로토콜 보안 
+
+### 4-1. Static routing 
+
+- 가장 안전한 라우팅 방법으로 라우팅 프로토콜을 사용하지 않기에 공격자가 임의로 라우팅 정보를 변경하거나 조작할 수 없다 
+
+### 4-2 Dynamic routing 
+
+- RIPv2 : 인증 기능을 적용 
+- EIGRP : 인증 기능을 적용하는 방법은 RIPv2와 유사 
+- OSPF : 각각의 인터페이스에 IP ospf message-digest-key 명령을 사용하여 key를 정의, area 번호 authentication-digest 명령을 사용하여 OSPF 프로토콜 사용 시에 인증을 하도록 설정 
+- BGP : 인증 설정은 neighbor 명령을 사용하여 password 키워들르 명령에 추가함으로써 단순하게 설정이 가능  
+
+
+### 5. 라우터 보안 설정 
+
+### 5-1. Reflexive Access-list 
+
+- Reflexive access list는 상위 계층 세션 정보를 기반으로 IP 패킷을 필터링하는 것으로 내부 네트워크로부터 시작된 세션에 속하는 IP 트래픽을 허용하고, 외부 네트워크로부터 시작된 세션에 속하는 IP 트래픽을 거부할 수 있다 
+- IP 상위 계층 세션이 내부 네트워크로부터 시작되어 외부 네트워크로 전송되는 경우, 새로운 임시 항목이 ACL 항목에 생성되어 외부 네트워크로부터 되돌아오는 트래픽을 허용한다. 되돌아오는 트래픽 중에 세션에 속하는 트래픽만을 허용하고 다른 트래픽들은 거부된다 
+- 스푸핑과 여러 종류의 DoS 공격에 대응할 수 있다 
+
+### 5-2. 웜 형태 공격 차단 
+
+- 코드레드 웜은 IIS 취약점을 이용한 공격으로써 IIS 버그 보안 패치를 통하여 방어할 수 있지만 웜의 HTTP GET requests가 웹 서버로 계속적으로 들어오게 되어 네트워크의 부하에 많은 영향을 미칠 수 도 있다 
+- 시스코 라우터에서 제공하는 ACL 기능 등을 이용하여 차단 가능 
+
+### 5-3. CAR(Committed Access Rate)를 이용한 보안 설정 
+
+- 시스코 라우터의 기능으로 레이트 필터링(rate filtering)이라고도 하며, 일정 시간 동안 정의한 트래픽 양을 초과해 라우터로 유입되는 패킷을 제한함으로써 부가적으로 필요한 대역폭을 어느 수준 이상으로 확보할 수 있다 
+- 라우터의 인터페이스에 rate-limit 명령어를 이용하여 UDP, ICMP, SYN 패킷량을 제어할 수 있다 
+
+
+
 
 ## 8.6 인증 시스템
 
+### 1. 생체인식 시스템 
+
+### 1-1. 개요 
+
+- 생체 정보를 이용하여 개인을 식별하는 시스템 
+- 신체적 특징 이용 : 지문, 홍채, 얼굴 망막, 손모양, 손 표피 가까이의 정맥의 모양, DNA 등 
+- 행동 특징 이용 : 서명, 음성, 걸음걸이 
+
+|분야|세부내용|
+|----|--------|
+|전자 금융|인터넷을 이용한 금융거래. 전자상거래에서의 개인 인증|
+|의료정보|원격 진료|
+|자동차|생체인식 자동차 열쇠|
+|모바일/정보기기|네트워크 로그인. 스파트폰 보안 체계. 디지털 사진 관리. 음성인식 개인 비서|
+|검역|안면인식을 통한 신종플루 감염자 식별|
+|공문서 발급기|무인 민원 발급기|
+|출입통제 시스템|기업의 근태관리. 전자여권을 통한 출입국 관리. 디지털 도어락|
+|전자 투표|전자투표 시스템|
+|시험 시스템|수험표 본인 확인|
+|복사기|생체인식 복사기|  
+
+
+### 1-2. 생체인식 시스템 성능 평가 지표
+
+- FAR(False acceptance rate) : 오인식률. 본인의 것이 아닌 생체정보를 본인의 것으로 잘못 판단할 확률 
+- FRR(False Rejection Rate) : 오거부율. 본인의 생체정보를 본인이 아닌 것으로 잘못 판단할 확률 
+- ROC(Receiver Operation Characteristic) 곡선 : 오인식률과 오거부율 간의 trade-off를 시각적으로 나타낸 그래프 
+- EER(Equal Error Rate) : 동일 오류율. 오인식률과 오거부율이 같아지는 비율. 낮은 EER을 갖는 장치가 더 정확함 
+- FTE(Failure To Enroll rate) : 사용자가 시스템에 생체정보를 등록하려는 시도가 실패하는 비율 
+- FTC(Failure To Capture rate) : 시스템이 생체정보를 감지하지 못하는 비율 
+- 주형용량 : 시스템에 저장 가능한 데이터의 수 등이 있다  
+
+### 2. SSO(Single Sign On)  
+
+- 하나의 ID/PASSWD, 또는 한 번의 인증으로 네트워크 내 여러 독립된 컴퓨터 시스템에 접근 가능하게 하는 인증 방식으로 모든 인증을 하나의 시스템에서 수행. 하나의 시스템에서 인증에 성공하면 다른 시스템에 대한 접근 권한도 모두 얻는다 
+- 여러 개의 시스템들을 운영하는 기관이나 조직에서 통합 관리할 필요성이 생김에 따라 개발된 방식이다 
+- Kerberos 인증시스템이 대표적 
+- 중요 정보에 접근 시 지속적인 인증이 요구됨 
+
+![](https://eliotjang.github.io/assets/images/network-security/ch08-18.png){: width="70%"}
+
+### 3. 일회용 비밀번호(OTP, One-Time Password) 
+
+### 3-1. 개요 
+
+- OTP 이외의 사용자 인증 수단은 한 번 인증 값이 유출되고 나면 인증 값을 바꾸기 전에는 해킹을 당하기 쉽다는 문제점을 가지고 있다 
+- 한 번 생성되면 그 인증 값이 임시적으로 한 번에 한해서만 유효한 OTP 방식을 도입하게 되었다 
+
+### 3-2. 생성 및 인증 방식 
+
+①S/KEY 방식  
+
+- 클라이언트에서 정한 임의의 seed에 대한 n번째 해시 체인 값 ⨍(n)(s)과 (n-1) 값을 서버에 저장한다 
+- 클라이언트는 첫 번째 로그인 시 ⨍(n-1)(s)를 서버로 전송한다 
+- 서버는 ⨍(⨍(n-1)(s)) == ⨍(n)(s)인지 확인한다. 일치되면 인증 성공. 서버는 저장되어 있던 ⨍(n)(s)를 ⨍(n-1)(s)로 대체하여 저장한다 
+- 다음 로그인 시 클라이언트는 ⨍(n-2)(s)를 전송한다  
+
+②시간 동기화 방식  
+
+- OTP를 생성하기 위해 사용하는 입력 값으로 시각을 사용하는 방식이다. 클라이언트는 현재 시각을 입력 값으로 OTP를 생성해 서버로 전송하고, 서버 역시 같은 방식으로 OTP를 생성하여 클라이언트가 전송한 값의 유효성을 검사한다 
+
+③챌린지·응답 방식 
+
+- 서버에서 난수 생성 등을 통해 임의의 수를 생성하고 클라이언트에 그 값을 전송하면, 클라이언트가 그 값으로 OTP를 생성해 응답한 값으로 인증하는 방식이다 
+
+④이벤트 동기화 방식 
+
+- 서버와 클라이언트가 카운트 값을 동일하게 증가시켜가며, 해당 카운트 값을 입력 값으로 OTP를 생성해 인증하는 방식이다  
+
+
+### 3-3. 전달 방식 
+
+①OTP 토큰 
+
+- OTP 토큰이라 불리는 별도의 하드웨어를 클라이언트로 사용하는 방식이다. 기기 자체에서 해킹이 이루어지기는 힘들지만 토큰을 구입해야 하므로 추가 비용이 필요하며 휴대하기에 불편하다는 단점이 있다 
+
+
+②스마트폰 앱 
+
+- 별도의 하드웨어 장비를 필요로 하지 않아서 추가 비용 없이도 OTP 서비스를 이용할 수 있는 방식이다 
+
+③SMS
+
+- SMS로 OTP를 전달하는 방식이다  
+
+
 
 ## 8.7 보안 프로토콜
+
+### 1. 암호화 통신  
+
+- TCP/IP 모델 계층별 프로토콜과 각 계층에서 동작하는 보안 프로토콜  
+
+![](https://eliotjang.github.io/assets/images/network-security/ch08-19.png){: width="80%"}  
+
+
+### 2. 데이터 링크 계층의 보안 프로토콜  
+
+(내용 없음) 
+
+
+### 3. 네트워크 계층의 보안 프로토콜  
+
+### 3-1. IPSec (IP Security)  
+
+①AH(Authentication Header)  
+
+- AH는 데이터가 전송 도중에 변조되었는지를 확인할 수 있도록 데이터의 무결성에 대해 검사한다  
+
+
+②ESP(Encapsulating Security Payload)  
+
+- ESP는 메시지의 암호화를 제공한다. ESP에서 사용하는 암호화 알고리즘으로는 DES-CBC, 3DES, RC5, IDEA, 3IDEA, CAST, blowfish가 있다  
+
+
+③IKE(Internet Key Exchange)  
+
+- IKE는 ISAKMP(Internet Security Association and Key Management Protocol), SKEME, Oakley 알고리즘의 조합으로, 두 컴퓨터 간의 보안 연결(SA, Security Association)을 설정한다  
+
+### 4. 전송 계층의 보안 프로토콜  
+
+### 4-1. SSL(Secure Socket Layer)  
+
+- TCP/IP 계층과 어플리케이션 계층(HTTP, Telent, FTP 등) 사이에 위치하여 송수신하는 두 컴퓨터 사이 종단간 보안 서비스 메커니즘 
+- TLS(Transport Layer Security)로 표준화되었으며 기본적으로 인증(Authentication), 암호화(Encryption), 무결성(Integrity)을 보장 
+  - 클라이언트 인증 : 아이디와 패스워드를 이용하여 등록된 사용자인지를 검증. 클라이언트의 인증서 확인 
+  - 서버 인증 : 클라이언트가 공개키 암호 기술을 이용하여 자신이 신뢰할 만한 서버에 접속을 시도하고 있는지 확인하는 것 서버의 인증서 확인 
+  - 암호화된 통신 : 40bit/128bit 암호화 세션을 형성하여 거래 내용의 위변조 여부를 확인하고 중요 정보가 제3자에 유출되는 것을 방지  
+
+
+- 2계층의 프로토콜로 구성  
+
+![](https://eliotjang.github.io/assets/images/network-security/ch08-20.png){: width="60%"}  
+
+- SSL Handshake 프로토콜 
+  - 서버/클라이언트 상호 인증 
+  - 암호 알고리즘, MAC 알고리즘, 암호키 협상  |메시지 유형|매개변수|
+|----|----------|
+|hello_request|없음(null)|
+|client_hello|버전(version), 랜덤(random), 세션id(session id), 암호도구(cipher suite), 압축방법(compression method)|
+|server_hello|버전(version), 랜덤(random), 세션id(session id), 암호도구(cipher suite), 압축방법(compression method)|
+|certificate_request|유형(type), 기관(authorities)|
+|server_done|없음(null)|
+|certificate_verify|서명(signature)|
+|client_key_exchange|매개변수(parameters), 서명(signature)|
+|finished|해시값(hash value)|  
+
+
+- SSL Change Cipher Spec 프로토콜 : 가장 간단한 프로토콜로 Handshake 프로토콜에 의해 협상된 압축, MAC, 암호화 방식 등이 이후부터 적용됨을 상대방에게 알려준다 
+
+- SSL Alert 프로토콜 
+  - 상대방에 SSL 관련 경고 전송 
+  - 경고 메시지 예 
+    - unexpected_message : 적합하지 않은 메시지 수신 
+    - bad_record_mac : 부정확한 MAC 수신 
+    - decompressed_failure : 압축풀기 함수에 적합하지 않은 입력 
+    - handshake_failure : 보안 매개변수의 집합을 송신자가 협상할 수 없음 
+    - illegal_parameter : 핸드셰이크 메시지 안의 한 필드가 범위 밖에 있거나 다른 필드와 모순  
+
+
+- SSL 레코드 프로토콜의 동작  
+  1. 단편화(fragmentation) : 2<sup>14</sup>바이트 이하 크기로
+  2. 압축(compression) : 1024바이트 이하로 
+  3. 메시지 인증 코드(message authentication code) 계산 
+  4. 대칭 암호로 암호화(encrypted) 
+  5. 헤더 붙이기(header attachment)  
+
+![](https://eliotjang.github.io/assets/images/network-security/ch08-21.png){: width="60%"}  
+
+
+### 5. 응용 계층의 보안 프로토콜 
+
+### 5-1. SSH(Secure Shell)  
+
+- 원격 시스템으로의 암호화된 안전한 접속을 지원하는 응용계층 프로토콜 
+- 클라이언트와 서버간 안전한 터널을 제공하여 파일 전송(sftp) 및 파일 복사 프로그램(scp)을 구현하는데 이용할 수 있다 
+
+### 5-2. MIME(Multipurpose Internet Mail Extensions)  
+
+- 아스키 데이터만을 처리할 수 있는 원래의 인터넷 전자우편 프로토콜이다 
+- SMTP를 확장하여 오디오, 비디오, 이미지, 응용 프로그램, 기타 여러 가지 종류의 데이터 파일들을 주고받을 수 있도록 기능이 확장된 프로토콜이다  
+
+
+### 5-3. PGP(Pretty Good Privacy)  
+
+- 전자메일과 파일 저장 응용에 필요한 기밀성과 인증을 제공한다 
+- 플랫폼에 무관하게 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

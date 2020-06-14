@@ -48,14 +48,14 @@ last_modified_at: 2020-06-14T14:00:00+09:00
 
 - State 패턴을 사용하지 않는 의사 코드(pseudo code)  
 
-![](https://eliotjang.github.io/assets/images/system-analysis/ch18-2.png){: width="70%"}  
+![](https://eliotjang.github.io/assets/images/system-analysis/ch19-2.png){: width="70%"}  
 
 - State 패턴을 사용한 의사 코드(pseudo  code)
   - 앞의 코드와 달리, 파묻혀 있던 '상태'를 외부로 끌어냄 
     - 따라서, <span style="color:red">상태를 체크하기 위한 if 문이 없다</span>  
 
 
-![](https://eliotjang.github.io/assets/images/system-analysis/ch18-3.png){: width="100%"}  
+![](https://eliotjang.github.io/assets/images/system-analysis/ch19-3.png){: width="100%"}  
 
 
 |이름|해설|
@@ -68,7 +68,7 @@ last_modified_at: 2020-06-14T14:00:00+09:00
 |Main|동작 테스트용 클래스|  
 
 
-![](https://eliotjang.github.io/assets/images/system-analysis/ch18-4.png){: width="60%"}  
+![](https://eliotjang.github.io/assets/images/system-analysis/ch19-4.png){: width="60%"}  
 
 
 ### State 인터페이스  
@@ -327,16 +327,16 @@ public class Main {
 ```
 
 
-![](https://eliotjang.github.io/assets/images/system-analysis/ch18-5.png){: width="70%"}  
+![](https://eliotjang.github.io/assets/images/system-analysis/ch19-5.png){: width="70%"}  
 
 - "금고사용" 버튼이 눌려진 후에 doUse()를 실행하는 모습 
 
-![](https://eliotjang.github.io/assets/images/system-analysis/ch18-6.png){: width="90%"}  
+![](https://eliotjang.github.io/assets/images/system-analysis/ch19-6.png){: width="90%"}  
 
 
 ## 03. 등장 역할  
 
-![](https://eliotjang.github.io/assets/images/system-analysis/ch18-7.png){: width="70%"}  
+![](https://eliotjang.github.io/assets/images/system-analysis/ch19-7.png){: width="70%"}  
 
 
 - State(상태)의 역할 

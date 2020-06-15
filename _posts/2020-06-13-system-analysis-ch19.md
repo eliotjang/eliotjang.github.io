@@ -68,7 +68,7 @@ last_modified_at: 2020-06-14T14:00:00+09:00
 |Main|동작 테스트용 클래스|  
 
 
-![](https://eliotjang.github.io/assets/images/system-analysis/ch19-4.png){: width="60%"}  
+![](https://eliotjang.github.io/assets/images/system-analysis/ch19-4.png){: width="100%"}  
 
 
 ### State 인터페이스  
@@ -327,16 +327,16 @@ public class Main {
 ```
 
 
-![](https://eliotjang.github.io/assets/images/system-analysis/ch19-5.png){: width="70%"}  
+![](https://eliotjang.github.io/assets/images/system-analysis/ch19-5.png){: width="100%"}  
 
 - "금고사용" 버튼이 눌려진 후에 doUse()를 실행하는 모습 
 
-![](https://eliotjang.github.io/assets/images/system-analysis/ch19-6.png){: width="90%"}  
+![](https://eliotjang.github.io/assets/images/system-analysis/ch19-6.png){: width="100%"}  
 
 
 ## 03. 등장 역할  
 
-![](https://eliotjang.github.io/assets/images/system-analysis/ch19-7.png){: width="70%"}  
+![](https://eliotjang.github.io/assets/images/system-analysis/ch19-7.png){: width="100%"}  
 
 
 - State(상태)의 역할 

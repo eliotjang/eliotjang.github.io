@@ -167,12 +167,12 @@ public class Main {
 }
 ```  
 
-![](https://eliotjang.github.io/assets/images/system-analysis/ch21-2.png){: width="60%"}  
+![](https://eliotjang.github.io/assets/images/system-analysis/ch21-2.png){: width="80%"}  
 
 
 ### 시퀀스 다이어그램  
 
-![](https://eliotjang.github.io/assets/images/system-analysis/ch21-3.png){: width="60%"}  
+![](https://eliotjang.github.io/assets/images/system-analysis/ch21-3.png){: width="80%"}  
 
 
 

@@ -79,6 +79,9 @@ public class Printer implements Printable {
   public void setPrinterName(String name) {
     this.name = name;
   }
+  public String getPrinterName() {
+    return name;
+  }
   public void print(String string) {
     System.out.println("=== " + name + " ===");
     System.out.println(string);
@@ -118,11 +121,13 @@ public class PrinterProxy implements Printable {
   private String name;
   private Printer real;
   public PrinterProxy() {
+  }
+  public PrinterProxy(String name) {
     this.name = name;
   }
   public synchronized void setPrinterName(String name) {
     if (real != null) {
-      resl.setPrinterName(name);
+      real.setPrinterName(name);
     }
     this.name = name;
   }

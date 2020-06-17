@@ -126,7 +126,7 @@ import java.util.HashMap;
 public class BigCharFactory {
   private HashMap pool = new HashMap();
   private static BigCharFactory singleton = new BigCharFactory();
-  private BigChar Factory() {
+  private BigCharFactory() {
   }
   public static BigCharFactory getInstance() {
     return singleton;
@@ -184,7 +184,7 @@ public class Main {
     if (args.length == 0) {
       System.out.println("Usage : java Main digits");
       System.out.println("Example : java Main 1212123");
-      System.exit(0):
+      System.exit(0);
     }
     BigString bs = new BigString(args[0]);
     bs.print();

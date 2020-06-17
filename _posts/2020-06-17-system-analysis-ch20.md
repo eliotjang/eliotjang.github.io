@@ -39,7 +39,32 @@ last_modified_at: 2020-06-17T17:00:00+09:00
 ![](https://eliotjang.github.io/assets/images/system-analysis/ch20-1.png){: width="100%"}  
 
 
-![](https://eliotjang.github.io/assets/images/system-analysis/ch20-2.png){: width="100%"}
+![](https://eliotjang.github.io/assets/images/system-analysis/ch20-2.png){: width="100%"}  
+
+
+### 주요 클래스  
+
+- BigChar 
+  - '큰 문자'를 나타내는 클래스 
+  - 파일로부터 큰 문자의 텍스트를 읽어 메모리에 저장하고, print 메소드에서 그것을 표시한다 
+  - 큰 문자는 메모리를 많이 차지하므로, BigChar의 인스턴스를 공유하자 
+- BigCharFactory 
+  - BigChar 클래스의 인스턴스를 만든다 
+  - 같은 문자에 대응하는 BigChar 클래스의 인스턴스가 <span style="color:red">이미 만들어져 있는 경우에는, 이것을 이용</span>하고 새로운 인스턴스는 만들지 않는다 
+  - 지금까지 만들어진 BigChar 클래스의 인스턴스는 모두 pool이라는 필드에 보관함(HashMap을 이용)  
+
+
+### BigChar 클래스 
+
+- '큰 문자'를 나타내는 클래스 
+- 생성자 
+  - 인수로 제공된 문자의 '큰 문자' 버전을 작성한다 
+  - 작성된 문자열은 fontdata에 저장함 
+  - 예를 들어, 생성자의 인수로 '3'이 주어지면, 다음과 같은 문자열이 fontdata에 저장됨 ⇐ 이 data는 big3.txt에서 읽어온다 
+    - 파일로부터 한 라인 씩 읽어서, "\n"과 함께 buf에 추가한다 
+    - but.toString()을 이용해서 문자열로 바꾼다음 fontdata에 할당한다  
+
+
 
 
 

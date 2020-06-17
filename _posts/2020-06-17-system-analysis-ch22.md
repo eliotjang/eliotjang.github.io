@@ -40,7 +40,7 @@ last_modified_at: 2020-06-17T22:00:00+09:00
 |drawer|DrawCommand|'점 그리기 명령'을 표현한 클래스|
 |drawer|Drawale|'그리기 대상'을 표현한 인터페이스|
 |drawer|DrawCanvas|'그리기 대상'을 구현한 클래스|
-|Anonymous|Main|동작 테스트용 클래스|  
+|Anonymous(default package)|Main|동작 테스트용 클래스|  
 
 
 ![](https://eliotjang.github.io/assets/images/system-analysis/ch22-2.png){: width="100%"}  
@@ -91,7 +91,7 @@ public interface Command {
 package command;
 
 import java.util.Stack;
-import jaav.util.Iterator;
+import java.util.Iterator;
 
 public class MacroCommand implements Command {
   private Stack commands = new Stack();

@@ -424,7 +424,7 @@ public class Main extends JFrame implements ActionListener, MouseMotionListener,
   - 프로그램 동작 방식 
     - 색깔을 바꾸면서 그림을 그리다가(점을 찍다가)
     - undo 버튼을 누를 때마다, 최근 점부터 사라진다 
-    - redo 버튼을 누를 때마다, 마지막의 undo 버튼이 눌러졌을 대 지워졌던 점부터 *지워졌을 당시의 위치와 색깔을 그대로 하여* 다시 그려진다 
+    - redo 버튼을 누를 때마다, 마지막의 undo 버튼이 눌러졌을 대 지워졌던 점부터 <u>지워졌을 당시의 위치와 색깔을 그대로 하여</u> 다시 그려진다 
   - 힌트 : 
     - undo를 행했던 Command들을 유지하는 멤버 변수 undoHistoryForRedo와 적당한 메소드들을 DrawCanvas 클래스에 추가한다 
     - Main.main()의 actionPerformed()에서는

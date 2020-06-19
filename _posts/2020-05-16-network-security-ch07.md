@@ -44,7 +44,6 @@ last_modified_at: 2020-05-16T21:00:00+09:00
     ![](https://eliotjang.github.io/assets/images/network-security/ch07-5.png){: width="100%"}  
 
 2. 위협 대응방안  
-
   - 웹 서버 등 외부 접속점에 대한 보안대책을 강화하고 외부 네트워크와 내부 네트워크를 분리하여 비인가자의 내부 네트워크에 대한 접근을 통제하고, 방화벽 등을 통해 DMZ 구간에서 내부망으로 접근을 엄격히 통제하거나 네트워크 침입 탐지 기능을 강화해야 한다 
   - 내부 네트워크는 외부에서 직접 접근이 불가능하도록 네트워크 주소변환 기술(NAT)을 적용하여 구성하여야 한다 
 
@@ -106,7 +105,7 @@ last_modified_at: 2020-05-16T21:00:00+09:00
             - IP 데이터그램 fragment들의 offset 번호의 혼동을 주어 시스템의 패킷 재조합에 과부하가 걸리도록 함으로써 시스템을 못쓰게 하는 공격
 	    
     4. DDoS(Distributed Denial of Service) 공격 기법 종류
-        - ①Trin
+        - ①Trin00
              - 제일 처음 나타난 DDOS 공격 툴로서, 사용하는 DOS 공격 형태는 UDP Packet Flooding이다
              - `Intruder-287655/tcp→Handler`
              - `Handler-27444/udp→Agent`
@@ -118,10 +117,10 @@ last_modified_at: 2020-05-16T21:00:00+09:00
         - ④Stacheldraht
              - 마스터와 에이전트 간 통신을 암호화
              - 공격 프로그램이 자동 업데이트 되도록 설계됨
-        - 마스터(master) 시스템: 해커로부터 공격 명령을 받아 에이전트 시스템에 공격 명령을 전달하는 시스템
-        - 핸들러 프로그램(handler program): 마스터 시스템에서 위의 일을 하는 프로그램
-        - 에이전트(agent) 시스템: 실제 공격을 수행하는 시스템
-        - 데몬(daemon) 프로그램: 공격을 수행하는 프로그램(에이전트 시스템에 설치)
+        - ✓마스터(master) 시스템: 해커로부터 공격 명령을 받아 에이전트 시스템에 공격 명령을 전달하는 시스템
+        - ✓핸들러 프로그램(handler program): 마스터 시스템에서 위의 일을 하는 프로그램
+        - ✓에이전트(agent) 시스템: 실제 공격을 수행하는 시스템
+        - ✓데몬(daemon) 프로그램: 공격을 수행하는 프로그램(에이전트 시스템에 설치)
         
         - ⑤IP Fragmentation
             - IP 단편화는 IP 데이터그램이 네트워크를 통해 전송될 때, 전송되는 IP 데이터그램의 크기가 해당 전송매체에서 전송될 수 있는 최대 크기 즉, MUT(Maximum Transmission Unit)보다 클 경우 발생한다
@@ -168,30 +167,42 @@ last_modified_at: 2020-05-16T21:00:00+09:00
 
 ![](https://eliotjang.github.io/assets/images/network-security/ch07-11.png){: width="100%"}
 
+①클라이언트는 서버와 모두 접속되어 있는 Established 상태, 공격자는 적절한 시퀀스 넘버를 획득하기 위해 스니핑을 하고 있음  
+
+②공격 시점에 비동기화 상태 중 세션이 완전히 끊어지지 않는 시퀀스 넘버의 범위에서 RST 패킷을 생성하여 서버로 보냄. 서버는 잠시 Closed 상태가 되나 클라이언트는 그대로 Established 상태  
+
+③공격자는 A_Client_My_Seq를 생성하여 서버로 보냄  
+
+④서버는 새로운 A_Client_My_Seq를 받아들이고, Server_My_Seq를 재생하여 공격자에게 보낸 후 Syn_Received 상태  
+
+⑤공격자는 정상 연결처럼 서버와 시퀀스 넘버를 교환하고, 공격자와 서버 모두 Established 상태. 원래의 클라이언트는 여전히 Established 상태고 서버의 네트워크 상태로 인한 잠시 동안의 연결 문제로 받아들임. 연결은 끊어졌지만 인증 세션은 열린 상태  
+
 
 ### 4. 네트워크 스니핑(Sniffing)
 
-1. 스니핑 개념
+### 4-1. 스니핑 개념
   - 네트워크상의 데이터를 도청하는 행위를 뜻한다. LAN에서의 스니핑은 Promiscuous Mode에서 작동한다
   - 네트워크에 접속하는 모든 시스템은 설정된 IP 주소 값과 고유한 MAC 주소 값을 가지고 있음
   - 네트워크 카드에 인식된 2계층과 3계층 정보가 자신의 것과 일치하지 않는 패킷은 무시함  
 ![](https://eliotjang.github.io/assets/images/network-security/ch07-12.png){: width="80%"}
 
-2. 스니핑 공격 유형
-  1. Switch Jamming
-    - 스위칭 재밍 공격은 위조된 MAC 주소를 지속적으로 네트워크로 흘려보내 스위치의 주소 테이블의 기능을 마비시키는 공격(MACOF 공격이라고도 함)
-    - 스위치에 랜덤한 형태로 생성한 MAC을 가진 패킷을 지속적으로 보내면, 스위치의 MAC 테이블을 저장 용량을 넘게 되고, 스위치의 원래 기능을 잃고 더미 허브처럼 작동하게 되어 스니핑이 가능해진다
-  2. ARP Redirect 공격
+### 4-2. 스니핑 공격 유형  
+
+  - 가. Switch Jamming  
+    - 스위칭 재밍 공격은 위조된 MAC 주소를 지속적으로 네트워크로 흘려보내 스위치의 주소 테이블의 기능을 마비시키는 공격(MACOF 공격이라고도 함)  
+    - 스위치에 랜덤한 형태로 생성한 MAC을 가진 패킷을 지속적으로 보내면, 스위치의 MAC 테이블을 저장 용량을 넘게 되고, 스위치의 원래 기능을 잃고 더미 허브처럼 작동하게 되어 스니핑이 가능해진다  
+  - 나. ARP Redirect 공격
     - ARP spoofing의 일종으로 공격자가 자신이 라우터라고 속여 외부로 나가는 패킷을 가로채는 공격 기법이다  
 ![](https://eliotjang.github.io/assets/images/network-security/ch07-13.png){: width="80%"}
-  3. ARP Spoofing 공격
+  - 다. ARP Spoofing 공격
     - ARP Redirect 공격과 마찬가지로 공격자 호스트로 들어오는 트래픽을 원래의 호스트로 relay 해주어야만 호스트 간에 정상적 연결을 할 수 있고 스니핑도 할 수 있다. 그렇지 않을 경우 호스트 간의 연결은 이루어질 수 없게 된다  
 ![](https://eliotjang.github.io/assets/images/network-security/ch07-14.png){: width="80%"}
-  4. ICMP Redirect 공격
+  - 라. ICMP Redirect 공격
     - ICMP Redirect 메시지가 어떻게 호스트의 라우팅 경로를 바꿔주는지 보여주는 좋은 예이다  
-![](https://eliotjang.github.io/assets/images/network-security/ch07-15.png){: width="80%"}
+![](https://eliotjang.github.io/assets/images/network-security/ch07-15.png){: width="80%"}  
 
-3. 스니퍼 탐지 방법
+
+### 4-3. 스니퍼 탐지 방법
   - Ping을 이용한 스니퍼 탐지
     - 의심이 가는 호스트에 ping을 보내면 되는데, 네트워크에 존재하지 않는 MAC 주소를 위장하여 보냄
     - 만약 ICMP Echo Reply를 받으면 해당 호스트가 스니핑을 하고 있는 것임  

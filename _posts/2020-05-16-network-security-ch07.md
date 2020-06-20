@@ -2,7 +2,7 @@
 title: "[네트워크보안] Chapter 07. 네트워크 기반 공격 기술"
 excerpt: "장상수 저, 정보보호총론, 생능출판, 2015"
 toc: true
-toc_sticky: true
+toc_sticky: false
 toc_label: "Ch07. 네트워크 기반 공격 기술"
 header:
   teaser: /assets/images/network-security/network-security-logo.jpeg
@@ -17,20 +17,20 @@ last_modified_at: 2020-05-16T21:00:00+09:00
 
 ### 1. 네트워크 관리도구 및 서비스
 
-1. Ping
+### 1-1. Ping
     - 상대방 컴퓨터, 네트워크 장비, 서버 장비까지 통신이 잘 되는지를 확인하는 명령이다  
     ![](https://eliotjang.github.io/assets/images/network-security/ch07-1.png){: width="100%"}
 
-2. traceroute
+### 1-2. traceroute
     - 최종 목적지 컴퓨터(서버)까지 중간에 거치는 여러 개의 라우터에 대한 경로 및 응답속도를 표시해준다  
     ![](https://eliotjang.github.io/assets/images/network-security/ch07-2.png){: width="100%"}
 
-3. Netstat
+### 1-3. Netstat
     - 네트워크 상태 확인 도구
     - 웹으로 프로그램을 개발할 때 외부에서 통신이 안되면 사용 포트를 확인할 때가 있다  
     ![](https://eliotjang.github.io/assets/images/network-security/ch07-3.png){: width="100%"}
 
-4. TCPDUMP
+### 1-4. TCPDUMP
     - TCPDUMP는 네트워크 모니터링 및 패킷 분석을 위해 가장 많이 사용되면서 모든 모니터링 및 패킷 분석 툴의 모태가 된다  
     ![](https://eliotjang.github.io/assets/images/network-security/ch07-4.png){: width="100%"}
 
@@ -69,7 +69,7 @@ last_modified_at: 2020-05-16T21:00:00+09:00
 
 ### 1. DoS(Denial of Service)/DDoS(Distributed Denial of Service) 공격
 
-1. DoS 특징
+### 1-1. DoS 특징
     - 서버의 성능을 크게 떨어뜨리거나 서버를 정지시키는 방법을 통해 서버의 정상적인 작동을 방해하는 공격
     - Resource 고갈형
         - 시스템이 가지고 있는 자원을 고갈시켜 정상적인 작동을 하지 못하도록 하는 공격으로 SYN flooding과 같은 공격이 이 범주에 속한다
@@ -81,7 +81,7 @@ last_modified_at: 2020-05-16T21:00:00+09:00
     - Bandwidth 잠식형
         - 앞의 공격들과 달리 이러한 유형의 공격은 특별한 대비책은 존재하지 않는 반면 OS나 서버의 취약점과는 관련이 적어 거의 모든 시스템을 공격할 수 있다는 특성을 가지고 있는 아주 강력한 공격 기법이다
 
-2. DDoS 특징
+### 1-2. DDoS 특징
     1. DDoS 공격의 동작 원리
 	- 수백 혹은 수천 개의 좀비 시스템(공격자가 사전에 공격 도구를 설치해 놓은 일반 인터넷 사용자들의 시스템)들을 이용해서 공격의 목적이 되는 목표 시스템(혹은 Victim 시스템)을 공격하는 형태를 가진다
     2. DDoS 공격의 형태
@@ -132,17 +132,17 @@ last_modified_at: 2020-05-16T21:00:00+09:00
 
 ### 2. Spoofing
 
-1. IP Spoofing
+### 2-1. IP Spoofing
   - IP Spoofing은 신뢰관계에 있는 두 개의 호스트 사이에서 하나의 시스템을 마비시킨 후 마치 자신이 신뢰관계에 있는 호스트인 것처럼 속이는 것을 말한다
     - 유닉스 계열에서는 트러스트 인증법을 사용
     - 트러스트 설정을 해주려면 유닉스에서는 /etc/host.equiv 파일에 다음과 같이 클라이언트의 IP와 접속 가능한 아이디를 등록해 주어야 한다  
 ![](https://eliotjang.github.io/assets/images/network-security/ch07-8.png){: width="100%"}
 
-2. ARP Spoofing
+### 2-2. ARP Spoofing
   - 로컬에서 통신하고 있는 서버와 클라이언트의 IP 주소에 대한 MAC 주소를 공격자의 MAC 주소로 속여 클라이언트가 서버로 가는 패킷이나 서버에서 클라이언트로 가는 패킷이 공격자에게 향하도록 한다  
 ![](https://eliotjang.github.io/assets/images/network-security/ch07-9.png){: width="80%"}
 
-3. DNS Spoofing
+### 2-3. DNS Spoofing
   - 공격 대상이 DNS 서버에 도메인 이름에 대한 IP 주소를 질의할 때 공격자가 실제 DNS 서버보다 빨리 공격 대상에게 DNS 응답(Response) 패킷을 보내 공격 대상이 잘못된 IP 주소로 이름 해석을 하도록 하여 잘못된 웹 접속을 유도하는 공격이다  
 ![](https://eliotjang.github.io/assets/images/network-security/ch07-10.png){: width="100%"}
 

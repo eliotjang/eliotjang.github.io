@@ -219,7 +219,7 @@ last_modified_at: 2020-06-22T21:00:00+09:00
 ![](https://eliotjang.github.io/assets/images/network-security/ch10-7.png){: width="100%"}  
 
 
-
+<br/>
 # 10.2 정보보호 감사론  
 
 ## 1. 정보시스템 감사(audlt)  

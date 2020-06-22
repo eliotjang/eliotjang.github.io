@@ -12,32 +12,32 @@ tags:
   - network security
 last_modified_at: 2020-05-16T21:00:00+09:00
 ---  
+<br/>
+# 7.1 네트워크 관리도구 및 서비스
 
-## 7.1 네트워크 관리도구 및 서비스
+## 1. 네트워크 관리도구 및 서비스
 
-### 1. 네트워크 관리도구 및 서비스
-
-### 1-1. Ping
+### 1. Ping
 - 상대방 컴퓨터, 네트워크 장비, 서버 장비까지 통신이 잘 되는지를 확인하는 명령이다  
 ![](https://eliotjang.github.io/assets/images/network-security/ch07-1.png){: width="100%"}
 
-### 1-2. traceroute
+### 2. traceroute
 - 최종 목적지 컴퓨터(서버)까지 중간에 거치는 여러 개의 라우터에 대한 경로 및 응답속도를 표시해준다  
 ![](https://eliotjang.github.io/assets/images/network-security/ch07-2.png){: width="100%"}
 
-### 1-3. Netstat
+### 3. Netstat
 - 네트워크 상태 확인 도구
  웹으로 프로그램을 개발할 때 외부에서 통신이 안되면 사용 포트를 확인할 때가 있다  
 ![](https://eliotjang.github.io/assets/images/network-security/ch07-3.png){: width="100%"}
 
-### 1-4. TCPDUMP
+### 4. TCPDUMP
 - TCPDUMP는 네트워크 모니터링 및 패킷 분석을 위해 가장 많이 사용되면서 모든 모니터링 및 패킷 분석 툴의 모태가 된다  
 ![](https://eliotjang.github.io/assets/images/network-security/ch07-4.png){: width="100%"}
 
+<br/>
+# 7.2 네트워크 보안 주요 위협
 
-## 7.2 네트워크 보안 주요 위협
-
-### 1. 비인가 침입시도
+## 1. 비인가 침입시도
 
 1. 위협 요인
     - 접근통제가 취약한 네트워크를 통해 그림과 같이 비인가 접근 시도가 성공할 경우 주요 웹 및 DB 서버에 접근하여 중요정보 및 개인정보를 유출시킬 수 있다  
@@ -47,7 +47,7 @@ last_modified_at: 2020-05-16T21:00:00+09:00
   - 웹 서버 등 외부 접속점에 대한 보안대책을 강화하고 외부 네트워크와 내부 네트워크를 분리하여 비인가자의 내부 네트워크에 대한 접근을 통제하고, 방화벽 등을 통해 DMZ 구간에서 내부망으로 접근을 엄격히 통제하거나 네트워크 침입 탐지 기능을 강화해야 한다 
   - 내부 네트워크는 외부에서 직접 접근이 불가능하도록 네트워크 주소변환 기술(NAT)을 적용하여 구성하여야 한다 
 
-### 2. 유해 트래픽의 전송
+## 2. 유해 트래픽의 전송
 
 1. 위협 요인
     - 침입차단, 침입탑지시스템 등의 정보보호시스템은 네트워크를 통해 전송되는 웜·바이러스 등의 악성코드를 차단하는 데 한계가 있으며, 이로 인해 정보유출이나 네트워크의 가용성이 침해될 수 있다
@@ -55,7 +55,7 @@ last_modified_at: 2020-05-16T21:00:00+09:00
     - 서버 및 네트워크 자원에 대한 다양한 형태의 침입행위를 실시간 탐지, 분석 후 비정상적인 패킷을 차단하여야 한다
     - 패킷 실시간 분석과 학습을 통해 알려지지 않은 공격에 대응할 수 있는 기능과 시스템 장애 시에도 네트워크서비스의 중단을 방지할 수 있는 Fallover 기능을 제공하는 침입 방지 시스템등을 운영해야 한다
 
-### 3. 잘못된 네트워크 설정
+## 3. 잘못된 네트워크 설정
     
 1. 불안정한 구조
     - 잘못된 네트워크는 허가 없는 사용자들이 시스템에 침입할 수 있게 해주는 주요 시작점이다
@@ -64,12 +64,12 @@ last_modified_at: 2020-05-16T21:00:00+09:00
 3. 중앙 집중형 서버
     - 중앙 집중형 서버를 사용하는 경우 만일 중앙 서버가 손상되면 네트워크 전체가 정지되거나 또는 데이터 조작이나 도난당하기 쉽다
 
+<br/>
+# 7.3 네트워크 기반 공격 기술
 
-## 7.3 네트워크 기반 공격 기술
+## 1. DoS(Denial of Service) / DDoS(Distributed Denial of Service) 공격
 
-### 1. DoS(Denial of Service)/DDoS(Distributed Denial of Service) 공격
-
-### 1-1. DoS 특징
+### 1. DoS 특징
 - 서버의 성능을 크게 떨어뜨리거나 서버를 정지시키는 방법을 통해 서버의 정상적인 작동을 방해하는 공격
 - Resource 고갈형
     - 시스템이 가지고 있는 자원을 고갈시켜 정상적인 작동을 하지 못하도록 하는 공격으로 SYN flooding과 같은 공격이 이 범주에 속한다
@@ -81,7 +81,7 @@ last_modified_at: 2020-05-16T21:00:00+09:00
 - Bandwidth 잠식형
     - 앞의 공격들과 달리 이러한 유형의 공격은 특별한 대비책은 존재하지 않는 반면 OS나 서버의 취약점과는 관련이 적어 거의 모든 시스템을 공격할 수 있다는 특성을 가지고 있는 아주 강력한 공격 기법이다
 
-### 1-2. DDoS 특징
+### 2. DDoS 특징
 1. DDoS 공격의 동작 원리
     - 수백 혹은 수천 개의 좀비 시스템(공격자가 사전에 공격 도구를 설치해 놓은 일반 인터넷 사용자들의 시스템)들을 이용해서 공격의 목적이 되는 목표 시스템(혹은 Victim 시스템)을 공격하는 형태를 가진다
 2. DDoS 공격의 형태
@@ -130,24 +130,24 @@ last_modified_at: 2020-05-16T21:00:00+09:00
     - 취약점을 갖는 운영체제 및 유틸리티 프로그램들에 대한 패치
     - 위장된 소스 IP 주소 필터링 등
 
-### 2. Spoofing
+## 2. Spoofing
 
-### 2-1. IP Spoofing
+### 1. IP Spoofing
   - IP Spoofing은 신뢰관계에 있는 두 개의 호스트 사이에서 하나의 시스템을 마비시킨 후 마치 자신이 신뢰관계에 있는 호스트인 것처럼 속이는 것을 말한다
     - 유닉스 계열에서는 트러스트 인증법을 사용
     - 트러스트 설정을 해주려면 유닉스에서는 /etc/host.equiv 파일에 다음과 같이 클라이언트의 IP와 접속 가능한 아이디를 등록해 주어야 한다  
 ![](https://eliotjang.github.io/assets/images/network-security/ch07-8.png){: width="100%"}
 
-### 2-2. ARP Spoofing
+### 2. ARP Spoofing
   - 로컬에서 통신하고 있는 서버와 클라이언트의 IP 주소에 대한 MAC 주소를 공격자의 MAC 주소로 속여 클라이언트가 서버로 가는 패킷이나 서버에서 클라이언트로 가는 패킷이 공격자에게 향하도록 한다  
 ![](https://eliotjang.github.io/assets/images/network-security/ch07-9.png){: width="80%"}
 
-### 2-3. DNS Spoofing
+### 3. DNS Spoofing
   - 공격 대상이 DNS 서버에 도메인 이름에 대한 IP 주소를 질의할 때 공격자가 실제 DNS 서버보다 빨리 공격 대상에게 DNS 응답(Response) 패킷을 보내 공격 대상이 잘못된 IP 주소로 이름 해석을 하도록 하여 잘못된 웹 접속을 유도하는 공격이다  
 ![](https://eliotjang.github.io/assets/images/network-security/ch07-10.png){: width="100%"}
 
 
-### 3. Session Hijacking
+## 3. Session Hijacking
 
 - 세션(Session): 사용자와 컴퓨터, 또는 두 대의 컴퓨터 간의 활성화된 상태
 - 세션 하이재킹: 세션, 즉 로그인(Login)된 상태를 가로채는 것을 뜻함
@@ -167,26 +167,26 @@ last_modified_at: 2020-05-16T21:00:00+09:00
 
 ![](https://eliotjang.github.io/assets/images/network-security/ch07-11.png){: width="100%"}
 
-①클라이언트는 서버와 모두 접속되어 있는 Established 상태, 공격자는 적절한 시퀀스 넘버를 획득하기 위해 스니핑을 하고 있음  
+① 클라이언트는 서버와 모두 접속되어 있는 Established 상태, 공격자는 적절한 시퀀스 넘버를 획득하기 위해 스니핑을 하고 있음  
 
-②공격 시점에 비동기화 상태 중 세션이 완전히 끊어지지 않는 시퀀스 넘버의 범위에서 RST 패킷을 생성하여 서버로 보냄. 서버는 잠시 Closed 상태가 되나 클라이언트는 그대로 Established 상태  
+② 공격 시점에 비동기화 상태 중 세션이 완전히 끊어지지 않는 시퀀스 넘버의 범위에서 RST 패킷을 생성하여 서버로 보냄. 서버는 잠시 Closed 상태가 되나 클라이언트는 그대로 Established 상태  
 
-③공격자는 A_Client_My_Seq를 생성하여 서버로 보냄  
+③ 공격자는 A_Client_My_Seq를 생성하여 서버로 보냄  
 
-④서버는 새로운 A_Client_My_Seq를 받아들이고, Server_My_Seq를 재생하여 공격자에게 보낸 후 Syn_Received 상태  
+④ 서버는 새로운 A_Client_My_Seq를 받아들이고, Server_My_Seq를 재생하여 공격자에게 보낸 후 Syn_Received 상태  
 
-⑤공격자는 정상 연결처럼 서버와 시퀀스 넘버를 교환하고, 공격자와 서버 모두 Established 상태. 원래의 클라이언트는 여전히 Established 상태고 서버의 네트워크 상태로 인한 잠시 동안의 연결 문제로 받아들임. 연결은 끊어졌지만 인증 세션은 열린 상태  
+⑤ 공격자는 정상 연결처럼 서버와 시퀀스 넘버를 교환하고, 공격자와 서버 모두 Established 상태. 원래의 클라이언트는 여전히 Established 상태고 서버의 네트워크 상태로 인한 잠시 동안의 연결 문제로 받아들임. 연결은 끊어졌지만 인증 세션은 열린 상태  
 
 
-### 4. 네트워크 스니핑(Sniffing)
+## 4. 네트워크 스니핑(Sniffing)
 
-### 4-1. 스니핑 개념
+### 1. 스니핑 개념
   - 네트워크상의 데이터를 도청하는 행위를 뜻한다. LAN에서의 스니핑은 Promiscuous Mode에서 작동한다
   - 네트워크에 접속하는 모든 시스템은 설정된 IP 주소 값과 고유한 MAC 주소 값을 가지고 있음
   - 네트워크 카드에 인식된 2계층과 3계층 정보가 자신의 것과 일치하지 않는 패킷은 무시함  
 ![](https://eliotjang.github.io/assets/images/network-security/ch07-12.png){: width="80%"}
 
-### 4-2. 스니핑 공격 유형  
+### 2. 스니핑 공격 유형  
 
   - 가. Switch Jamming  
     - 스위칭 재밍 공격은 위조된 MAC 주소를 지속적으로 네트워크로 흘려보내 스위치의 주소 테이블의 기능을 마비시키는 공격(MACOF 공격이라고도 함)  
@@ -202,7 +202,7 @@ last_modified_at: 2020-05-16T21:00:00+09:00
 ![](https://eliotjang.github.io/assets/images/network-security/ch07-15.png){: width="80%"}  
 
 
-### 4-3. 스니퍼 탐지 방법
+### 3. 스니퍼 탐지 방법
   - Ping을 이용한 스니퍼 탐지
     - 의심이 가는 호스트에 ping을 보내면 되는데, 네트워크에 존재하지 않는 MAC 주소를 위장하여 보냄
     - 만약 ICMP Echo Reply를 받으면 해당 호스트가 스니핑을 하고 있는 것임  
@@ -219,7 +219,7 @@ last_modified_at: 2020-05-16T21:00:00+09:00
     - ARP watch는 MAC 주소와 IP 주소의 매칭 값을 초기에 저장하고 ARP 트래픽을 모니터링하여, 이를 변하게 하는 패킷이 탐지되면 관리자에게 메일로 알려주는 툴
     - 대부분의 공격 기법이 위조된 ARP를 사용하기 때문에 쉽게 탐지할 수 있음
 
-### 5. 스턱스넷 및 나이트 드래곤
+## 5. 스턱스넷 및 나이트 드래곤
 
 1. 스턱스넷(Stuxnet)
   - 국가 및 산업의 중요 기반 시설을 제어하는 SCADA(Supervisory Control And Data Acquisition) 시스템을 대상으로 한 웜이다
@@ -229,7 +229,7 @@ last_modified_at: 2020-05-16T21:00:00+09:00
   - 2011년 2월 10일 미국의 윌스트리트 저널의 기사를 통해 글로벌 에너지 업체들을 대상으로 한 악성코드를 이용한 보안 위협이 발생한 것이 공개되었다. 해당 보안 위협은 미국 보안 업체 맥아피(McAfee)에 의해 발견되었으며 나이트 드래곤(Night Dragon)으로 명명되었다
 
 
-### 6. 중간자 공격(Man in the middle attack)
+## 6. 중간자 공격(Man in the middle attack)
 
 ![](https://eliotjang.github.io/assets/images/network-security/ch07-17.png){: width="100%"}
 

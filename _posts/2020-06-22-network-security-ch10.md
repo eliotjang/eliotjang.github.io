@@ -57,7 +57,7 @@ last_modified_at: 2020-06-22T21:00:00+09:00
 - 실제사고나 의심되는 침해사고에 대해 초기의 연결자 역할수행 
 - 침해사고 조사, 분석, 대응 업무 
 
-- 침해사고 대응시 각 단계별 담장자 역할  
+- 침해사고 대응시 각 단계별 담당자 역할  
 ![](https://eliotjang.github.io/assets/images/network-security/ch10-3.png){: width="100%"}  
 
 ### 2. 공격 사이트 확인(초기대응)  
@@ -73,16 +73,16 @@ last_modified_at: 2020-06-22T21:00:00+09:00
 나. 침해사고대응팀(CERT)에 연락  
 
 - FIRST(Ther Forum of Incident Response and Security Team) : Global Forum of CERT
-- <www.first.org>  
+- www.first.org  
 
 
 
 다. Whois 이용하기  
 
-- 미주지역 도메인 정보 제공 : <whois.arin.net> 
-- 아시아 지역 도메인 정보 제공 : <whois.apnic.net>
-- 유럽 지역의 도메인 정보 제공 : <whois.ripe.net>
-- 국내 도메인(kr) 정보 제공 : <whois.krnic.net> or <whois.kisa.or.kr>  
+- 미주지역 도메인 정보 제공 : whois.arin.net 
+- 아시아 지역 도메인 정보 제공 : whois.apnic.net
+- 유럽 지역의 도메인 정보 제공 : whois.ripe.net
+- 국내 도메인(kr) 정보 제공 : whois.krnic.net or whois.kisa.or.kr  
 
 
 
@@ -194,7 +194,7 @@ last_modified_at: 2020-06-22T21:00:00+09:00
 
 ## 6. 침해사고 대응 체계  
 
-### 1. 국가 침해사고 대응 체계  
+### 1. 국가 침해사고 대응체계  
 
 - 우리나라 인터넷 침해사고 대응 체계 
   - 국가 차원의 총괄 : 국가정보원(국가사이버안전센터) 

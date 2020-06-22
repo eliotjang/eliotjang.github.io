@@ -32,12 +32,12 @@ last_modified_at: 2020-06-22T21:00:00+09:00
 ### 2. 침해사고 유형 
 
 - 해킹, DoS 공격, 홈페이지 변조, 피싱, 스팸 등이 있다  
-![](https://eliotjang.github.io/assets/images/network-security/ch010-1.png){: width="60%"}  
+![](https://eliotjang.github.io/assets/images/network-security/ch10-1.png){: width="60%"}  
 
 
 ## 2. 침해사고 대응 절차  
 
-![](https://eliotjang.github.io/assets/images/network-security/ch010-2.png){: width="70%"}  
+![](https://eliotjang.github.io/assets/images/network-security/ch10-2.png){: width="70%"}  
 
 - 침해사고 분석 및 복구를 위한 정보 수집 
 - 침해사고 예방을 위한 보안 조치 
@@ -58,7 +58,7 @@ last_modified_at: 2020-06-22T21:00:00+09:00
 - 침해사고 조사, 분석, 대응 업무 
 
 - 침해사고 대응시 각 단계별 담장자 역할  
-![](https://eliotjang.github.io/assets/images/network-security/ch010-3.png){: width="100%"}  
+![](https://eliotjang.github.io/assets/images/network-security/ch10-3.png){: width="100%"}  
 
 ### 2. 공격 사이트 확인(초기대응)  
 
@@ -94,7 +94,7 @@ last_modified_at: 2020-06-22T21:00:00+09:00
 ### 3. 침해사고 분석 방법(사고조사 단계)  
 
 - 사고 유형별, 시스템별 조사항목 및 조치 방안  
-![](https://eliotjang.github.io/assets/images/network-security/ch010-4.png){: width="100%"}  
+![](https://eliotjang.github.io/assets/images/network-security/ch10-4.png){: width="100%"}  
 
 
 ## 4. 침해사고 분석  
@@ -199,7 +199,7 @@ last_modified_at: 2020-06-22T21:00:00+09:00
 - 우리나라 인터넷 침해사고 대응 체계 
   - 국가 차원의 총괄 : 국가정보원(국가사이버안전센터) 
   - 민간 분야 총괄 : 인터넷진흥원(인터넷침해사고대응센터 www.krcert.or.kr)  
-![](https://eliotjang.github.io/assets/images/network-security/ch010-5.png){: width="100%"}  
+![](https://eliotjang.github.io/assets/images/network-security/ch10-5.png){: width="100%"}  
 
 
 ### 2. 해외 침해사고 대응체계  
@@ -213,10 +213,10 @@ last_modified_at: 2020-06-22T21:00:00+09:00
 ### 1. 해외 침해사고 대응체계  
 
 - 국가 정보보호 체계  
-![](https://eliotjang.github.io/assets/images/network-security/ch010-6.png){: width="100%"}  
+![](https://eliotjang.github.io/assets/images/network-security/ch10-6.png){: width="100%"}  
 
 - 사이버위기 경보단계별 내용  
-![](https://eliotjang.github.io/assets/images/network-security/ch010-7.png){: width="100%"}  
+![](https://eliotjang.github.io/assets/images/network-security/ch10-7.png){: width="100%"}  
 
 
 
@@ -273,7 +273,7 @@ last_modified_at: 2020-06-22T21:00:00+09:00
 
 - 회사에서 이뤄지는 보안 활동이 적절한 지 확인하는 활동 
 - 일반적으로 ISMS 인증 기준을 활용  
-![](https://eliotjang.github.io/assets/images/network-security/ch010-8.png){: width="100%"}  
+![](https://eliotjang.github.io/assets/images/network-security/ch10-8.png){: width="100%"}  
 
 
 ## 3. 정보보호 관리체계(ISMS/PIMS) 인증심사  
@@ -398,7 +398,7 @@ last_modified_at: 2020-06-22T21:00:00+09:00
 ### 5. 디지털 포렌식 절차  
 
 - 좀 더 세분하여 사고 조사를 위한 조사자의 사전 준비과정, 사건 발생 인지 후 현장 출동 및 증거 수집, 수집된 증거의 포장 및 이송, 확보된 증거의 분류 및 조사 분석, 사건의 재구성 및 정밀 검초, 보고서 작성 단계로 구성된다  
-![](https://eliotjang.github.io/assets/images/network-security/ch010-9.png){: width="100%"}  
+![](https://eliotjang.github.io/assets/images/network-security/ch10-9.png){: width="100%"}  
 
 
 ### 6. 디지털 포렌식의 5대 원칙  

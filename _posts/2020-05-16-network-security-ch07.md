@@ -50,7 +50,7 @@ last_modified_at: 2020-05-16T21:00:00+09:00
 ## 2. 유해 트래픽의 전송
 
 1. 위협 요인
-    - 침입차단, 침입탑지시스템 등의 정보보호시스템은 네트워크를 통해 전송되는 웜·바이러스 등의 악성코드를 차단하는 데 한계가 있으며, 이로 인해 정보유출이나 네트워크의 가용성이 침해될 수 있다
+    - 침입차단, 침입탐지시스템 등의 정보보호시스템은 네트워크를 통해 전송되는 웜·바이러스 등의 악성코드를 차단하는 데 한계가 있으며, 이로 인해 정보유출이나 네트워크의 가용성이 침해될 수 있다
 2. 위협 대응방안
     - 서버 및 네트워크 자원에 대한 다양한 형태의 침입행위를 실시간 탐지, 분석 후 비정상적인 패킷을 차단하여야 한다
     - 패킷 실시간 분석과 학습을 통해 알려지지 않은 공격에 대응할 수 있는 기능과 시스템 장애 시에도 네트워크서비스의 중단을 방지할 수 있는 Fallover 기능을 제공하는 침입 방지 시스템등을 운영해야 한다
@@ -85,50 +85,78 @@ last_modified_at: 2020-05-16T21:00:00+09:00
 1. DDoS 공격의 동작 원리
     - 수백 혹은 수천 개의 좀비 시스템(공격자가 사전에 공격 도구를 설치해 놓은 일반 인터넷 사용자들의 시스템)들을 이용해서 공격의 목적이 되는 목표 시스템(혹은 Victim 시스템)을 공격하는 형태를 가진다
 2. DDoS 공격의 형태
-    - ①대역폭 공격(Bandwidth Attacks): 엄청난 양의 패킷을 전송해서 네트워크의 대역폭이나 장비 자체의 리소스를 모두 소진시키는 형태이다
-    - ②어플리케이션 공격(Application Attacks): TCP와 HTTP 같은 프로토콜을 이용해서 특정한 반응이 일어나는 요청 패킷을 발송하여 해당 시스템의 연산처리 리소스를 소진시켜서 정상적인 서비스 요쳥과 처리를 할 수 없는 상태로 만드는 것이다
-3. DoS(Denial of Service) 공격 기법 종류
-    - ①Ping of Death
-        - Ping of Death(죽음의 ping) 공격은 몇몇 OS들이 IP fragment를 제대로 재조합하지 못하여 취약점을 이용한 공격 기법이다
-            - ping 명령을 보낼 때 패킷을 최대한 길게 하여(65,535바이트 이상) 공격대상으로 보낸다
-            - 목적지 호스트가 IP fragment들을 재조합할 때 IP 데이터그램의 최대 크기를 넘어서는 경우 버퍼 오버플로우가 발생돼 시스템이 다운되거나 재부팅될 수 있다
-    - ②SYN Flooding attack
-        - 공격자가 송진자 IP 주소를 존재하지 않거나 다른 시스템의 IP 주소로 위장하여 목적 시스템으로 SYN 패킷을 연속해서 보내는 방법이다
-        - TCP 서버는 동시에 진행할 수 있는 연결들의 개수가 제한되어 있는데 이것을 초과할 경우 정상적ㅇ니 연결 요청을 처리할 수 없다  
-![](https://eliotjang.github.io/assets/images/network-security/ch07-6.png){: width="100%"}
-    - ③Smurf Attack
-        - 공격자가 공격대상의 IP 주소로 위장하여, 중계 네트워크(Intermediary Network)에 ICMP Echo Request 패킷을 directed broadcast 주소로 전송하는 방법이다  
-![](https://eliotjang.github.io/assets/images/network-security/ch07-7.png){: width="100%"}  
-    - ④Land Attack
-        - 송신자 IP 주소와 수신자 IP 주소, 송신자 포트와 수신자 포트가 동일한 조작된 SYN 패킷을 공격 대상에 전송한다
-    - ⑤Teardrop Attack
-        - IP 데이터그램 fragment들의 offset 번호의 혼동을 주어 시스템의 패킷 재조합에 과부하가 걸리도록 함으로써 시스템을 못쓰게 하는 공격
-	    
-4. DDoS(Distributed Denial of Service) 공격 기법 종류
-    - ①Trin00
-         - 제일 처음 나타난 DDOS 공격 툴로서, 사용하는 DOS 공격 형태는 UDP Packet Flooding이다
-         - `Intruder-287655/tcp→Handler`
-         - `Handler-27444/udp→Agent`
-         - `Agent-31335/udp→Handler`
-    - ②TFN(Tribe Floodingg Network)
-         - 사용하는 DOS 공격 형태는 UDP, TCP, SYN Flooding, ICMP flooding, Smurf 등이다. TFN은 trinoo와 거의 유사한 분산 서비스거부공격 도구로 많은 소스에서 하나 혹은 여러 개의 목표 시스템에 대해 서비스거부 공격을 수행한다
-    - ③TFN2K
-         - 거의 대부분이 TFN과 비슷하고 TFN의 업그레이드 버전이라 생각하면 된다
-    - ④Stacheldraht
-         - 마스터와 에이전트 간 통신을 암호화
-         - 공격 프로그램이 자동 업데이트 되도록 설계됨
-    - ✓마스터(master) 시스템: 해커로부터 공격 명령을 받아 에이전트 시스템에 공격 명령을 전달하는 시스템
-    - ✓핸들러 프로그램(handler program): 마스터 시스템에서 위의 일을 하는 프로그램
-    - ✓에이전트(agent) 시스템: 실제 공격을 수행하는 시스템
-    - ✓데몬(daemon) 프로그램: 공격을 수행하는 프로그램(에이전트 시스템에 설치)
-        
-    - ⑤IP Fragmentation
-        - IP 단편화는 IP 데이터그램이 네트워크를 통해 전송될 때, 전송되는 IP 데이터그램의 크기가 해당 전송매체에서 전송될 수 있는 최대 크기 즉, MUT(Maximum Transmission Unit)보다 클 경우 발생한다
-    - ⑥NTP(Network Time Protocol)는 사용자의 기기가 정확한 시간을 맞추기 위한 프로토콜로 NTP DDoS 공격은 monlist라는 최근 접속한 시스템의 목록(최대 600개)을 요청하는 명령어를 사용한 공격이다
+    - ① 대역폭 공격(Bandwidth Attacks): 엄청난 양의 패킷을 전송해서 네트워크의 대역폭이나 장비 자체의 리소스를 모두 소진시키는 형태이다
+    - ② 어플리케이션 공격(Application Attacks): TCP와 HTTP 같은 프로토콜을 이용해서 특정한 반응이 일어나는 요청 패킷을 발송하여 해당 시스템의 연산처리 리소스를 소진시켜서 정상적인 서비스 요청과 처리를 할 수 없는 상태로 만드는 것이다  
 
-5. DoS/DDoS 공격 대응 방법
-    - 취약점을 갖는 운영체제 및 유틸리티 프로그램들에 대한 패치
-    - 위장된 소스 IP 주소 필터링 등
+
+### 3. DoS(Denial of Service) 공격 기법 종류
+<br/>
+① Ping of Death  
+
+  - Ping of Death(죽음의 ping) 공격은 몇몇 OS들이 IP fragment를 제대로 재조합하지 못하는 취약점을 이용한 공격 기법이다
+    - ping 명령을 보낼 때 패킷을 최대한 길게 하여(65,535바이트 이상) 공격대상으로 보낸다
+    - 목적지 호스트가 IP fragment들을 재조합할 때 IP 데이터그램의 최대 크기를 넘어서는 경우 버퍼 오버플로우가 발생돼 시스템이 다운되거나 재부팅될 수 있다  
+
+② SYN Flooding attack  
+
+  - 공격자가 송신자 IP 주소를 존재하지 않거나 다른 시스템의 IP 주소로 위장하여 목적 시스템으로 SYN 패킷을 연속해서 보내는 방법이다
+  - TCP 서버는 동시에 진행할 수 있는 연결들의 개수가 제한되어 있는데 이것을 초과할 경우 정상적인 연결 요청을 처리할 수 없다  
+![](https://eliotjang.github.io/assets/images/network-security/ch07-6.png){: width="100%"}  
+
+③ Smurf Attack  
+
+  - 공격자가 공격대상의 IP 주소로 위장하여, 중계 네트워크(Intermediary Network)에 ICMP Echo Request 패킷을 directed broadcast 주소로 전송하는 방법이다  
+![](https://eliotjang.github.io/assets/images/network-security/ch07-7.png){: width="100%"}  
+
+④ Land Attack  
+
+  - 송신자 IP 주소와 수신자 IP 주소, 송신자 포트와 수신자 포트가 동일한 조작된 SYN 패킷을 공격 대상에 전송한다  
+
+⑤ Teardrop Attack  
+
+  - IP 데이터그램 fragment들의 offset 번호의 혼동을 주어 시스템의 패킷 재조합에 과부하가 걸리도록 함으로써 시스템을 못쓰게 하는 공격  
+
+	    
+### 4. DDoS(Distributed Denial of Service) 공격 기법 종류  
+<br/>
+① Trin00  
+  - 제일 처음 나타난 DDOS 공격 툴로서, 사용하는 DOS 공격 형태는 UDP Packet Flooding이다
+  - `Intruder-287655/tcp→Handler`
+  - `Handler-27444/udp→Agent`
+  - `Agent-31335/udp→Handler`  
+
+② TFN(Tribe Flooding Network)  
+
+  - 사용하는 DOS 공격 형태는 UDP, TCP, SYN Flooding, ICMP flooding, Smurf 등이다. TFN은 trinoo와 거의 유사한 분산 서비스거부공격 도구로 많은 소스에서 하나 혹은 여러 개의 목표 시스템에 대해 서비스거부 공격을 수행한다  
+
+③ TFN2K  
+
+  - 거의 대부분이 TFN과 비슷하고 TFN의 업그레이드 버전이라 생각하면 된다  
+
+④ Stacheldraht  
+
+  - 마스터와 에이전트 간 통신을 암호화
+  - 공격 프로그램이 자동 업데이트 되도록 설계됨
+
+- ✓마스터(master) 시스템: 해커로부터 공격 명령을 받아 에이전트 시스템에 공격 명령을 전달하는 시스템
+- ✓핸들러 프로그램(handler program): 마스터 시스템에서 위의 일을 하는 프로그램
+- ✓에이전트(agent) 시스템: 실제 공격을 수행하는 시스템
+- ✓데몬(daemon) 프로그램: 공격을 수행하는 프로그램(에이전트 시스템에 설치)  
+        
+
+⑤ IP Fragmentation  
+
+  - IP 단편화는 IP 데이터그램이 네트워크를 통해 전송될 때, 전송되는 IP 데이터그램의 크기가 해당 전송매체에서 전송될 수 있는 최대 크기 즉, MTU(Maximum Transmission Unit)보다 클 경우 발생한다  
+
+⑥ NTP(Network Time Protocol) Reflection
+
+- NTP는 사용자의 기기가 정확한 시간을 맞추기 위한 프로토콜로 NTP DDoS 공격은 monlist라는 최근 접속한 시스템의 목록(최대 600개)을 요청하는 명령어를 사용한 공격이다  
+
+
+### 5. DoS/DDoS 공격 대응 방법  
+
+- 취약점을 갖는 운영체제 및 유틸리티 프로그램들에 대한 패치
+- 위장된 소스 IP 주소 필터링 등
 
 ## 2. Spoofing
 
@@ -155,11 +183,11 @@ last_modified_at: 2020-05-16T21:00:00+09:00
   - TCP가 가지는 고유한 취약점을 이용해 정상적인 접속을 가로채는 방법
   - 대부분의 인증은 TCP 세션이 시작할 때 이루어지므로 해커는 서버에 대한 접근 권한을 얻을 수 있음
   - 세션 하이재킹 순서
-    - ①공격자는 네트워크 스니핑이 가능해야 함(희생자와 같은 네트워크에 위치)
-    - ②패킷의 흐름을 모니터링
-    - ③순서번호 예측
-    - ④희생자 컴퓨터에 대한 연결 해지
-    - ⑤세션을 가로챔
+    - ① 공격자는 네트워크 스니핑이 가능해야 함(희생자와 같은 네트워크에 위치)
+    - ② 패킷의 흐름을 모니터링
+    - ③ 순서번호 예측
+    - ④ 희생자 컴퓨터에 대한 연결 해지
+    - ⑤ 세션을 가로챔
 
 - 세션 하이재킹 공격에 대한 대응책
   - SSH와 같이 세션에 대한 인증 수준이 높은 프로토콜을 이용해서 서버에 접속해야 함

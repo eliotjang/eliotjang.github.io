@@ -53,7 +53,7 @@ last_modified_at: 2020-06-23T23:00:00+09:00
   - BNF(Backus-Naur Form 또는 Backus Normal Form)의 확장으로 문법을 표기함  
 ![](https://eliotjang.github.io/assets/images/system-analysis/ch23-7.png){: width="100%"}  
   - `<program> ::= program <command list>`
-    - `<program>이란 program이라는 단어 뒤에 <command list>가 이어잊ㄴ 것`이라는 정의를 나타냄 
+    - `<program>이란 program이라는 단어 뒤에 <command list>가 이어진 것`이라는 정의를 나타냄 
   - `<command list> ::= <comand>*end`
     - `<command list>는, <command>가 0개 이상 반복된 후 end라는 단어가 온것`이라는 뜻
   - `<command> ::= <repeat command> | <primitive command>`

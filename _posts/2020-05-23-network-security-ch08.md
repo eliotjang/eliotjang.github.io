@@ -438,7 +438,7 @@ last_modified_at: 2020-05-23T17:00:00+09:00
 - 계층별 터널링 프로토콜  
 ![](https://eliotjang.github.io/assets/images/network-security/ch08-13.png){: width="100%"}  
 
-### 1. L2F(Layer2 Forwarding)
+### 1. L2F(Layer 2 Forwarding)
 
 - Cisco사에서 제안한 프로토콜
 - 접속 트래픽을 PPP로 프레임화
@@ -860,7 +860,7 @@ last_modified_at: 2020-05-23T17:00:00+09:00
 
 
 - 라. Sendmail 취약점 공격  
-  - Sendmsil은 주로 리눅스 및 유닉스 시스템에서 메일서버를 운영할 때 기본적으로 사용되는 프로그램이며, 사용자가 필요에 의해 다운받았을 경우 윈도우 시스템에서 운영되기도 한다 
+  - Sendmail은 주로 리눅스 및 유닉스 시스템에서 메일서버를 운영할 때 기본적으로 사용되는 프로그램이며, 사용자가 필요에 의해 다운받았을 경우 윈도우 시스템에서 운영되기도 한다 
   - 과거 Sendmail의 버퍼오버플로우 등의 취약점을 이용한 공격이 많이 발생했으나 최신 보안 패치를 통해 제거할 수 있다  
 
 

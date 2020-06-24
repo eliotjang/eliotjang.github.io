@@ -40,7 +40,7 @@ last_modified_at: 2020-05-16T13:00:00+09:00
 |Visitor|파일이나 디렉토리를 방문하는 방문자를 나타낸 추상 클래스|
 |Element|Visitor 클래스의 인스턴스를 받아들이는 데이터 구조를 나타내는 인터페이스|
 |ListVisitor|Visitor 클래스의 하위 클래스로 파일이나 디렉토리의 종류를 나타내는 클래스|
-|Enrty|File과 Directory의 상위 클래스가 되는 추상 클래스(Element 인터페이스를 구현)|
+|Entry|File과 Directory의 상위 클래스가 되는 추상 클래스(Element 인터페이스를 구현)|
 |File|파일을 나타내는 클래스|
 |Directory|디렉토리를 나타내는 클래스|
 |FileTreatmentException|File에 대해서 add한 경우에 발생하는 예외 클래스|

@@ -70,7 +70,7 @@ public class Trouble {
 - setNext()
   - next 필드를 설정한다
 - support()
-  - <span style="color:blue"><b>추상 메소드</b></span> resolve() 메소드를 호출해서, 반환 값이 false 이면, 자기 다음 해결자에게 트러블을 떠넘긴다
+  - <span style="color:blue"><b>추상 메소드 resolve() 메소드</b></span>를 호출해서, 반환 값이 false 이면, 자기 다음 해결자에게 트러블을 떠넘긴다
   - Template Method 패턴을 사용했다
 
 ```java

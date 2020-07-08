@@ -12,11 +12,11 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "sunrise" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "mint" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Software Engineer, EliotJang Blog"
+locale                   : "ko"
+title                    : "Software Engineer, EliotJang"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "EliotJang"
@@ -109,7 +109,7 @@ analytics:
 author:
   name             : "EliotJang, 엘리엇장"
   avatar           : "/assets/images/album/long-hair-eliot.jpg"
-  bio              : "Welcome to my library, margin of life."
+  bio              : "Welcome to my library. 제 모든 것을 기록하는 도서관에 오신 것을 환영합니다"
   location         : "Korea, Republic of"
   email            : "eliotjang2@gmail.com"
   links:

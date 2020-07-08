@@ -1,9 +1,12 @@
 ---
-title: "[Common sense]Homebrew 2.4.0 Update"
+title: "[MacOS Knowledge]Homebrew 2.4.0 Update"
 excerpt: "macOS 용 패키지 관리자, MikeMcQuaid님의 설명"
 
 toc: true
 toc_sticky: true
+
+header:
+  teaser: /assets/images/knowledge/knowledge-logo.jpg
 
 categories:
   - knowledge

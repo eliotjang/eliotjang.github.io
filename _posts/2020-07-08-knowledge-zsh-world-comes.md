@@ -1,9 +1,12 @@
 ---
-title: "[Common sense]바야흐로 zsh의 시대가 왔습니다"
+title: "[MacOS Knowledge]바야흐로 zsh의 시대가 왔습니다"
 excerpt: "bash 저리가라"
 
 toc: true
 toc_sticky: true
+
+header:
+  teaser: /assets/images/knowledge/knowledge-logo.jpg
 
 categories:
   - knowledge

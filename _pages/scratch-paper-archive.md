@@ -12,6 +12,11 @@ __This Page uploads what I learned and scratch.__
 
 - - -
 
+### 2020, Summer Vacation, CSE Senior  
+
+[C# Language Basic](https://eliotjang.github.io/tags/c sharp basic/)
+  
+
 ### Computer Science & Engineering, Senior
 
 [Network Security Lecture](https://eliotjang.github.io/tags/network security/)  

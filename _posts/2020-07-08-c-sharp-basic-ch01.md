@@ -11,6 +11,6 @@ categories:
   - c sharp basic
 tags:
   - c sharp basic
-last_modified_at: 2020-07-09T15:00:00T09:00
+last_modified_at: 2020-07-09T15:00:00+09:00
 ---
 start..

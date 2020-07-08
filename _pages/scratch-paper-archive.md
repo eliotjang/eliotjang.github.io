@@ -12,7 +12,7 @@ __This Page uploads what I learned and scratch.__
 
 - - -
 
-### 2020, Summer Vacation, CSE Senior  
+### 2020, CSE Senior, Summer Vacation  
 
 [C# Language Basic](https://eliotjang.github.io/tags/c sharp basic/)  
 

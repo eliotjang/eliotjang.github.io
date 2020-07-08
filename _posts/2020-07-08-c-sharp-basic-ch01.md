@@ -6,7 +6,7 @@ toc: true
 toc_sticky: true
 toc_label: "Ch01. .Net Framework & C# Language"
 header:
-  teaser: /assets/images/c-sharp/c-sharp-logo.jpeg
+  teaser: /assets/images/scratch-paper/c-sharp-basic/c-sharp-basic-logo.png
 categories:
   - c sharp basic
 tags:

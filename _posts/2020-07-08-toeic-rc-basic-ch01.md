@@ -1,6 +1,6 @@
 ---
 title: "[TOEIC RC Basic] 1강. 주어와 동사"
-excerpt: "multicampus"
+excerpt: "멀티캠퍼스, 토마토 TOEIC 생기초 RC"
 
 toc: true
 toc_sticky: true

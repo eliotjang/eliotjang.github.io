@@ -25,7 +25,15 @@ Git을 자주 사용하는 개발자들은 zsh을 이미 많이 사용해왔습�
 - 자동 제안 및 수정 기능을 제공하고, 문맥에 맞는 도움말을 지원합니다.
 - 부동-소수점 수와 수학 함수 라이브러리를 제공합니다.  
 
+## .zshrc 관련 
 
-## 참고 사이트 
+Mac OS X에는 deafault로 .zshrc가 존재하지 않습니다.  
+따라서 구글링하면서 .zshrc에 관한 내용이 나오면 직접 만들어 주셔야 합니다.  
+
+- `vi ~/.zshrc`
+
+## 참고 문헌 
 
 <https://xho95.github.io/macos/cli/shell/zsh/2020/03/04/Setting-Up-the-Zsh-shell-on-Mac.html>  
+
+<https://superuser.com/questions/886132/where-is-the-zshrc-file-on-mac>  

@@ -1,10 +1,10 @@
 ---
-title: "[C# Basic] Chapter 01. .NET Framework & C# Language"
-excerpt: "나우캠퍼스, C#으로 살아남기"
+title: "미정"
+excerpt: "미정"
 
 toc: true
 toc_sticky: true
-toc_label: "Ch01. .Net Framework & C# Language"
+toc_label: "미정"
 header:
   teaser: /assets/images/scratch-paper/c-sharp-basic/c-sharp-basic-logo.png
 categories:
@@ -14,8 +14,5 @@ tags:
 last_modified_at: 2020-07-10T13:00:00+09:00
 ---
 
-## 1. .NET Framework
-
-## 2. C# language overview
-
-## 3. 정리
+태그랑 카테고리도 변경 요망.
+일단 뭘 블로깅할건지가 제일 중요함

@@ -18,7 +18,7 @@ test...
 
 ### 2020, CSE Senior, Summer Vacation  
 
-[C# Language Basic](https://eliotjang.github.io/tags/c sharp basic/)  
+[C# Language Basic](https://eliotjang.github.io/categories/c sharp basic/)  
 
 
 [TOEIC RC Basic](https://eliotjang.github.io/toeic rc basic/toeic-rc-basic/)  

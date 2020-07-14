@@ -12,6 +12,10 @@ __This Page uploads what I learned and scratch.__
 
 - - -
 
+test...  
+
+[testing](https://eliotjang.github.io/c sharp basic/ex-C-sharp-scratch-paper/)
+
 ### 2020, CSE Senior, Summer Vacation  
 
 [C# Language Basic](https://eliotjang.github.io/tags/c sharp basic/)  
@@ -30,10 +34,11 @@ __This Page uploads what I learned and scratch.__
 [Embedded System Lecture](https://eliotjang.github.io/tags/embedded system/)  
 
 
+[Fitbit Scratch Paper](https://eliotjang.github.io/tags/fitbit/)  
+
+### 2019, CSE Junior, Winter Vacation 
+
 [Hadoop Lecture](https://eliotjang.github.io/tags/hadoop)  
-
-
-[Fitbit Scratch Paper](https://eliotjang.github.io/tags/fitbit/)
 
 - - -
 

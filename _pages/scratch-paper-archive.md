@@ -18,7 +18,8 @@ __This Page uploads what I learned and scratch.__
 
 
 [TOEIC RC Basic](https://eliotjang.github.io/tags/toeic rc basic/)
-  
+
+[TOEIC RC Basic](https://eliotjang.github.io/toeic rc basic/toeic-rc-basic/)  
 
 ### Computer Science & Engineering, Senior
 

@@ -16,8 +16,22 @@ main:
 docs:
   - title: "낙서장"
     children:
-      - title: "Unity Basic"
+      - title: "C# Language Basic"
+        url: /categories/c sharp basic/
+      - title: "TOEIC RC Basic"
         url: /categories/toeic rc basic/
+      - title: "Network Security Lecture"
+        url: /categories/network security
+      - title: "Design Pattern Lecture"
+        url: home/
+      - title: "Embedded System Lecture"
+        url: home/
+  - title: "독서"
+    children:
+       - title: "하버드 상위 1퍼센트의 비밀"
+         url: home/
+       - title: "녹나무의 파수꾼"
+         url: home/
 
 
 # - title: "소개"

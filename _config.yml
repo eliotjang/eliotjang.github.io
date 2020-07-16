@@ -122,7 +122,9 @@ author:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       url: "https://facebook.com/eliotjang"
-
+sidebar:
+  - title: "독서"
+    text: "독서는 즐거웡"
 
 # Site Footer
 footer:

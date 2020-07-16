@@ -109,7 +109,7 @@ analytics:
 author:
   name             : "Eliot Jang"
   avatar           : "/assets/images/album/eliot-in-sea.jpg"
-  bio              : "- Computer Science & Engineering, Senior<br>- Game Client Programmer"
+  bio              : "Computer Science & Engineering, Senior"
   location         : "Korea, Republic of"
   email            : "eliotjang2@gmail.com"
   links:
@@ -203,7 +203,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 7 # amount of posts to show
 paginate_path: /page:num/
 timezone: Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
@@ -235,12 +235,14 @@ whitelist:
 #  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
 #  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
 #  - <base_path>/my-awesome-category/index.html ~> path: /
+
 category_archive:
   type: liquid
   path: /categories/
 tag_archive:
   type: liquid
   path: /tags/
+
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
 #   enabled:
@@ -287,3 +289,4 @@ defaults:
       comments: false
       share: true
       related: true
+

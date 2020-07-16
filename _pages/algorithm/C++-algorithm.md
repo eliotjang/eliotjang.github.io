@@ -1,7 +1,7 @@
 ---
 title: "C++ Algorithm"
-permalink: /tags/c++/
-layout: tag
+permalink: /categories/c++/
+layout: category
 author_profile: true
 taxonomy: c++
 ---

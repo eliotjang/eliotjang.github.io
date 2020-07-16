@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "About Eliot Jang"
 permalink: /about/
 layout: single
 author_profile: true

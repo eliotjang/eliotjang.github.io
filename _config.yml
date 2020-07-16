@@ -271,11 +271,13 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: false
-      read_time: false
+      author_profile: true
+      read_time: true
       comments: true
       share: true
       related: true
+      sidebar:
+        nav: "bookshelf"
 
   # _pages
   - scope:
@@ -288,6 +290,8 @@ defaults:
       comments: false
       share: true
       related: true
+      sidebar:
+        nav: "bookshelf"
 
   # bookshelf
   - scope:

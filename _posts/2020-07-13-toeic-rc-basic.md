@@ -13,15 +13,11 @@ categories:
 tags:
   - toeic rc basic
 
-sidebar:
-  - title: "TOEIC RC Basic"
-    image: /assets/images/scratch-paper/toeic-rc-basic/toeic-rc-basic-logo.png
-    image_alt: "image"
-    text: "Write for Study."
-
 last_modified_at: 2020-07-14T09:30:00+09:00
 ---
-<br/>
+
+![](https://eliotjang.github.io/assets/images/scratch-paper/toeic-rc-basic/toeic-rc-basic-logo.png)
+
 # UNIT 01 [기초문법] 주어와 동사 
 
 ## 1. 주어

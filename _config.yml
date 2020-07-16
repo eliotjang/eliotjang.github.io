@@ -12,15 +12,15 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "mint" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "mint"
 
 # Site Settings
 locale                   : "ko"
-title                    : "Software Engineer, EliotJang"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+title                    : "삶의 여유 | IT Blog"
+title_separator          : "|"
+subtitle                 : "모든 것을 기록하는 도서관"
 name                     : "EliotJang"
-description              : "Welcome to my library, margin of life.  삶의 여유가 있는 제 도서관에 오신 것을 환영합니다"
+description              : "관심있는 모든 것을 다룹니다."
 url                      : "https://eliotjang.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "eliotjang/eliotjang.github.io"

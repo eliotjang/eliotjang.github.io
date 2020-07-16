@@ -14,6 +14,7 @@ tags:
   - toeic rc basic
 
 sidebar:
+  nav: "docs"
   - title: "토익 RC 생기초"
     image: /assets/images/scratch-paper/toeic-rc-basic/toeic-rc-basic-logo.png
     image_alt: "image"

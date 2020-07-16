@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "mint"
 
 # Site Settings
 locale                   : "ko"
-title                    : "삶의 여유 | IT Blog"
+title                    : "삶의 여유, IT Blog"
 title_separator          : "|"
 subtitle                 : "모든 것을 기록하는 도서관"
 name                     : "EliotJang"
@@ -25,7 +25,7 @@ url                      : "https://eliotjang.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "eliotjang/eliotjang.github.io"
 teaser                   : "/assets/images/album/book.jpg"
-logo                     : "/assets/images/album/eliot-in-sea.jpg"
+logo                     : "/assets/images/album/Cafe-in-Japen.jpeg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs            : true
 words_per_minute         : 200

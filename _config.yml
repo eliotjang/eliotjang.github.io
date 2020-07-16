@@ -89,7 +89,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : "/assets/images/album/long-hair-eliot.jpg"
+og_image                 : "/assets/images/album/notebook-empty.jpg"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -107,9 +107,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "EliotJang, 엘리엇장"
-  avatar           : "/assets/images/album/long-hair-eliot.jpg"
-  bio              : "Welcome to my library. 제 모든 것을 기록하는 도서관에 오신 것을 환영합니다"
+  name             : "Eliot Jang"
+  avatar           : "/assets/images/album/eliot-in-sea.jpg"
+  bio              : "- Computer Science & Engineering, Senior<br>- Game Client Programmer"
   location         : "Korea, Republic of"
   email            : "eliotjang2@gmail.com"
   links:

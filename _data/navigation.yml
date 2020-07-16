@@ -2,8 +2,8 @@
 main:
 #  - title: "Knowledge"
 #    url: /categories/knowledge/
-  - title: "낙서장"
-    url: /categories/scratch paper/
+#  - title: "낙서장"
+#    url: /categories/scratch paper/
 #  - title: "Algorithm"
 #    url: /categories/algorithm/
 #  - title: "Projects"
@@ -16,26 +16,26 @@ main:
     url: /about/
 
 bookshelf:
+  - title: "지식"
+    url: categories/knowledge/
   - title: "낙서장"
     children:
-      - title: "C# Language Basic"
+      - title: "C#"
         url: /categories/c sharp basic/
-      - title: "TOEIC RC Basic"
+      - title: "토익 RC 기초"
         url: /categories/toeic rc basic/
-      - title: "Network Security Lecture"
+      - title: "네트워크 보안"
         url: /categories/network security
-      - title: "Design Pattern Lecture"
-        url: home/
-      - title: "Embedded System Lecture"
-        url: home/
+      - title: "디자인패턴"
+        url: /tags/system analysis/
+      - title: "임베디드시스템"
+        url: /tags/embedded system/
   - title: "독서"
     children:
        - title: "하버드 상위 1퍼센트의 비밀"
-         url: home/
+         url: https://eliotjang.github.io/reading/reading-harvard-top-1-precent-reading/
        - title: "녹나무의 파수꾼"
-         url: home/
-  - title: "지식"
-    url: categories/knowledge/
+         url: https://eliotjang.github.io/reading/reading-guard-of-camphor-tree/
   - title: "프로젝트"
     children:
         - title: "타워 디펜스 게임"
@@ -44,7 +44,7 @@ bookshelf:
           url: https://github.com/eliotjang/eliotjang/Modazal
   - title: "알고리즘"
     children:
-        - title: "HackerRand, C++"
+        - title: "HackerRank, C++"
           url: https://eliotjang.github.io/tags/c++
 
 

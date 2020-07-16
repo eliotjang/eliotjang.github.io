@@ -13,6 +13,12 @@ categories:
 tags:
   - toeic rc basic
 
+sidebar:
+  - title: "독서"
+    image: http://placehold.it/350x250
+    image_alt: "image"
+    text: "독서는 즐거웡"
+
 last_modified_at: 2020-07-14T09:30:00+09:00
 ---
 <br/>

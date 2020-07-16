@@ -14,10 +14,10 @@ tags:
   - toeic rc basic
 
 sidebar:
-  - title: "독서"
-    image: http://placehold.it/350x250
+  - title: "토익 RC 생기초"
+    image: /assets/images/scratch-paper/toeic-rc-basic/toeic-rc-basic-logo.png
     image_alt: "image"
-    text: "독서는 즐거웡"
+    text: "개인적으로 공부하고자 기록하였습니다."
 
 last_modified_at: 2020-07-14T09:30:00+09:00
 ---

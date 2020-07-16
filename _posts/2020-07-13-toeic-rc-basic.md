@@ -86,7 +86,7 @@ last_modified_at: 2020-07-14T09:30:00+09:00
 - Tony **must provide** money for her.  
 토니는 그녀를 위해 자금을 제공해야 한다.  
 
-## CHECK-UP  
+## check the Point!  
 다음 각 문장에서 주어와 동사를 찾으시오. (동사는 조동사를 포함하여 찾으시오)  
 
 1. In the shop, people should wear a uniform.
@@ -173,7 +173,7 @@ last_modified_at: 2020-07-14T09:30:00+09:00
 
 > be동사 뒤에 주격보어가 명사라면, 주어와 보어가 같아야한다.  
 
-## CHECK-UP 
+## check the Point! 
 
 다음 각 문장에서 목적어와 보어를 찾으시오.(필요 시 관사를 포함하시오)  
 
@@ -230,7 +230,7 @@ last_modified_at: 2020-07-14T09:30:00+09:00
 - 조동사, 미래 시제, 과거 시제는 수일치와 관련이 없다.
 - 주어가 3인칭 단수일 때, 동사에 따라 -es또는 -s를 붙인다.
 
-## CHECK-UP 1
+## check the Point!(1)
 
 다음 중 괄호 안에서 알맞은 것을 고르시오.
 
@@ -255,7 +255,7 @@ last_modified_at: 2020-07-14T09:30:00+09:00
   - 전명구
   - V-ing, p.p, to V
 
-## CHECK-UP 2
+## check the Point!(2)
 
 다음 중 괄호 안에서 알맞은 것을 고르시오.
 
@@ -352,7 +352,7 @@ A very expensive pen.
 제주는 휴식을 위한 최적지이다.  
 
 
-## CHECK-UP 1
+## check the Point!(1)
 
 다음 각 문장에서 명사(구)를 찾으시오.
 
@@ -370,7 +370,7 @@ A very expensive pen.
 > 명사 + 명사 = 복합명사  
 > ex) discount coupons
 
-## CHECK-UP 2
+## check the Point!(2)
 
 다음 괄호 안에서 알맞은 것을 고르시오.
 

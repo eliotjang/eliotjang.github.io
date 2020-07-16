@@ -1,6 +1,6 @@
 ---
 title: "Coding test"
- permalink: coding test/
+permalink: coding test/
 # layout: category
 # author_profile: true
 # taxonomy: algorithm

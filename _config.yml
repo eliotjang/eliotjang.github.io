@@ -24,10 +24,10 @@ description              : "관심있는 모든 것을 다룹니다."
 url                      : "https://eliotjang.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "eliotjang/eliotjang.github.io"
-teaser                   : "/assets/images/album/notebook.webp"
-logo                     : "/assets/images/album/long-hair-eliot.jpg"
+teaser                   : "/assets/images/album/book.jpg"
+logo                     : "/assets/images/album/eliot-in-sea.jpg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+breadcrumbs            : true
 words_per_minute         : 200
 comments:
   provider               : "disqus"
@@ -65,7 +65,7 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : # true, false (default)
+search                   : true
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 algolia:

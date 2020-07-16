@@ -24,8 +24,8 @@ description              : "관심있는 모든 것을 다룹니다."
 url                      : "https://eliotjang.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "eliotjang/eliotjang.github.io"
-teaser                   : "/assets/images/album/book.jpg"
-logo                     : "/assets/images/album/Cafe-in-Japen.jpeg"
+logo                     : "/assets/images/album/book.jpg"
+teaser                   : "/assets/images/album/Cafe-in-Japen.jpeg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs            : true
 words_per_minute         : 200

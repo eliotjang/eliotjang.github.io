@@ -1,19 +1,21 @@
 # main links
 main:
-  - title: "Knowledge"
-    url: /categories/knowledge/
-  - title: "Scratch Paper"
+#  - title: "Knowledge"
+#    url: /categories/knowledge/
+  - title: "낙서장"
     url: /categories/scratch paper/
-  - title: "Algorithm"
-    url: /categories/algorithm/
-  - title: "Projects"
-    url: /categories/project/
-  - title: "독서"
-    url: /categories/reading/
-  - title: "Github"
-    url: https://github.com/eliotjang/
+#  - title: "Algorithm"
+#    url: /categories/algorithm/
+#  - title: "Projects"
+#    url: /categories/project/
+#  - title: "독서"
+#    url: /categories/reading/
+#  - title: "Github"
+#    url: https://github.com/eliotjang/
+  - title: "About"
+    url: /about/
 
-docs:
+bookshelf:
   - title: "낙서장"
     children:
       - title: "C# Language Basic"
@@ -32,6 +34,18 @@ docs:
          url: home/
        - title: "녹나무의 파수꾼"
          url: home/
+  - title: "지식"
+    url: categories/knowledge/
+  - title: "프로젝트"
+    children:
+        - title: "타워 디펜스 게임"
+          url: https://github.com/eliotjang/Defense_Game
+        - title: "익명 SNS 어플리케이션"
+          url: https://github.com/eliotjang/eliotjang/Modazal
+  - title: "알고리즘"
+    children:
+        - title: "HackerRand, C++"
+          url: https://eliotjang.github.io/tags/c++
 
 
 # - title: "소개"

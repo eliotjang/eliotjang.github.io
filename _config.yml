@@ -110,18 +110,18 @@ author:
   name             : "Eliot Jang"
   avatar           : "/assets/images/album/eliot-in-sea.jpg"
   bio              : "Computer Science & Engineering, Senior"
-  location         : "Korea, Republic of"
-  email            : "eliotjang2@gmail.com"
-  links:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/engineer_eliot"  
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/eliotjang"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      url: "https://facebook.com/eliotjang"
+#  location         : "Korea, Republic of"
+#  email            : "eliotjang2@gmail.com"
+#  links:
+#    - label: "Instagram"
+#      icon: "fab fa-fw fa-instagram"
+#      url: "https://instagram.com/engineer_eliot"  
+#    - label: "GitHub"
+#      icon: "fab fa-fw fa-github"
+#      url: "https://github.com/eliotjang"
+#    - label: "Facebook"
+#      icon: "fab fa-fw fa-facebook-square"
+#      url: "https://facebook.com/eliotjang"
 
 # Site Footer
 footer:
@@ -289,10 +289,10 @@ defaults:
       share: true
       related: true
 
-  # _docs
+  # bookshelf
   - scope:
       path: ""
-      type: docs
+      type: bookshelf
     values:
       sidebar:
-        nav: "docs"
+        nav: "bookshelf"

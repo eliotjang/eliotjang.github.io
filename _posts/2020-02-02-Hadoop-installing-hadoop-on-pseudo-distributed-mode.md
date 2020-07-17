@@ -3,11 +3,9 @@ title: "[Hadoop] Installing Hadoop on Pseudo Distributed Mode"
 excerpt: "Tutorials Point (India) Pvt. Ltd."
 
 categories:
-  - scratch
+  - 컴퓨터공학
 tags:
-  - scratch
-  - hadoop
-  - big data
+  - Hadoop
 last_modified_at: 2020-02-02T04:00+09:00
 ---  
 

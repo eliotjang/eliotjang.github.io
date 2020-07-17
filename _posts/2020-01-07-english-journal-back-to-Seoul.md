@@ -4,8 +4,7 @@ excerpt: "After learning, We go back to Seoul, my home"
 
 categories:
   - 영어일기
-tags:
-  - Seoul
+
 last_modified_at: 2020-01-08T01:50:00+09:00
 ---
 Tuesday, January 7th, 2020  

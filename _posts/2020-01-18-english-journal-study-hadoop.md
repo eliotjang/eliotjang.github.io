@@ -4,8 +4,7 @@ excerpt: "Friday, January 18, 2020"
 
 categories:
   - 영어일기
-tags:
-  - blissful
+
 last_modified_at: 2020-01-19T18:50:00+09:00
 ---
 I got up at three.  

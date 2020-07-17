@@ -4,8 +4,7 @@ excerpt: "Sunday, January 12th, 2020"
 
 categories:
   - 영어일기
-tags:
-  - fun
+
 last_modified_at: 2020-01-13T20:00:00+09:00
 ---
 I went to the cafe, Idiya.  

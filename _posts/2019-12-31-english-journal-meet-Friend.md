@@ -4,8 +4,7 @@ excerpt: "My High-school alumni"
 
 categories:
   - 영어일기
-tags:
-  - friends
+
 last_modified_at: 2019-01-01T22:50:00+09:00
 ---
 Tuesday, December 31th, 2019  

@@ -4,8 +4,7 @@ excerpt: "Saturday, January 18, 2020"
 
 categories:
   - 영어일기
-tags:
-  - zealous
+
 
 last_modified_at: 2020-01-19T01:50:00+09:00
 ---

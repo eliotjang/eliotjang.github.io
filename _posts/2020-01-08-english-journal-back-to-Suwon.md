@@ -4,8 +4,7 @@ excerpt: "After a medical examination, we back to Suwon, rented room."
 
 categories:
   - 영어일기
-tags:
-  - Suwon
+
 
 last_modified_at: 2020-01-09T00:20:00+09:00
 ---

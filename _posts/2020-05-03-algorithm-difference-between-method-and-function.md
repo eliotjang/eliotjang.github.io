@@ -5,7 +5,7 @@ excerpt: "stackoverflow.com/questions/155609/whats-the-difference-between-a-meth
 categories:
   - algorithm
 tags:
-  - stackoverflow
+  - Stack Overflow
 
 last_modified_at: 2020-05-03T22:00:00+09:00
 ---

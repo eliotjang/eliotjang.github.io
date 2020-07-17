@@ -9,7 +9,7 @@ categories:
   - algorithm
 tags:
   - C#
-  - stackoverflow
+  - Stack Overflow
 
 last_modified_at: 2020-06-05T19:00:00+09:00
 ---

@@ -5,7 +5,7 @@ excerpt: "thispointer.com, stl-algorithm-stdunique-tutorial"
 categories:
   - algorithm
 tags:
-  - c++
+  - C++
   - std::unique
 
 last_modified_at: 2020-01-26T21:20:00T09:00

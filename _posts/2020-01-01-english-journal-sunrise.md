@@ -5,11 +5,11 @@ excerpt: "After have a drink, climb a EungBong mountain to see sunrise."
 categories:
   - 영어일기
 tags:
-  - sunrise
   - Eungbong Mountain
+
 last_modified_at: 2020-01-01T23:15:00+09:00
 ---
-Wednesday, January 1th, 2019  
+Wednesday, January 1th, 2020  
 Cloudy
 
 We visited 4 bars to have a drink.  

@@ -4,8 +4,7 @@ excerpt: "Sunday, January 19, 2020"
 
 categories:
   - 영어일기
-tags:
-  - contended
+
 last_modified_at: 2020-01-20T00:23:00+09:00
 ---
 Today we did a thorough cleaning.  

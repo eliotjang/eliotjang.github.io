@@ -5,7 +5,6 @@ excerpt: "Upload to Youtube, the first video in 2020 year."
 categories:
   - 영어일기
 tags:
-  - video
   - Youtube
 last_modified_at: 2020-01-04T02:00:00+09:00
 ---

@@ -4,8 +4,7 @@ excerpt: "Saturday, January 11, 2020"
 
 categories:
   - 영어일기
-tags:
-  - open lab
+
 last_modified_at: 2020-01-12T08:00:00+09:00
 ---
 We went to Open-Lab.  

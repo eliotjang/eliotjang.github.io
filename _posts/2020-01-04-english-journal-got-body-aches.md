@@ -4,9 +4,7 @@ excerpt: "I had a sore throat and body was aching because of stay up all night"
 
 categories:
   - 영어일기
-tags:
-  - camera
-  - body aches
+
 last_modifed_at: 2020-01-05T17:40:00+09:00
 ---
 Saturday, January 4th, 2020  

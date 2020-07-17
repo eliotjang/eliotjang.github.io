@@ -4,9 +4,7 @@ excerpt: "Thursday, January 16, 2020"
 
 categories:
   - 영어일기
-tags:
-  - brother's friend
-  - fun
+
 
 last_modified_at: 2020-01-17T03:40:00+09:00
 ---

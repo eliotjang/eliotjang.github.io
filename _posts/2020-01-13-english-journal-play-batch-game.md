@@ -5,7 +5,7 @@ excerpt: "Monday, January 13, 2020"
 categories:
   - 영어일기
 tags:
-  - League of Legend
+  - League of Legends
 
 last_modified_at: 2020-01-14T02:10:00+09:00
 ---

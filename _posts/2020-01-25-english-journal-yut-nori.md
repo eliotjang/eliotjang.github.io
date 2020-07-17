@@ -1,12 +1,11 @@
 ---
-title: "[영어일기]Play Yut-nori"
+title: "[영어일기]Play Yut Nori"
 excerpt: "Saturday, January 25, 2020"
 
 categories:
   - 영어일기
 tags:
-  - yut nori
-  - festive
+  - Yut Nori
 
 last_modified_at: 2020-01-26T01:00:00+09:99"
 ---

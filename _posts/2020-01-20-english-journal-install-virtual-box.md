@@ -4,8 +4,7 @@ excerpt: "Monday, January 20, 2020"
 
 categories:
   - 영어일기
-tags:
-  - Eager
+
 last_modified_at: 2020-01-21T01:30:00+09:00
 ---
 I got up early and arrived at Cafe, Starbucks.  

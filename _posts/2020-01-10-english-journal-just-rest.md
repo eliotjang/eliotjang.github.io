@@ -4,8 +4,7 @@ excerpt: "Friday, January 10, 2020"
 
 categories:
   - 영어일기
-tags:
-  - rest
+
 last_modified_at: 2020-01-11T01:10:00+09:00
 ---
 I woke up late.  

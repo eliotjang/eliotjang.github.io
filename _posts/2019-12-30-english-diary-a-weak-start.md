@@ -1,13 +1,11 @@
 ---
-title: "A weak start"
-excerpt: "make up my mind to start this hard journey"
+title: "[영어일기]A weak start"
+excerpt: "Make up my mind to start this hard journey"
 
 categories:
-  - journal
+  - 영어일기
 tags:
-  - journal
-  - in 2019
-  - C Sharp
+  - C#
   - Unity
 last_modified_at: 2019-12-31T03:15:00+09:00
 ---

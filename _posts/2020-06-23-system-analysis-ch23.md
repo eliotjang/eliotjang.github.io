@@ -8,9 +8,12 @@ toc_label: "Ch23. Interpreter 패턴"
 header:
   teaser: /assets/images/system-analysis/system-analysis-logo.jpeg
 categories: 
+  - tech tree
   - system analysis
 tags:
   - system analysis
+  - 디자인 패턴 
+  - Java
 last_modified_at: 2020-06-23T23:00:00+09:00  
 ---  
 

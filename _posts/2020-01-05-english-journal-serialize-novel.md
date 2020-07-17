@@ -1,5 +1,5 @@
 ---
-title: [영어일기]Serialize a novel
+title: "[영어일기]Serialize a novel"
 excerpt: Serialize a novel with program, FolderStory
 
 categories:

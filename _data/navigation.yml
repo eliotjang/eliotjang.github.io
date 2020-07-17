@@ -15,17 +15,17 @@ main:
   - title: "About"
     url: /about/
 
-bookshelf:
-  - title: "Knowledge"
-    url: categories/knowledge/
-  - title: "Tech Tree"
-    url: categories/scratch paper/
-  - title: "Reading"
-    url: categories/reading/
-  - title: "Project"
-    url: categories/project/
-  - title: "Coding Test"
-    url: https://eliotjang.github.io/coding test/
+#bookshelf:
+#  - title: "Knowledge"
+#    url: categories/knowledge/
+#  - title: "Tech Tree"
+#    url: categories/scratch paper/
+#  - title: "Reading"
+#    url: categories/reading/
+#  - title: "Project"
+#    url: categories/project/
+#  - title: "Coding Test"
+#    url: https://eliotjang.github.io/coding test/
 
 #  - title: "알고리즘"
 #    children:

@@ -10,9 +10,9 @@ header:
   teaser: /assets/images/fitbit/fitbit-logo.jpeg
 
 categories:
-  - fitbit
+  - 컴퓨터공학
 tags:
-  - fitbit
+  - Fitbit
 
 last_modified_at: 2020-04-12T18:00:00+09:00
 ---  

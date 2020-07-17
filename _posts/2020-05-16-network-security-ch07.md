@@ -1,5 +1,5 @@
 ---
-title: "[네트워크보안] Chapter 07. 네트워크 기반 공격 기술"
+title: "[네트워크 보안] Chapter 07. 네트워크 기반 공격 기술"
 excerpt: "장상수 저, 정보보호총론, 생능출판, 2015"
 toc: true
 toc_sticky: false
@@ -7,9 +7,9 @@ toc_label: "Ch07. 네트워크 기반 공격 기술"
 header:
   teaser: /assets/images/network-security/network-security-logo.jpeg
 categories:
-  - network security
+  - 컴퓨터공학
 tags:
-  - network security
+  - 네트워크 보안
 last_modified_at: 2020-05-16T21:00:00+09:00
 ---  
 <br/>

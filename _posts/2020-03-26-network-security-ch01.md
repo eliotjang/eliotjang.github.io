@@ -1,5 +1,5 @@
 ---
-title: "[네트워크보안] Chapter 01. 정보보호 일반 이론"
+title: "[네트워크 보안] Chapter 01. 정보보호 일반 이론"
 excerpt: "장상수 저, 정보보호총론, 생능출판, 2015"
 toc: true
 toc_sticky: true
@@ -8,9 +8,9 @@ header:
   teaser: /assets/images/network-security/network-security-logo.jpeg
 
 categories:
-  - network security
+  - 컴퓨터공학
 tags:
-  - network security
+  - 네트워크 보안
 last_modified_at: 2020-03-29T00:00:19+09:00
 ---  
 

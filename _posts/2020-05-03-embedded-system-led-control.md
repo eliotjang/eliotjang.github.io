@@ -1,5 +1,5 @@
 ---
-title: "[임베디드시스템] LED 제어"
+title: "[임베디드 시스템] LED 제어"
 excerpt: "GWNU Embedded System Lecture"
 
 toc: true
@@ -10,9 +10,9 @@ header:
   teaser: /assets/images/embedded-system/embedded-system-logo.jpeg
 
 categories:
-  - embedded system
+  - 컴퓨터공학
 tags:
-  - embedded system
+  - 임베디드 시스템
 last_modified_at: 2020-05-03T12:18:00+09:00
 ---
 

@@ -3,9 +3,10 @@ title: "HTML 태그 적용 및 문서 작성"
 excerpt: "GWNU Computer Science & Engineering Lecture"
 
 categories:
-  - knowledge
+  - 컴퓨터공학
 tags:
-  - knowledge
+  - HTML
+
 last_modified_at: 2020-03-24T17:00:00+09:00
 ---  
 

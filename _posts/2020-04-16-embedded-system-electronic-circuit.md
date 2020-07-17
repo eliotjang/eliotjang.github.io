@@ -1,5 +1,5 @@
 ---
-title: "[임베디드시스템] 전자회로 기초"
+title: "[임베디드 시스템] 전자회로 기초"
 excerpt: "GWNU Embedded System Lecture"
 
 toc: true
@@ -10,9 +10,9 @@ header:
   teaser: /assets/images/embedded-system/embedded-system-logo.jpeg
 
 categories:
-  - embedded system
+  - 컴퓨터공학
 tags:
-  - embedded system
+  - 임베디드 시스템
 last_modified_at: 2020-04-16T12:00:00+09:00
 ---
 

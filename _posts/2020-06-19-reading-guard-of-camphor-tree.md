@@ -10,10 +10,12 @@ header:
   teaser: /assets/images/reading/guard-of-camphor-tree.jpeg
 
 categories:
-  - reading
+  - 독서
 
 tags:
-  - reading
+  - 녹나무의 파수꾼
+  - 소설
+  - 히가시노 게이고
 
 last_modified_at: 2020-06-19T17:00:00+09:00
 ---

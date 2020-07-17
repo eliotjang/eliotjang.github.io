@@ -3,11 +3,10 @@ title: "[Ubuntu] Change Terminal Text Size"
 excerpt: "smok95.tistory.com/285"
 
 categories:
-  - knowledge
+  - 컴퓨터공학
 tags:
-  - knowledge
+  - Ubuntu
 
-  - ubuntu
 last_modified_at: 2020-02-11T14:10:00+09:00
 ---
 

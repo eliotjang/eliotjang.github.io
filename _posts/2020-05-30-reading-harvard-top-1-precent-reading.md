@@ -10,10 +10,11 @@ header:
   teaser: /assets/images/reading/harvard-top-1-percent.jpeg
 
 categories:
-  - reading
+  - 독서
 
 tags:
-  - reading
+  - 하버드 상위 1퍼센트의 비밀
+  - 자기계발서
 
 last_modified_at: 2020-05-30T18:00:00+09:00
 ---

@@ -1,5 +1,5 @@
 ---
-title: "[시스템분석및설계] Chapter 21. Proxy 패턴" 
+title: "[디자인 패턴] Chapter 21. Proxy 패턴" 
 excerpt: "Hiroshi Yuki, Java 언어로 배우는 디자인 패턴 입문"  
 
 toc: true
@@ -8,9 +8,9 @@ toc_label: "Ch21. Proxy 패턴"
 header:
   teaser: /assets/images/system-analysis/system-analysis-logo.jpeg
 categories: 
-  - system analysis
+  - 컴퓨터공학
 tags:
-  - system analysis
+  - 디자인 패턴
 last_modified_at: 2020-06-17T20:00:00+09:00  
 ---  
 

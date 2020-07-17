@@ -1,13 +1,10 @@
 ---
-title: "[Journal] long-suffering algorithm"
+title: "[영어일기] long-suffering algorithm"
 excerpt: "Wednesday, January 29, 2020"
 
 categories:
-  - journal
-tags:
-  - journal
-  - january
-  - in 2020
+  - 영어일기
+
 last_modified_at: 2020-01-30T00:15:00+09:00
 ---
 I spent three days trying to solve this algorithm problem, name as Merge two sorted linked lists.  

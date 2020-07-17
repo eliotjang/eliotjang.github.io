@@ -12,6 +12,8 @@ main:
 #    url: /categories/reading/
 #  - title: "Github"
 #    url: https://github.com/eliotjang/
+  - title: "Monthly"
+    url: /month-archive/
   - title: "About"
     url: /about/
 

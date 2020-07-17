@@ -27,7 +27,7 @@ repository               : "eliotjang/eliotjang.github.io"
 logo                     : "/assets/images/album/notebook-empty.jpg"
 teaser                   : "/assets/images/album/book-with-phone.jpg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-breadcrumbs            : true
+breadcrumbs              : false
 words_per_minute         : 200
 comments:
   provider               : "disqus"

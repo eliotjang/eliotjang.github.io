@@ -17,11 +17,9 @@ main:
   - title: "About"
     url: /about/
 
-#bookshelf:
-#  - title: "Knowledge"
-#    url: categories/knowledge/
-#  - title: "Tech Tree"
-#    url: categories/scratch paper/
+bookshelf:
+  - title: "테크트리"
+    url: categories/테크트리/
 #  - title: "Reading"
 #    url: categories/reading/
 #  - title: "Project"
@@ -29,17 +27,8 @@ main:
 #  - title: "Coding Test"
 #    url: https://eliotjang.github.io/coding test/
 
-#  - title: "알고리즘"
-#    children:
 #        - title: "HackerRank, C++"
 #          url: https://eliotjang.github.io/tags/c++
-
-
-# - title: "소개"
-#    url: /about/
-  
-
-
 
   # - title: "Sample Posts"
   #   url: /year-archive/

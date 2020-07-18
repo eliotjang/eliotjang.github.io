@@ -19,7 +19,9 @@ sidebar:
 last_modified_at: 2020-07-14T09:30:00+09:00
 ---
 
-![토익 로고](https://drive.google.com/file/d/1fgNzpSPAOhMZGWaSSmqNYo-GyQQqkOMN/view?usp=sharing)
+
+![](https://drive.google.com/uc?export=view&amp;id=1fgNzpSPAOhMZGWaSSmqNYo-GyQQqkOMN)
+
 
 ![](https://eliotjang.github.io/assets/images/scratch-paper/toeic-rc-basic/toeic-rc-basic-logo.png)
 

@@ -6,7 +6,7 @@ toc: true
 toc_sticky: true
 
 header:
-  teaser: /assets/images/scratch-paper/toeic-rc-basic/toeic-rc-basic-logo.png
+  teaser: /assets/images/logo/toeic-rc-basic-logo.png
 
 categories:
   - 영어공부
@@ -18,12 +18,7 @@ sidebar:
 
 last_modified_at: 2020-07-14T09:30:00+09:00
 ---
-
-
-![](https://drive.google.com/uc?export=view&amp;id=1fgNzpSPAOhMZGWaSSmqNYo-GyQQqkOMN)
-
-
-![](https://eliotjang.github.io/assets/images/scratch-paper/toeic-rc-basic/toeic-rc-basic-logo.png)
+![](https://eliotjang.github.io/assets/images/logo/toeic-rc-basic-logo.png)
 
 # UNIT 01 [기초문법] 주어와 동사 
 

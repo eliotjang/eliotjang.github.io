@@ -6,7 +6,7 @@ toc: true
 toc_sticky: true
 
 header:
-  teaser: /assets/images/logo/toeic-rc-basic-logo.png
+  teaser: /assets/images_v2/logo/toeic-rc-basic-logo.png
 
 categories:
   - 영어공부
@@ -18,7 +18,7 @@ sidebar:
 
 last_modified_at: 2020-07-14T09:30:00+09:00
 ---
-![](https://eliotjang.github.io/assets/images/logo/Toeic-rc-basic-logo.png)
+![](https://eliotjang.github.io/assets/images_v2/logo/Toeic-rc-basic-logo.png)
 
 # UNIT 01 [기초문법] 주어와 동사 
 

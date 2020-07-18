@@ -276,6 +276,7 @@ defaults:
       comments: true
       share: true
       related: true
+      sidebar_category: false
       sidebar:
         nav: "bookshelf"
 
@@ -290,6 +291,7 @@ defaults:
       comments: false
       share: true
       related: true
+      sidebar_category: true
       sidebar:
         nav: "bookshelf"
 
@@ -300,3 +302,7 @@ defaults:
     values:
       sidebar:
         nav: "bookshelf"
+
+# 사이드바에 카테고리와 태그 추가
+category_dir: categories/
+tag_dir: tags/

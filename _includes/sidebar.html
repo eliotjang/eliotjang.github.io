@@ -1,24 +1,88 @@
-{% if page.author_profile or layout.author_profile or page.sidebar %}
-  <div class="sidebar sticky">
+{% if page.author_profile or layout.author_profile or page.sidebar or page.sidebar_category %}
+<div class="sidebar sticky">
   {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
   {% if page.sidebar %}
-    {% for s in page.sidebar %}
-      {% if s.image %}
-        <img src=
-        {% if s.image contains "://" %}
-          "{{ s.image }}"
-        {% else %}
-          "{{ s.image | relative_url }}"
-        {% endif %}
-        alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
-      {% endif %}
-      {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
-      {% if s.text %}{{ s.text | markdownify }}{% endif %}
-      {% if s.nav %}{% include nav_list nav=s.nav %}{% endif %}
-    {% endfor %}
-    {% if page.sidebar.nav %}
-      {% include nav_list nav=page.sidebar.nav %}
-    {% endif %}
+  {% for s in page.sidebar %}
+  {% if s.image %}
+  <img src={% if s.image contains "://" %} "{{ s.image }}" {% else %} "{{ s.image | relative_url }}" {% endif %}
+    alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
   {% endif %}
+  {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
+  {% if s.text %}{{ s.text | markdownify }}{% endif %}
+  {% if s.nav %}{% include nav_list nav=s.nav %}{% endif %}
+  {% endfor %}
+  {% if page.sidebar.nav %}
+  {% include nav_list nav=page.sidebar.nav %}
+  {% endif %}
+  {% endif %}
+
+  {% if page.sidebar_category %}
+  <div class="sidebar-category">
+    <div class="sidebar-nav-item"><big><b>❀ 카테고리</b></big></div>
+    <nav class="content-ul">
+      <ul>
+        {% for category in site.categories %}
+        <a href="{{ root_url }}/{{ site.category_dir }}#{{ category | first }}" class="sidebar-nav-item pl-3rem">
+          <li>
+            <span style="font-size:1.3em;color:#0052cc;">
+            <b><big>
+            <span class="name">
+              {{ category | first }}
+            </span>
+            <span class="badge">({{ category | last | size }})</span>
+            </big></b>
+            </span>
+          </li>
+        </a>
+        {% endfor %}
+      </ul>
+    </nav>
+    
+    <br>
+
+    <div class="sidebar-nav-item"><big><b>태그</b></big></div>
+    <div class="tags-cloud">
+      <div>
+        {% assign first = site.tags.first %}
+        {% assign max = first[1].size %}
+        {% assign min = max %}
+        {% for tag in site.tags offset:1 %}
+        {% if tag[1].size > max %}
+        {% assign max = tag[1].size %}
+        {% elsif tag[1].size < min %}
+        {% assign min = tag[1].size %}
+        {% endif %}
+        {% endfor %}
+
+        {% if max == min %}
+        {% assign diff = 1 %}
+        {% else %}
+        {% assign diff = max | minus: min %}
+        {% endif %}
+
+        {% for tag in site.tags %}
+        {% assign temp = tag[1].size | minus: min | times: 36 | divided_by: diff %}
+        {% assign base = temp | divided_by: 4 %}
+        {% assign remain = temp | modulo: 4 %}
+        {% if remain == 0 %}
+        {% assign size = base | plus: 9 %}
+        {% elsif remain == 1 or remain == 2 %}
+        {% assign size = base | plus: 9 | append: '.5' %}
+        {% else %}
+        {% assign size = base | plus: 10 %}
+        {% endif %}
+        {% if remain == 0 or remain == 1 %}
+        {% assign color = 9 | minus: base %}
+        {% else %}
+        {% assign color = 8 | minus: base %}
+        {% endif %}
+        <a href="{{ root_url }}/{{ site.tag_dir }}#{{ tag[0] }}"
+          style="font-size: {{ size }}pt; color: #{{ color }}{{ color }}{{ color }};">{{ tag[0] }}</a>
+        {% endfor %}
+      </div>
+    </div>
   </div>
+  {% endif %}
+
+</div>
 {% endif %}

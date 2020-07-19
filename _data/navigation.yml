@@ -1,4 +1,5 @@
 # main links
+
 main:
 #  - title: "Knowledge"
 #    url: /categories/knowledge/
@@ -17,18 +18,13 @@ main:
   - title: "About"
     url: /about/
 
-bookshelf:
-  - title: "테크트리"
-    url: categories/테크트리/
-#  - title: "Reading"
-#    url: categories/reading/
-#  - title: "Project"
-#    url: categories/project/
-#  - title: "Coding Test"
-#    url: https://eliotjang.github.io/coding test/
 
-#        - title: "HackerRank, C++"
-#          url: https://eliotjang.github.io/tags/c++
+
+# 사이드바 링크
+
+bookshelf:
+  - title: "<big><big><big>❀ 게임개발 테크트리</big></big></big>"
+    url: categories/테크트리/
 
   # - title: "Sample Posts"
   #   url: /year-archive/

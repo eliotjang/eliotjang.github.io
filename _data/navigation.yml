@@ -22,9 +22,9 @@ main:
 
 # 사이드바 링크
 
-bookshelf:
-  - title: "<big><big><big>❀ 게임개발 테크트리</big></big></big>"
-    url: categories/테크트리/
+#bookshelf:
+#  - title: "<big><big><big>❀ 게임개발 테크트리</big></big></big>"
+#    url: categories/테크트리/
 
   # - title: "Sample Posts"
   #   url: /year-archive/

@@ -1,10 +1,8 @@
 ---
 title: "게임개발 테크트리"
-layout: category
+layout: archive
 permalink: /categories/테크트리/
 author_profile: true
-toc: true
-toc_sticky: true
 ---
 
 - - -
@@ -12,7 +10,7 @@ toc_sticky: true
 
 ### 2020, CSE Senior, Summer Vacation  
 
-[TOEIC RC Basic](https://eliotjang.github.io/영어공부/토익 RC/)  
+[TOEIC RC Basic](https://eliotjang.github.io/영어공부/english-learning-toeic-rc-basic/)  
 
 ### Computer Science & Engineering, Senior
 

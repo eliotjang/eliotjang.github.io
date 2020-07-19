@@ -5,9 +5,9 @@ excerpt: "My First Game"
 categories:
   - 영어일기
 tags:
-  - Unity
-  - C#
+  - c_sharp
   - game
+  - unity
 
 last_modified_at: 2019-12-31T19:00:00+09:00
 ---

@@ -8,8 +8,10 @@
 - 테마라던지 폰트라던지 마음에 안들어서 계속 수정하다보면 너무 시간을 잡아먹음
 - 주객이 전도됨
 
-minimal mistakes 테마를 이용하여 만든 블로그입니다.  
+minimal mistakes 테마를 이용하여 만든 블로그
 
-[새로 이전한 블로그](https://velog.io/eliotjang)
+- - -
+
+[새로 이전한 블로그로 이동하기](https://velog.io/@eliotjang)
 
 

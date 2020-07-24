@@ -3,7 +3,7 @@ title: "[영어공부] 토마토 TOEIC 생기초 RC"
 excerpt: "멀티캠퍼스 러닝클라우드 서비스, www.multicampus.com"
 
 toc: true
-toc_sticky: true
+toc_sticky: false
 
 header:
   teaser: /assets/images_v2/logo/toeic-rc-basic-logo.png
@@ -14,7 +14,7 @@ tags:
   - 토익
 
 sidebar:
-  - nav: bookshelf
+  nav: toeic-rc-basic
 
 last_modified_at: 2020-07-14T09:30:00+09:00
 ---
@@ -406,7 +406,7 @@ A very expensive pen.
 |-ful|-ive|-ous|-ble|-ic|-al|-ent/ant|
 |----|----|----|----|---|---|--------|
 |beautiful|expensive|various|available|automatic|normal|frequent|
-|wonderful|impressive|curious|possible|economic|medical|important|  
+|wonderful|impressive|curious|possible|economic|medical|important|
 
 2) 형용사 위치  
 

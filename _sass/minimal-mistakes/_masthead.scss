@@ -45,7 +45,7 @@
 
 .site-logo img {
   /* 상단 로고 크기 수정 기본값:3rem */
-  max-height: 3rem;
+  max-height: 3.3rem;
 }
 
 .site-title {
@@ -54,6 +54,8 @@
   display: flex;
   -ms-flex-item-align: center;
   align-self: center;
+  font-family: stylish;
+  font-size: 1.3em;
   font-weight: bold;
   z-index: 20;
 }

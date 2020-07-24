@@ -1,24 +1,19 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve`. If you change this file, please restart the server process.
+# 수정하고 난 뒤에는 서버를 끊고 "bundle serve jekyll serve" 명령어를 다시 입력할 것
 
-# Theme Settings
-#
+# 테마 세팅
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
+# fork했기때문에 불필요
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "mint"
 
 # Site Settings
 locale                   : "ko"
-title                    : "삶의 여유"
+title                    : <span style="font-family:stylish; font-size:1.3em">삶의 여유</span>
 title_separator          : "|"
-subtitle                 : "모든 것을 기록하는 도서관"
+subtitle                 : <span style="font-family:stylish">모든 것을 기록하는 도서관</span>
 name                     : "EliotJang"
 description              : "관심있는 모든 것을 다룹니다."
 url                      : "https://eliotjang.github.io"

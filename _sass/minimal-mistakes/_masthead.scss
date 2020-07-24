@@ -44,7 +44,8 @@
 }
 
 .site-logo img {
-  max-height: 2rem;
+  /* 상단 로고 크기 수정 기본값:3rem */
+  max-height: 3rem;
 }
 
 .site-title {

@@ -12,6 +12,10 @@
 - 알고리즘
 - 독서
 
+## 스크린샷
+
+<img width="1792" alt="Screen Shot 2020-07-26 at 7 08 18 PM" src="https://user-images.githubusercontent.com/37320831/88476511-e2b62d00-cf73-11ea-8fe0-5146ebfa73d7.png">
+
 [블로그 살펴보기](https://eliotjang.github.io/)
 
 - - -

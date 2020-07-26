@@ -1,17 +1,31 @@
-## 2020-07-21 이후로 블로그 이전합니다.
+# 깃허브 블로그
 
-### 블로그 이전 이유
+공부한 내용들을 기록하는 블로그입니다.
 
-- 블로그 커스터마이징마다 계속 이슈가 발생
-- 카테고리와 태그를 영어 대문자로 시작할 때 링크 오작동
-- **디자인(테마,폰트 등)이나 기능(메뉴, 카테고리,태그 등) 마음에 안들어서 계속 수정하다보면 너무 시간을 잡아먹음**
-  - 기능 수정을 2주동안 한 적도 있음. 물론 내 실력이 부족해서;
+## 카테고리
 
-### 결론
-- 주객이 전도됨
+- 영어일기
+- 영어공부
+- 컴퓨터공학
+- 한국사
+- 자료구조
+- 알고리즘
+- 독서
+
+[블로그 살펴보기](https://eliotjang.github.io/)
 
 - - -
 
-[새로 이전한 블로그로 이동하기](https://velog.io/@eliotjang)
+# Github Blog
 
+## Categories
 
+- English journal
+- English learning
+- Computer Science & Engineering
+- Korean History
+- data structure
+- algorithm
+- reading
+
+[Watch blog](https://eliotjang.github.io/)

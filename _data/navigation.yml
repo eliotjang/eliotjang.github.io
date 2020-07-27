@@ -54,3 +54,12 @@ toeic-rc-basic:
         url: https://eliotjang.github.io/영어공부/english-learning-toeic-rc-basic-07/
       - title: UNIT 08 - 준동사 - to부정사
         url: https://eliotjang.github.io/영어공부/english-learning-toeic-rc-basic-08/
+
+
+# 정보처리기사 - 소프트웨어 설계 사이드바
+software-design:
+  - title: 요구사항 확인
+    children:
+      - title: 현행 시스템 분석
+      - title: 요구사항 확인
+      - title: 분석모델 확인

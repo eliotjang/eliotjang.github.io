@@ -1,18 +1,5 @@
 # main links
-
 main:
-#  - title: "Knowledge"
-#    url: /categories/knowledge/
-#  - title: "낙서장"
-#    url: /categories/scratch paper/
-#  - title: "Algorithm"
-#    url: /categories/algorithm/
-#  - title: "Projects"
-#    url: /categories/project/
-#  - title: "독서"
-#    url: /categories/reading/
-#  - title: "Github"
-#    url: https://github.com/eliotjang/
   - title: "Monthly"
     url: /month-archive/
   - title: "About"
@@ -20,18 +7,11 @@ main:
 
 
 
-# 사이드바 링크
-
+# 게임개발 사이드바 링크
 #bookshelf:
 #  - title: "<big><big><big>❀ 게임개발 테크트리</big></big></big>"
 #    url: categories/테크트리/
 
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
 
 
 # 토익 생기초 RC [기초문법] 사이드바
@@ -63,3 +43,16 @@ software-design:
       - title: 현행 시스템 분석
       - title: 요구사항 확인
       - title: 분석모델 확인
+  - title: 화면 설계
+    children:
+      - title: UI 요구사항 확인
+      - title: UI 설계
+  - title: 애플리케이션 설계
+    children:
+      - title: 공통 모듈 설계
+      - title: 객체지향 설계
+  - title: 인터페이스 설계
+    children:
+      - title: 인터페이스 요구사항 확인
+      - title: 인터페이스 대상 식별
+      - title: 인터페이스 상세 설계

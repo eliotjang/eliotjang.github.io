@@ -34,22 +34,23 @@ main:
   #   url: /sitemap/
 
 
-# 토익 생기초 RC 사이드바
-
+# 토익 생기초 RC [기초문법] 사이드바
 toeic-rc-basic:
-  - title: <span style="font-size:1.3em">목차</span>
+  - title: <span style="font-size:1.3em">기초문법</span>
     children:
-      - title: <span style="font-size:1.3em">주어와 동사</span>
-        url: https://eliotjang.github.io/영어공부/english-learning-toeic-rc-basic/#unit-01-기초문법-주어와-동사
-      - title: <span style="font-size:1.3em">목적어와 보어</span>
-        url: https://eliotjang.github.io/영어공부/english-learning-toeic-rc-basic/#unit-02-기초-문법-목적어와-보어
-      - title: <span style="font-size:1.3em">수 일치</span>
-        url: https://eliotjang.github.io/영어공부/english-learning-toeic-rc-basic/#unit-03-기초-문법-수-일치
-      - title: <span style="font-size:1.3em">명사</span>
-        url: https://eliotjang.github.io/영어공부/english-learning-toeic-rc-basic/#unit-04-기초-문법-명사
-      - title: <span style="font-size:1.3em">형용사와 부사</span>
-        url: https://eliotjang.github.io/영어공부/english-learning-toeic-rc-basic/#unit-05-기초-문법-형용사와-부사
-      - title: <span style="font-size:1.3em">대명사</span>
-        url: https://eliotjang.github.io/영어공부/english-learning-toeic-rc-basic/#unit-06-기초-문법-대명사
-      - title: <span style="font-size:1.3em">준동사 - 대명사</span>
-        url: https://eliotjang.github.io/영어공부/english-learning-toeic-rc-basic/#unit-07-기초-문법-준동사---동명사
+      - title: "UNIT 01 - 주어와 동사"
+        url: https://eliotjang.github.io/영어공부/english-learning-toeic-rc-basic-01/
+      - title: "UNIT 02 - 목적어와 보어"
+        url: https://eliotjang.github.io/영어공부/english-learning-toeic-rc-basic-02/
+      - title: "UNIT 03 - 수 일치"
+        url: https://eliotjang.github.io/영어공부/english-learning-toeic-rc-basic-03/
+      - title: UNIT 04 - 명사
+        url: https://eliotjang.github.io/영어공부/english-learning-toeic-rc-basic-04/
+      - title: UNIT 05 - 형용사와 부사
+        url: https://eliotjang.github.io/영어공부/english-learning-toeic-rc-basic-05/
+      - title: UNIT 06 - 대명사
+        url: https://eliotjang.github.io/영어공부/english-learning-toeic-rc-basic-06/
+      - title: UNIT 07 - 준동사 - 동명사
+        url: https://eliotjang.github.io/영어공부/english-learning-toeic-rc-basic-07/
+      - title: UNIT 08 - 준동사 - to부정사
+        url: https://eliotjang.github.io/영어공부/english-learning-toeic-rc-basic-08/

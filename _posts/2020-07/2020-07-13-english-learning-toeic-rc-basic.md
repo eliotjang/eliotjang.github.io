@@ -651,10 +651,22 @@ A very expensive pen.
 
 > be동사는 원래 뒤에 형용사가 오는데, 명사가 오면 동격이다.
 
-## check the Point!
+## check the Point!(1)
 
 다음 각 문장에서 동명사를 찾아 밑줄을 치시오.  
 
 1. Getting emails automatically can save you time.
 2. Michael recommended moving to China.
 3. All employees like having a coffee break before the noon.
+
+## check the Point!(2)
+
+괄호  안의 동사를 활용하여 빈 칸에 알맞게 쓰시오.
+
+1. Michael is responsible for _____ helping homeless people in Torinia. (help)
+2. _____ my question is easy. (answer)
+3. Mr. Chang likes _____ breakfast with his family. (eat)
+4. _____ a taxi is more convenient. (take)
+
+<br>
+

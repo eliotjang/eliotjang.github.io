@@ -3,7 +3,7 @@ title: "[영어공부] 대명사에 대해서 알아보자"
 excerpt: "멀티캠퍼스 러닝클라우드 서비스, 토마토 TOEIC 생기초 RC"
 
 toc: true
-toc_sticky: false
+toc_sticky: true
 
 header:
   teaser: /assets/images_v2/logo/toeic-rc-basic-logo.png

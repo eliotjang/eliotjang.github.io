@@ -6,7 +6,7 @@ toc: true
 toc_sticky: true
 
 header:
-  teaser: /assets/images_v2/logo/toeic-rc-basic-logo.png
+  teaser: /assets/images_v2/logo/Toeic-rc-basic-logo.png
 
 categories:
   - 영어공부

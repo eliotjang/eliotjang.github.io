@@ -37,22 +37,22 @@ toeic-rc-basic:
 
 
 # 정보처리기사 - 소프트웨어 설계 사이드바
-software-design:
-  - title: 요구사항 확인
-    children:
-      - title: 현행 시스템 분석
-      - title: 요구사항 확인
-      - title: 분석모델 확인
-  - title: 화면 설계
-    children:
-      - title: UI 요구사항 확인
-      - title: UI 설계
-  - title: 애플리케이션 설계
-    children:
-      - title: 공통 모듈 설계
-      - title: 객체지향 설계
-  - title: 인터페이스 설계
-    children:
-      - title: 인터페이스 요구사항 확인
-      - title: 인터페이스 대상 식별
-      - title: 인터페이스 상세 설계
+#software-design:
+#  - title: 요구사항 확인
+#    children:
+#      - title: 현행 시스템 분석
+#      - title: 요구사항 확인
+#      - title: 분석모델 확인
+#  - title: 화면 설계
+#    children:
+#      - title: UI 요구사항 확인
+#      - title: UI 설계
+#  - title: 애플리케이션 설계
+#    children:
+#      - title: 공통 모듈 설계
+#      - title: 객체지향 설계
+#  - title: 인터페이스 설계
+#    children:
+#      - title: 인터페이스 요구사항 확인
+#      - title: 인터페이스 대상 식별
+#      - title: 인터페이스 상세 설계

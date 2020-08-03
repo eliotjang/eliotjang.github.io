@@ -34,7 +34,32 @@ toeic-rc-basic:
         url: https://eliotjang.github.io/영어공부/english-learning-toeic-rc-basic-07/
       - title: UNIT 08 - 준동사 - to부정사
         url: https://eliotjang.github.io/영어공부/english-learning-toeic-rc-basic-08/
-
+      - title: UNIT 09 - 준동사 - 분사
+        url: https://eliotjang.github.io/영어공부/english-learning-toeic-rc-basic-09/
+      - title: UNIT 10 - 형식별 동사의 특징
+        url: https://eliotjang.github.io/영어공부/english-learning-toeic-rc-basic-10/
+  - title: <span style="font-size:1.3em">실전문법</span>
+    children:
+      - title: UNIT 11 - 명사
+        url: https://eliotjang.github.io/영어공부/english-learning-toeic-rc-basic-11/
+      - title: UNIT 12 - 형용사와 부사
+        url: https://eliotjang.github.io/영어공부/english-learning-toeic-rc-basic-12/
+      - title: UNIT 13 - 대명사
+        url: https://eliotjang.github.io/영어공부/english-learning-toeic-rc-basic-13/
+      - title: UNIT 14 - 동사와 수일치
+        url: https://eliotjang.github.io/영어공부/english-learning-toeic-rc-basic-14/
+      - title: UNIT 15 - 수동태
+        url: https://eliotjang.github.io/영어공부/english-learning-toeic-rc-basic-15/
+      - title: UNIT 16 - 동사의 시제
+        url: https://eliotjang.github.io/영어공부/english-learning-toeic-rc-basic-16/
+      - title: UNIT 17 - 준동사
+        url: https://eliotjang.github.io/영어공부/english-learning-toeic-rc-basic-17/
+      - title: UNIT 18 - 전치사
+        url: https://eliotjang.github.io/영어공부/english-learning-toeic-rc-basic-18/
+      - title: UNIT 19 - 접속사
+        url: https://eliotjang.github.io/영어공부/english-learning-toeic-rc-basic-19/
+      - title: UNIT 20 - 관계대명사
+        url: https://eliotjang.github.io/영어공부/english-learning-toeic-rc-basic-20/
 
 # 정보처리기사 - 소프트웨어 설계 사이드바
 #software-design:

@@ -39,7 +39,7 @@ be + V p.p
 - I writing the report. (X)
 - You given me a book. (X)
 
-> 단, [동사 + -ing], [동사의 p.p]가 단독으로 동사 자리에 올 수 없다.
+> [동사 + -ing], [동사의 p.p]가 단독으로 동사 자리에 올 수 없다.
 
 3) 명령문은 동사원형으로 시작한다.
 
@@ -47,7 +47,7 @@ be + V p.p
 
 ## 2. 동사의 수일치
 
-<span style="color:red">동사는 반드시 주어의 수에 일치시킨다.</span>  
+<span style="color:blue">동사는 반드시 주어의 수에 일치시킨다!</span>  
 
 1) 단수 주어이면 단수 동사를, 복수 주어이면 복수 동사를 쓴다.  
 
@@ -71,7 +71,12 @@ be + V p.p
 
 - Making a good decision is not always easy.
 
-&nbsp;&#160;&#160;&#160;4} much, little, a little + 불가산 명사
+&nbsp;&#160;&#160;&#160;4} one, each, every, another + 단수 가산 명사
+
+- Every rock looks the same to me.
+- Each country sends two delegates to the meeting.
+
+&nbsp;&#160;&#160;&#160;5} much, little, a little + 불가산 명사
 
 - Much of the time was wasted.
 - A little knowledge is a dangerous thing.

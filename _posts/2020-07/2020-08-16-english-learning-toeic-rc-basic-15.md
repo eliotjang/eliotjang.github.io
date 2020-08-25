@@ -62,6 +62,9 @@ The English play was made **by the students**.
 1) 문장의 구조를 확인한다. (목적어 확인!)
 
 - 자동사(1형식, 2형식 동사)는 목적어를 취하지 않으므로 수동태로 쓸 수 없다.
+  - 1형식 동사 : go, come, rise, work, live 등
+  - 2형식 동사 : be, become, remain, seem 등
+
 - 타동사는 뒤에 목적어를 취하면 능동태, 목적어를 취하지 않으면 수동태이다.
   - He will repair my car.
   - My car will be repaired by him.
@@ -77,7 +80,12 @@ The English play was made **by the students**.
 
 ## 4. 시제 별 수동태 구조
 
-![](https://eliotjang.github.io/assets/images_v2/english-learning/toeic-rc-basic/unit15/Picture1.png)
+![](https://eliotjang.github.io/assets/images_v2/english-learning/toeic-rc-basic/unit15/Picture1.png)  
+
+be / being / been + p.p.  
+
+진행을 나타내기 위해 be 에 ing를 붙인다.  
+be의 과거분사는 been이다.
 
 ## 5. 수동태 + 전치사 표현
 
